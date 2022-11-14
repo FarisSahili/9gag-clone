@@ -12,6 +12,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.but{
+  border-radius: 50px;
+  }
+  #d{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  }
+  
 
 .App-link {
   color: #61dafb;
