@@ -1,8 +1,9 @@
 import './App.css';
+import Newpost from './components/Newpost';
 
 function App() {
   return (
-   <section></section>
+<Newpost />
   );
 }
 
