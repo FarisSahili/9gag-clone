@@ -1,15 +1,18 @@
 const Scroll = () =>{
     return (
-    <div id="d" className="container">
-    <button className="but" type="button"> 📰News</button>
-    <button className="but" type="button"> 🎭Anime</button>
-    <button className="but" type="button"> 🐱Cats</button>
-    <button className="but" type="button"> 💰Crypto</button>
-    <button className="but" type="button"> 🕹Games</button>
-    <button className="but" type="button"> 📽Movies</button>
-    <button className="but" type="button"> ☕Lifestyle</button>
-    <button className="but" type="button"> 💃Pretty Girls</button>
+   
+    <div id="scroll" className="container">
+    <button className="but1" type="button"> 📰News</button>
+    <button className="but2" type="button"> 🇺🇦Ukraine</button>
+    <button className="but3" type="button"> 🎭Anime</button>
+    <button className="but4" type="button"> 🐱Cats</button>
+    <button className="but5" type="button"> 💰Crypto</button>
+    <button className="but6" type="button"> 🕹Games</button>
+    <button className="but7" type="button"> 📽Movies</button>
+    <button className="but8" type="button"> ☕Lifestyle</button>
+    <button className="but9" type="button"> 💃Pretty Girls</button>
    </div>
    )
+   
 }
-export default Scroll
+export default Scroll 
