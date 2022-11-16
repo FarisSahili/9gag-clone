@@ -3,15 +3,9 @@ const GetApp = () => {
 
     return (            
         
-    <section>
+    <div>
 
-            <nav className="navbar bg-light">
-            <div className="container">
-                <a className="navbar-brand" href="#">
-                <img src="9gag\src\images\logo-9gag-getapp.png" alt="Bootstrap" width="30" height="24"/>
-                </a>
-            </div>
-            </nav>
+        <img src="//images.squarespace-cdn.com/content/v1/599501b0ff7c50ab01b0e9a1/1503023420657-4B6U70Z25EV0QCRC2KY4/Group.png?format=1500w" alt="9GAG" class="Header-branding-logo snipcss0-0-0-1 snipcss-oN2o5"/>
             <ul className="nav justify-content-end">
             <li className="nav-item">
                 <a className="nav-link disabled">FAQ</a>
@@ -35,8 +29,8 @@ const GetApp = () => {
                 <a className="nav-link active" aria-current="page" href="#">GET THE APP</a>
             </li>
             </ul>
-    </section>
-
+            
+    </div>
     )
 };
 export default GetApp;
