@@ -1,34 +1,34 @@
-
+import './Logincard.css';
 
 const Logincard = () =>  {
 
 
 
     return (
-//         <div className = "Logincard">
-//   <div className ="card-body">
-//     <h5 className ="card-title">Card title</h5>
-//     <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-//     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//     <a href="#" className="card-link">Card link</a>
-//     <a href="#" className="card-link">Another link</a>
-//   </div>
-//  </div> 
-<div>
-      <h4>
+
+    <div className="signup-list-banner" >
+  <div className="signup-list-banner__content">
+    <div className="signup-list-banner__content__logo" >
+    </div>
+    <div className="signup-list-banner__content__des" >
+      <h4 >
         9GAG is the largest meme community on the internet 
       </h4>
-      <p>
+      <p className="signup-list-banner__content__def" >
         This is the place to discover the latest memes for sharing and to grow your meme collection. 
       </p>
-
-    <a className="button">
+    </div>
+  </div>
+  <div className="signup-list-banner__action" >
+    <a className="signup-list-banner__action__btn" href="/login" >
       Log in 
     </a>
-    <a className="button">
+    <a className="signup-list-banner__action__btn signup" href="/signup" >
       Create new account 
     </a>
-    </div>
+  </div>
+</div>
+
 
 
     )
