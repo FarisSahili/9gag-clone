@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -13,10 +14,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 
 /* sidebar style */
 /* the first section style (9gag section)*/
@@ -30,26 +27,7 @@
   width: 100%;
 }
 
-.sidebar-item{
-  color: var(--palette-text);
-  font-size: 14px;
-  height: 32px;
-  line-height: 20px;
-  padding: 6px 48px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-transition: background-color .15s,padding-right .15s;
-  -o-transition: background-color .15s,padding-right .15s;
-  transition: background-color .15s,padding-right .15s;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+
  
 Section {
   margin: 4px 0 8px;
@@ -83,3 +61,31 @@ li {
 ul {
   list-style-type: disc;
 }
+
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+
+.icons-sidebar-9gag-sction {
+  position: left;
+  width: 24px;
+  height: 24px;
+
+}
+
+
+  .icon-star
+  {
+    background-position: -48px 0;
+    background-position-x: -48px;
+    background-position-y: 0px;
+    position: right;
+    width: 24px;
+    height: 24px;
+  }
