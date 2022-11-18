@@ -1,10 +1,17 @@
 import './App.css';
-import Card from './components/Card';
-
+import Navbar from './components/Navbar';
+import Scroll from './components/Scroll';
+import Logincard from './components/Logincard';
+import TypeButton from './components/TypeButton';
 
 function App() {
-  return (
-  <Card/>
+return (
+    <>
+      <Navbar />
+      <Scroll /> 
+      <TypeButton/>
+      <Logincard />
+    </>
   );
 }
 
