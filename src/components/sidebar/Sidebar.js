@@ -1,4 +1,5 @@
 //import 
+import './SidebarStyle.css' ;
 
 
 //function
@@ -7,8 +8,6 @@ const Sidebar= () =>{
 
     return(
 
-
-      
    <div className = "sidebar">
       <section className="9gagSection">
       <header> 
