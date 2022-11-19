@@ -39,9 +39,10 @@ body {
 .signup-list-banner__action { 
 
     display: flex; 
-    -ms-flex-align: center; 
+    /* -ms-flex-align: center;  */
     align-items: center; 
-    -ms-flex-pack: center; 
+    /* -ms-flex-pack: center; 
+    ms : (Internet Explorer and Microsoft Edge, before Chromium) */
     justify-content: center; 
     margin: 16px -4px 0;
 } 
@@ -62,13 +63,6 @@ body {
     text-align: left;
 } 
 
-a { 
-    margin:  0; 
-    padding:  0; 
-    outline:  0;
-    color: rgb(255, 255, 255); 
-} 
-
 .signup-list-banner__action__btn { 
     cursor: pointer; 
     display: block; 
@@ -85,19 +79,14 @@ a {
     margin: 0 4px;
     border-color: white;
 } 
-/* a.signup-list-banner__action__btn :hover{ 
-background-color:;
-}
- */
 
 .signup-list-banner__action__btn.signup { 
     background:#101010; 
     color: #fcf4f4f1;
+    background-color:#006BE6;
+
 } 
 
-.signup-list-banner__action__btn.signup{ 
-    background-color:#006BE6;
-} 
 
 h4 { 
     margin: 0; 
@@ -130,9 +119,3 @@ p {
     line-height: 24px; 
     color:#000;
 } 
-
-
-/* a {
-    color: white;
-    text-decoration: underline;
-} */
