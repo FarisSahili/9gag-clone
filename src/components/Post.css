@@ -77,18 +77,8 @@ div.post-tag {
     position: relative;
 }
 
-
-.btn-vote {
-    overflow: hidden;
-}
-
 .post-afterbar-a ul {
     display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
 .btn-vote   li {
@@ -99,10 +89,7 @@ div.post-tag {
 .left {
     float: left!important;
 }
-.btn-vote {
-    overflow: hidden;
  
-}
 .comment {
     position: relative;
     display: flex;
@@ -122,9 +109,7 @@ div.post-tag {
     float: right!important;
 }
 .share-bar  {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    
     display: flex;
     align-items: center;
     justify-content: flex-end;
