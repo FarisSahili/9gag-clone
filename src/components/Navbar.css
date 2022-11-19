@@ -8,9 +8,6 @@
     border: #fff;
     background-color: #fff;
     }
-    #gag-but:hover{
-        color: rgb(53, 51, 51);
-    }
     .buttons{
     border-radius: 50px;
     } 
@@ -36,11 +33,14 @@
         background-color: #fff;
     }
     #search-but{
+        width: 30px ;
         border: #fff;
-    background-color: #fff;
-    padding-right: 50px;
-    margin-left: 30px;
-    
+        background-color: #fff; 
+        padding-right: 50px;
+        margin-left: 30px;
+    }
+    #search-but:hover{
+        background-color: #d9dde1;        
     }
     .post-pen{
         height: 20px;
@@ -61,4 +61,31 @@
     {
       width: 25px;
       border-radius: 50px;
+    }
+    #gag-img{
+        height: 35px;
+        width: 60px;
+    }
+    #shuffle{
+        color: black;
+    }
+    #getApp{
+        color: black;
+    }
+     #memeLand{
+        color: black;
+    }
+    #potatoz{
+        color: black;
+    }
+    #navbar{
+        height: 66px;
+        width: 100%;
+    }
+    #search-icon{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    #search-icon:hover{
+        background-color: #d9dde1;
     }
