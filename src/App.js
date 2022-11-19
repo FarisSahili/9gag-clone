@@ -1,8 +1,18 @@
 import './App.css';
+
+
+import Navbar from './components/Navbar';
+
 import Scroll from './components/Scroll';
+import Logincard from './components/Logincard';
 
 function App() {
-  return ( <Scroll /> 
+  return (
+<>
+ <Navbar />
+ <Scroll /> 
+<Logincard />
+</>
   );
 }
 
