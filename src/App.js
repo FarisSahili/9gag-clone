@@ -1,4 +1,5 @@
 import './App.css';
+import Post from './components/Post';
 
 
 import Navbar from './components/Navbar';
@@ -8,10 +9,13 @@ import Logincard from './components/Logincard';
 
 function App() {
   return (
+
 <>
  <Navbar />
  <Scroll /> 
+    <Post/>
 <Logincard />
+    <Post/>
 </>
   );
 }
