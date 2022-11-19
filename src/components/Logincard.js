@@ -1,5 +1,4 @@
 import './Logincard.css';
-
 const Logincard = () =>  {
 
 
@@ -20,14 +19,18 @@ const Logincard = () =>  {
     </div>
   </div>
   <div className="signup-list-banner__action" >
-    <a className="signup-list-banner__action__btn" href="/login" >
+    
+    <button className="signup-list-banner__action__btn" href="/loginhtml" type="button">
       Log in 
-    </a>
-    <a className="signup-list-banner__action__btn signup" href="/signup" >
+    </button>
+    <button className="signup-list-banner__action__btn signup" href="/signuphtml" type = "button ">
       Create new account 
-    </a>
-  </div>
+    </button>
+
+      </div>
 </div>
+
+
 
 
 
