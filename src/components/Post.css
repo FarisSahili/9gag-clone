@@ -91,34 +91,27 @@ div.post-tag {
 }
  
 .comment {
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    border-radius: 4px;
-    padding: 0 16px;
-    height: 34px;
     border: 1px solid rgba(0,0,0,.1);
     cursor: pointer;
     color: #000;
 }
-.comment :hover {
-    background-color: rgba(0,0,0,.06);
-}
+ 
 .right {
     float: right!important;
 }
-.share-bar  {
-    
+ 
+
+a {
+   
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    position: relative;
-}
-.share-bar avg{
-    margin: 5;
-    padding: 10;
-    
-}
+    text-align: center;
+    border-radius: 4px;
+    padding: 0 18px;
+    height: 34px;
+    color: rgb(7, 7, 7);
  
+}
+.share-bar  {
+    display: flex;
+}
