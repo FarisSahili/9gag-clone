@@ -1,9 +1,12 @@
 import './App.css';
-import GetApp from "./components/GetApp";
-function App() {
+import './components/PostCard.css';
+import PostCard from './components/PostCard';
+function App() 
+{
   return (
-   <GetApp/>
+   <section>
+    <PostCard/>
+   </section>
   );
 }
-
 export default App;
