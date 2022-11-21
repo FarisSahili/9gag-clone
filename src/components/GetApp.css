@@ -1,0 +1,45 @@
+.nav-get-app{
+    font-family:futura-pt;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(0,0,0);
+    word-spacing :0px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    background-color: #FFFFFF;
+    background:0% 0% ;
+    position: #000;
+
+    height: 630px;
+    width: 1263.33px;
+
+    display: block;
+
+    cursor: default;
+}
+.logo-nav-get-app{
+
+    height:32px ;
+    width: 290.375px; 
+    padding-top: 40px;
+    padding-left :122px;
+    padding-right: 851px; 
+    
+    } 
+.logo-header{
+    height:44px;
+    width: 120px;
+} 
+.nav-without-logo{
+    /* height:32px ;
+    width: 290.375px; */
+    padding-top: 80px;
+    /* padding-left :122px;
+    padding-right: 851px; */
+} 
+
+.nav-item:hover{
+background: blue;
+} 
