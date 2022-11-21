@@ -46,6 +46,8 @@
     width: 100%; 
     margin: 0 4px;
     border-color: white;
+    background-color: rgba(0,0,0,.06);
+
 } 
 
 .signup-button  { 
@@ -57,7 +59,7 @@
     font-weight: bold; 
     cursor: pointer;  
     border-radius: 40px; 
-    color:black ; 
+    color:white; 
     width: 100%; 
     margin: 0 4px;
     border-color: white;
