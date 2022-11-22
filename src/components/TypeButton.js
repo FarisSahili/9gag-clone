@@ -1,12 +1,11 @@
-//imports  
+
 import './TypeButton.css'
 
 //function
 
 const TypeButton = () => {
 return (
-    
-        <div className="post-tag" >
+    <div className='countainerTag'>
         <button className="buut1" type="button"><a href>black panther</a></button> 
         <button className="buut2" type="button"><a href>wakanda forever</a></button>       
         <button className="buut3" type="button"><a href>pokemon</a></button>

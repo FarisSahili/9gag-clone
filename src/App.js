@@ -1,18 +1,18 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Scroll from './components/Scroll';
 import Logincard from './components/Logincard';
+import Navbar from './components/Navbar';
+import Post from './components/Post';
+import Scroll from './components/Scroll';
 import TypeButton from './components/TypeButton';
 
 function App() {
 return (
-    <>
-      <Navbar />
-      <Scroll /> 
-      <TypeButton/>
-      <Logincard />
-    </>
-  );
+<>
+
+<TypeButton/>
+
+</>
+);
 }
 
 export default App;
