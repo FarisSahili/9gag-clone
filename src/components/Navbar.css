@@ -4,14 +4,14 @@
     width: 50px;
     margin-left: 50px;
     }
-    #menu-but{
+#menu-but{
     border: #fff;
     background-color: #fff;
     }
-    .buttons{
+.buttons{
     border-radius: 50px;
     } 
-    #post-but{
+#post-but{
     padding:8px 16px 8px 14px ;
     margin-left: 100px;
     background-color:#0975f1;
@@ -21,71 +21,99 @@
     margin-right: 80px;
     margin-left: 10px;
     }
-    #sign-but{
+ #sign-but{
         color:rgb(174, 166, 166) ;
         border: #fff;
     background-color: #fff;
     margin-left: 10px;
     }
-    #profile-but{
+#profile-but{
         border-radius: 100px;
         border: #fff;
         background-color: #fff;
     }
-    #search-but{
+#search-but{
         width: 30px ;
         border: #fff;
         background-color: #fff; 
         padding-right: 50px;
         margin-left: 30px;
     }
-    #search-but:hover{
+#search-but:hover{
         background-color: #d9dde1;        
     }
-    .post-pen{
+.post-pen{
         height: 20px;
         width:20px;
     }
-    #prof{
+#prof{
         color:rgb(174, 166, 166) ;
         height: 40px;
         width: 40px;
     }
-    #prof:hover{
+#prof:hover{
         color: rgb(189, 184, 184);
     }
-    #post-but:hover{
+#post-but:hover{
         background-color: rgb(92, 59, 212);
     }
-    #search-icon
+#search-icon
     {
       width: 25px;
       border-radius: 50px;
     }
-    #gag-img{
+#gag-img{
         height: 35px;
         width: 60px;
     }
-    #shuffle{
+#shuffle{
         color: black;
     }
-    #getApp{
+#getApp{
         color: black;
     }
-     #memeLand{
+#memeLand{
         color: black;
     }
-    #potatoz{
+#potatoz{
         color: black;
     }
-    #navbar{
+#navbar{
         height: 66px;
         width: 100%;
+        border-bottom: #0975f1;
+        border-bottom-left-radius: 10px;
     }
-    #search-icon{
+#search-icon{
         margin-right: 20px;
         cursor: pointer;
     }
-    #search-icon:hover{
+#search-icon:hover{
         background-color: #d9dde1;
     }
+    /*Dropdown*/
+
+
+    .dropdown-item{
+        margin-top: 20px;
+    }
+    .dropdown-menu{
+        padding-right: 50px;
+        width: 380px;   
+    }
+    #gag{
+        padding-left: 18px;
+        margin-top: 20px;
+        font-size: small;
+        color: #ccc5c5;
+    }
+    #Terms{
+        color: #7b7575;
+    }
+    #Advertise{
+        color: #7b7575;
+    }
+    #Contact{
+        color: #7b7575;
+    }
+   
