@@ -2,7 +2,7 @@ import './App.css';
 
 
 import Navbar from './components/Navbar';
-import Post from './components/Post'
+// import Post from './components/Post'
 import Scroll from './components/Scroll';
 import LoginCard from './components/LoginCard';
 
@@ -12,7 +12,6 @@ function App() {
  <Navbar />
  <Scroll /> 
 <LoginCard />
-<Post/>
 </>
   );
 }
