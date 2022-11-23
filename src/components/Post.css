@@ -73,13 +73,15 @@ div.post-tag {
     flex-wrap: wrap;
     padding: 8px;
 }
-.post-afterbar-a {
+.post-afterbar {
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
-.post-afterbar-a ul {
+.post-afterbar ul {
     display: block;
-    padding-inline-start: 40px;
+ padding: 8px;
 }
 .btn-vote   li {
     margin: 0 8px 0 0;
@@ -93,7 +95,7 @@ div.post-tag {
 .comment {
     border: 1px solid rgba(0,0,0,.1);
     cursor: pointer;
-    color: #000;
+   
 }
  
 .right {
@@ -109,9 +111,24 @@ a {
     border-radius: 4px;
     padding: 0 18px;
     height: 34px;
-    color: rgb(7, 7, 7);
- 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 .share-bar  {
     display: flex;
+}
+  a span   {
+    padding: 0 0 0 22px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    min-width: 3ch;
+    color: rgba(0,0,0,.5);
+  }
+  
+  li:hover {
+    background-color: rgba(0,0,0,.06);
+}
+.comment{
+    color: #999;
 }
