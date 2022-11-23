@@ -1,45 +1,102 @@
 .nav-get-app{
-    font-family:futura-pt;
+    font-family:system-ui;
     font-size: 16px;
     font-weight: 300;
     line-height: 25.6px;
-    text-decoration: none solid rgb(0,0,0);
-    word-spacing :0px;
-    padding-left: 32px;
-    padding-right: 32px;
-
-    background-color: #FFFFFF;
-    background:0% 0% ;
-    position: #000;
-
-    height: 630px;
-    width: 1263.33px;
-
+    height: 82px;
+    width: 1263px;
     display: block;
-
-    cursor: default;
 }
-.logo-nav-get-app{
-
-    height:32px ;
-    width: 290.375px; 
-    padding-top: 40px;
-    padding-left :122px;
-    padding-right: 851px; 
-    
-    } 
+ .logo-nav-get-app{
+    height: 32px;
+    width: 80px; 
+    position: relative;
+    right: 1062px;
+    left: 122px;
+    top: 50px;
+}
 .logo-header{
-    height:44px;
-    width: 120px;
-} 
-.nav-without-logo{
-    /* height:32px ;
-    width: 290.375px; */
-    padding-top: 80px;
-    /* padding-left :122px;
-    padding-right: 851px; */
+    height:22px ;
+    width: 60px; 
 } 
 
-.nav-item:hover{
-background: blue;
+ .nav-without-logo{
+    font-family:system-ui;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.96px;
+    height:24px ;
+    width: 729px; 
+    line-height: 25.6px;
+    position: relative;
+    right: 122px;
+    left: 412px;
+    top: 15px;
+    bottom: 4px;
+
+    
 } 
+/* .nav-item:hover{
+    color: brown;
+}  */
+
+.content-getapp-page{
+   height: 630px;
+   width:1263px;
+}
+.phones-photo{
+    height: 468px;
+    width: 558px; 
+    position: relative;
+    right: 122px;
+    left: 632px;
+    top: 72px;
+}
+.wr-content-get-app{
+    height:180px;
+    width: 483px; 
+    position: relative;
+    right: 50px;
+    left: 122px;
+    bottom: 310px;
+}
+.text-in-content-get-app{
+
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;   
+    line-height: 90px;
+    font-weight: bolder;
+    text-decoration: none solid rgb(18,18,18);
+    font-size: 70px;
+    color:#121212;
+}
+
+.two-photos-google-store-wr{
+    height: 55px;
+    width: 483px; 
+    position: absolute;
+    top: 470px;
+    right: 649px;
+    left: 132px;
+    bottom: 220px;
+
+}
+.img-App-store-in-get-app
+{
+    height:48px;
+    width: 160px;
+}
+.img-Google-play-in-get-app
+{
+    height:48px;
+    width: 160px; 
+    position: absolute;
+    right: 150px;
+}
+
+.footer-wr-getapp{
+    height: 350px;
+    width:1263px;
+    background:#f6f6f6;
+
+
+}
