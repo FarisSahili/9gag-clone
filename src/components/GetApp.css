@@ -24,7 +24,7 @@
     font-family:system-ui;
     font-weight: bold;
     font-size: 14px;
-    letter-spacing: 0.96px;
+    word-spacing: 5px;
     height:24px ;
     width: 729px; 
     line-height: 25.6px;
@@ -33,6 +33,7 @@
     left: 412px;
     top: 15px;
     bottom: 4px;
+    color: #757474;
 
     
 } 
@@ -97,6 +98,64 @@
     height: 350px;
     width:1263px;
     background:#f6f6f6;
+}
+.footer-getapp{
+
+    font-family:system-ui;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(84, 19, 19);
+    height: 149px;
+    width: 224px; 
+    position: relative;
+    top: 80px;
+    right: 888px;
+    left: 112px;
+    bottom: 180px;
+    position: #000;
 
 
 }
+.navbar-brand{
+    line-height: 1.8;
+}
+.navbar-brand:hover{
+    color: #cccbcb;
+}
+.faq-class{
+    position: absolute;
+    right: 372px;
+    left: 235px;
+    top: 8px;
+}
+.rules-class
+{
+    position: absolute;
+    right: 372px;
+    left: 280px;
+    top: 8px;
+}
+.culture-class{
+    position: absolute;
+    right: 372px;
+    left: 340px;
+    top: 8px;
+}
+.advertise-class{
+    position: absolute;
+    right: 372px;
+    left: 420px;
+    top: 8px;
+}
+.tips-class{
+    position: absolute;
+    right: 372px;
+    left: 510px;
+    top: 8px;
+}
+.jops-class{
+    position: absolute;
+    right: 372px;
+    left: 555px;
+    top: 8px;
+ }

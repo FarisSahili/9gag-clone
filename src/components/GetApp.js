@@ -19,25 +19,42 @@ const GetApp = () => {
                           <div className='nav-without-logo'>
                                     <ul className="nav justify-content-end">
                                           <li className="nav-item">
-                                            <a className="nav-link disabled">FAQ</a>
+                                            <div className="faq-class">
+                                                <a className="navbar-brand" href="#" >FAQ</a>
+                                            </div>
                                           </li>
                                           <li className="nav-item">
-                                            <a className="nav-link disabled">RULES</a>
+                                            <div className='rules-class'>
+                                              <a className="navbar-brand" href="#" >RULES</a>
+                                            </div>
+                                            
                                           </li>
                                           <li className="nav-item">
-                                            <a className="nav-link disabled" aria-current="page" href="#">TIPS</a>
+                                            <div className='tips-class'>
+                                            <a className="navbar-brand" href="#">TIPS</a>
+                                            </div>
+                                            
                                           </li>
                                           <li className="nav-item">
-                                            <a className="nav-link disabled" aria-current="page" href="#">CULTURE</a>
+                                            <div className='culture-class'>
+                                            <a className="navbar-brand" href="#">CULTURE</a>
+                                            </div>
+                                          
                                           </li>
                                           <li className="nav-item">
-                                            <a className="nav-link disabled" aria-current="page" href="#" >ADVERTISE</a>
+                                            <div className='advertise-class'>
+                                            <a className="navbar-brand" href="#" >ADVERTISE</a>
+                                            </div>
+                                            
                                           </li>
                                           <li className="nav-item">
-                                            <a className="nav-link disabled" aria-current="page" href="#">DISABLED</a>
+                                            <div className='jops-class'>
+                                            <a className="navbar-brand"  href="#">JOBS</a>
+                                            </div>
+
                                           </li>
                                           <li className="nav-item-blue">
-                                          <a className="nav-link active" aria-current="page" href="#">GET THE APP</a>
+                                          <a className="nav-link active" href="#">GET THE APP</a>
                                           </li>
                                     </ul>
                           </div>
@@ -56,20 +73,28 @@ const GetApp = () => {
                             
                             <div className='two-photos-google-store-wr'>
                                 <a>
-                                <img src={imgContentAppStore} className='img-App-store-in-get-app'/>
-                                <img src={imgContentGooglePlay} className='img-Google-play-in-get-app'/>
+                                <img src={imgContentAppStore} className='img-App-store-in-get-app' href="#"/>
+                                <img src={imgContentGooglePlay} className='img-Google-play-in-get-app' href="#" />
                                 </a>  
+                               
                             </div>
                     </div>
 
                     <div className='footer-wr-getapp'>
-
-
-
+                      
+                          <div className='footer-getapp'>
+                                <nav className="nav flex-column">
+                                <a className="navbar-brand" href="#" >TERMS</a>
+                                <a className="navbar-brand" href="#" >PRIVACY</a>
+                                <a className="navbar-brand" href="#" >BLOG</a>
+                                <a className="navbar-brand" href="#" >FEEDBACK</a>
+                                <a className="navbar-brand" href="#" >PRESS, PARTNERSHIPS OR GENERAL INQUIRIES</a>
+                                <a className="navbar-brand" href="#" >COPYRIGHT</a>
+                                </nav>
+                          </div>
+                         
                     </div>
       </div>
     );
 }
 export default GetApp;
-
-
