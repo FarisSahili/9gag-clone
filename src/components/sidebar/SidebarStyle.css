@@ -1,12 +1,14 @@
 
 
   /* sidebar style */
-  /* the first section style (9gag section)*/
 
 
 
+  #offcanvasScrolling
+  {
+    width: 235px;
+  }
 
-    /* 9gag section css*/
     .label-section-9gag 
     {
       padding: 0px 16px; 
@@ -31,9 +33,79 @@
 
     /*  css for all sections */
 
+    .sidebar-menu
+    {
+      padding: 0px;
+    }
+
+
+
+
 .sidebarItem{
   width: 204px ;
 }
+
+
+
+
+
+
+
+li { 
+  position: relative;
+} 
+
+
+
+
+.drawer-container { 
+  width: 100%; 
+  height: 100%; 
+  overflow-y: scroll; 
+  will-change: transform;
+} 
+
+.drawer{ 
+  margin-top: 0; 
+  width: 220px; 
+  height: -webkit-calc(100% - 48px); 
+  height: calc(100% - 48px); 
+  position: fixed; 
+  overflow: hidden; 
+  -ms-scroll-chaining: none; 
+  overscroll-behavior: contain; 
+  background-color: var(--palette-text-foreground); 
+  border-color: var(--palette-border-line);
+} 
+
+#container { 
+  min-width: calc(1036px + var(--main-margin)); 
+  padding: 48px 0 32px; 
+  position: relative; 
+  margin: 0 auto;
+} 
+
+#container.drawer { 
+  width: calc(1264px + var(--main-margin));
+} 
+
+body { 
+  margin:  0; 
+  padding:  0; 
+  outline:  0;
+  font: 14px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,Helvetica,Geneva,sans-serif; 
+  background-color: #fff; 
+  -webkit-font-smoothing: antialiased; 
+  -webkit-text-size-adjust: none;
+} 
+
+html { 
+  margin: 0; 
+  padding: 0; 
+  outline: 0;
+} 
+
+
 
 
 li {
@@ -42,6 +114,11 @@ li {
   padding: 6px; 
   outline: 0;
 } 
+
+.sidebar{
+  width: 29px
+  
+}
 
 
 
@@ -68,27 +145,27 @@ Section {
  
 }
 
+
+
   
 
 /* css for another sections without 9gag section*/
 
 
-.button-star
-  {
-padding: 206px;
-text-align: center;
-  }
- 
+
+.icon-star 
+{
+padding: 0px;
 
 
-.icon-star
-    {
-      position: right;
-      width: 23px;
-      height: 23px;
-    
-    }
-  
+width: 24px; 
+height: 24px; 
+
+
+}
+
+
+
 
 
     .sidebarItem
