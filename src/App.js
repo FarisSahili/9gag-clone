@@ -1,20 +1,17 @@
 import './App.css';
-
-
+import Logincard from './components/Logincard';
+import Modal from './components/Modal';
 import Navbar from './components/Navbar';
-import Post from './components/Post'
+import Post from './components/Post';
 import Scroll from './components/Scroll';
-import Logincard from './components/LoginCard';
+import TypeButton from './components/TypeButton';
 
 function App() {
-  return (
+return (
 <>
- <Navbar />
- <Scroll /> 
-<Logincard />
-<Post/>
+<Modal/>
 </>
-  );
+);
 }
 
 export default App;
