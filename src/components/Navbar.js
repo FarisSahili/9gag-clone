@@ -3,7 +3,7 @@ import img from './image.png';
 
 const Navbar = () => {
     return(
-      <nav className="navbar navbar-expand-lg " id="navbar" >
+      <nav className="navbar navbar-expand-lg " id="navbar" > 
       <div className="container-fluid">
             <div id="menu-div">
               <button id="menu-but" type='button'> <img id="menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAIVJREFUSEvtlcENgCAQBPeoQa3H0rQzbUep4TAQX0KIj40YPQrYSSYDCBodacSFgR8zb6qT6sG5SVUDy7sH5utWUXUvQoNG4B5CxnkXmKW4tmNVJzsdMAKgBeaB1aouxnWqpsXtgeWWahqxMmTXKcn531sdv0VmYJtqtmdxMQ1Xt0z191Uf+B0nH2ATIcQAAAAASUVORK5CYII="/></button>
@@ -56,9 +56,9 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+   
     
                      
     )
     }//end func
     export default Navbar
-   
