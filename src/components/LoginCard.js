@@ -15,29 +15,25 @@ const Logincard = () =>  {
 {/* /*fromlogo.svg on component */ }
 
     </div>
-    <div className="card-9gag-descreptions" >
+    <div className="card-9gag-des" >
       <h4 >
         9GAG is the largest meme community on the internet </h4>
-      <p className="card-9gag-defention" >
+      <p className="card-9gag-def" >
         This is the place to discover the latest memes for sharing and to grow your meme collection. 
       </p>
     </div>
   </div>
   <div className="card-9gag-buttons" >
     
-    <b className="login-button" href="/login-modal" type="button">
+    <b className="login-button" href="/login-modal">
       Log in 
     </b>
-    <b className="signup-button" href="/signup-modal" type = "button ">
+    <b className="signup-button" href="/signup-modal">
       Create new account 
     </b>
 
       </div>
 </div>
-
-
-
-
 
     )
 }
