@@ -25,8 +25,7 @@
 
 .Login-9gag-logo { 
     width: 80px; 
-    min-width: 80px; 
-    height: 80px; 
+        height: 80px; 
     margin-right: 16px; 
    
 } 
@@ -68,9 +67,9 @@
 
 
 h4{
-    margin: 0; 
+    /* margin: 0; 
     padding: 0; 
-    outline: 0;
+    outline: 0; */
     text-align: left;
     font-style: normal; 
     font-weight: bold; 
