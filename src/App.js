@@ -1,4 +1,5 @@
 import './App.css';
+import Newpost_page from './components/Newpost_page';
 
 
 
@@ -9,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <>
-
+<Newpost_page />
     </>
  );
 }

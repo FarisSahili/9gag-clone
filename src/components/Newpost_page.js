@@ -1,33 +1,50 @@
+import ph from './ph.png';
+import './Newpost_page.css';
 const Newpost_page=()=>
 {
-    console.log('hello')
+    console.log()
     return(
-       <div id='oop' className="container" >
-              <h1>new post</h1>
+       <div>
+
+              <div className='creat_post'><h4>Create Post</h4></div>
               <div className="dropdown">
-                  <h1 className="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> 9GAG Rules<span className="navbar-toggler-icon"></span>
-                  </h1>
-                                    
-                      <ol className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li>No pornography</li>
-                        <li>No violence or gory contents</li>
-                        <li>No hate speech and bullying</li>
-                        <li>No spamming and manipulation</li>
-                        <il>No deceptive content</il>
-                        <il>No illegal activities</il>
-                        <il>No impersonation</il>
-                        <il>No copyright infringement</il>
-                      </ol>
-               </div>
-              <div className="input-group input-group-lg">
-                   <input type="text" className="form-control" aria-label="basil" aria-describedby="inputGroup-sizing-lg"></input>
-              </div>
+                    <p className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">9GAG Rules
+                    </p>
+                    <ul className="rules_menu dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <ol>
+                        <li className='hhh'>No pornography</li>
+                        <li className='hhh'>No violence or gory contents</li>
+                        <li className='hhh'>No hate speech and bullying</li>
+                        <li className='hhh'>No spamming and manipulation</li>
+                        <li className='hhh'>No deceptive content</li>
+                        <li className='hhh'>No illegal activities</li>
+                        <li className='hhh'>No impersonation</li>
+                        <li className='hhh'>No copyright infringement</li>
 
-                  <p></p>
-        
+                        </ol>
+                    </ul>
+                    
+                    <div id='oop' className="container" >
+              
+                         <input  placeholder="Titel" className="titel form-control" ></input>
+              
+
+                            <img src={ph} className="rounded mx-auto d-block"/>
+                            <input  placeholder="Add at least 1 tag" className="add form-control" ></input>
+
+                            <div class="btn-group dropup">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    o
+  </button>
+  <ul class="dropdown-menu">
+    <il><p>Enable anonymous posting</p><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input></div></il>
+  </ul>
+                                </div>
+                                </div>
+
+                               
+                </div>
        </div>
-         
-
     )
 
 
