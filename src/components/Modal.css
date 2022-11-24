@@ -1,0 +1,104 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer {
+    width: 534px;
+    height: 563px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+}
+.par{
+    margin-top:20px ;   
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-start;
+}
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modalContainer .bodyBut {
+margin-top: 70px;
+}
+.ButFacebook
+{
+    border-radius: 30px;
+    height: 50px; ;
+    width: 460px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    margin:4px;
+    background-color: white;
+}
+.ButGoogle{
+    border-radius: 30px;
+    height: 50px; ;
+    width: 460px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px;
+    margin:4px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    background-color: white;
+}
+.ButApple{
+    border-radius: 30px;
+    height: 50px; ;
+    width: 460px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px;
+    margin:4px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    background-color: white;
+}
+.ButEmail{
+    border-radius: 30px;
+    height: 50px; ;
+    width: 460px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px;
+    margin:4px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    background-color: white;
+}
+.ButLogIn{
+    border-radius: 30px;
+    height: 50px; ;
+    width: 460px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0px;
+    margin:4px;
+    background-color: white;
+}
+.ButFacebook:hover,.ButGoogle:hover,.ButApple:hover,.ButEmail:hover{
+    background-color: rgb(194, 194, 194);
+}
