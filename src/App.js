@@ -13,7 +13,6 @@ function App() {
  <Scroll />
  <Post/> 
 <Logincard />
- <Post/> 
 </>
   );
 }
