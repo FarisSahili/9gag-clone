@@ -33,13 +33,14 @@
         background-color: #fff;
     }
 #search-but{
-        width: 30px ;
+        width: 20px ;
         border: #fff;
         background-color: #fff; 
         padding-right: 50px;
         margin-left: 30px;
+        border-radius: 50px;
     }
-#search-but:hover{
+#search-icon:hover{
         background-color: #d9dde1;        
     }
 .post-pen{
@@ -95,13 +96,17 @@
 
 
     .dropdown-item{
+        margin-right: 200px;
         margin-top: 20px;
+    } 
+    .dropdown-item:active{
+        color: black;
+        background-color: #d2cece;
     }
     .dropdown-menu{
-        padding-right: 50px;
         width: 380px;   
     }
-    #gag{
+    #gag{   
         padding-left: 18px;
         margin-top: 20px;
         font-size: small;
@@ -109,10 +114,51 @@
     }
     #Terms{
         color: #7b7575;
+        font-weight: bold;
     }
     #Advertise{
         color: #7b7575;
+        font-weight: bold;
     }
     #Contact{
         color: #7b7575;
+        font-weight: bold;
+    }
+    #switch-span{
+        display: flex;
+        color: black;
+        padding-left: 100px;
+    }
+     #terms-span{
+        margin-left: 83px;
+    }
+    #advertise-span{
+        margin-left: 135px;
+    }  #contact-span{
+        margin-left: 150px;
+    } 
+     #dark-mode{
+        display: flex;
+        width: 40px;
+        margin-left: 180px;
+        margin-top: 0px;
+    }
+     #search-div{
+        
+        margin-top: 5px;
+     }
+    #basic-addon1{
+        border: #fff;  
+        background-color: #d1cccc;
+    }
+    #search-input{
+        border: #fff;  
+        background-color: #d1cccc;
+        color:#7b7575 ;
+    }
+    .input-group{
+        margin-left: 15px;
+        border-radius: 10px ;
+        background-color: #d1cccc;
+        width: 350px;
     }
