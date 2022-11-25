@@ -10,21 +10,30 @@
 
 .modalContainer {
     width: 534px;
-    height: 563px;
     border-radius: 12px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
     padding: 25px;
+    /* overflow-y: auto; */
 }
 
 .modalContainer .title {
     display: inline-block;
     text-align: center;
 }
+
 .par{
-    margin-top:20px ;   
+font-size: 12px;
+height:28px;
+width :508px;
+text-align: center;
+padding: 16px 0 16px 0;
+}
+.NineGagIcon{
+    height:100px;
+    width: 100px;
 }
 
 .titleCloseBtn {
@@ -40,6 +49,19 @@
 .modalContainer .bodyBut {
 margin-top: 70px;
 }
+.carousel
+{
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+.para
+{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding: 16px 0;
+}
 .ButFacebook
 {
     border-radius: 30px;
@@ -53,6 +75,13 @@ margin-top: 70px;
     margin:4px;
     background-color: white;
 }
+.facebook1{
+    position: absolute;
+width: 20px;
+margin: 1px -130px;
+
+}
+
 .ButGoogle{
     border-radius: 30px;
     height: 50px; ;
@@ -65,6 +94,12 @@ margin-top: 70px;
     border-style: solid;
     background-color: white;
 }
+.google1
+{
+    position: absolute;
+    width: 30px;
+    margin: 0px -145px;
+}
 .ButApple{
     border-radius: 30px;
     height: 50px; ;
@@ -76,6 +111,11 @@ margin-top: 70px;
     border-color: #e5e5e5;
     border-style: solid;
     background-color: white;
+}
+.apple1{
+    position: absolute;
+    width: 40px;
+    margin: 0px -155px;
 }
 .ButEmail{
     border-radius: 30px;
