@@ -7,10 +7,11 @@ const Newpost_page=()=>
        <div>
 
               <div className='creat_post'><h4>Create Post</h4></div>
+              
               <div className="dropdown">
-                    <p className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">9GAG Rules
+                    <p className="btn" type="button" data-bs-toggle="dropdown">9GAG Rules
                     </p>
-                    <ul className="rules_menu dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <ul className="rules_menu dropdown-menu">
                         <ol>
                         <li className='hhh'>No pornography</li>
                         <li className='hhh'>No violence or gory contents</li>
@@ -33,12 +34,10 @@ const Newpost_page=()=>
                             <input  placeholder="Add at least 1 tag" className="add form-control" ></input>
 
                             <div class="btn-group dropup">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    o
-  </button>
-  <ul class="dropdown-menu">
-    <il><p>Enable anonymous posting</p><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input></div></il>
-  </ul>
+                                <button type="button" class="toggle-button" data-bs-toggle="dropdown"></button>
+                                <ul class="dropdown-menu">
+                                    <il><p>Enable anonymous posting</p><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input></div></il>
+                                </ul>
                                 </div>
                                 </div>
 

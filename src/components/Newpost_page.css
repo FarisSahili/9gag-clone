@@ -1,6 +1,6 @@
 .container{
     border-radius: 10px;
-    border: 2px solid #d1d1d1;
+    border: 2px solid #e5e5e5;
 
     margin: 0px 0 0 -673px;
     width: 640px;
@@ -20,7 +20,7 @@
     width: 298px;
     height: 48px;
     margin: -30px 0 0 1147px;
-    
+
     
 }
 .rules_menu{
@@ -38,9 +38,15 @@
     width: 234px;
     height: 48px;
 }
+.toggle-button{
+    border-radius: 50px;
+}
 .btn{
     width: 298px;
     height: 48px;
+    background-color: white;
+    border-color: #e5e5e5;
+    color: black;
     
 }
 .creat_post{
