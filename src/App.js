@@ -10,9 +10,10 @@ function App() {
   return (
 <>
  <Navbar />
- <Scroll /> 
+ <Scroll />
+ <Post/> 
 <Logincard />
-<Post/>
+ <Post/> 
 </>
   );
 }
