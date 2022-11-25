@@ -1,8 +1,8 @@
 const Scroll = () =>{
-    
+
     return (
    
-    <div id="scroll" className="container">
+    <div className="container">
     <button className="but1" type="button"> 📰News</button>
     <button className="but2" type="button"> 🇺🇦Ukraine</button>
     <button className="but3" type="button"> 🎭Anime</button>
