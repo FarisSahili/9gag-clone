@@ -5,15 +5,15 @@
         float: left;
       margin-top: 400px;
 }
-.list-stream{
+.list{
     
     padding-left: 400px;
     padding-right: 473px;
 }
-.post-creator .post-creator__author {
+ .post-author {
     font-weight: 700;
     font-size: 12px;
-    line-height: 16px;
+    height: 16px;
     color:  black; 
     margin-right: 4px;
 }
@@ -38,13 +38,13 @@ header{
         font-size: 14px;
         box-sizing: border-box;
     }
-    .post-header-action{
+    .post-action{
         align-items: center;
         text-align: center;
     }
 
  img{
-    min-height: 419.565px;
+    height: 419px;
     padding: 0px 70px;
     display: block;
     width: 500px;
@@ -56,7 +56,7 @@ header{
  .post-tag a {
     display: block;
     height: 32px;
-    line-height: 32px;
+    height: 32px;
     margin-right: 8px;
     margin-bottom: 8px;
     background-color: rgba(0,0,0,.06);
@@ -89,7 +89,7 @@ div.post-tag {
     list-style: none;
 }
 .left {
-    float: left!important;
+    float: left;
 }
  
 .comment {
@@ -97,12 +97,7 @@ div.post-tag {
     cursor: pointer;
    
 }
- 
-.right {
-    float: right!important;
-}
- 
-
+  
 a {
    
     display: flex;
@@ -121,7 +116,7 @@ a {
     padding: 0 0 0 22px;
     font-weight: bold;
     font-size: 14px;
-    line-height: 20px;
+    height: 20px;
     min-width: 3ch;
     color: rgba(0,0,0,.5);
   }

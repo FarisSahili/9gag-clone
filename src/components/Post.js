@@ -6,7 +6,7 @@ import './Post.css';
 const Post =() => {
     return (
         <>
-        <div className='list-stream' height="0px">
+        <div className='list'>
             <artical className="postt">
                 <header>
                     <div className="post-header">
@@ -15,11 +15,11 @@ const Post =() => {
   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
 </svg>
-                        <a className="post-creator__author">gager name</a>
-                        <span className="post-creator__creation" >  3h</span>
+                        <a className="post-author">gager name</a>
+                        <span className="post-creation" >  3h</span>
                         </div>
                    
-                 <div className="post-hrader-action">  
+                 <div className="post-action">  
                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
   <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
@@ -75,7 +75,7 @@ const Post =() => {
 </svg>
 <span >82</span>
 </a>
- </li>
+</li>
 </ul>
 
 <ul class="btn-vote left commentt" >
