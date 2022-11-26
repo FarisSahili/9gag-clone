@@ -1,13 +1,11 @@
 import './App.css';
+import Navbar from './components/Navbar';
+
+
 
 function App() {
-return (
-  
- <section>
-</section>
-  
-);
-  
+  return (
+ <Navbar />
+  );
 }
-
 export default App;
