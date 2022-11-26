@@ -1,7 +1,5 @@
 import './Navbar.css';
-import imgg from './image.png';
-
-
+import imagge from './image.png';
 
 const Navbar = () => {
     return(
@@ -10,7 +8,7 @@ const Navbar = () => {
             <div id="menu-div">
               <button id="menu-but" type='button'> <img id="menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAIVJREFUSEvtlcENgCAQBPeoQa3H0rQzbUep4TAQX0KIj40YPQrYSSYDCBodacSFgR8zb6qT6sG5SVUDy7sH5utWUXUvQoNG4B5CxnkXmKW4tmNVJzsdMAKgBeaB1aouxnWqpsXtgeWWahqxMmTXKcn531sdv0VmYJtqtmdxMQ1Xt0z191Uf+B0nH2ATIcQAAAAASUVORK5CYII="/></button>
             </div>  
-              <a id="gag-but" className="navbar-brand" href="#" ><img id="gag-img" src={imgg}  /></a>
+              <a id="gag-but" className="navbar-brand" href="#" ><img id="gag-img" src={imagge}  /></a>
                 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">  
@@ -28,9 +26,11 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="#" id="potatoz"><b> 🥔 Potatoz</b></a>
             </li>
-           
+            <li className="nav-item">
+              <a className="nav-link" href="#" id="potatoz"><b> ⚽ World Cup</b></a>
+            </li>
           </ul>
-          <div class="dropdown">
+          <div class="dropdown" >
            <button id="search-but" className="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false" > 
             <img id="search-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAjRJREFUSEv
                   lllFO20AQhme8m742nKDpCRoeKxwgUnYl3sIJCjegJyCcoPQEDScgb0g2UqAE9ZHcoOEEmFds71RrOZEdbO86kssD+xIpmp1vZv6ZWSO80cE34oI1+M739
@@ -57,25 +57,22 @@ const Navbar = () => {
                       </nav>
                     </li>
             </ul>
-
             </div>  
-
-
-
             <button id="sign-but" type="button" className="buttons" > <b>Sign up/ Log in</b></button>
-            <div className="dropdown">
-            <button className="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false" id="profile-but" class="buttons" ><svg id="prof" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <div id="test" className="dropdown">
+            <button className="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false" id="profile-but" className="buttons" >
+                    <svg id="prof" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
+                    </svg>  
             </button>
-
-              <ul className="dropdown-menu">
+           
+                 <ul className="dropdown-menu ">
                     <li><a  className="dropdown-item" href="#">Sign up or Log in</a></li>
-                    <li><a className="dropdown-item" href="#">Dark Mode<div id="dark-mode" class="form-check form-switch">
+                    <li><a id="dark-mode-link" className="dropdown-item" href="#">Dark Mode<div id="dark-mode" class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
                     <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                   </div>
+                    </div>
                     </a></li>
                     <li><a className="dropdown-item" href="#">Download 9GAG App</a></li>
                     <li><a className="dropdown-item" href="#">Help Center</a></li>
@@ -84,9 +81,9 @@ const Navbar = () => {
                     <li><a id="Advertise"class="temp" className="dropdown-item " href="#">Advertise<span id="advertise-span" className='dropdown-toggle'></span></a></li>
                     <li><a id="Contact" class="temp" className="dropdown-item " href="#">Contact<span id="contact-span" className='dropdown-toggle'></span></a></li>
                     <p id="gag" href="#" className='disabled'>9GAG <i >&copy;</i> 2022</p>
-                  </ul> 
-
-            </div>
+                 </ul> 
+           
+          </div>
             <button id="post-but" type="button" className="buttons"><img className='post-pen' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXJJREFUSEvt1v1NwkAYBvDnJRViAthOoCPUCZQNcAM20RHcwDiBI8gIt4F1gn4cibQcPXOJNYVeP+hdQ2Lsv5D+eN57yHuEMz10Jhd/B/4Kw5uR47wB8AGwXIiHS88LjidrNXG22fhSyncAbgmKiGgxnk5ZGbcGyzB0M8dRya40vYlyIW7Lya3BCsuSZCWJXrSFlfJ1Mp+vis+MYTXei90uIM+L2vDJbPbrGcGlMw3GQiwacVuJNUViDXicC+Ebn3FNe9WkdfgzEd0bt7oBLXpzgKu2F0fQ++/UAdXiupZ3LtcJqHJi3XhPTmwbVT+gNfEQaCs8FNoID4nWwkOjtXCaJAGIrjvcTlrbW/eOSrl+FvnHkKg2cZokSxCpG0TT0ztp7VpMOX8C8NigGqPaxFvO1wTc1cBWUP2oOVcLvXp9kfKTRqPl8Zbp0AXtVw7KVSpWLAFGwBpSsny/Z7qbYl+0klitsC3g2kaMtpNJun9YTeAbfjfzH40wiiEAAAAASUVORK5CYII="/> <b>  Post </b>
             </button> 
         </div>
