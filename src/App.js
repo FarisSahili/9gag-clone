@@ -1,5 +1,4 @@
 import './App.css';
-import './components/GetApp';
 import GetApp from './components/GetApp';
 function App() 
 {
