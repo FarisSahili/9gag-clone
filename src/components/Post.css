@@ -1,16 +1,16 @@
-.postt {
+.cardpost {
   
     border-top: 1px solid rgba(0,0,0,.1);
     box-sizing: border-box;
         float: left;
       margin-top: 400px;
 }
-.list{
+.group{
     
     padding-left: 400px;
     padding-right: 473px;
 }
- .post-author {
+ .nameofcreator {
     font-weight: 700;
     font-size: 12px;
     height: 16px;
@@ -22,7 +22,7 @@ header{
     position: relative;
     display: block;
 }
-.post-header {
+.topsection{
     height: 20px;
     color: #999;
     font-size: 12px;
@@ -31,14 +31,14 @@ header{
     align-items: center;
     position: relative;
 }
-    .post-creator{
+    .creatorphoto{
         display: flex;
         align-items: center;
         flex-grow: 1;
         font-size: 14px;
         box-sizing: border-box;
     }
-    .post-action{
+    .downloadicon{
         align-items: center;
         text-align: center;
     }
@@ -53,7 +53,7 @@ header{
      background-color: rgb(0 0 0 / 6%);
  }
  
- .post-tag a {
+ .tags a {
     display: block;
     height: 32px;
     height: 32px;
@@ -68,36 +68,33 @@ header{
     font-weight: 700;
     
 }
-div.post-tag {
+div .tags {
     display: flex;
     flex-wrap: wrap;
     padding: 8px;
 }
-.post-afterbar {
+.sectiondown {
     position: relative;
     margin: 0;
     padding: 0;
 }
 
-.post-afterbar ul {
+.sectiondown ul {
     display: block;
  padding: 8px;
 }
-.btn-vote   li {
+.vote   li {
     margin: 0 8px 0 0;
     float: left;
     list-style: none;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+    border-radius: 4px;
 }
 .left {
     float: left;
 }
  
-.comment {
-    border: 1px solid rgba(0,0,0,.1);
-    cursor: pointer;
-   
-}
-  
 a {
    
     display: flex;

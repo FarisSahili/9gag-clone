@@ -6,20 +6,20 @@ import './Post.css';
 const Post =() => {
     return (
         <>
-        <div className='list'>
-            <artical className="postt">
+        <div className='group'>
+            <artical className="cardpost">
                 <header>
-                    <div className="post-header">
-                    <div className="post-creator">
+                    <div className="topsection">
+                    <div className="creatorphoto">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
 </svg>
-                        <a className="post-author">gager name</a>
-                        <span className="post-creation" >  3h</span>
+                        <a className="nameofcreator">gager name</a>
+                        <span className="time" >  3h</span>
                         </div>
                    
-                 <div className="post-action">  
+                 <div className="downloadicon">  
                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
   <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
@@ -52,16 +52,16 @@ const Post =() => {
                 <img src={photo}  alt="gag"/>
                  </div> 
 
-                <div className="post-tag">
+                <div className="tags">
                 <a >Funny</a> 
                 <a >Elon Musk</a>
                     
                 </div>
 
-<div className='post-afterbar'>
-                <ul className="btn-vote left">
+<div className='sectiondown'>
+                <ul className="vote left">
                <li>
-                <a className="up comment">
+                <a className="up ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="gray" class="bi bi-arrow-up" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
 </svg>
@@ -69,7 +69,7 @@ const Post =() => {
 </a>
  </li>
  <li>
-<a className="down comment" >
+<a className="down " >
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down"  color="gray" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
 </svg>
@@ -78,7 +78,7 @@ const Post =() => {
 </li>
 </ul>
 
-<ul class="btn-vote left commentt" >
+<ul class="vote left" >
     <li>
     <a className='comment' >
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="gray" class="bi bi-chat-left" viewBox="0 0 16 16">
