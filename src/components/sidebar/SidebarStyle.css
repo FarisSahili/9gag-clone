@@ -1,12 +1,28 @@
 
+/* wr-side-bar */
 
-  /* sidebar style */
-
-.wr-side-bar{
+.wr-side-bar
+{
 width: 50px;
-
-
 }
+
+
+/*offcanvas */
+
+#offcanvasScrolling
+{
+  overflow: hidden; /* Hide scrollbars */
+}
+
+#offcanvasScrolling
+{
+  width: 235px;
+}
+
+
+
+/*card styel*/
+
 .btn-card{ 
 
   border: none; 
@@ -32,12 +48,7 @@ width: 50px;
 .card-title
 {
   font-weight: bold; 
-  font-size: 19px; 
-}
-
-
-#offcanvasScrolling{
-  overflow: hidden; /* Hide scrollbars */
+  font-size: 18px; 
 }
 
 
@@ -51,14 +62,16 @@ width: 50px;
     margin: 16px 8px 0 8px;
 
 }
+.card-text
+{
+  font-size: 14px; 
+}
 
 
-  #offcanvasScrolling
-  {
-    width: 235px;
-  }
 
-    .label-section-9gag 
+
+
+ .label-section-9gag 
     {
       padding: 0px 16px; 
     }
@@ -73,7 +86,7 @@ width: 50px;
     }
 
     
-    .label-section-9gag
+  .label-section-9gag
     {
       padding: 0px;
       font-weight: bold; 
@@ -82,11 +95,6 @@ width: 50px;
 
 
 
-
-
-
-
-    /*  css for all sections */
 
     .sidebar-menu
     {
@@ -103,9 +111,6 @@ width: 50px;
 
 
 
-li { 
-  position: relative;
-} 
 
 
 
@@ -162,10 +167,13 @@ Section {
 }
 
 
+li{ 
+  position: relative;
+ 
+} 
 
   
 
-/* css for another sections without 9gag section*/
 
 
 
