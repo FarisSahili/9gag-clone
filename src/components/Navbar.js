@@ -17,7 +17,7 @@ const Navbar = () => {
               <a className="nav-link active" aria-current="page" href="#" id="shuffle" ><b>🔀 Shuffle</b></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" id="getApp" ><b>📱 Get App</b></a>
+              <a className="nav-link" href ='./src/components/GetApp.js' id="getApp" ><b>📱 Get App</b></a>
             </li>
            
             <li className="nav-item">
