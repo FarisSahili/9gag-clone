@@ -1,12 +1,8 @@
 import './App.css';
-import Sidebar from './components/sidebar/Sidebar';
-
+import Navbar from './components/Navbar';
 function App() {
   return (
-    <section>
-      <Sidebar/>
-    </section>
-  )
+ <Navbar />
+  );
 }
-
 export default App;
