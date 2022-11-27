@@ -1,5 +1,5 @@
 import './App.css';
-import LoginCard from './components/LoginCard';
+import LoginCard from './components/loginCard/LoginCard';
 function App() 
 {
   return (
