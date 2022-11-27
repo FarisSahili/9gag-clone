@@ -13,59 +13,29 @@
 .content-card{
     display: flex; 
 }
-.card-9gag-buttons  { 
 
-    display: flex; 
-    margin: 5px;
-
-} 
 
 .Login-9gag-logo { 
     width: 80px; 
-        height: 80px; 
+    height: 80px; 
     margin-right: 16px; 
    
 } 
-
 .card-9gag-des { 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 16px; 
+    color:#000;
+} 
+
+.card-9gag-des{ 
     text-align: left;
 } 
 
-.login-button{
-    padding: 10px 16px; 
-    font-size: 14px; 
-    font-style: normal; 
-    font-weight: bold; 
-    border-radius: 40px; 
-    color:black ; 
-    width: 100%; 
-    margin: 0 4px;
-    border-color: white;
-    background-color: rgba(0,0,0,.06);
-    cursor: pointer;  
-
-
-} 
-
-.signup-button  { 
-    color: #fcf4f4f1;
-    background-color:#006BE6;
-    padding: 10px 16px; 
-    font-size: 14px; 
-    font-style: normal; 
-    font-weight: bold; 
-    border-radius: 40px; 
-    color:white; 
-    width: 100%; 
-    margin: 0 4px;
-    border-color: white;
-    cursor: pointer;  
-
-} 
 
 
 h4{
-
+   
     text-align: left;
     font-style: normal; 
     font-weight: bold; 
@@ -76,10 +46,38 @@ h4{
 p { 
     text-align: left;
 } 
+.card-9gag-buttons  { 
 
-.card-9gag-des { 
+    display: flex; 
+    margin:5px;
+} 
+.login-button{
+    padding: 10px 16px; 
+    font-size: 14px; 
     font-style: normal; 
-    font-weight: normal; 
-    font-size: 16px; 
-    color:#000;
+    font-weight: bold; 
+    cursor: pointer;  
+    border-radius: 40px; 
+    color:black ; 
+    width: 100%; 
+    margin: 0 4px;
+    border-color: white;
+    background-color:rgb(179, 179, 179);
+
+} 
+
+.signup-button  { 
+    color: #fcf4f4f1;
+    background-color:#006BE6;
+    padding: 10px 16px; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-weight: bold; 
+    cursor: pointer;  
+    border-radius: 40px; 
+    color:rgb(238, 230, 230) ; 
+    width: 100%; 
+    margin: 0 4px;
+    border-color: white;
+
 } 

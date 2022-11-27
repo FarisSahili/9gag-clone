@@ -25,17 +25,21 @@ const Logincard = () =>  {
   </div>
   <div className="card-9gag-buttons" >
     
-    <b className="login-button" href="/login-modal">
+    <p1 className="login-button" href="/loginModal" >
       Log in 
-    </b>
-    <b className="signup-button" href="/signup-modal">
+    </p1>
+    <p1 className="signup-button" href="/signupModal" >
       Create new account 
-    </b>
+    </p1>
 
       </div>
 </div>
 
+
+
+
+
     )
 }
 
-export default Logincard ;
+export default Logincard 
