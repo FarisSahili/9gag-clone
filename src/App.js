@@ -1,6 +1,7 @@
 import './App.css';
 import LoginCard from './components/LoginCard';
-function App() {
+function App() 
+{
   return (
   // <section>
   // </section>
