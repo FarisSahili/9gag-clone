@@ -4,13 +4,22 @@
     width: 50px;
     display: flex;
     border-radius: 50px;
+    margin : 5px; 
 }
 .post-container {
     text-align: left; 
-    padding: 24px 0; 
-    z-index: 0;
-    padding-top: 400px;
-    padding-left: 400px;
-    padding-right: 473px;
-
+    /* padding-top: 400px; */
+    /* padding-left: 400px;
+    padding-right: 473px; */
+/* height: 1000px;*/
+width: 552px;
+display: flex;
+margin:228px 228px 228px 228px;
+position: relative;
 }
+ a {
+display: block;
+position: relative;
+margin-top: 10px;
+
+ }
