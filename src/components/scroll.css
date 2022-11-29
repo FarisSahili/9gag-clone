@@ -1,129 +1,136 @@
 .but1{
-    
+
   border-radius: 50px;
   height: 37px; ;
-  width: 89px;
+  width: 100px;
   font-weight: bold;
   font-size: 14px;
   border: 1px solid rgb(181, 180, 180);
-}
+  background-color: white;
   
+}
+
   .but2 {
     border-radius: 50px;
     height: 37px; 
-    width: 98px;
+    width: 120px;
     font-weight: bold; 
     font-size: 14px; 
     margin-left: 8px; 
     border: 1px solid rgb(181, 180, 180);  
+    background-color: white;
   }
-  
-  
+
+
   .but3{
     border-radius: 50px;
     height: 37px; 
-    width: 100px; 
+    width: 110px; 
     font-weight: bold;
     font-size: 14px;
     margin-left: 8px;   
     border: 1px solid rgb(181, 180, 180);
+    background-color: white;
     }
 
     .but4{
-      
+
       border-radius: 50px;
       height: 37px; 
-      width: 82px; 
+      width: 100px; 
       font-weight: bold;
       font-size: 14px;
       margin-left: 8px;  
       border: 1px solid rgb(181, 180, 180); 
+      background-color: white;
       }
 
       .but5{
         border-radius: 50px;
         height: 37px; 
-        width: 92px; 
+        width: 105px; 
         font-weight: bold;  
         font-size: 14px;
         margin-left: 8px;   
         border: 1px solid rgb(181, 180, 180);
+        background-color: white;
       }
 
         .but6{
           border-radius: 50px;
           height: 37px; 
-          width: 92px;
+          width: 105px;
           font-weight: bold; 
           font-size: 14px; 
           margin-left: 8px;   
-          border: 1px solid rgb(181, 180, 180);      
+          border: 1px solid rgb(181, 180, 180);  
+          background-color: white;    
         }
           .but7{
             border-radius: 50px;
             height: 37px; 
-            width: 93px;
+            width: 105px;
             font-weight: bold; 
             font-size: 14px;
             margin-left: 8px; 
-            border: 1px solid rgb(181, 180, 180);         
+            border: 1px solid rgb(181, 180, 180); 
+            background-color: white;        
           }
             .but8{
               border-radius: 50px;
               height: 37px; 
-              width: 108px;
+              width: 120px;
               font-weight: bold;  
               font-size: 14px;    
               margin-left: 8px;  
               border: 1px solid rgb(181, 180, 180);   
+              background-color: white;
             }
               .but9{
                 border-radius: 50px;
                 height: 37px; 
-                width: 122px;
+                width: 150px;
                 font-weight: bold;  
                 font-size: 14px;   
                 margin-left: 8px; 
                 border: 1px solid rgb(181, 180, 180);  
+                background-color: white;
               }
+
+              .but1:hover,.but2:hover,.but3:hover,.but4:hover,.but5:hover,.but6:hover,.but7:hover,.but8:hover,.but9:hover{
+                background-color: rgb(194, 194, 194);
+              }
+  
+  #scroll{
+ padding-top: 171px;
+ padding-left: 400px;
+ width: 520px;
+ min-height: 65px;
+ display: flex;
+ box-sizing: content-box;
+
+ white-space: nowrap;
+ 
+ 
+   }          
                 
+.ButtonScroll{
+ 
+ 
+  display: flex;
+overflow-x: scroll;   
+overflow-x: hidden;  
+}
+.ButtonScroll:hover{
+  overflow-x: scroll; 
 
-
-
-
-
-
-
-
-  .container{
-    position: g;
-    width: 520px; ;
-    height: 150px;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 120px;
-    margin-left: 400px;
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-.App-link {
-  color: #fbe161;
-  
+}
+.but1:focus ,.but2:focus ,.but3:focus ,.but4:focus ,.but5:focus ,.but6:focus ,.but7:focus ,.but8:focus ,.but9:focus {
+  background-color: black;
+  color: white;
 }
 
 
 
-.but1:hover,.but2:hover,.but3:hover,.but4:hover,.but5:hover,.but6:hover,.but7:hover,.but8:hover,.but9:hover{
-  background-color: rgb(194, 194, 194);
-  
-}
+
+
