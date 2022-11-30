@@ -1,0 +1,165 @@
+    #menu-div{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+    }
+    #menu-but{
+    border: #fff;
+    background-color: #fff;
+    }
+   .buttons{
+    border-radius: 50px;
+    } 
+    #post-but{
+    padding:8px 16px 8px 14px ;
+    margin-left: 100px;
+    background-color:#0975f1;
+    color:aliceblue;
+    border: 10px;
+    width: 90px;
+    margin-right: 80px;
+    margin-left: 10px;
+    }
+    #sign-but{
+        color:rgb(174, 166, 166) ;
+        border: #fff;
+    background-color: #fff;
+    margin-left: 10px;
+    }
+    #profile-but{
+        border-radius: 100px;
+        border: #fff;
+        background-color: #fff;
+    }
+    #search-but{
+        width: 20px ;
+        border: #fff;
+        background-color: #fff; 
+        padding-right: 50px;
+        margin-left: 30px;
+        border-radius: 50px;
+    }
+    #search-icon:hover{
+        background-color: #d9dde1;        
+    }
+    .post-pen{
+        height: 20px;
+        width:20px;
+    }
+    #prof{
+        color:rgb(174, 166, 166) ;
+        height: 40px;
+        width: 40px;
+    }
+    #prof:hover{
+        color: rgb(189, 184, 184);
+    }
+    #post-but:hover{
+        background-color: rgb(92, 59, 212);
+    }
+    #search-icon
+    {
+      width: 25px;
+      border-radius: 50px;
+    }
+    #gag-img{
+        height: 35px;
+        width: 60px;
+    }
+    #shuffle{
+        color: black;
+    }
+    #getApp{
+        color: black;
+    }
+    #memeLand{
+        color: black;
+    }
+    #potatoz{
+        color: black;
+    }
+    #navbar{
+        height: 66px;
+        width: 100%;
+        border-bottom: #0975f1;
+        border-bottom-left-radius: 10px;
+    }
+    #search-icon{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    #search-icon:hover{
+        background-color: #d9dde1;
+    }
+    /*Dropdown*/
+
+
+    .dropdown-item{
+        margin-top: 20px;
+    } 
+    .dropdown-item:active{
+        color: black;
+        background-color: #d2cece;
+    }
+    .dropdown-menu{
+        width: 380px;
+        position:absolute ;
+        right: 40px;
+    }
+    #gag{   
+        padding-left: 18px;
+        margin-top: 20px;
+        font-size: small;
+        color: #ccc5c5;
+    }
+    #Terms{
+        color: #7b7575;
+        font-weight: bold;
+    }
+    #Advertise{
+        color: #7b7575;
+        font-weight: bold;
+    }
+    #Contact{
+        color: #7b7575;
+        font-weight: bold;
+    }
+    #switch-span{
+        display: flex;
+        color: black;
+        padding-left: 100px;
+    }
+     #terms-span{
+        margin-left: 83px;
+    }
+    #advertise-span{
+        margin-left: 135px;
+    }  #contact-span{
+        margin-left: 150px;
+    } 
+     #search-div{
+        
+        margin-top: 5px;
+     }
+    #basic-addon1{
+        border: #fff;  
+        background-color: #d1cccc;
+    }
+    #search-input{
+        border: #fff;  
+        background-color: #d1cccc;
+        color:#7b7575 ;
+    }
+    .input-group{
+        margin-left: 15px;
+        border-radius: 10px ;
+        background-color: #d1cccc;
+        width: 350px;
+    }
+    #dark-mode-link{
+        background-color: chocolate;
+    }
+    #dark-mode{
+        background-color: brown;
+    }

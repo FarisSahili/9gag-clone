@@ -1,19 +1,12 @@
 import './App.css';
+
 import Newpost_page from './components/Newpost_page';
 
-
-
-
-
-
-
-function App() {
+function App() 
+{
   return (
-    <>
- 
-<Newpost_page />
-    </>
- );
-}
+  <Newpost_page/>
+  );
 
+}
 export default App;
