@@ -9,10 +9,11 @@ width: 50px;
 
 /*offcanvas */
 
-#offcanvasScrolling
-{
-  overflow: hidden; /* Hide scrollbars */
+::-webkit-scrollbar {
+  display: none;
 }
+
+
 
 #offcanvasScrolling
 {
@@ -32,8 +33,8 @@ width: 50px;
   text-decoration: none; 
   padding: 10px 16px; 
   color: #fff; 
-  border-radius: 50px; 
-
+  border-radius: 70px; 
+width: 140px;
 } 
 
 .card-body
@@ -172,12 +173,9 @@ li{
  
 } 
 
-  
 
 
-
-
-.icon-star 
+.icon-star
 {
 width: 20px; 
 height: 20px;
@@ -186,6 +184,14 @@ right: 15px;
 }
 
 
+
+.bx
+{
+width: 20px; 
+height: 20px;
+position: absolute;
+right: 15px;
+}
 
 
 
@@ -202,3 +208,8 @@ div {
   outline: 0;
 } 
 
+div { 
+  margin: 0; 
+  padding: 0; 
+  outline: 0;
+} 

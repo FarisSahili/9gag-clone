@@ -12,11 +12,19 @@ const Sidebar= () =>{
       
 <div className='wr-side-bar'> 
 
-<button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Sidebar</button>
+<button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" >Sidebar</button>
 
 <div className="offcanvas offcanvas-start" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
 <div class="offcanvas-header">
- 
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+  
+
+  </div>
+</div>
   </div>
   <div className="offcanvas-body">
 
@@ -25,7 +33,7 @@ const Sidebar= () =>{
   <div className="card-body">
     <p className="card-title">New to 9GAG?</p>
     <p className="card-text">Sign up now to see more content! </p>
-    <a href="#" className="btn-card btn btn-primary" >Sign up</a>
+    <button type  ="button"  className="btn-card btn btn-primary"data-toggle="modal" data-target="#myModal" onClick={"#myModal"} >Sign up</button>
 
   </div>
 </div>
@@ -46,13 +54,14 @@ const Sidebar= () =>{
 
 
 
+
                     <section className="ExploreSection">
                       <h3 className="h3Sections">Explore Popular Tags</h3> 
                         <ul className="sidebar-menu">
-                        <li><a className="sidebarItem"  href="#">qatar</a><a className="button-star" href="#"><img className="icon-star" href=".allSections" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
+                        <li><a className="sidebarItem"  href="#">qatar</a><a className="button-star" href="#"><img type="button" type= "button" className="icon-star"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
                         <li><a className="sidebarItem"  href="#">world cup</a><a className="button-star" href="#"><img className="icon-star"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
                         <li><a className="sidebarItem"  href="#">brazil</a><a className="button-star" href="#"><img className="icon-star"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
-                        <li><a className="sidebarItem" input="" href="#">football</a><a className="button-star" href="#"><img className="icon-star"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
+                        <li><a className="sidebarItem"  href="#">football</a><a className="button-star" href="#"><img className="icon-star"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
                         <li><a className="sidebarItem"  href="#">fifa</a><a className="button-star" href="#"><img className="icon-star"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
                         <li><a className="sidebarItem"  href="#">jaban</a><a className="button-star" href="#"><img className="icon-star"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
                         <li><a className="sidebarItem"  href="#">sport</a><a className="button-star" href="#"><img className="icon-star"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdNJREFUWEftmA1HBUEUhp8b6UMiiaSk9P9/UFJSErki6UNU3uxc25iZc2Znb13pZe2yX8+++54zszthwTRZMB7+JNAysN85fQ28tbg+hkO7wGYH8QDc/iaQ3DmKAC5aXGp1aAfYioDugbuhLrUALQHHgNZ9vQPngNbVagHaBrSkJIfkVLVagJQdZSglVZqyVK2hQKoqVVdJqjZVXZWGAh0CK8adXoHLKhpIdup14APQOkg3D+FdTQQ5d18F+6XbqW1BBj11G8/9k2OHDoC12qdqPF5g6vBfioFOKp6+kWN2upw7ywF5wjoWSLjOt/CnQv1TUHLmBghZSr6yQD1vKMFcRSEvAmnnvKDUNOVMv+JmMbD60NhQgpAz2XHOAhK5+tHeCNVnwqTKPldBGx3U0Apzd22PQ4IojexeyFPPgV4gvTK51CIF+dG6gBdojA7umkl6gDSwanRvlWuO5AEas/TNDwAPUP8zJ+dSyIaVM3Nq6wEqTVXV4DQ49oH0APHEPzyIjlO4s7KAdGEFOiVdXDBx19U5gsq5VSx/CyjVEGNXSs005Vax/C2guCHmXMlBpdyaAlqSsoD6PxIUSLOxZe4jp/WVKxV/SFhArb2n+vx/IMuyTy0CVCVgVo4DAAAAAElFTkSuQmCC"/></a></li>
@@ -146,8 +155,8 @@ const Sidebar= () =>{
                 
                   </div>
                 </div>
-                    
-                    </div>
+</div>
+
 
     )
 
