@@ -1,25 +1,146 @@
 
 .AvatarPic {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
-    border-radius: 50px;
-    margin : 5px; 
+    border-radius: 40px;
 }
 .post-container {
     text-align: left; 
-    /* padding-top: 400px; */
-    /* padding-left: 400px;
-    padding-right: 473px; */
-/* height: 1000px;*/
-width: 552px;
+    padding-top: 400px; 
+    padding-left: 400px;
+    padding-right: 473px; 
+width: 540px;
 display: flex;
 margin:228px 228px 228px 228px;
 position: relative;
 }
  a {
 display: block;
-position: relative;
 margin-top: 10px;
+text-decoration:none solid black;
+font-weight: bold;
+color:black ; 
+
 
  }
+ a:hover {
+    color: black;
+ }
+ .gagger-prof-pic{
+    height: 30px;
+    width: 500px;
+    cursor: pointer;
+    margin :0 ; 
+    position: relative;
+    display: flex;
+ }
+ .gagger-name{
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 10px;
+    width: 150px;
+    display: flex;
+    margin-right: 10px;
+ }
+ span {
+    display: flex;
+    padding-top: 10px;
+    color:  #999999 ;
+ }
+ .SaveIcon{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    margin: 2px;
+    padding-right: 5px;
+padding-top: 2px;
+ }
+   .save-icon{
+
+    display: flex;
+padding-left: 350px ;
+padding-top: 30px;
+align-items: center; 
+   }
+   .save-button{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin: 7px;
+    display: flex;
+background-color:white ;
+cursor: pointer;
+border-color: white ;
+border-width: 0;
+
+ }
+ .save-button:hover {
+    background-color:lightgray; 
+    ;
+ }
+h2{
+    padding-top : 30px;
+
+}
+ .title-of-post.h2{
+    height: 30px;
+    width: 650px;
+    display: flex;
+    cursor: pointer;
+    padding-top : 30px;
+    padding-left: 0;
+margin: 2px;
+}
+.title-of-post:hover{
+color :  #0099FF;
+}
+.video-card{
+    
+    cursor: pointer;
+margin-top: 5px;
+    background-color: #f0eeee;
+    border-radius: 20px;
+}
+.container-tag{
+    display: flex;
+padding: 4px;
+}
+.Post-Card-Tag{
+    border-radius: 5px;
+    border-color:#f0eeee;
+    border-width: 1px;
+    background-color: #f0eeee;
+    text-align:  center; 
+padding:7px;
+margin :3px;
+display: flex;
+}
+.Post-Card-Tag:hover{
+    background-color:lightgray;
+
+}
+
+.vote-button{
+display: flex;
+padding: 5px;
+
+
+}
+.button-vote{
+    border-radius: 5px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: rgb(65, 41, 88);
+    text-align:  center; 
+padding:5px;
+margin :3px;
+border: 1px solid lightgray;
+
+}
+.button-vote:hover{
+    background-color:rgb(246, 246, 246);
+   
+}
