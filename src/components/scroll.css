@@ -105,7 +105,7 @@
  padding-top: 171px;
  padding-left: 400px;
  width: 520px;
- min-height: 65px;
+ min-height: 55px;
  display: flex;
  box-sizing: content-box;
 
@@ -130,6 +130,18 @@ overflow-x: hidden;
   color: white;
 }
 
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+ 
+  border-radius: 10px;
+  background: rgb(175, 173, 173); 
+
+}
 
 
 

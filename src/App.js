@@ -1,12 +1,14 @@
-import './App.css';
+import './App.css'
+
+function App() 
+{
+  return (
 
 
-function App() {
-return (
-<section></section>
+    <section></section>
   
-);
   
+  
+  )
 }
-
 export default App;
