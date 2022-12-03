@@ -4,7 +4,7 @@ import Sidebar from './components/sidebar/Sidebar';
 function App() 
 {
   return (
-<section></section>
+<Sidebar/>
      );
 }
 export default App;
