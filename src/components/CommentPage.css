@@ -1,0 +1,74 @@
+.page-commints{
+    height: auto;
+    width: auto;
+}
+
+.comments-num-wr{
+
+    height: 19px;
+    width: 113px;
+    position: absolute;
+    right: 820px;
+    left: 280px;
+    top: 400px; 
+}
+ .button-wr{
+    height:41px;
+    width:117px;
+    position: absolute;
+    right: 50px;
+    left: 810px;
+    top: 400px; 
+   
+}
+.page-link{
+    color: black;
+    background: rgb(255, 255, 255);
+    cursor: pointer; 
+    font-weight: bold; 
+    line-height: 20px; 
+    font-size: 14px; 
+    background: none; 
+    border: var(--bs-pagination-border-width)snow var(--bs-pagination-border-color);
+}
+.text-start{
+    color: black;
+    display: block ;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    cursor: pointer; 
+    font-weight: bold; 
+    line-height: 20px; 
+    font-size: 15px; 
+    background: none; 
+}
+.card{
+    color: black;
+    font-size: 20px;
+    font-family:system-ui;
+    font-weight: bold;
+   position: absolute;
+   right:351px;
+   left:272px;
+   top: 450px;
+}  
+
+.btn-primary{
+
+    font-size: 15px;
+    font-family:system-ui;
+    font-weight: bold;
+    position: relative;
+     left: 65px; 
+    border-radius: 48%;
+}
+.btn-light{
+    background: rgb(231, 229, 229);
+    font-size: 15px;
+    font-family:system-ui;
+    font-weight: bold;
+    position: relative;
+    left: 55px; 
+    border-radius: 48%;
+
+} 
