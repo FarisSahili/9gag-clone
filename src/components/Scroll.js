@@ -14,7 +14,6 @@ const Scroll = () =>{
     <button className="but7" type="button"> 📽Movies</button>
     <button className="but8" type="button"> ☕Lifestyle</button>
     <button className="but9" type="button"> 💃Pretty Girls</button>
-    
    </div>
    </div>
     )
