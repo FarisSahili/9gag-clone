@@ -1,4 +1,4 @@
-.countainerTag{
+.TagCont{
     position: absolute;
     width: 564px;
     height:120px;
@@ -8,7 +8,7 @@
     margin-left: 400px;
 
 }
-.buut1{
+.Tag1{
     border-radius: 5px;
     height: 32px; ;
     width: 110px;
@@ -17,7 +17,7 @@
     border: 0px;
     margin:5px;
 }
-.buut2{
+.Tag2{
     border-radius:5px;
     height: 32px; ;
     width: 129px;
@@ -27,7 +27,7 @@
     margin: 5px;
 
 }
-.buut3{
+.Tag3{
     border-radius: 5px;
     height: 32px; ;
     width: 79px;
@@ -36,7 +36,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut4{
+.Tag4{
     border-radius: 5px;
     height: 32px; ;
     width: 37px;
@@ -45,7 +45,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut5{
+.Tag5{
     border-radius: 5px;
     height: 32px; ;
     width: 84px;
@@ -54,7 +54,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut6{
+.Tag6{
     border-radius: 5px;
     height: 32px; ;
     width: 64px;
@@ -63,7 +63,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut7{
+.Tag7{
     border-radius: 5px;
     height: 32px; ;
     width: 133px;
@@ -72,7 +72,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut8{
+.Tag8{
     border-radius: 5px;
     height: 32px; ;
     width: 150px;
@@ -81,7 +81,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut9{
+.Tag9{
     border-radius: 5px;
     height: 32px; ;
     width: 111px;
@@ -90,7 +90,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut10{
+.Tag10{
     border-radius: 5px;
     height: 32px; ;
     width: 93px;
@@ -99,7 +99,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut11{
+.Tag11{
     border-radius: 5px;
     height: 32px; ;
     width: 128px;
@@ -108,7 +108,7 @@
     border: 0px;
     margin: 5px;
 }
-.buut12{
+.Tag12{
     border-radius: 5px;
     height: 32px; ;
     width: 128px;
@@ -117,6 +117,6 @@
     border: 0px;
     margin: 5px;
 }
-.buut1:hover,.buut2:hover,.buut3:hover,.buut4:hover,.buut5:hover,.buut6:hover,.buut7:hover,.buut8:hover,.buut9:hover,.buut10:hover,.buut11:hover,.buut12:hover{
+.Tag1:hover,.Tag2:hover,.Tag3:hover,.Tag4:hover,.Tag5:hover,.Tag6:hover,.Tag7:hover,.Tag8:hover,.Tag9:hover,.Tag10:hover,.Tag11:hover,.Tag12:hover{
     background-color: rgb(194, 194, 194);
 }

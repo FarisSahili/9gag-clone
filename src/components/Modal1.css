@@ -1,3 +1,4 @@
+
 .modalBackground {
     width: 100vw;
     height: 100vh;
@@ -17,47 +18,33 @@
     flex-direction: column;
     padding: 25px;
 }
-.CloseIconBtn button {
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+}
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-start;
+}
+.titleCloseBtn button {
     background-color: transparent;
     border: none;
     font-size: 20px;
     cursor: pointer;
 }
-.carousel-dark .carousel-indicators [data-bs-target] {
-    border-radius: 4px;
-    width: 8px;
-    height: 8px;
-    margin: 0 4px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color:#9999;
+.modalContainer .bodyBut {
+margin-top: 0px;
 }
-a.facebook{
-    text-decoration: none;
-    color: black;
+.P-Or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 6px 13px;
+    margin-bottom: 7px;
 }
-a.Google{
-    text-decoration: none;
-    color: black;
-}
-a.Apple{
-    text-decoration: none;
-    color: black;
-}
-.para
-{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    outline: 0;
-    color: #9999;
-    
-}
-.ButFacebook
+.ButFacebook 
 {
     border-radius: 30px;
     height: 50px; ;
@@ -70,17 +57,28 @@ a.Apple{
     margin:4px;
     background-color: white;
 }
+a.facebook {
+    text-decoration: none;
+    color: black;
+}
+a.Google {
+    text-decoration: none;
+    color: black;
+}
+a.Apple{
+    text-decoration: none;
+    color: black;
+}
+
 .facebook1{
     position: absolute;
 width: 20px;
 margin: 1px -130px;
-
 }
-
 
 .ButGoogle{
     border-radius: 30px;
-    height: 50px; 
+    height: 50px; ;
     width: 460px;
     font-weight: bold;
     font-size: 14px;
@@ -95,7 +93,6 @@ margin: 1px -130px;
     position: absolute;
     width: 30px;
     margin: 0px -145px;
-    
 }
 .ButApple{
     border-radius: 30px;
@@ -110,11 +107,12 @@ margin: 1px -130px;
     background-color: white;
 }
 .apple1{
-    position:absolute;
+    position: absolute;
     width: 40px;
     margin: 0px -155px;
 }
-.ButEmail{
+
+.ButLogIn{
     border-radius: 30px;
     height: 50px; ;
     width: 460px;
@@ -124,9 +122,10 @@ margin: 1px -130px;
     margin:4px;
     border-color: #e5e5e5;
     border-style: solid;
-    background-color: white;
+    background-color:#0077ff;
+    opacity: .4;
 }
-.ButLogIn{
+.Forgot{
     border-radius: 30px;
     height: 50px; ;
     width: 460px;
@@ -139,4 +138,3 @@ margin: 1px -130px;
 .ButFacebook:hover,.ButGoogle:hover,.ButApple:hover,.ButEmail:hover{
     background-color: rgb(194, 194, 194);
 }
-
