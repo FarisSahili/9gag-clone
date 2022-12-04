@@ -1,4 +1,16 @@
-.but1{
+
+.but{
+
+  border-radius: 50px;
+  height: 37px; 
+  width: 130px; 
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 8px;  
+  border: 1px solid rgb(181, 180, 180); 
+  background-color: white;
+  }
+  .but1{
 
   border-radius: 50px;
   height: 37px; ;
@@ -7,6 +19,7 @@
   font-size: 14px;
   border: 1px solid rgb(181, 180, 180);
   background-color: white;
+  margin-left: 8px;
   
 }
 
@@ -97,10 +110,10 @@
                 background-color: white;
               }
 
-              .but1:hover,.but2:hover,.but3:hover,.but4:hover,.but5:hover,.but6:hover,.but7:hover,.but8:hover,.but9:hover{
+              .but:hover,.but1:hover,.but2:hover,.but3:hover,.but4:hover,.but5:hover,.but6:hover,.but7:hover,.but8:hover,.but9:hover{
                 background-color: rgb(194, 194, 194);
               }
-  
+
   #scroll{
  padding-top: 171px;
  padding-left: 400px;
@@ -125,7 +138,7 @@ overflow-x: hidden;
   overflow-x: scroll; 
 
 }
-.but1:focus ,.but2:focus ,.but3:focus ,.but4:focus ,.but5:focus ,.but6:focus ,.but7:focus ,.but8:focus ,.but9:focus {
+.but:focus ,.but1:focus ,.but2:focus ,.but3:focus ,.but4:focus ,.but5:focus ,.but6:focus ,.but7:focus ,.but8:focus ,.but9:focus {
   background-color: black;
   color: white;
 }
