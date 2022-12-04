@@ -1,9 +1,14 @@
-import './App.css';
+import './App.css'
+import Scroll from './components/scroll';
 function App() 
 {
   return (
-  <section>
-  </section>
-  );
+
+
+    <Scroll/>
+  
+  
+  
+  )
 }
 export default App;
