@@ -79,21 +79,21 @@ function ModalTags() {
 
 
   const filterArrayFromFavorite = (selectedIndex) => {
-    setPopularTags((current) =>current.filter((_item, index) => index !== selectedIndex)
+    setPopularTags((current) =>current.filter((item, index) => index !== selectedIndex)
     );
   };
   
   const deleteItemFromFavorite = (selectedIndex) => {
-    setFavorites((current) =>current.filter((_item, index) => index !== selectedIndex)
+    setFavorites((current) =>current.filter((item, index) => index !== selectedIndex)
     );
   };
   
   const filterArrayFromOtherFavorite = (selectedIndex) => {
-    setOtherTags((current) =>current.filter((_item, index) => index !== selectedIndex)
+    setOtherTags((current) =>current.filter((item, index) => index !== selectedIndex)
     );
   };
   const filterArrayFromhidden = (selectedIndex) => {
-    setHidden((current) =>current.filter((_item, index) => index !== selectedIndex)
+    setHidden((current) =>current.filter((item, index) => index !== selectedIndex)
     );
   };
   return (
@@ -134,18 +134,19 @@ function ModalTags() {
                 <div className="rowContainer">
                   <div className="title">{item}</div>
                   <div className="btnsContainer">
+                  <XButton
+                      onClick={() => {
+                        filterArrayFromFavorite(index);
+                        setHidden((current) => [...current, item]);
+                      }}
+                    />
                     <Star
                       onClick={() => {
                         filterArrayFromFavorite(index);
                         setFavorites((current) => [...current, item]);
                       }}
                     />
-                    <XButton
-                      onClick={() => {
-                        filterArrayFromFavorite(index);
-                        setHidden((current) => [...current, item]);
-                      }}
-                    />
+                  
                   </div>
                 </div>
               );
@@ -161,18 +162,19 @@ function ModalTags() {
                 <div className="rowContainer">
                   <div className="title">{item}</div>
                   <div className="btnsContainer">
+                  <XButton
+                      onClick={() => {
+                        filterArrayFromFavorite(index);
+                        setHidden((current) => [...current, item]);
+                      }}
+                    />
                     <Star
                       onClick={() => {
                         filterArrayFromOtherFavorite(index);
                         setFavorites((current) => [...current, item]);
                       }}
                     />
-                    <XButton
-                      onClick={() => {
-                        filterArrayFromFavorite(index);
-                        setHidden((current) => [...current, item]);
-                      }}
-                    />
+                   
                   </div>
                 </div>
               );
