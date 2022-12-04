@@ -5,7 +5,15 @@ ul {
     min-height: 32px;
     margin-bottom: 4px;
   }
-    
+    span{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      color:  #999999;
+      display: inline-block;
+      margin-bottom: 4px;
+   
+    }
   p {
     font-weight: 400;
     font-size: 14px;

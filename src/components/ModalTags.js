@@ -92,7 +92,10 @@ function ModalTags() {
     setOtherTags((current) =>current.filter((_item, index) => index !== selectedIndex)
     );
   };
-
+  const filterArrayFromhidden = (selectedIndex) => {
+    setHidden((current) =>current.filter((_item, index) => index !== selectedIndex)
+    );
+  };
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
@@ -111,13 +114,13 @@ function ModalTags() {
               <div className="rowContainer">
                 <div className="title">{item}</div>
                 <div className="btnsContainer">
-                  <Star isSelected={true} />
-                  <XButton
-                    onClick={() => {
-                      deleteItemFromFavorite(index);
-                      setHidden((current) => [...current, item]);
-                    }}
+                  <Star isSelected={true} 
+                   onClick={() => {
+                    deleteItemFromFavorite(index);
+                    setPopularTags((current) => [...current, item]);
+                  }}
                   />
+                 
                 </div>
               </div>
             );
@@ -151,13 +154,12 @@ function ModalTags() {
         </Modal.Body>
         <hr></hr>
         <Modal.Body>
-         
           <span>Other Tags</span>
           <ul className="list-group list-group-flush">
             {otherTags.map((item, index) => {
               return (
                 <div className="rowContainer">
-                  <span className="title">{item}</span>
+                  <div className="title">{item}</div>
                   <div className="btnsContainer">
                     <Star
                       onClick={() => {
@@ -185,13 +187,13 @@ function ModalTags() {
               <div className="rowContainer">
                 <div className="title">{item}</div>
                 <div className="btnsContainer">
-                  <Star isSelected={false}
-                    onClick={() => {
-                      filterArrayFromFavorite(index);
-                      setFavorites((current) => [...current, item]);
-                    }}
+                  
+                  <XButton isSelected={true}
+                   onClick={() => {
+                    filterArrayFromhidden(index);
+                    setFavorites((current) => [...current, item]);
+                  }} 
                   />
-                  <XButton isSelected={true} />
                 </div>
               </div>
             );
