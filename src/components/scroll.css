@@ -1,0 +1,161 @@
+
+.but{
+
+  border-radius: 50px;
+  height: 37px; 
+  width: 130px; 
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 8px;  
+  border: 1px solid rgb(181, 180, 180); 
+  background-color: white;
+  }
+  .but1{
+
+  border-radius: 50px;
+  height: 37px; ;
+  width: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid rgb(181, 180, 180);
+  background-color: white;
+  margin-left: 8px;
+  
+}
+
+  .but2 {
+    border-radius: 50px;
+    height: 37px; 
+    width: 120px;
+    font-weight: bold; 
+    font-size: 14px; 
+    margin-left: 8px; 
+    border: 1px solid rgb(181, 180, 180);  
+    background-color: white;
+  }
+
+
+  .but3{
+    border-radius: 50px;
+    height: 37px; 
+    width: 110px; 
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 8px;   
+    border: 1px solid rgb(181, 180, 180);
+    background-color: white;
+    }
+
+    .but4{
+
+      border-radius: 50px;
+      height: 37px; 
+      width: 100px; 
+      font-weight: bold;
+      font-size: 14px;
+      margin-left: 8px;  
+      border: 1px solid rgb(181, 180, 180); 
+      background-color: white;
+      }
+
+      .but5{
+        border-radius: 50px;
+        height: 37px; 
+        width: 105px; 
+        font-weight: bold;  
+        font-size: 14px;
+        margin-left: 8px;   
+        border: 1px solid rgb(181, 180, 180);
+        background-color: white;
+      }
+
+        .but6{
+          border-radius: 50px;
+          height: 37px; 
+          width: 105px;
+          font-weight: bold; 
+          font-size: 14px; 
+          margin-left: 8px;   
+          border: 1px solid rgb(181, 180, 180);  
+          background-color: white;    
+        }
+          .but7{
+            border-radius: 50px;
+            height: 37px; 
+            width: 105px;
+            font-weight: bold; 
+            font-size: 14px;
+            margin-left: 8px; 
+            border: 1px solid rgb(181, 180, 180); 
+            background-color: white;        
+          }
+            .but8{
+              border-radius: 50px;
+              height: 37px; 
+              width: 120px;
+              font-weight: bold;  
+              font-size: 14px;    
+              margin-left: 8px;  
+              border: 1px solid rgb(181, 180, 180);   
+              background-color: white;
+            }
+              .but9{
+                border-radius: 50px;
+                height: 37px; 
+                width: 150px;
+                font-weight: bold;  
+                font-size: 14px;   
+                margin-left: 8px; 
+                border: 1px solid rgb(181, 180, 180);  
+                background-color: white;
+              }
+
+              .but:hover,.but1:hover,.but2:hover,.but3:hover,.but4:hover,.but5:hover,.but6:hover,.but7:hover,.but8:hover,.but9:hover{
+                background-color: rgb(194, 194, 194);
+              }
+
+  #scroll{
+ padding-top: 171px;
+ padding-left: 400px;
+ width: 520px;
+ min-height: 55px;
+ display: flex;
+ box-sizing: content-box;
+
+ white-space: nowrap;
+ 
+ 
+   }          
+                
+.ButtonScroll{
+ 
+ 
+  display: flex;
+overflow-x: scroll;   
+overflow-x: hidden;  
+}
+.ButtonScroll:hover{
+  overflow-x: scroll; 
+
+}
+.but:focus ,.but1:focus ,.but2:focus ,.but3:focus ,.but4:focus ,.but5:focus ,.but6:focus ,.but7:focus ,.but8:focus ,.but9:focus {
+  background-color: black;
+  color: white;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+ 
+  border-radius: 10px;
+  background: rgb(175, 173, 173); 
+
+}
+
+
+
+
