@@ -1,14 +1,11 @@
-import './App.css'
-import Scroll from './components/scroll';
+import './App.css';
+
 function App() 
 {
   return (
-
-
-    <Scroll/>
-  
-  
-  
-  )
+  <section>
+  </section>
+  );
 }
 export default App;
+
