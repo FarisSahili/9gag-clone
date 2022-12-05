@@ -35,7 +35,9 @@ width: 50px;
   padding: 10px 16px; 
   color: #fff; 
   border-radius: 70px; 
-width: 170px;
+ width: 170px;
+ height: 42px;
+font-weight: bold;
 } 
 
 .card-body
@@ -51,14 +53,9 @@ width: 170px;
 .card-title
 {
   font-weight: bold; 
-  font-size: 18px; 
+  font-size: 19px; 
 }
 
-
-.btn-card
-{
-  font-weight: bold; 
-}
 
 .card{
 
@@ -67,7 +64,7 @@ width: 170px;
 }
 .card-text
 {
-  font-size: 14px; 
+  font-size: 14.3px; 
 }
 
 
@@ -111,14 +108,18 @@ width: 170px;
 
   
 .icon-star:hover { 
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(172, 167, 167, 0.1);
 } 
+
+
 
 .sidebarItem{
   font-size :14px;
   color: rgb(65, 65, 65);
   padding: 0px;
 }
+
+
 .icon-star
 {
 width: 22px; 
@@ -153,13 +154,12 @@ Section {
 } 
 
 
-
-
 /*li and ul style */
 
 
-    li:hover { 
-      background-color: rgba(0,0,0,.1);
+    li:hover 
+    { 
+      background-color: rgba(100, 99, 99, 0.1);
   } 
 
   ul li {
@@ -189,3 +189,6 @@ li{
   position: relative;
  
 } 
+
+
+
