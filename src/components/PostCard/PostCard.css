@@ -1,15 +1,15 @@
 
 .post-container {
     text-align: left; 
-    padding-top: 400px; 
+    padding-top: 30px; 
     padding-left: 400px;
     padding-right: 500px; 
 width: 540px;
 display: flex;
-margin:228px 228px 228px 228px;
 position: relative;
 
 }
+
  a {
 display: block;
 margin-top: 10px;
@@ -23,7 +23,7 @@ color:black ;
  }
 
  .gagger-prof-pic{
-    height: 40px;
+    height: 30px;
     width: 500px;
     cursor: pointer;
     margin :0 ; 
@@ -31,20 +31,20 @@ color:black ;
     display: flex;
  }
  .AvatarPic {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     display: flex;
-    border-radius: 40px;
+    border-radius: 50%;
 }
  .gagger-name{
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
-    padding-left: 5px;
-    padding-top: 5px;
-    height: 10px;
-    width: 150px;
+    padding-left: 2%;
+    padding-top: 3px;
+    height: 100%;
+    width: 100%;
+      /* 150px */
     display: flex;
-    margin-right: 10px;
  }
  span {
     display: flex;
@@ -52,37 +52,40 @@ color:black ;
     color:  #999999 ;
  }
  .SaveIcon{
-    height: 30px;
-    width: 30px;
-    border-radius: 30px;
+    height: 50%;
+    width: 100%;
     margin: 1px;
     padding-right: 5px;
-padding-top: 2px;
+padding-top: 1px;
  }
  .DropdownIcon{
-    height: 30px;
-    width: 30px;
-    border-radius: 30px;
-    margin: 1px;
+    height: 50%;
+    width: auto;
+    margin: 1px; 
     padding-right: 5px;
-padding-top: 2px;
  }
    .save-icon{
 
     display: flex;
-padding-left: 530px ;
-padding-top: 30px;
+padding-left:  68% ;
+padding-top: 2%;
 align-items: center; 
    }
-   .drop-down-icon{
+   .dropdown{
+  
+    display: flex;
+padding-top: 0%;
+align-items: center; 
+   }
+  .drop-down-icon{
     display: flex;
 padding-left: 0px ;
 align-items: center; 
    }
    .save-button{
-    height: 40px;
+    height: auto;
     width: 40px;
-    border-radius: 20px;
+    border-radius:20%;
     margin: 7px;
     display: flex;
 background-color:white ;
@@ -92,17 +95,17 @@ border-width: 0;
 
  }
  .dropdown-button{
-    height: 40px;
+    height: auto;
     width: 40px;
-    border-radius: 20px;
-    margin: 8px;
+    border-radius: 20%;
+    margin: 7px;
     display: flex;
 background-color:white ;
 cursor: pointer;
 border-color: white ;
 border-width: 0;
-padding-top: 12px;
- }
+padding-top: 9px;
+}
  .save-button:hover {
     background-color:lightgray; 
  }
@@ -111,8 +114,8 @@ padding-top: 12px;
 
  }
 
-h2{
-    padding-top : 30px;
+h4{
+    padding-top : 3%;
     cursor: pointer;
 }
 
@@ -143,12 +146,13 @@ padding: 4px;
 .Post-Card-Tag{
     border-radius: 5px;
     border-color:#f0eeee;
-    border-width: 1px;
+    border-width: auto;
     background-color: #f0eeee;
     text-align:  center; 
-padding:10px 20px;
+padding:1% 1%;
 margin :3px;
 display: flex;
+position: relative;
 }
 .Post-Card-Tag:hover{
     background-color:lightgray;
@@ -163,36 +167,35 @@ padding-left: none;
 .share-buttons{
     display: flex;
     padding: 5px;  
-    padding-left: 340px;
+    padding-left: 170px;
 }
 
 .button-vote{
-    border-radius: 5px;
+    border-radius: 15%;
     background-color: white;
-    border-radius: 10px;
     border-color: rgb(65, 41, 88);
     text-align:  center; 
 padding:10px 10px;
-padding-left: 2px;
+padding-left:none;
 margin :2px;
 border: 1px solid lightgray;
-width:90px;
+width:auto;
 position:relative;
 cursor: pointer;
-}
+block-size: 80%;}
 .share-icon{
     background-color: white;
-    border-radius: 10px;
+    border-radius: 30%;
     border-color: rgb(65, 41, 88);
     text-align:  center; 
 padding:10px 10px;
-padding-left: 20px;
-padding-right: 20px;
+padding-left: 10px;
+padding-right: 10px;
 margin :1px;
 display: flex;
 height: 50px;
 cursor: pointer;
-width: 70px;
+width: 50px;
 
 }
 
@@ -209,20 +212,22 @@ width: 70px;
 }
 .dropdown-item{
 font-weight:normal;
-padding : 12px;
+padding : 4px;
+padding-left: 9px;
+
 font-size: large;
 
 }
 .dropdown-share-icon{
-    height: 20px;
-    padding-right: 3px;
+    height: 21px;
+    padding-right: 10px;
     padding-left: 3px;
 }
 
 .button-card{
     display: flex;
-    padding: 5px;  
-    margin: 10px;
+    padding: 10px;  
+    margin: -9px;
 }
 a.button-vote{
     color:grey;

@@ -18,14 +18,9 @@ import Telegram from './telegram.ico';
 
 
 
-
-
-
 const PostCard = () =>  {
     return ( 
-
 <div className='post-container'>
-
         <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
                     <a href = "gagger-page-html">
@@ -57,10 +52,10 @@ const PostCard = () =>  {
                 </div>
         </div>  
                             <div className='title-of-post'>
-                                        <h2 >Why hadn't I ever heard a miniature Italian speak before?!</h2>
+                                        <h4 >Why hadn't I ever heard a miniature Italian speak before?!</h4>
                             </div>
                             <div className='memes-media'>
-                                <video className='video-card' src={video} width="850" height="700"  controls="controls" />
+                                <video className='video-card' src={video} width="600" height="700"  controls="controls" />
                             </div>
                         <div className='container-tag'>
                                 <a  className='Post-Card-Tag' href = "tag-html">Girl</a>
@@ -71,7 +66,7 @@ const PostCard = () =>  {
                         </div>
                         <div className='button-card'>
                             <div className='vote-button'>
-                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/> 5.8k</a>
+                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>70</a>
                                  <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/> 325</a>
                                  <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " /> 92</a>
                             </div>
@@ -105,7 +100,6 @@ const PostCard = () =>  {
                    
              
 </div>
-
     )
 }
 export default PostCard;
