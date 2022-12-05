@@ -1,5 +1,4 @@
 
-/* wr-side-bar */
 
 .wr-side-bar
 {
@@ -7,21 +6,24 @@ width: 50px;
 }
 
 
+
 /*offcanvas */
 
-#offcanvasScrolling
-{
-  overflow: hidden; /* Hide scrollbars */
+::-webkit-scrollbar {
+  display: none;
 }
 
 #offcanvasScrolling
 {
-  width: 235px;
+  width: 260px;
 }
+
+
 
 
 
 /*card styel*/
+
 
 .btn-card{ 
 
@@ -32,8 +34,10 @@ width: 50px;
   text-decoration: none; 
   padding: 10px 16px; 
   color: #fff; 
-  border-radius: 50px; 
-
+  border-radius: 70px; 
+ width: 170px;
+ height: 42px;
+font-weight: bold;
 } 
 
 .card-body
@@ -45,17 +49,13 @@ width: 50px;
  
 }
 
+
 .card-title
 {
   font-weight: bold; 
-  font-size: 18px; 
+  font-size: 19px; 
 }
 
-
-.btn-card
-{
-  font-weight: bold; 
-}
 
 .card{
 
@@ -64,100 +64,76 @@ width: 50px;
 }
 .card-text
 {
-  font-size: 14px; 
+  font-size: 14.3px; 
 }
 
 
 
 
 
- .label-section-9gag 
-    {
-      padding: 0px 16px; 
-    }
-    
-    .icons-sidebar-9gag-sction {
-     
-      width: 24px;
-      height: 24px;
-       
-     
-     
-    }
-
+/*9gag section */
     
   .label-section-9gag
     {
-      padding: 0px;
+ 
       font-weight: bold; 
-  font-size: 15px; 
+     font-size: 14px; 
+     size: 10px;
+  
+        
     }
 
+.icons-sidebar-9gag-sction
+{
+  padding: 0px;
+  width: 24px;
+  height: 24px;
+  
+
+}
+.sidebar-menu 
+{
+  padding: 0px;
+}
+
+
+.sidebar-menu-9gag
+{
+  padding: 0px;
+}
 
 
 
-    .sidebar-menu
-    {
-      padding: 0px;
-    }
+/*all section*/
 
+  
+.icon-star:hover { 
+  background-color: rgba(172, 167, 167, 0.1);
+} 
 
 
 
 .sidebarItem{
   font-size :14px;
   color: rgb(65, 65, 65);
+  padding: 0px;
 }
 
 
-
-
-
-
-.label-section-9gag 
+.icon-star
 {
-  size: 10px;
+width: 22px; 
+height: 22px;
+position: absolute;
+right: 10px;
 }
 
 
-html { 
+
+div { 
   margin: 0; 
   padding: 0; 
   outline: 0;
-} 
-
-
-
-
-li {
-  list-style-type: none;
-  margin: 2px; 
-  padding: 6px; 
-  outline: 0;
-} 
-
-.sidebar{
-  width: 216px
-  
-}
-
-
-
-a{
-  color: #010101;
-  text-decoration: none;
-}
-
-
-.h3Sections { 
-  color: #999; 
-  font-size: 14px; 
-  font-weight: 700; 
-  width: 100%;
-  line-height: 24px; 
-  height: 20px; 
-  padding: 0px 16px ;
-
 } 
 
    
@@ -167,38 +143,52 @@ Section {
 }
 
 
+.h3Sections { 
+  color: rgb(143, 142, 142); 
+  font-size: 14px; 
+  font-weight: 700; 
+  width: 100%;
+  line-height: 30px; 
+
+
+} 
+
+
+/*li and ul style */
+
+
+    li:hover 
+    { 
+      background-color: rgba(100, 99, 99, 0.1);
+  } 
+
+  ul li {
+    list-style-type: none;
+    margin: 2px; 
+    padding: 6px; 
+    outline: 0;
+    margin-top: -5px;
+  } 
+
+
+
+.sidebar{
+  width: 216px
+  
+}
+
+
+a{
+  color: #010101;
+  text-decoration: none;
+}
+
+
+
 li{ 
   position: relative;
  
 } 
 
-  
 
-
-
-
-.icon-star 
-{
-width: 20px; 
-height: 20px;
-position: absolute;
-right: 15px;
-}
-
-
-
-
-
-
-.ExploreSection
-{
-  padding: 0px
-}
-
-
-div { 
-  margin: 0; 
-  padding: 0; 
-  outline: 0;
-} 
 
