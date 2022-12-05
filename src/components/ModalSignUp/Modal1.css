@@ -32,9 +32,28 @@
     border: none;
     font-size: 20px;
     cursor: pointer;
+    margin-left: -3px;
+    margin-top:-10px;
 }
 .modalContainer .bodyBut {
 margin-top: 0px;
+}
+.h4, h4 {
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0px;
+}
+hr {
+    margin: 0rem -26px;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
 }
 .P-Or{
     display: flex;
@@ -124,6 +143,7 @@ margin: 1px -130px;
     border-style: solid;
     background-color:#0077ff;
     opacity: .4;
+    color: aliceblue;
 }
 .Forgot{
     border-radius: 30px;

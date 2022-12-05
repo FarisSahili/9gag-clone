@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     padding: 25px;
+    height: 290px;
 }
 .titleCloseBtn {
     display: flex;
@@ -25,18 +26,27 @@
     border: none;
     font-size: 20px;
     cursor: pointer;
+    height: 0px;
+}
+hr {
+    margin: -1rem -25px;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+    height: 160px;
 }
 .head{
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 48px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     color: var(--palette-text);
     min-height: 48px;
     width: 100%;
+    margin-left: 20px;
 }
 .Email1{
     font-style: normal;

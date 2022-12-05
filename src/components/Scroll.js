@@ -1,7 +1,10 @@
+import './scroll.css' 
 const Scroll = () =>{
+
     return (
-   
-    <div id="scroll" className="container">
+  <div id ="scroll" >    
+  <div className="ButtonScroll "  >
+    <button className="but" type="button">  ⚽World Cup</button>
     <button className="but1" type="button"> 📰News</button>
     <button className="but2" type="button"> 🇺🇦Ukraine</button>
     <button className="but3" type="button"> 🎭Anime</button>
@@ -12,7 +15,7 @@ const Scroll = () =>{
     <button className="but8" type="button"> ☕Lifestyle</button>
     <button className="but9" type="button"> 💃Pretty Girls</button>
    </div>
-   )
-   
+   </div>
+    )
 }
 export default Scroll 

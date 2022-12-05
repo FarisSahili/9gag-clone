@@ -1,8 +1,8 @@
 import React from "react";
 import "./Modal1.css";
-import face from "./image/2021_Facebook_icon.svg.png"
-import google from "./image/Google_Icons.webp"
-import Apple from "./image/Apple-Logo.png"
+import face from "../image/2021_Facebook_icon.svg.png"
+import google from "../image/Google_Icons.webp"
+import Apple from "../image/Apple-Logo.png"
 
 const Modal1 = () => 
 {  

@@ -23,6 +23,16 @@
     font-size: 20px;
     cursor: pointer;
 }
+.Close{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
 .carousel-dark .carousel-indicators [data-bs-target] {
     border-radius: 4px;
     width: 8px;
@@ -76,7 +86,22 @@ width: 20px;
 margin: 1px -130px;
 
 }
-
+.imgNum {
+    margin-left: 158px;
+    margin-bottom: 120px;
+}.imgNum2 {
+    margin-left: 190px;
+    margin-bottom: 100px;
+}.imgNum3 {
+    margin-left: 190px;
+    margin-bottom: 100px;
+}.imgNum4 {
+    margin-left: 190px;
+    margin-bottom: 112px;
+}.imgNum5 {
+    margin-left: 180px;
+    margin-bottom: 100px;
+}
 
 .ButGoogle{
     border-radius: 30px;

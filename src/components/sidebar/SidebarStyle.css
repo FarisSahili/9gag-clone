@@ -1,0 +1,204 @@
+
+/* wr-side-bar */
+
+.wr-side-bar
+{
+width: 50px;
+}
+
+
+/*offcanvas */
+
+#offcanvasScrolling
+{
+  overflow: hidden; /* Hide scrollbars */
+}
+
+#offcanvasScrolling
+{
+  width: 235px;
+}
+
+
+
+/*card styel*/
+
+.btn-card{ 
+
+  border: none; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-decoration: none; 
+  padding: 10px 16px; 
+  color: #fff; 
+  border-radius: 50px; 
+
+} 
+
+.card-body
+{
+  font-style: normal; 
+  display: block; 
+  text-align: center; 
+  
+ 
+}
+
+.card-title
+{
+  font-weight: bold; 
+  font-size: 18px; 
+}
+
+
+.btn-card
+{
+  font-weight: bold; 
+}
+
+.card{
+
+    margin: 16px 8px 0 8px;
+
+}
+.card-text
+{
+  font-size: 14px; 
+}
+
+
+
+
+
+ .label-section-9gag 
+    {
+      padding: 0px 16px; 
+    }
+    
+    .icons-sidebar-9gag-sction {
+     
+      width: 24px;
+      height: 24px;
+       
+     
+     
+    }
+
+    
+  .label-section-9gag
+    {
+      padding: 0px;
+      font-weight: bold; 
+  font-size: 15px; 
+    }
+
+
+
+
+    .sidebar-menu
+    {
+      padding: 0px;
+    }
+
+
+
+
+.sidebarItem{
+  font-size :14px;
+  color: rgb(65, 65, 65);
+}
+
+
+
+
+
+
+.label-section-9gag 
+{
+  size: 10px;
+}
+
+
+html { 
+  margin: 0; 
+  padding: 0; 
+  outline: 0;
+} 
+
+
+
+
+li {
+  list-style-type: none;
+  margin: 2px; 
+  padding: 6px; 
+  outline: 0;
+} 
+
+.sidebar{
+  width: 216px
+  
+}
+
+
+
+a{
+  color: #010101;
+  text-decoration: none;
+}
+
+
+.h3Sections { 
+  color: #999; 
+  font-size: 14px; 
+  font-weight: 700; 
+  width: 100%;
+  line-height: 24px; 
+  height: 20px; 
+  padding: 0px 16px ;
+
+} 
+
+   
+Section {
+  margin: 4px 0px 8px;
+ 
+}
+
+
+li{ 
+  position: relative;
+ 
+} 
+
+  
+
+
+
+
+.icon-star 
+{
+width: 20px; 
+height: 20px;
+position: absolute;
+right: 15px;
+}
+
+
+
+
+
+
+.ExploreSection
+{
+  padding: 0px
+}
+
+
+div { 
+  margin: 0; 
+  padding: 0; 
+  outline: 0;
+} 
+

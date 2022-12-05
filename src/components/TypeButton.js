@@ -10,7 +10,7 @@ return (
         <button className="Tag2" type="button"><a href>Wakanda forever</a></button>       
         <button className="Tag3" type="button"><a href>pokemon</a></button>
         <button className="Tag4" type="button"><a href>ftx</a></button>
-        <button className="Tag5" type="button"><a href>elon musk</a></button>
+        <button className="Tag5" type="button"><a href>Elon musk</a></button>
         <button className="Tag6" type="button"><a href>twitter</a></button>
         <br/>
         <button className="Tag7" type="button"><a href>no nut november</a></button>
