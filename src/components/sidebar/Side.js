@@ -52,7 +52,7 @@ const[ExplorePopular,setExplorePopular] = useState([
   
   
   
-  const[Popular,setPopular] = useState([
+  const[AllSection,setAllSection] = useState([
   
     
   "Ask 9GAG",
