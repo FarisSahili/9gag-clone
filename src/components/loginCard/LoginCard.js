@@ -25,10 +25,10 @@ const Logincard = () =>  {
   </div>
   <div className="card-9gag-buttons" >
     
-    <p1 className="login-button" href="/loginModal" >
+    <p1 className="login-button" href="./loginModal" >
       Log in 
     </p1>
-    <p1 className="signup-button" href="/signupModal" >
+    <p1 className="signup-button" href="./signupModal" >
       Create new account 
     </p1>
 
