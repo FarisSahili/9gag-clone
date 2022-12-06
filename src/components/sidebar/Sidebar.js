@@ -10,8 +10,6 @@ import './SidebarStyle.css' ;
 const Sidebar= () =>{
 
 
-
-
     return(
 
       
@@ -58,7 +56,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
 
 
-<ul className="sidebar-menu">
+<ul>
 <h3 className="h3Sections">Explore Popular Tags</h3> 
                     
 

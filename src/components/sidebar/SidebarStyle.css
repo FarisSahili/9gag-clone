@@ -113,20 +113,29 @@ font-weight: bold;
 
 
 
+
+.star {
+  display: flex;
+  align-self: baseline;
+  display: flex;
+}
+
 .sidebarItem{
   font-size :14px;
   color: rgb(65, 65, 65);
   padding: 0px;
 }
 
-
-.icon-star
-{
-width: 22px; 
-height: 22px;
-position: absolute;
-right: 10px;
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
+
+
+
 
 
 
@@ -192,3 +201,13 @@ li{
 
 
 
+button 
+{
+  display: flex;
+    outline: none;
+    align-self: baseline;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    border-width: 0px;
+}
