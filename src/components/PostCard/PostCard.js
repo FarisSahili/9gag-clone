@@ -55,7 +55,7 @@ const PostCard = () =>  {
                                         <h4 >Why hadn't I ever heard a miniature Italian speak before?!</h4>
                             </div>
                             <div className='memes-media'>
-                                <video className='video-card' src={video} width="600" height="700"  controls="controls" />
+                                <video className='video-card col-12' src={video} width="600" height="700"  controls="controls" />
                             </div>
                         <div className='container-tag'>
                                 <a  className='Post-Card-Tag' href = "tag-html">Girl</a>
@@ -81,7 +81,7 @@ const PostCard = () =>  {
                                 <button className="dropdown" type="button" data-bs-toggle="dropdown">
                                 <a className='share-icon'><img src = {ShareIcon} alt ="this is ShareIcon "/></a>
                                 </button>
-                            <ul class="dropdown-menu">
+                            <ul className="dropdown-menu">
                                 <li><a  className="dropdown-item" href="#"><img  className='dropdown-share-icon' src = {Link} alt="this is Copylink Icon"/>Copy Link</a></li>
                                 <li><a className="dropdown-item" href="#"><img className='dropdown-share-icon' src = {Email} alt="this is Email Icon"/>Email</a></li>
                                 <li><a className="dropdown-item" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252F9gag.com%252Fgag%252FaBd8dDN%253Fref%253Dfb.s%26switched_accounts%3D1&display=popup">

@@ -1,12 +1,18 @@
-
+@media screen and (max-width:700px){
+    .video-card{
+        width:25%;
+    }
+}
 .post-container {
     text-align: left; 
     padding-top: 30px; 
     padding-left: 400px;
     padding-right: 500px; 
+    padding: auto;
 width: 540px;
 display: flex;
 position: relative;
+max-width: 540px;
 
 }
 
