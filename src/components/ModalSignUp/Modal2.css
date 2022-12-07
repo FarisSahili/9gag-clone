@@ -1,0 +1,73 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalContainer {
+    width: 534px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    height: 290px;
+}
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-start;
+}
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    height: 0px;
+}
+hr {
+    margin: -1rem -25px;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+    height: 160px;
+}
+.head{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: var(--palette-text);
+    min-height: 48px;
+    width: 100%;
+    margin-left: 20px;
+}
+.Email1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    color: #9999;
+    margin-bottom: 8px;
+}
+.send{
+    border-radius: 30px;
+    height: 50px; ;
+    width: 460px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px;
+    margin:4px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    background-color:#0077ff;
+    opacity: .4;
+    color: aliceblue;
+}
