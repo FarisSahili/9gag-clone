@@ -1,6 +1,6 @@
 import React from "react";
 import "./Modal2.css";
-
+import LiftArow from "../image/left-arrow-alt-regular-24.png";
 
 
 const Modal2 = () => 
@@ -9,7 +9,7 @@ return (
     <div className="modalBackground">
         <div className="modalContainer">      
             <div className="titleCloseBtn">
-                <button>X</button>
+            <button className="LiftAroww"> <img className = "LiftAroww" src={LiftArow}  alt=""/> </button>
                 <div className="head">Forgot Password</div>
             </div>
             <hr/>

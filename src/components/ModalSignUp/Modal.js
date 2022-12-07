@@ -20,8 +20,6 @@ return (
         <div className="CloseIconBtn col-2">
         <button className="ClosePut"> <img className = "Close" src={Close}  alt=""/> </button>
         </div>
-      
-      
       </div> 
       <div className="row">
         <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">

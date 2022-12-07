@@ -3,14 +3,14 @@ import "./Modal1.css";
 import face from "../image/2021_Facebook_icon.svg.png"
 import google from "../image/Google_Icons.webp"
 import Apple from "../image/Apple-Logo.png"
-
+import Closee from "../image/Close_icone.png";
 const Modal1 = () => 
 {  
 return (
     <div className="modalBackground">
         <div className="modalContainer">      
             <div className="titleCloseBtn">
-                <button>X</button>
+            <button className="ClosePut"> <img className = "Closee" src={Closee}  alt=""/> </button>
                 <h4>Log in</h4>
             </div>
             <hr/>
