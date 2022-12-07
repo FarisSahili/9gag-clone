@@ -27,7 +27,7 @@ const PostCard = () =>  {
                     <img src={AvatarPic} className='AvatarPic' alt = "this is avatar "/>
                     </a>
                 <div className='gagger-name'>
-                    <a  href="gagger-page-html">nouralhuda312</a>
+                    <a>nouralhuda312</a>
                     <span> 5h </span>
                 </div>
                     
@@ -55,7 +55,7 @@ const PostCard = () =>  {
                                         <h4 >Why hadn't I ever heard a miniature Italian speak before?!</h4>
                             </div>
                             <div className='memes-media'>
-                                <video className='video-card col-12' src={video} width="600" height="700"  controls="controls" />
+                                <video className='video-card' src={video}  controls="controls" />
                             </div>
                         <div className='container-tag'>
                                 <a  className='Post-Card-Tag' href = "tag-html">Girl</a>
@@ -92,6 +92,7 @@ const PostCard = () =>  {
                                 <li><a className="dropdown-item" href="https://t.me/share/url?text=Bottomless%20table&url=https%3A%2F%2F9gag.com%2Fgag%2Fa3ZM8Y3%3Fref%3Dtgm"><img className='dropdown-share-icon' src = {Telegram} alt="this is telegram Icon"/>Telegram</a></li>
 
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
