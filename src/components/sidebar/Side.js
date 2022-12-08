@@ -1,13 +1,13 @@
 //import
-import './SidebarStyle.css' ;
-import React, { useState } from "react";
+ import './SidebarStyle.css' ;
+ import React, { useState } from "react";
 
 
-//function
+ //function
 
 
 
-const Remove = ({ isSelected, onClick }) => {
+ const Remove = ({ isSelected, onClick }) => {
   return (
     <div className="remove">
     <button  class="btn-remove" onClick={() => onClick()}>
@@ -24,18 +24,16 @@ const Remove = ({ isSelected, onClick }) => {
     </button>
     </div>
   );
-};
+ };
 
 
-const Star = ({ isSelected, onClick }) => {
+ const Star = ({ isSelected, onClick }) => {
   return (
     <div className="star">
       <button  className ="star-btn" onClick={() => onClick()}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill={isSelected ? "gold" : "#919191"}
+          fill={isSelected ? "gold" : "gainsboro"}
           className="bi bi-star-fill"
           viewBox="0 0 16 16">
           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -43,11 +41,14 @@ const Star = ({ isSelected, onClick }) => {
       </button>
     </div>
   )
-};
+ };
+
 
 
 const Side= () =>
 {
+
+
 
 
   const filterArrayFromPopular = (selectedIndex) => 
@@ -196,7 +197,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" >Sidebar
 
 <div className="offcanvas offcanvas-start" data-bs-scroll="true" 
 data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-<div class="offcanvas-header">
+<div className="offcanvas-header">
 <div id="myModal" class="modal fade" role="dialog">
 <div class="modal-dialog">
 
@@ -229,13 +230,15 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
 
 
-<h3 className="h3Sections">Favorites</h3> 
 
-<ul className="sidebar-menu">
+  <h3 className="h3Sections">Favorites</h3> 
+
+  <ul className="sidebar-menu">
           {favorites.map((item, index) => {
             return (
+              <li key={index}>
               <div className="rowContainer">
-                <div className="sidebarItem"><li>{item}</li></div>
+                <div className="sidebarItem">{item}</div>
                 <div className="star-btn-container">
                   <Star isSelected={true}  onClick={() => {  
 
@@ -246,7 +249,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
                      />
                 </div>
               </div>
-            
+              </li>
             );
           })}
             </ul>
@@ -254,13 +257,16 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
 
 
-  <div className="contanier"> <span className="spanSections">Recent</span><button type="button" className="btn btn-link"><a className="clear">Clear</a></button> </div>
 
-<ul className="sidebar-menu">
+
+   <div className="contanier"> <span className="spanSections">Recents</span><a className="clear">Clear</a></div>
+
+   <ul className="sidebar-menu">
           {recent.map((item, index) => {
             return (
+              <li key={index}>
               <div className="rowContainer">
-                <div className="sidebarItem"><li>{item}</li></div>
+                <div className="sidebarItem">{item}</div>
                 <div className="btnsContainer">
 
                 <Remove
@@ -277,6 +283,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
                   }}/>
                 </div>
               </div>
+              </li>
             
             );
           })}
@@ -284,46 +291,44 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
 
 
-<h3 className="h3Sections">Explore Popular Tags</h3> 
+   <h3 className="h3Sections">Explore Popular Tags</h3> 
 
           <ul className="sidebar-menu">
+        
             {ExplorePopular.map((item, index) => {
               return (
+                <li key={index}>
+              
                 <div className="rowContainer">
-                  <div className="sidebarItem"><li
-                    isSelected={() => {
-                      filterArrayFromExplorePopular(index);
-                      setRecent((current) => [...current, item]);
-                    }}
-                  >{item}</li></div>
+                  <div className="sidebarItem">{item}</div>
                   <div className="starContainer">
-
                     <Star
                       onClick={() => {
+
                         filterArrayFromExplorePopular(index);
-                        setFavorites((current) => [...current, item]);
-                     
-                      }}
-                    />
+                        setFavorites((current) => [...current, item]); }}/>
 
                     </div>
-                  
                 </div>
+                </li>
+              
               );
-            })}
-          </ul>
+             })}
+            
+            </ul>
 
 
 
 
 
-<h3 className="h3Sections">Popular </h3> 
+ <h3 className="h3Sections">Popular </h3> 
 
-<ul className="sidebar-menu">
+ <ul className="sidebar-menu">
   {Popular.map((item, index) => {
     return (
+      <li key={index}>
       <div className="rowContainer">
-        <div className="sidebarItem"><li>{item}</li></div>
+        <div className="sidebarItem">{item}</div>
         <div className="starContainer">
           <Star
             onClick={() => {
@@ -333,22 +338,24 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
           />
         </div>
       </div>
+      </li>
     );
   })}
-</ul>
+ </ul>
 
 
 
 
 
 
-<h3 className="h3Sections">All Sections</h3> 
+ <h3 className="h3Sections">All Sections</h3> 
 
-<ul className="sidebar-menu">
+ <ul className="sidebar-menu">
   {AllSection.map((item, index) => {
     return (
+      <li key={index}>
       <div className="rowContainer">
-        <div className="sidebarItem"><li>{item}</li></div>
+        <div className="sidebarItem">{item}</div>
         <div className="starContainer">
           <Star
             onClick={() => {
@@ -358,9 +365,10 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
           />
         </div>
       </div>
+      </li>
     );
   })}
-</ul>
+ </ul>
 
 
 
