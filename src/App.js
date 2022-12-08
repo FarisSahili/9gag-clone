@@ -8,5 +8,5 @@ function App()
   <Newpost_page/>
   );
 
-}
+  }
 export default App;
