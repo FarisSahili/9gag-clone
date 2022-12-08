@@ -1,8 +1,46 @@
 import './Navbar.css';
-import './functionNavbar.js';
 import imagge from './image.png';
+
+
+
+const dropdowns=document.querySelectorAll('.Dropdown');
+dropdowns.forEach(Dropdown=>{
+const select=Dropdown.querySelector('.select');
+const caret=Dropdown.querySelector('.caret');
+const menu=Dropdown.querySelector('.menu');
+const options=Dropdown.querySelectorAll('.menu li');
+const selected=Dropdown.querySelector('.test');
+select.addEventListener('click', () =>{
+ 
+    select.classList.toggle('select-clicked');
+    caret.classList.toggle('bi-rotate');
+    menu.classList.toggle('menu-open');
+})
+options.forEach(option => {
+  option.addEventListener('click',() => {
+     test.innerText = option.innerText;
+     select.classList.remove('select-clicked');
+     caret.classList.remove('bi-rotate');
+     menu.classList.remove('menu-open');
+     options.forEach(option => {
+       option.classList.remove('active');
+     });
+option.classList.add('active');
+  });
+ });
+});
+
+
+
+
+// event.preventDefault();
+
+
+
+  
 const Navbar = () => {
     return(
+   <div>   
       <nav className="navbar navbar-expand-lg " id="navbar" > 
       <div className="container-fluid"> 
             <div id="menu-div">
@@ -113,7 +151,7 @@ const Navbar = () => {
                               <li> 
                                  <div className='Dropdown'>  
                                     <div className='select'>    
-                                        <a href='#' id='term' className='test dropdown-item  '>Advertise
+                                        <a href='#' id='termm' className='test dropdown-item  '>Advertise
                                             <div className='caret'>
                                                 <svg id='img-advertise-id'  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                                 <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
@@ -127,6 +165,7 @@ const Navbar = () => {
                                         </ul>
                                   </div>
                               </li>
+
 
                               <li>
                                  <div className='dropdown'>  
@@ -154,7 +193,9 @@ const Navbar = () => {
             </button>   
         </div>
       </div>
-    </nav>      
+    </nav>   
+    <hr id="navbar-hr"/>
+  </div>   
     )
     }//end func
     export default Navbar
