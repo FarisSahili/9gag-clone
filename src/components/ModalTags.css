@@ -1,61 +1,54 @@
+ ul {
+   display: flex;
+   justify-content: space-between;
+   min-height: 32px;
+   margin-bottom: 4px;
+ }
+
+ span {
+   font-weight: 700;
+   font-size: 14px;
+   height: 24px;
+   color: #999999;
+   display: inline-block;
+   margin-bottom: 4px;
+
+ }
  
-ul {
-    display: flex;
-    justify-content: space-between;
-    min-height: 32px;
-    margin-bottom: 4px;
-  }
-    span{
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 24px;
-      color:  #999999;
-      display: inline-block;
-      margin-bottom: 4px;
-   
-    }
-  p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-    padding: 12px 0 8px 0;
-  }
-  svg {
-    margin-left: 10px;
-    
-  }
-  
-  .modal-open .modal {
-    overflow-y: auto;
-    display: block;
-    height: 80vh;
-    position: relative;
-  }
-  button {
-    display: flex;
-    outline: none;
-    align-self: baseline;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
-    border-width: 0px;
-  }
-  
-  .star {
-    display: flex;
-    align-self: baseline;
-  }
-  .btnsContainer {
-    display: flex;
-  }
-  .rowContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  ::-webkit-scrollbar{
-    display: none;
-  }
+ .modal-open .modal {
+   overflow-y: auto;
+   display: block;
+   height: 80vh;
+   position: relative;
+ }
+
+ button {
+   display: flex;
+   outline: none;
+   align-self: baseline;
+   background-color: transparent;
+   justify-content: center;
+   align-items: center;
+   border-width: 0px;
+ }
+
+ .star {
+   display: flex;
+   align-self: baseline;
+ }
+
+ .btnsContainer {
+   display: flex;
+ }
+
+ .rowContainer {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 10px;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ ::-webkit-scrollbar {
+   display: none;
+ }
