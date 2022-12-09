@@ -7,7 +7,7 @@
 
 .post-container {
     text-align: left; 
-    padding-top: 30px; 
+    padding-top: 2%; 
     padding-left: 25%;
     padding-right: 500px; 
     padding: auto;
@@ -95,7 +95,7 @@ align-items: center;
    .save-button{
     height: auto;
     width: 40px;
-    border-radius:20%;
+    border-radius:50%;
     margin: 7px;
     display: flex;
 background-color:white ;
@@ -107,14 +107,15 @@ border-width: 0;
  .dropdown-button{
     height: auto;
     width: 40px;
-    border-radius: 20%;
+    border-radius: 50%;
     margin: 7px;
     display: flex;
 background-color:white ;
 cursor: pointer;
 border-color: white ;
 border-width: 0;
-padding-top: 9px;
+padding-top: 8px;
+align-items: center;
 }
  .save-button:hover {
     background-color:lightgray; 
