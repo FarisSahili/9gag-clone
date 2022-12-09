@@ -1,17 +1,13 @@
- 
+
 import './App.css';
-import ModalTags from './components/ModalTags';
-import Posts from './components/Posts';
  
-function App() 
-{
+function App() {
   return (
-  <section> 
- <ModalTags/>
- <Posts/>
-  </section>
+    <section>
+       
+    </section>
   );
- 
-  }
- 
+
+}
+
 export default App;
