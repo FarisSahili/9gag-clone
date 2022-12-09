@@ -1,26 +1,30 @@
-.nav-get-app{
-    font-family:system-ui;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25.6px;
-    height: 82px;
-    width: 1263px;
-    display: block;
-}
- .logo-nav-get-app{
-    height: 32px;
-    width: 80px; 
-    position: relative;
-    right: 1062px;
-    left: 122px;
-    top: 50px;
-}
 .logo-header{
     height:22px ;
-    width: 60px; 
-} 
+    width: 60px;
+}
 
- .nav-without-logo{
+.navbar-nav{
+        padding-right:100px;
+        padding-left:450px;
+        padding-top: 30px;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+
+        font-family:system-ui;
+        font-weight: bold;
+        font-size: 12px;
+}
+
+  .navbar-brand{
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+#blue-button{
+    color: rgb(59, 59, 245);
+}
+
+ /* .nav-without-logo{
     font-family:system-ui;
     font-weight: bold;
     font-size: 14px;
@@ -36,7 +40,7 @@
     color: #757474;
 
     
-} 
+}  */
 /* .nav-item:hover{
     color: brown;
 }  */
@@ -94,12 +98,12 @@
     right: 150px;
 }
 
-.footer-wr-getapp{
+/* .footer-wr-getapp{
     height: 350px;
     width:1263px;
     background:#f6f6f6;
-}
-.footer-getapp{
+} */
+/* .footer-getapp{
 
     font-family:system-ui;
     font-weight: bold;
@@ -115,47 +119,13 @@
     position: #000;
 
 
-}
-.navbar-brand{
+} */
+
+/* .navbar-brand{
     line-height: 1.8;
 }
 .navbar-brand:hover{
     color: #cccbcb;
-}
-.faq-class{
-    position: absolute;
-    right: 372px;
-    left: 235px;
-    top: 8px;
-}
-.rules-class
-{
-    position: absolute;
-    right: 372px;
-    left: 280px;
-    top: 8px;
-}
-.culture-class{
-    position: absolute;
-    right: 372px;
-    left: 340px;
-    top: 8px;
-}
-.advertise-class{
-    position: absolute;
-    right: 372px;
-    left: 420px;
-    top: 8px;
-}
-.tips-class{
-    position: absolute;
-    right: 372px;
-    left: 510px;
-    top: 8px;
-}
-.jops-class{
-    position: absolute;
-    right: 372px;
-    left: 555px;
-    top: 8px;
- }
+} */
+
+
