@@ -1,7 +1,10 @@
 import './App.css';
+import GetApp from './components/getapp-page/GetApp';
 function App() {
 return (
-<section></section>
+<section>
+    <GetApp/>
+</section>
 );
 }
 export default App;
