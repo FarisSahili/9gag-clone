@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
 import "./ModalTags.css";
-
  
 const Star = ({ isSelected, onClick }) => {
   return (
@@ -70,9 +67,7 @@ function ModalTags() {
     "fortnite",
     "girl celebrity",
   ]);
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  
   const [favorites, setFavorites] = useState([]);
   const [hidden, setHidden] = useState([]);
  
@@ -96,17 +91,21 @@ function ModalTags() {
     setHidden((current) =>current.filter((item, index) => index !== selectedIndex)
     );
   };
+ 
+
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
-
-      <Modal show={show} onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
-          <Modal.Title>Customize with Tags</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
+     <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+     <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog">
+        <div className="modal-content">
+         <div className="modal-header">
+        <h5 className="modal-title">Customize with Tags</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+          <div className="modal-body">
           <span>Favorites</span>
           {
           favorites.map((item, index) => {
@@ -125,8 +124,8 @@ function ModalTags() {
               </div>
             );
           })}
-        </Modal.Body>
-        <Modal.Body>
+        </div>
+        <div className="modal-body">
           <span>Explore Popular Tags</span>
           <ul className="list-group list-group-flush">
             {popularTags.map((item, index) => {
@@ -152,9 +151,9 @@ function ModalTags() {
               );
             })}
           </ul>
-        </Modal.Body>
+        </div>
         <hr></hr>
-        <Modal.Body>
+        <div className="modal-body">
           <span>Other Tags</span>
           <ul className="list-group list-group-flush">
             {otherTags.map((item, index) => {
@@ -180,9 +179,9 @@ function ModalTags() {
               );
             })}
           </ul>
-        </Modal.Body>
+        </div>
         <hr></hr>
-        <Modal.Body>
+        <div className="modal-body">
           <span>Hidden</span>
           {hidden.map((item, index) => {
             return (
@@ -201,8 +200,10 @@ function ModalTags() {
             );
           })} 
            <p>Posts from these tags will be filtered from Home page.</p>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </div>
+      </div>
+      </div>
     </>
   );
 }
