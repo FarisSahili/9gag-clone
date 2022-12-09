@@ -1,16 +1,20 @@
 import './App.css';
-import Modal1 from './components/ModalSignUp/Modal1';
+import React from'react';
+import FullModalSignUp from'./components/ModalSignUp/FullModalSignUp';
+
+
+
 
 
 
 
 function App() {
 return (
-<Modal1/>
-
+<FullModalSignUp/>
 );
 }
 export default App;
+
 
 
 
