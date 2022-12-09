@@ -1,8 +1,8 @@
 //import
 import React, { Component } from 'react';
 import './Post.css';
-//function
-const Post = ({name ,description, image}) => {
+//functions
+const Post = (props) => {
     return (
         <>
         <div className='list'>
@@ -15,8 +15,8 @@ const Post = ({name ,description, image}) => {
   <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
 </svg>
  
-                        <a className="post-author">{name}</a>
-                        <span className="post-creation" >3h</span>
+                        <a className="post-author">{props.name}</a>
+                        <span className="post-creation" >{props.time}h</span>
                         </div>
                    
                  <div className="post-action">  
@@ -45,16 +45,16 @@ const Post = ({name ,description, image}) => {
                    </div>
                 </div>
  
-                <h1>{description}</h1>
+                <h1>{props.description}</h1>
                 </header>
 
                 <div className="container">
-                <img src={image}  alt=""/>
+                <img src={props.image}  alt=""/>
                  </div> 
 
                 <div className="post-tag">
-                <a >Funny</a> 
-                <a >Elon Musk</a>
+                <a >{props.type1}</a> 
+                <a >{props.type2}</a>
                     
                 </div>
 
@@ -62,10 +62,10 @@ const Post = ({name ,description, image}) => {
                 <ul className="btn-vote left">
                <li>
                 <a className="up comment">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" color="gray" className="bi bi-arrow-up" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" color="gray" className="bi bi-arrow-up" viewBox="0 0 16 16">
   <path fillRule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
 </svg>
-<span>2.2K</span>
+<span>{props.up}k</span>
 </a>
  </li>
  <li>
@@ -73,7 +73,7 @@ const Post = ({name ,description, image}) => {
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" className="bi bi-arrow-down"  color="gray" viewBox="0 0 16 16">
   <path fillRule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
 </svg>
-<span>82</span>
+<span> {props.down}</span>
 </a>
 </li>
 </ul>
@@ -84,7 +84,7 @@ const Post = ({name ,description, image}) => {
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" color="gray" className="bi bi-chat-left" viewBox="0 0 16 16">
   <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
 </svg>
- <span >66</span>
+ <span >{props.commt}</span>
 </a></li></ul>
 < div className='share right'>
  <div className='share-bar'>
@@ -115,7 +115,5 @@ viewBox="0 0 48 48">
 </>
  )
 }
-
-
 //expor
 export default Post;
