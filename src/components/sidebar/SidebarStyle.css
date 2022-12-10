@@ -99,8 +99,8 @@ width: 50px;
 .icons-sidebar-9gag-sction
 {
   padding: 0px;
-  width: 24px;
-  height: 24px;
+  width: 1.4rem;
+  height: 1.3rem;
   
   
 
@@ -134,8 +134,8 @@ width: 50px;
 
 .bi
 {
-  width:20px;
-  height:20px;
+  width:1.4rem;
+  height:1.4rem;
 }
 
 .star-btn
@@ -149,7 +149,8 @@ width: 50px;
     border-width: 0px;
 }
 
-.btn-remove{
+.btn-remove
+{
   display: flex;
   outline: none;
   align-self: baseline;
@@ -292,7 +293,7 @@ li:hover
 .sidebar
 {
 
-  width: 216px
+  width: 216px;
   
 }
 

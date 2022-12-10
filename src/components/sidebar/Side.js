@@ -99,10 +99,11 @@ const Side= () =>
                      
                     }}/>
 
-                  <Star isSelected={true}  onClick={() => {  
+                  <Star isSelected={false}  onClick={() => {  
 
                           setFavorites((current) => [...current, item]);
                           {favoriteSection()};
+                          
                     
                     }}/>
                 </div>
@@ -272,7 +273,6 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
    <h3 className="h3Sections">Explore Popular Tags</h3> 
 
           <ul className="sidebar-menu">
-        
             {ExplorePopular.map((item, index) => {
               return (
                 <li key={index} onClick={() => 
@@ -291,10 +291,10 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
                         {
                         setFavorites((current) => [...current, item]);
                         {favoriteSection()};
-                         }}/>
+                        }}/>
 
-                    </div>
-                    </div>
+                  </div>
+                  </div>
                 </li>
               
               );
