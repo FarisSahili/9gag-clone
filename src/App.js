@@ -1,15 +1,15 @@
+
 import './App.css';
-import Scroll from './components/Scroll'
-import PostCard from './components/postcard/PostCard'
-import TagButton from './components/tagbutton/tagButton'
+import Posts from './components/Posts';
+ 
 
 function App() {
-return (
-<section>
-<Scroll/>
-<TagButton/>
-<PostCard/>
-</section>
-);
+  return (
+    <section>
+    <Posts/>
+    </section>
+  );
+
 }
+
 export default App;

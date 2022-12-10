@@ -18,7 +18,7 @@ import Telegram from './telegram.ico';
 
 
 
-const PostCard = () =>  {
+const PostCard = (props) =>  {
     return ( 
 <div className='post-container'>
         <div className='gagger-part'>
@@ -27,8 +27,8 @@ const PostCard = () =>  {
                     <img src={AvatarPic} className='AvatarPic' alt = "this is avatar "/>
                     </a>
                 <div className='gagger-name'>
-                    <a>nouralhuda312</a>
-                    <span> 5h </span>
+                    <a>{props.name}</a>
+                    <span> {props.time}h</span>
                 </div>
                     
                 <div className='save-icon'>
@@ -52,20 +52,20 @@ const PostCard = () =>  {
                 </div>
         </div>  
                             <div className='title-of-post'>
-                                        <h4 >Why hadn't I ever heard a miniature Italian speak before?!</h4>
+                                        <h4 >{props.description}</h4>
                             </div>
                             <div className='memes-media'>
-                                <video className='video-card' src={video}  controls="controls" />
+                            <img src={props.image} alt="" />
                             </div>
                         <div className='container-tag'>
-                                <a  className='Post-Card-Tag' href = "tag-html">Girl</a>
-                                <a  className='Post-Card-Tag' href = "tag-html">Funny</a>
+                                <a  className='Post-Card-Tag' >{props.type1}</a>
+                                <a  className='Post-Card-Tag' >{props.type2}</a>
                         </div>
                         <div className='button-card'>
                             <div className='vote-button'>
-                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>70</a>
-                                 <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/> 325</a>
-                                 <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " /> 92</a>
+                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>{props.up}k</a>
+                                 <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/>  {props.down}</a>
+                                 <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " />{props.commt}</a>
                             </div>
 
                     <div className='share-buttons'>
