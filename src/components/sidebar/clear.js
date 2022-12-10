@@ -1,16 +1,18 @@
 import './SidebarStyle.css' ;
 
 
-const clear = ()=>
+const Clear = ()=>
 {
 
 
  return  (
-<h1>dd</h1>
+
+ 
+<h1>lojain</h1>
    
   )
 }
 
 
 
-export default clear
+export default Clear

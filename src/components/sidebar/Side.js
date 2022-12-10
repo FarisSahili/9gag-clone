@@ -18,9 +18,8 @@
       </path>
   </svg>  
   </button>
-  );
- };
-
+  ); 
+};
 
  const Star = ({ isSelected, onClick }) => {
   return (
@@ -39,9 +38,82 @@
  };
 
 
-
 const Side= () =>
 {
+
+  const favoriteSection= () =>{
+    if (favorites.length > 0){
+
+  return(
+
+  <ul className="sidebar-menu">
+
+  <h3 className="h3Sections">favorites</h3> 
+
+          {favorites.map((item, index) => {
+            return (
+              <li key={index} onClick={() => 
+                {
+                setRecent((current) => [...current, item]); 
+                }}>
+
+              <div className="rowContainer">
+                <div className="sidebarItem">{item}</div>
+                <div className="star-btn-container">
+                  <Star isSelected={true}  onClick={() => {  
+
+                       deleteItemFromFavorite(index);
+                     
+
+                    }}/>
+                </div>
+              </div>
+              </li>
+            );
+          })}    
+             
+            </ul>
+            )}}// To hide fav text when there is no filter inside it
+
+
+
+
+  const recentSection= () =>{
+    if (recent.length > 0){
+
+  return(
+
+<ul className="sidebar-menu">
+<div className="contanier"> <span className="spanSections">Recents</span><button  onClick={() => setRecent([null])}  id="clear-btn"><a id="clear">Clear</a></button></div>
+ {recent.map((item, index) => {
+             return (
+              <li key={index}>
+              <div className="rowContainer">
+                <div className="sidebarItem">{item}</div>
+                <div className="btnsContainer">
+                  
+                <Remove 
+                    onClick={() => 
+                    {
+                      deleteItemFromRecent(index);
+                     
+                    }}/>
+
+                  <Star isSelected={true}  onClick={() => {  
+
+                          setFavorites((current) => [...current, item]);
+                          {favoriteSection()};
+                    
+                    }}/>
+                </div>
+              </div>
+              </li>
+             );
+          })}    
+             
+            </ul>
+            )}}// To hide recent text when there is no filter inside it
+
 
 
   const deleteItemFromFavorite = (selectedIndex) =>
@@ -73,7 +145,7 @@ const Side= () =>
   "sport",
   "qatar 2022",
   "cat",
-  ]);
+  ]);//array for Explore Popular filters
   
 
   const[Popular,setPopular] = useState
@@ -100,7 +172,7 @@ const Side= () =>
     "Relationshiop",
     "Savage",
     "Video",
-  ]);
+  ]);//array for Popular filters
   
   
   const[AllSection,setAllSection] = useState
@@ -144,7 +216,7 @@ const Side= () =>
   "PUBG",
   "Wallpaper",
   "Dark Humor",
-  ]);
+  ]);//array for all section filters
 
 
 
@@ -152,8 +224,8 @@ const Side= () =>
   return(
 <div className='wr-side-bar'> 
 
-<button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
-data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" >Sidebar</button>
+<button className="btn-start" type="button" data-bs-toggle="offcanvas" 
+data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img className="menue"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAH9JREFUWEft1UsKgDAMANH05npypTsXtYOGQAvTbaikLx9bLHbaYvmECVFFFFKIBCi+VQ9d9JpkfIgxEzKhLr5VDyVb5N91hchtJnREROWknaPkHPuHyufF2EtWeYbfd8qIXKGMUOUOev2Puocye4jKXRJ3yohVIYVIgOL2EAndFg4LJcntgd8AAAAASUVORK5CYII="/></button>
 
 <div className="offcanvas offcanvas-start" data-bs-scroll="true" 
 data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -190,71 +262,10 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
 
 
+{favoriteSection()}
 
 
-  <ul className="sidebar-menu">
-   
-  <h3 className="h3Sections">Favorites</h3> 
-
-          {favorites.map((item, index) => {
-            return (
-              <li key={index} onClick={() => 
-                {
-                setRecent((current) => [...current, item]); 
-                }}>
-
-              <div className="rowContainer">
-                <div className="sidebarItem">{item}</div>
-                <div className="star-btn-container">
-                  <Star isSelected={true}  onClick={() => {  
-
-                       deleteItemFromFavorite(index);
-                     
-
-                    }} 
-                     />
-                </div>
-              </div>
-              </li>
-            );
-          })}
-            </ul>
-
-
-
-
-
-
-   <div className="contanier"> <span className="spanSections">Recents</span><button  id="clear-btn"><a id="clear">Clear</a></button></div>
-
-   <ul className="sidebar-menu">
-          {
-          recent.map((item, index) => {
-            return (
-              <li key={index}>
-                <div className="rowContainer">
-                <div className="sidebarItem">{item}</div>
-                <div className="btnsContainer">
-
-                <Remove
-                    onClick={() => 
-                    {
-                      deleteItemFromRecent(index);
-                     
-                    }}/>
-
-                <Star
-                  onClick={() => 
-                  {
-                    setFavorites((current) => [...current, item]);
-                  }}/>
-                </div>
-              </div>
-              </li>
-            
-            );
-          })}
-         </ul>
+{recentSection()}
 
 
 
@@ -266,7 +277,8 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
               return (
                 <li key={index} onClick={() => 
                   {
-                  setRecent((current) => [...current, item]); 
+                 setRecent((current) => [...current, item]);
+                 {recentSection()};
                   }}>
               
                   
@@ -275,8 +287,11 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
                   <div className="starContainer">
                
                     <Star
-                      onClick={() => {
-                        setFavorites((current) => [...current, item]); }}/>
+                      onClick={() => 
+                        {
+                        setFavorites((current) => [...current, item]);
+                        {favoriteSection()};
+                         }}/>
 
                     </div>
                     </div>
@@ -293,12 +308,13 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
  <h3 className="h3Sections">Popular </h3> 
 
- <ul className="sidebar-menu">
-  {Popular.map((item, index) => {
-    return (
+          <ul className="sidebar-menu">
+         {Popular.map((item, index) => {
+     return (
       <li key={index} onClick={() => 
         {
-        setRecent((current) => [...current, item]); 
+          setRecent((current) => [...current, item]);
+          {recentSection()};
         }}>
 
       <div className="rowContainer">
@@ -307,7 +323,8 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
           <Star
             onClick={() => 
               {
-              setFavorites((current) => [...current, item]);
+                setFavorites((current) => [...current, item]);
+                {favoriteSection()};
             }}
           />
         </div>
@@ -315,7 +332,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
     </li>
     );
   })}
- </ul>
+            </ul>
 
 
 
@@ -328,7 +345,8 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
       <li key={index} onClick={() => 
         {
-        setRecent((current) => [...current, item]); 
+          setRecent((current) => [...current, item]);
+          {recentSection()};
         }}>
           
       <div className="rowContainer">
@@ -337,6 +355,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
           <Star
             onClick={() => {
               setFavorites((current) => [...current, item]);
+              {favoriteSection()};
             }}
           />
         </div>
@@ -348,13 +367,15 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
 
 
+
               </div>
               </div>
               </div>
               </div>
 
 
-  )}
+  )
+  };
 
         
 

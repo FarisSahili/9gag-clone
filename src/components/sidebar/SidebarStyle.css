@@ -9,15 +9,24 @@ width: 50px;
 
 /*offcanvas */
 
-::-webkit-scrollbar {
+::-webkit-scrollbar 
+{
   display: none;
 }
 
 #offcanvasScrolling
 {
   width: 260px;
+  margin-top:80px;
 }
 
+.btn-start{
+ 
+
+  background-color: transparent;
+  border-width: 0px;
+  padding-left: 1px;
+}
 
 
 
@@ -27,18 +36,17 @@ width: 50px;
 
 .btn-card
 { 
-
-  border: none; 
+  
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  text-decoration: none; 
   padding: 10px 16px; 
   color: #fff; 
-  border-radius: 70px; 
+  border-radius: 100px; 
   width: 170px;
   height: 42px;
   font-weight: bold;
+ 
 
 } 
 
@@ -48,7 +56,7 @@ width: 50px;
   font-style: normal; 
   display: block; 
   text-align: center; 
- 
+
  
 }
 
@@ -62,7 +70,7 @@ width: 50px;
 
 .card{
 
-    margin: 16px 8px 0 8px;
+  margin: 16px 8px 10px;
   
 } 
 
@@ -126,11 +134,10 @@ width: 50px;
 
 .bi
 {
-  display: flex;
-  align-self: baseline;
   width:20px;
   height:20px;
 }
+
 .star-btn
 {
     display: flex;
