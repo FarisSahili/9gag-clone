@@ -20,8 +20,11 @@ import Telegram from './telegram.ico';
 
 const PostCard = () =>  {
     return ( 
+        
+                            
 <div className='post-container'>
-        <div className='gagger-part'>
+    
+       <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
                     <a href = "gagger-page-html">
                     <img src={AvatarPic} className='AvatarPic' alt = "this is avatar "/>
