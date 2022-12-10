@@ -18,17 +18,17 @@ import Telegram from './telegram.ico';
 
 
 
-const PostCard = () =>  {
+const PostCard = (props) =>  {
     return ( 
 <div className='post-container'>
         <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
                     <a href = "gagger-page-html">
-                    <img src={AvatarPic} className='AvatarPic' alt = "this is avatar "/>
+                    <img src={props.icon} className='AvatarPic' alt = "this is avatar "/>
                     </a>
                 <div className='gagger-name'>
-                    <a  href="gagger-page-html">nouralhuda312</a>
-                    <span> 5h </span>
+                    <a>{props.name}</a>
+                    <span> {props.time}h</span>
                 </div>
                     
                 <div className='save-icon'>
@@ -52,23 +52,20 @@ const PostCard = () =>  {
                 </div>
         </div>  
                             <div className='title-of-post'>
-                                        <h4 >Why hadn't I ever heard a miniature Italian speak before?!</h4>
+                                        <h4 >{props.description}</h4>
                             </div>
                             <div className='memes-media'>
-                                <video className='video-card' src={video} width="600" height="700"  controls="controls" />
+                            <img src={props.image} alt="" />
                             </div>
                         <div className='container-tag'>
-                                <a  className='Post-Card-Tag' href = "tag-html">Girl</a>
-                                <a  className='Post-Card-Tag' href = "tag-html">Funny</a>
-                                <a  className='Post-Card-Tag' href = "tag-html">Comic</a>
-                                <a  className='Post-Card-Tag' href = "tag-html">Random</a>
-
+                                <a  className='Post-Card-Tag' >{props.type1}</a>
+                                <a  className='Post-Card-Tag' >{props.type2}</a>
                         </div>
                         <div className='button-card'>
                             <div className='vote-button'>
-                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>70</a>
-                                 <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/> 325</a>
-                                 <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " /> 92</a>
+                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>{props.up}k</a>
+                                 <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/>  {props.down}</a>
+                                 <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " />{props.commt}</a>
                             </div>
 
                     <div className='share-buttons'>
@@ -81,7 +78,7 @@ const PostCard = () =>  {
                                 <button className="dropdown" type="button" data-bs-toggle="dropdown">
                                 <a className='share-icon'><img src = {ShareIcon} alt ="this is ShareIcon "/></a>
                                 </button>
-                            <ul class="dropdown-menu">
+                            <ul className="dropdown-menu">
                                 <li><a  className="dropdown-item" href="#"><img  className='dropdown-share-icon' src = {Link} alt="this is Copylink Icon"/>Copy Link</a></li>
                                 <li><a className="dropdown-item" href="#"><img className='dropdown-share-icon' src = {Email} alt="this is Email Icon"/>Email</a></li>
                                 <li><a className="dropdown-item" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252F9gag.com%252Fgag%252FaBd8dDN%253Fref%253Dfb.s%26switched_accounts%3D1&display=popup">
@@ -92,6 +89,7 @@ const PostCard = () =>  {
                                 <li><a className="dropdown-item" href="https://t.me/share/url?text=Bottomless%20table&url=https%3A%2F%2F9gag.com%2Fgag%2Fa3ZM8Y3%3Fref%3Dtgm"><img className='dropdown-share-icon' src = {Telegram} alt="this is telegram Icon"/>Telegram</a></li>
 
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
