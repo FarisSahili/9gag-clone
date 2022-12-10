@@ -49,12 +49,12 @@ h4 {
 
 .para {
     font-size: 12px;
-    line-height: 14px;
+    line-height: .9rem;
     text-align: center;
     color: #9999;
 }
 
-.LiftAroww {
+.LeftArroww {
     width: 2rem;
     height: 2em;
     border: 0;

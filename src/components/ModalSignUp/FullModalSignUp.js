@@ -8,7 +8,6 @@ import SaveTo from "./ModalImage/image/5.png";
 import face1 from "./ModalImage/image/2021_Facebook_icon.svg.png";
 import google1 from "./ModalImage/image/Google_Icons.webp";
 import Apple1 from "./ModalImage/image/Apple-Logo.png";
-import Close from "./ModalImage/image/Close_icone.png";
 import LiftArow from "./ModalImage/image/left-arrow-alt-regular-24.png";
 const FullModalSignUP = () => {
   return (
@@ -123,13 +122,13 @@ const FullModalSignUP = () => {
                 </div>
                 <div className="row bodyBut">
                   <button className="ButFacebook">
-                    <a className="facebook" href="#">
+                    <a className="facebook" href>
                       <img className="facebook1" src={face1} alt="" /> Continue
                       with Facebook
                     </a>
                   </button>
                   <button className="ButGoogle">
-                    <a className="Google" href="https://www.google.de/">
+                    <a className="Google" href>
                       <img className="google1" src={google1} alt="" /> Continue
                       with Google
                     </a>
@@ -245,11 +244,11 @@ const FullModalSignUP = () => {
           <div className="modal-content">
             <div className="modal-header">
               <button
-                className="LiftAroww"
+                className="LeftArroww"
                 data-bs-target="#exampleModalToggle2"
                 data-bs-toggle="modal"
               >
-                <img className="LiftAroww" src={LiftArow} alt="" />{" "}
+                <img className="LeftArroww" src={LiftArow} alt="" />{" "}
               </button>
               <div className="head">Forgot Password</div>
             </div>
@@ -282,7 +281,7 @@ const FullModalSignUP = () => {
 
     
 
-    
+
     </>
   );
 };
