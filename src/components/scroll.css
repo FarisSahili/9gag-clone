@@ -115,8 +115,8 @@
               }
 
   #scroll{
- padding-top: 171px;
- padding-left: 400px;
+ padding-top: 10%;
+ padding-left: 25%;
  width: 520px;
  min-height: 55px;
  display: flex;

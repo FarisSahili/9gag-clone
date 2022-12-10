@@ -3,9 +3,10 @@
     text-align: center; 
     padding: 24px 0; 
     z-index: 0;
-    padding-top: 400px;
-    padding-left: 400px;
-    padding-right: 473px;
+    padding-top: 50px;
+    padding-left: 0%;
+    padding-right: 25%;
+    
 
 
 } 
@@ -25,6 +26,7 @@
     font-weight: normal; 
     font-size: 16px; 
     color:#000;
+    width:100%;
 } 
 
 .card-9gag-des{ 
@@ -40,11 +42,21 @@ h4{
     font-weight: bold; 
     font-size: 24px; 
     margin-bottom: 8px; 
+    display: block;
 
 }
 p { 
     text-align: left;
 } 
+p.login-button{
+    text-align: center;
+   
+}
+p.signup-button{
+    text-align: center;
+   
+}
+
 .card-9gag-buttons  { 
 
     display: flex; 
@@ -62,8 +74,13 @@ p {
     margin: 0 4px;
     border-color: white;
     background-color:rgb(179, 179, 179);
+    display: block;
 
 } 
+.login-button:hover{
+    background-color:rgba(179, 179, 179, 0.69);
+
+}
 
 .signup-button  { 
     color: #fcf4f4f1;
@@ -80,3 +97,7 @@ p {
     border-color: white;
 
 } 
+.signup-button:hover{
+    background-color:rgba(2, 15, 253, 0.69);
+
+}
