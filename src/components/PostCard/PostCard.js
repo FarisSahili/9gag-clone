@@ -22,7 +22,7 @@ const PostCard = (props) =>  {
         <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
                     <a href = "gagger-page-html">
-                    <img src={AvatarPic} className='AvatarPic' alt = "this is avatar "/>
+                    <img src={props.icon} className='AvatarPic' alt = "this is avatar "/>
                     </a>
 
                 <div className='gagger-name'>
