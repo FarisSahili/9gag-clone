@@ -1,9 +1,16 @@
+
 import './App.css';
-import GetApp from './components/getapp-page/GetApp';
-function App() {
-return (
+import Navbar from './components/navbarhome/Navbar';
+import PostCard from './components/PostCard/PostCard';
+import Posts from './components/Posts';
+import Side from './components/sidebar/Side';
+function App() 
+{
+return(
 <section>
-    <GetApp/>
+<Navbar/>
+<Side/>
+<Posts/> 
 </section>
 );
 }
