@@ -5,7 +5,7 @@ import votedown from './votedown.ico';
 import video from './video.mp4';
 import SaveIcon from './saveicon.ico';
 import DropdownIcon from './dropdownicon.ico';
-import CommitIcon from './commitIcon.ico';
+import CommitIcon from './commit.ico';
 import WhatsAppIcon from './Whatsapp.ico';
 import MessangerIcon from './Messenger.ico';
 import ShareIcon from './Share.ico';
@@ -16,9 +16,8 @@ import Pinterest from './pinterest.ico';
 import Twitter from './twitter.ico';
 import Telegram from './telegram.ico';
 
-
-
 const PostCard = (props) =>  {
+
     return ( 
 <div className='post-container'>
         <div className='gagger-part'>
@@ -27,9 +26,11 @@ const PostCard = (props) =>  {
                     <img src={AvatarPic} className='AvatarPic' alt = "this is avatar "/>
                     </a>
                 <div className='gagger-name'>
-                    <a>{props.name}</a>
+                    <a className='gagger'>{props.name}</a>
                     <span> {props.time}h</span>
+
                 </div>
+
                     
                 <div className='save-icon'>
                     <button className='save-button'>
@@ -55,7 +56,7 @@ const PostCard = (props) =>  {
                                         <h4 >{props.description}</h4>
                             </div>
                             <div className='memes-media'>
-                            <img src={props.image} alt="" />
+                            <img className='Media' src={props.image} alt="" />
                             </div>
                         <div className='container-tag'>
                                 <a  className='Post-Card-Tag' >{props.type1}</a>
@@ -63,9 +64,10 @@ const PostCard = (props) =>  {
                         </div>
                         <div className='button-card'>
                             <div className='vote-button'>
-                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>{props.up}k</a>
-                                 <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/>  {props.down}</a>
-                                 <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " />{props.commt}</a>
+                            <button type="button" className="votebutton"><img className='voteup' src={voteup} alt='Graph icon'/>{props.up}</button>
+                            <button type="button" className="votebutton"><img className='votedown' src={votedown} alt='Graph icon'/>{props.down}</button>
+                            <button type="button" className="votebutton"><img className='commit' src={CommitIcon} alt='Graph icon'/>{props.commt}</button>
+
                             </div>
 
                     <div className='share-buttons'>
@@ -100,4 +102,6 @@ const PostCard = (props) =>  {
 </div>
     )
 }
+
 export default PostCard;
+

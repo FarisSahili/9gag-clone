@@ -7,6 +7,7 @@ import img4 from './image/awZXdxy_460swp (1).webp'
 import img5 from './image/az2XRZj_461swp.webp'
 import img6 from './image/avQORnq_460swp.webp'
 
+
 const Posts = ()=>  {
     const datawebsite = [
         {
@@ -39,7 +40,7 @@ const Posts = ()=>  {
             time:3,
             type1:"Elon Musk",
             type2:"hollywood",
-            up:9392,
+            up:939,
              down:20,
              commt:4,
        },
@@ -55,7 +56,7 @@ const Posts = ()=>  {
         commt:112,
    },
    { 
-    name : "memeducation" ,
+    name : "meducation" ,
      description : "I do as the heart says",
     image:img5,
     time:3,
@@ -66,7 +67,7 @@ const Posts = ()=>  {
          commt:115,
 },
 { 
-    name : "gamingodpro" ,
+    name : "gamingod" ,
      description : "Oh ok",
     image:img6,
     time:1,
@@ -77,6 +78,7 @@ const Posts = ()=>  {
     commt:4,
 
 },
+
     ];
     return (
         <>

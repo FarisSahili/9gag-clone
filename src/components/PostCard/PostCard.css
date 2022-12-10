@@ -1,9 +1,4 @@
-@media screen and (max-width:700px){
-    .video-card{
-        width:50%;
-        
-    }
-}
+
 
 .post-container {
     text-align: left; 
@@ -20,64 +15,71 @@ max-width: 540px;
 
  a {
 display: block;
-margin-top: 10px;
+margin-top: 0%;
 text-decoration:none solid black;
 font-weight: bold;
 color:black ; 
 font-size: small;
-
+width:auto;
  }
+
  a:hover {
     color: black;
  }
 
  .gagger-prof-pic{
     height: 20px;
-    width: 500px;
+    width: 100%;
     cursor: pointer;
-    margin :0 ; 
     position: relative;
     display: flex;
  }
  .AvatarPic {
-    height: 20px;
-    width:20px;
+    height: 30px;
+    width:30px;
     display: flex;
     border-radius: 50%;
 }
+a.gagger{
+    width:80px;
+    padding-top: 5%;
+    padding-left: 1%;
+     }
  .gagger-name{
     font-size: 15px;
     cursor: pointer;
-    padding-left: 2%;
+    padding-left: 3%;
     padding-top: 0px;
-    height: 100%;
+    height: 50%;
     width: 100%;
       /* 150px */
     display: flex;
  }
  span {
-    display: flex;
-    padding-top: 10px;
+    display:flex;
+    padding-top: 6%;
     color:  #999999 ;
     font-size: small;
+  padding-left: 1%;
  }
  .SaveIcon{
-    height: 50%;
-    width: 100%;
+    height:90%;
+    width: 90%;
     margin: 1px;
     padding-right: 5px;
 padding-top: 1px;
  }
  .DropdownIcon{
-    height: 50%;
-    width: auto;
+    height: 90%;
+    width: 90%;
     margin: 1px; 
     padding-right: 5px;
+    padding-top: 1px;
+
  }
    .save-icon{
-
     display: flex;
-padding-left:  68% ;
+padding-left: 50% ;
 padding-top: 2%;
 align-items: center; 
    }
@@ -86,11 +88,13 @@ align-items: center;
     display: flex;
 padding-top: 0%;
 align-items: center; 
+width: 100%;
    }
   .drop-down-icon{
     display: flex;
 padding-left: 0% ;
 align-items: center; 
+width: 100%;
    }
    .save-button{
     height: auto;
@@ -129,19 +133,28 @@ h4{
     padding-top : 3%;
     cursor: pointer;
 }
-
+.title-of-post{
+    padding-top: 1%;
+}
  .title-of-post.h2{
     height: 30px;
-    width: 650px;
+    width: 100%;
     display: flex;
     cursor: pointer;
-    padding-top : 30px;
-    padding-left: 0;
-margin: 2px;
 }
 
 .title-of-post:hover{
 color :  #0099FF;
+}
+.Media{
+
+    cursor: pointer;
+margin-top: 5px;
+    background-color: #f0eeee;
+    border-radius: 20px;
+    height: 100%;
+    width: auto;
+    
 }
 .video-card{
     
@@ -156,7 +169,7 @@ margin-top: 5px;
 }
 .container-tag{
     display: flex;
-padding: 4px;
+padding: 2%;
 }
 .Post-Card-Tag{
     border-radius: 5px;
@@ -176,13 +189,15 @@ position: relative;
 
 .vote-button{
 display: flex;
-padding: 5px;
-padding-left: none;
+padding-top: 1%;
+margin-right: 1%;
+width:400px;
+height:50px;
 }
 .share-buttons{
     display: flex;
-    padding: 5px;  
-    padding-left: 170px;
+    padding:4%;  
+    padding-left:20%;
 }
 
 .button-vote{
@@ -190,14 +205,14 @@ padding-left: none;
     background-color: white;
     border-color: rgb(65, 41, 88);
     text-align:  center; 
-padding:10px 10px;
-padding-left:none;
+padding-top: 5%;
 margin :2px;
 border: 1px solid lightgray;
-width:auto;
+width:100%;
 position:relative;
 cursor: pointer;
-block-size: 80%;}
+height: 40px;
+}
 .share-icon{
     background-color: white;
     border-radius: 30%;
@@ -213,6 +228,23 @@ cursor: pointer;
 width: 50px;
 
 }
+.votebutton{
+    width: auto;
+    height: 40px;
+    margin: 2% 0 0 2%;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: #29292bb6;
+}
+.votebutton:hover{
+    background-color:lightgray;
+
+}
+.commit{
+    width:50%
+}
+
 
 .button-vote:hover{
     background-color:rgb(246, 246, 246);
