@@ -1,6 +1,7 @@
 import "./Profile.css"; 
 import imagge from './happy-drake.jpg';
 
+
 const Profile = () => {
   return(
     <div className="container">
@@ -8,19 +9,19 @@ const Profile = () => {
             <img  className="img" src={imagge} /> 
               <div className="prof">
                   <div  className="prof-name">
-                    <h4 ><b>DRAKE</b></h4>
+                    <h4><b>DRAKE</b></h4>
                   </div>
                   <div className="prof-details">
-                    <p >@icu2o <span>.</span> 380 days</p>
-                  </div>
-              </div>
+                    <p>@icu2o <span className="profile-span">.</span> 380 days</p>
+                  </div> 
+              </div>     
          </div> 
          <div className="caption">
               <p>My Funny Collection</p>
          </div>
          <div className="linkes-div">
               <div className="post-div">
-                   <a href="#" className="d">Posts</a>
+                   <a href="#" >Posts</a>
               </div>
               <div className="comment-div">
                    <a href="#">Comments</a>

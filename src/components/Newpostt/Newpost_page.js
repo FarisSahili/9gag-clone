@@ -1,4 +1,4 @@
-import Ph from './Ph.png';
+import Choos_photo from './Choos_photo.png';
 import './Newpost_page.css';
 import Setting from './Setting.ico';
 import Graphup from './Graphup.ico';
@@ -14,7 +14,7 @@ const Newpost_page=()=>
             <div className="rules_dropdown dropdown accordion" id="accordionExample">
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
-                <button className="gag-rules accordion-button"data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                <button className="gag-rules accordion-button"data-bs-toggle="collapse" data-bs-target="#collapseOne" >
                 9GAG Rules
                 </button>
                 </h2>
@@ -55,7 +55,7 @@ const Newpost_page=()=>
             
                         <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
                     
-                            <img src={Ph} className="ph-photo"/>
+                            <img src={Choos_photo} className="ph-photo"/>
                             <input  placeholder="Add at least 1 tag" className="add form-control" data-bs-toggle="collapse" href="#collapseExample"></input>
                             <div className="collapse" id="collapseExample">
                             <div className="card-body">
