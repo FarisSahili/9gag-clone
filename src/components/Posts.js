@@ -5,12 +5,18 @@ import img3 from './image/axo1R8Y_460swp.webp'
 import img4 from './image/awZXdxy_460swp (1).webp'
 import img5 from './image/az2XRZj_461swp.webp'
 import img6 from './image/avQORnq_460swp.webp'
-
+import icon1 from './image/icon1.jpg'
+import icon2 from './image/icon2.jpg'
+import icon3 from './image/icon3.jpg'
+import icon4 from './image/icon4.jpg'
+import icon5 from './image/icon5.jpg'
+import icon6 from './image/icon6.jpg'
 const Posts = () => {
     const datawebsite = [
         {
 
             name: "gager name ",
+            icon:icon1,
             description: "funny",
             image: img1,
             time: 1,
@@ -22,6 +28,7 @@ const Posts = () => {
         },
         {
             name: "ali ali ",
+            icon:icon2,
             description: "hahahahahah",
             image: img2,
             time: 8,
@@ -33,6 +40,7 @@ const Posts = () => {
         },
         {
             name: "atti18",
+            icon:icon3,
             description: "Should focus more on football than on dancing ",
             image: img3,
             time: 3,
@@ -44,6 +52,7 @@ const Posts = () => {
         },
         {
             name: "high_guh",
+            icon:icon4,
             description: "Where the meme?",
             image: img4,
             time: 5,
@@ -55,6 +64,7 @@ const Posts = () => {
         },
         {
             name: "memeducation",
+            icon:icon5,
             description: "I do as the heart says",
             image: img5,
             time: 3,
@@ -66,6 +76,7 @@ const Posts = () => {
         },
         {
             name: "gamingodpro",
+            icon:icon6,
             description: "Oh ok",
             image: img6,
             time: 1,
@@ -80,7 +91,7 @@ const Posts = () => {
     return (
         <>
             {datawebsite.map((post) => {
-                return <PostCard key={post.name} name={post.name} description={post.description} image={post.image}
+                return <PostCard key={post.name} name={post.name} icon={post.icon} description={post.description} image={post.image}
                     type1={post.type1} type2={post.type2}
                     up={post.up} down={post.down} commt={post.commt} time={post.time}
                 />
