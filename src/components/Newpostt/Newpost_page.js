@@ -1,4 +1,4 @@
-import ph from './ph.png';
+import Ph from './Ph.png';
 import './Newpost_page.css';
 import Setting from './Setting.ico';
 import Graphup from './Graphup.ico';
@@ -8,18 +8,18 @@ const Newpost_page=()=>
     console.log()
     return(
     <div>
-
-            <div className='creat_post'><h4>Create Post</h4></div>
+        
+            <h4 className='creat_post'>Create Post</h4>
             
-            {/*<div class="dropdown accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div className="rules_dropdown dropdown accordion" id="accordionExample">
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                <button className="gag-rules accordion-button"data-bs-toggle="collapse" data-bs-target="#collapseOne">
                 9GAG Rules
                 </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <ul class="rules_menu accordion-body">
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <ul className="rules_menu accordion-body">
                 <ol>
                         <li className='rules'>No pornography</li>
                         <li className='rules'>No violence or gory contents</li>
@@ -29,13 +29,13 @@ const Newpost_page=()=>
                         <li className='rules'>No illegal activities</li>
                         <li className='rules'>No impersonation</li>
                         <li className='rules'>No copyright infringement</li>
-
                         </ol>
                 </ul>
                 </div>
-    </div>*/}
+    </div>
+    </div>
             
-            <div className="dropdown">
+            {/*<div className="dropdown">
                     <p className="btn_rules btn" data-bs-toggle="dropdown"><p className='g99'>9GAG Rules</p>
                     </p>
                     <ul className="rules_menu dropdown-menu">
@@ -48,16 +48,14 @@ const Newpost_page=()=>
                         <li className='rules'>No illegal activities</li>
                         <li className='rules'>No impersonation</li>
                         <li className='rules'>No copyright infringement</li>
-
                         </ol>
-    </ul>
+</ul>*/}
                     
                     <div className="container" >
             
-                        <input  placeholder="Titel" className="titel form-control" maxlength="15" required></input>
-            
-
-                            <img src={ph} className="choose_file"/>
+                        <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
+                    
+                            <img src={Ph} className="ph-photo"/>
                             <input  placeholder="Add at least 1 tag" className="add form-control" data-bs-toggle="collapse" href="#collapseExample"></input>
                             <div className="collapse" id="collapseExample">
                             <div className="card-body">
@@ -68,8 +66,8 @@ const Newpost_page=()=>
                                 <button type="button" className="tages"><span><img className='graphup' src={Graphup} alt='Graph icon'/></span>
                                 deutschland<span>+</span>
                                 </button>
-                                <button type="button" class="tages"><span><img className='graphup' src={Graphup} alt='Graph icon'/></span>
-                                9gag den deutschen <span>+</span>
+                                <button type="button" className="tages"><span><img className='graphup' src={Graphup} alt='Graph icon'/></span>
+                                9gag den deutschen <span>+</span>                                                                                                                                               
                                 </button>
                                 <button type="button" className="tages"><span><img className='graphup' src={Graphup} alt='Graph icon'/></span>
                                 japan <span>+</span>
@@ -98,7 +96,9 @@ const Newpost_page=()=>
                                 </div>
                                 
                 </div>
-    </div>
+                
+                
+    
     
     )
 
