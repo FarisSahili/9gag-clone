@@ -60,9 +60,6 @@ const PostCard = () =>  {
                         <div className='container-tag'>
                                 <a  className='Post-Card-Tag' href = "tag-html">Girl</a>
                                 <a  className='Post-Card-Tag' href = "tag-html">Funny</a>
-                                <a  className='Post-Card-Tag' href = "tag-html">Comic</a>
-                                <a  className='Post-Card-Tag' href = "tag-html">Random</a>
-
                         </div>
                         <div className='button-card'>
                             <div className='vote-button'>

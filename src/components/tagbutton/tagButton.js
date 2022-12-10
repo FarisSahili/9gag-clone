@@ -5,23 +5,25 @@ import './tagButton.css';
 
 const TagButton = () => {
 return (
-    <div className='TagCont'>
- 
-                                <a  className='Tag-Button'  href = "tag-html" >black panther</a>
-                                <a  className='Tag-Button'  href = "tag-html" >Wakanda forever</a>
-                                <a  className='Tag-Button'  href = "tag-html">pokemon</a>
-                                <a  className='Tag-Button'  href = "tag-html" >ftx</a>
-                                <a  className='Tag-Button'  href = "tag-html" >Elon musk</a>
-                                <a  className='Tag-Button'  href = "tag-html" >twitter</a>
+    <div className='container'>
+ <div className='tag1'>
+                             <button  className='Tag-Button'  href = "tag-html" >world cup</button>
+                             <button  className='Tag-Button'  href = "tag-html" >spain</button>  
+                              <button  className='Tag-Button'  href = "tag-html">morocco</button>
+                               <button  className='Tag-Button'  href = "tag-html" >brazil</button>
+                                <button  className='Tag-Button'  href = "tag-html" >jaban</button>
+                                <button  className='Tag-Button'  href = "tag-html" >qatar</button>
+                                <button className='Tag-Button' href = "tag-html">wednesday</button>
+        <button className='Tag-Button' href = "tag-html">pokemon</button>
         <br/>
+        </div>
+        <div className='tag1'>
 
-                                    <a className='Tag-Button' href = "tag-html">no nut november</a>
-                                    <a className='Tag-Button' href = "tag-html">house of the dragon</a>
-                                    <a className='Tag-Button' href = "tag-html">chainsaw man</a>        
-                                    <a className='Tag-Button' href = "tag-html">latest news</a>
-        <br/>
-                                <a className='Tag-Button' href = "tag-html">most commented</a>
-                                <a className='Tag-Button' href = "tag-html">weekly highlights</a>
+         <button className='Tag-Button' href = "tag-html">chainsaw man</button>        
+         <button className='Tag-Button' href = "tag-html">latest news</button>
+        <button className='Tag-Button' href = "tag-html">most commented</button>
+         <button className='Tag-Button' href = "tag-html">weekly highlights</button>
+                           </div>    
                                 </div>
 );
 

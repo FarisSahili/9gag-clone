@@ -4,7 +4,7 @@ const Logincard = () =>  {
 
 
     return (
-
+<div className='container'>
     <div className="LoginCard" >
       <div className='content-card'>
     <div className="Login-9gag-logo" >
@@ -33,6 +33,7 @@ const Logincard = () =>  {
     </p>
 
       </div>
+</div>
 </div>
 
 
