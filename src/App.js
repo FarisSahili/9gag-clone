@@ -1,19 +1,15 @@
-import './App.css';
-// import Navbar from './components/navbarhome/Navbar';
-import NavPost from './components/navpost/NavPost';
-import Profile from './components/profilepage/Profile';
-// import NavPost from './components/navpost/NavPost';
 
+import './App.css';
+import Navbar from './components/navbarhome/Navbar';
 function App() 
 {
-  return (
+return(
 <section>
-  <NavPost />
-  <Profile />
-
+  <Navbar />
   
+
+
 </section>
-     );
+);
 }
 export default App;
-
