@@ -13,7 +13,6 @@ import Facebook from './photo-post-card/facebook.ico';
 import Pinterest from './photo-post-card/pinterest.ico';
 import Twitter from './photo-post-card/twitter.ico';
 import Telegram from './photo-post-card/telegram.ico';
-import Video from './photo-post-card/.Video.mp4'
 
 const PostCard = (props) =>  {
 
@@ -56,7 +55,7 @@ const PostCard = (props) =>  {
                                     <h4 >{props.description}</h4>
                             </div>
                             <div className='memes-media'>
-                            <video className='Media' src={Video} alt="" />
+                            <img className='Media' src={props.image} alt="" />
                             </div>
                         <div className='container-tag'>
                                 <a  className='Post-Card-Tag' >{props.type1}</a>
