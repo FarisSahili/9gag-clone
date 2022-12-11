@@ -1,19 +1,19 @@
 import './PostCard.css';
-import AvatarPic from './avatar.png';
-import voteup from './voteup.ico';
-import votedown from './votedown.ico';
-import SaveIcon from './saveicon.ico';
-import DropdownIcon from './dropdownicon.ico';
-import CommitIcon from './commit.ico';
-import WhatsAppIcon from './Whatsapp.ico';
-import MessangerIcon from './Messenger.ico';
-import ShareIcon from './Share.ico';
-import Link  from './link.ico';
-import Email from './email.ico';
-import Facebook from './facebook.ico';
-import Pinterest from './pinterest.ico';
-import Twitter from './twitter.ico';
-import Telegram from './telegram.ico';
+import voteup from './photo-post-card/voteup.ico';
+import votedown from './photo-post-card/votedown.ico';
+import SaveIcon from './photo-post-card/saveicon.ico';
+import DropdownIcon from './photo-post-card/dropdownicon.ico';
+import CommitIcon from './photo-post-card/commit.ico';
+import WhatsAppIcon from './photo-post-card/Whatsapp.ico';
+import MessangerIcon from './photo-post-card/Messenger.ico';
+import ShareIcon from './photo-post-card/Share.ico';
+import Link  from './photo-post-card/link.ico';
+import Email from './photo-post-card/email.ico';
+import Facebook from './photo-post-card/facebook.ico';
+import Pinterest from './photo-post-card/pinterest.ico';
+import Twitter from './photo-post-card/twitter.ico';
+import Telegram from './photo-post-card/telegram.ico';
+import Video from './photo-post-card/.Video.mp4'
 
 const PostCard = (props) =>  {
 
@@ -56,7 +56,7 @@ const PostCard = (props) =>  {
                                     <h4 >{props.description}</h4>
                             </div>
                             <div className='memes-media'>
-                            <img className='Media' src={props.image} alt="" />
+                            <video className='Media' src={Video} alt="" />
                             </div>
                         <div className='container-tag'>
                                 <a  className='Post-Card-Tag' >{props.type1}</a>
