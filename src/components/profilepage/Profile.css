@@ -72,7 +72,7 @@ a:hover{
     width: 200px;
 }
 #prof-hr{
-  margin: 6px;
-  border: 1px solid rgb(147, 140, 140);
-  width: 100%;
+  margin: 3px;
+  border: 0.5px solid rgb(147, 140, 140);
+  width: 105%;
 }   

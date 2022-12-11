@@ -2,41 +2,40 @@ import './Navbar.css';
 import imagge from './image.png';
 
 
-
-const dropdowns=document.querySelectorAll('.Dropdown');
-dropdowns.forEach(Dropdown=>{
-const select=Dropdown.querySelector('.select');
-const caret=Dropdown.querySelector('.caret');
-const menu=Dropdown.querySelector('.menu');
-const options=Dropdown.querySelectorAll('.menu li');
-const selected=Dropdown.querySelector('.test');
-select.addEventListener('click', () =>{
- 
-    select.classList.toggle('select-clicked');
-    menu.classList.toggle('menu-open');
-})
-options.forEach(option => {
-  option.addEventListener('click',() => {
-     test.innerText = option.innerText;
-     select.classList.remove('select-clicked');
-     menu.classList.remove('menu-open');  
-     options.forEach(option => {
-       option.classList.remove('active');
-     });
-option.classList.add('active');
-  });
- });
-});
-
-
-
-
-
-
-
-  
 const Navbar = () => {
+
+
+
+    const dropdowns=document.querySelectorAll('.Dropdown');
+    dropdowns.forEach(Dropdown=>{
+    const select=Dropdown.querySelector('.select');
+    const caret=Dropdown.querySelector('.caret');
+    const menu=Dropdown.querySelector('.menu');
+    const options=Dropdown.querySelectorAll('.menu li');
+    const selected=Dropdown.querySelector('.test');
+    select.addEventListener('click', () =>{
+    
+        select.classList.toggle('select-clicked');
+        menu.classList.toggle('menu-open');
+    })
+    options.forEach(option => {
+      option.addEventListener('click',() => {
+        test.innerText = option.innerText;
+        select.classList.remove('select-clicked');
+        menu.classList.remove('menu-open');  
+        options.forEach(option => {
+          option.classList.remove('active');
+        });
+    option.classList.add('active');
+      });
+    });
+    });
+    
+
+
+
     return(
+      
    <div>   
       <nav className="navbar navbar-expand-lg " id="navbar" > 
       <div className="container-fluid"> 
@@ -46,6 +45,7 @@ const Navbar = () => {
               <a id="gag-but" className="navbar-brand" href="#" ><img id="gag-img" src={imagge}  /></a>
                 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">  
              
             <li className="nav-item">
@@ -62,13 +62,15 @@ const Navbar = () => {
               <a className="nav-link" href="#" id="potatoz"><b> 🥔 Potatoz</b></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" id="potatoz"><b> ⚽ World Cup</b></a>
+              <a className="nav-link" href="#" id="WorldCup"><b> ⚽ World Cup</b></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" id="potatoz"><b> 📰 News</b></a>
+              <a className="nav-link" href="#" id="News"><b> 📰 News</b></a>
             </li>
           </ul>
-          <div class="dropdown" >
+        
+        
+          <div className="dropdown" >
            <button id="search-but" className="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false" > 
             <img id="search-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAjRJREFUSEv
                   lllFO20AQhme8m742nKDpCRoeKxwgUnYl3sIJCjegJyCcoPQEDScgb0g2UqAE9ZHcoOEEmFds71RrOZEdbO86kssD+xIpmp1vZv6ZWSO80cE34oI1+M739
@@ -85,7 +87,7 @@ const Navbar = () => {
                         <form className="form-inline">
                           <div className="input-group">
                             <div id="search-div" className="input-group-prepend">
-                            <span className="input-group-text" id="basic-addon1"><svg id="nested-search" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <span className="input-group-text" id="basic-addon1"><svg id="nested-search" xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                               </svg></span>
                             </div>
@@ -93,7 +95,6 @@ const Navbar = () => {
                           </div>
                         </form> 
                       </nav> 
-                      
                     </li>
             </ul>
             </div>  
@@ -102,9 +103,9 @@ const Navbar = () => {
       
             <div  className="btn-group dropstart">
                   <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="profile-but"  >
-                          <svg id="prof" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                          <svg id="prof" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-person-circle" viewBox="0 0 16 16">
                           <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                          <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                           </svg>  
                   </button>
            
@@ -115,7 +116,7 @@ const Navbar = () => {
                         <li>
                             <a id="dark-mode-link" className="dropdown-item" href="#"> <div id="f-div">Dark Mode<div id="s-div"  className="form-check form-switch">
                               <input  className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-                              <label className="form-check-label" for="flexSwitchCheckDefault"></label></div> </div>
+                              <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label></div> </div>
                             </a>
                         </li> 
                         <li><a className="dropdown-item" href="#">Download 9GAG App</a></li>
@@ -127,7 +128,7 @@ const Navbar = () => {
                         
                             <li>
                                  <div className='Dropdown'>   
-                                    <div className='select'>
+                                    <div className='select'>  
                                           <a href='#' id='term' className='test dropdown-item'>Terms & Policies
                                               <div className='caret'>
                                                   <svg id='img-terms-id'  xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -141,6 +142,7 @@ const Navbar = () => {
                                               <li><a id="Privacyy" href='#' className='test'>Privacy</a></li>
                                               <li><a id="Copyrightt" href='#' className='test'>Copyright</a></li>
                                           </ul>
+                                       
                                   </div>  
                               </li>
   
@@ -187,8 +189,9 @@ const Navbar = () => {
                     </ul> 
             </div>
               <button id="post-but" type="button" className="buttons"><img className='post-pen' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXJJREFUSEvt1v1NwkAYBvDnJRViAthOoCPUCZQNcAM20RHcwDiBI8gIt4F1gn4cibQcPXOJNYVeP+hdQ2Lsv5D+eN57yHuEMz10Jhd/B/4Kw5uR47wB8AGwXIiHS88LjidrNXG22fhSyncAbgmKiGgxnk5ZGbcGyzB0M8dRya40vYlyIW7Lya3BCsuSZCWJXrSFlfJ1Mp+vis+MYTXei90uIM+L2vDJbPbrGcGlMw3GQiwacVuJNUViDXicC+Ebn3FNe9WkdfgzEd0bt7oBLXpzgKu2F0fQ++/UAdXiupZ3LtcJqHJi3XhPTmwbVT+gNfEQaCs8FNoID4nWwkOjtXCaJAGIrjvcTlrbW/eOSrl+FvnHkKg2cZokSxCpG0TT0ztp7VpMOX8C8NigGqPaxFvO1wTc1cBWUP2oOVcLvXp9kfKTRqPl8Zbp0AXtVw7KVSpWLAFGwBpSsny/Z7qbYl+0klitsC3g2kaMtpNJun9YTeAbfjfzH40wiiEAAAAASUVORK5CYII="/> <b>  Post </b>
-              </button>   
-          </div>
+              </button> 
+          </div>    
+          
         </div>
       </nav>   
       <hr id="navbar-hr"/>

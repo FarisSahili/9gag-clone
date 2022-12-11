@@ -77,13 +77,17 @@
         color: black;
     }
     #potatoz{
+        color: black;   
+    }
+    #WorldCup{
+        color: black;
+    }
+    #News{
         color: black;
     }
     #navbar{
         height: 50px;
         width: 100%;
-        border-bottom: #0975f1;
-        border-bottom-left-radius: 10px;
     }
     #search-icon{
         margin-right: 20px;
@@ -92,6 +96,7 @@
     #search-icon:hover{
         background-color: #d9dde1;
     }
+
     /*Dropdown*/
    
     .dropdown-item{
@@ -117,7 +122,7 @@
         color: #7b7575;
         font-weight: bold;
     }
-     #termm{
+    #termm{
         color: #7b7575;
         font-weight: bold;
     } 
@@ -249,8 +254,8 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
     #navbar-hr{
-        margin: 4px;
-        border: 1px solid rgb(147, 140, 140);
+        margin: 1px;
+        border: 0.5px solid rgb(147, 140, 140);
         width:100%; 
     }
     .test{
