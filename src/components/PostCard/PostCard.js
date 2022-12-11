@@ -77,7 +77,7 @@ const PostCard = (props) =>  {
                                     <img src = {MessangerIcon} alt ="this is MessangerIcon "/></a>
                         <div class="dropdown">
                                 <button className="dropdown" type="button" data-bs-toggle="dropdown">
-                                <a className='share-icon'><img src = {ShareIcon} alt ="this is ShareIcon "/></a>
+                                <img className='share-icon' src = {ShareIcon} alt ="this is ShareIcon "/>
                                 </button>
                             <ul className="dropdown-menu">
                                 <li><a  className="dropdown-item" ><img  className='dropdown-share-icon' src = {Link} alt="this is Copylink Icon"/>Copy Link</a></li>

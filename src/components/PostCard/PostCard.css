@@ -76,7 +76,7 @@ padding-top: 1px;
  }
    .save-icon{
     display: flex;
-padding-left: 50% ;
+padding-left: 60% ;
 padding-top: 2%;
 align-items: center; 
    }
@@ -201,8 +201,9 @@ padding: 2px;
 }
 .share-buttons{
     display: flex;
-    padding-left:20%;
     padding-top: 0%;
+    margin-left: 20px;
+    
 }
 
 
@@ -229,7 +230,7 @@ width: 50px;
     font-weight: bold;
     color: #29292bb6;
     background-color: #fff;
-  
+margin-right: 2%;  
 }
 
 .votebutton:hover{
@@ -270,6 +271,7 @@ font-size: large;
     display: flex;
     padding: 10px;  
     margin: -9px;
+
 }
 a.button-vote{
     color:grey;

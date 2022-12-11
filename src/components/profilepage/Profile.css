@@ -1,8 +1,12 @@
+@media screen and (max-width :100px)
+{
+   .img{width: 50% ; }
+}
 .container{
-    width:640px;
+    width:42%;
     height: 195px;
-    margin-right: 500px;
-    margin-left: 350px;
+    margin-right: 25%;;
+    margin-left: 25%;
     margin-top: 20px;
 }
 .photo-div{
@@ -11,7 +15,7 @@
 .img{
     opacity: 0.8;
     cursor: pointer;
-     height: 100px; 
+    height: 100px; 
     width: 100px;
     border-radius: 50%;
 }
@@ -27,7 +31,7 @@
     color: rgb(16, 205, 205);
     margin-left: 16px;
 }
-span{
+.profile-span{
     cursor:context-menu;
 }
 .caption{
@@ -53,7 +57,7 @@ a:hover{
     margin-top: 10px;
 }
 #but-div{
-    margin-left: 410px;
+    margin-left: 70%;
 }
 #but{
     border: #fff;
@@ -70,5 +74,5 @@ a:hover{
 #prof-hr{
   margin: 6px;
   border: 1px solid rgb(147, 140, 140);
-  width: 630px;
-}
+  width: 100%;
+}   
