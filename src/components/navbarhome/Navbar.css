@@ -256,3 +256,7 @@
     .test{
         font-weight: normal;
     }
+
+    .nav-link{
+        width: 100%;
+    }

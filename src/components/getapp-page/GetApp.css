@@ -1,4 +1,4 @@
-/* .logo-header{
+.logo-header{
     height:22px;
     width: 100%;
 }
@@ -6,15 +6,16 @@
         padding-right:8%;
         padding-left:38%;
         padding-top: 30px;
-        margin: 0.618em; 
-        letter-spacing: 0.1rem; 
+        margin: 0.618rem; 
+        letter-spacing: 0.1rem;
         color: gray;
         font-family:system-ui;
         font-weight: bold;
         font-size: 90%;
+
 }
 .navbar-brand{
-    padding-left:10%;
+    padding-left:9%;
     padding-top: 30px;
 }
 .navbar-toggler-icon{
@@ -38,7 +39,7 @@
  .content-getapp-page{
    display: block;
    height: 630px;
-   width:1263px;
+   width:427%;
 } 
 
 .phones-photo{
@@ -90,13 +91,14 @@
     cursor: pointer;
 
 } 
+
  .nav-link:hover{
     color: rgb(0, 0, 0);
 }  
 
 .footer-wr-getapp{
     height: 350px;
-    width:1263px;
+    width: 428%;
     background:#f6f6f6;
 } 
 .footer-getapp{
@@ -125,4 +127,4 @@
 }
 .nav-link{
     color: rgb(156, 155, 155);
-} */
+}

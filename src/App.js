@@ -1,17 +1,13 @@
 
 import './App.css';
-import Navbar from './components/navbarhome/Navbar';
-import PostCard from './components/PostCard/PostCard';
-import Posts from './components/Posts';
-import Side from './components/sidebar/Side';
+import GetApp from './components/getapp-page/GetApp';
+
 function App() 
 {
 return(
-<section>
-<Navbar/>
-<Side/>
-<Posts/> 
-</section>
+    <>
+    <GetApp/>
+    </>
 );
 }
 export default App;
