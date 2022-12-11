@@ -69,9 +69,11 @@
     }
     #shuffle{
         color: black;
+        font-weight: bold;
     }
     #getApp{
         color: black;
+    
     }
     #memeLand{
         color: black;
@@ -253,6 +255,20 @@
         border: 1px solid rgb(147, 140, 140);
         width:100%; 
     }
+    .page{
+        display: flex;
+        padding-top: 7%;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+    }
     .test{
         font-weight: normal;
     }
+<<<<<<< HEAD
+
+    .nav-link{
+        width: 100%;
+    }
+=======
+>>>>>>> 8f80ec4ea61b0adfeee6265059ac731a2e55135b
