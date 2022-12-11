@@ -1,15 +1,10 @@
 
 import './App.css';
-import Navbar from './components/navbarhome/Navbar';
 function App() 
 {
-return(
-<section>
-  <Navbar />
-  
-
-
-</section>
+return (
+<>
+</>
 );
 }
 export default App;

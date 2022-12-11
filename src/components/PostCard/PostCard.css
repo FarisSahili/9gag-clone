@@ -1,10 +1,4 @@
-@media screen and (max-width:700px){
-    .video-card{
-        width:50%;
-        
-    }
-}
-
+/* container */
 .post-container {
     text-align: left; 
     padding-top: 2%; 
@@ -14,70 +8,75 @@
 width: 540px;
 display: flex;
 position: relative;
-max-width: 540px;
-
 }
 
  a {
 display: block;
-margin-top: 10px;
+margin-top: 0%;
 text-decoration:none solid black;
 font-weight: bold;
 color:black ; 
 font-size: small;
-
+width:auto;
  }
+
  a:hover {
     color: black;
  }
-
+/* Gagger Part  */
  .gagger-prof-pic{
     height: 20px;
-    width: 500px;
+    width: 100%;
     cursor: pointer;
-    margin :0 ; 
     position: relative;
     display: flex;
  }
  .AvatarPic {
-    height: 20px;
-    width:20px;
+    height: 30px;
+    width:30px;
     display: flex;
     border-radius: 50%;
 }
+a.gagger{
+    width:80px;
+    padding-top: 5%;
+    padding-left: 1%;
+     }
  .gagger-name{
     font-size: 15px;
     cursor: pointer;
-    padding-left: 2%;
+    padding-left: 3%;
     padding-top: 0px;
-    height: 100%;
+    height: 50%;
     width: 100%;
       /* 150px */
     display: flex;
  }
  span {
-    display: flex;
-    padding-top: 10px;
+    display:flex;
+    padding-top: 6%;
     color:  #999999 ;
     font-size: small;
+  padding-left: 1%;
  }
  .SaveIcon{
-    height: 50%;
-    width: 100%;
+    height:90%;
+    width: 90%;
     margin: 1px;
     padding-right: 5px;
 padding-top: 1px;
  }
  .DropdownIcon{
-    height: 50%;
-    width: auto;
+    height: 90%;
+    width: 90%;
     margin: 1px; 
     padding-right: 5px;
+    padding-top: 1px;
+
  }
    .save-icon{
-
     display: flex;
-padding-left:  68% ;
+padding-left: 60% ;
 padding-top: 2%;
 align-items: center; 
    }
@@ -86,11 +85,13 @@ align-items: center;
     display: flex;
 padding-top: 0%;
 align-items: center; 
+width: 100%;
    }
   .drop-down-icon{
     display: flex;
 padding-left: 0% ;
 align-items: center; 
+width: 100%;
    }
    .save-button{
     height: auto;
@@ -129,19 +130,28 @@ h4{
     padding-top : 3%;
     cursor: pointer;
 }
-
+.title-of-post{
+    padding-top: 1%;
+}
  .title-of-post.h2{
     height: 30px;
-    width: 650px;
+    width: 100%;
     display: flex;
     cursor: pointer;
-    padding-top : 30px;
-    padding-left: 0;
-margin: 2px;
 }
 
 .title-of-post:hover{
 color :  #0099FF;
+}
+/* Media of Post  */
+.Media{
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: #f0eeee;
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+    
 }
 .video-card{
     
@@ -154,50 +164,49 @@ margin-top: 5px;
     max-height: auto;
     max-width: auto;
 }
+/* Tags */
 .container-tag{
     display: flex;
-padding: 4px;
+padding: 1%;
+padding-left: 0%;
 }
 .Post-Card-Tag{
     border-radius: 5px;
     border-color:#f0eeee;
     border-width: auto;
     background-color: #f0eeee;
-    text-align:  center; 
+    justify-content: center; 
 padding:1% 1%;
 margin :3px;
 display: flex;
 position: relative;
+width:auto;
+height: 10%;
+font-size: 90%;
+cursor: pointer;
 }
 .Post-Card-Tag:hover{
     background-color:lightgray;
 
 }
-
+/* Vote & share Part */
 .vote-button{
 display: flex;
-padding: 5px;
-padding-left: none;
+padding-top: 1%;
+margin-right: 2%;
+width:400px;
+height:50px;
+padding: 2px;
+
 }
 .share-buttons{
     display: flex;
-    padding: 5px;  
-    padding-left: 170px;
+    padding-top: 0%;
+    margin-left: 20px;
+    
 }
 
-.button-vote{
-    border-radius: 15%;
-    background-color: white;
-    border-color: rgb(65, 41, 88);
-    text-align:  center; 
-padding:10px 10px;
-padding-left:none;
-margin :2px;
-border: 1px solid lightgray;
-width:auto;
-position:relative;
-cursor: pointer;
-block-size: 80%;}
+
 .share-icon{
     background-color: white;
     border-radius: 30%;
@@ -213,6 +222,25 @@ cursor: pointer;
 width: 50px;
 
 }
+.votebutton{
+    width: auto;
+    height: 40px;
+    border-radius: 15%;
+    border: 1px solid lightgray;
+    font-weight: bold;
+    color: #29292bb6;
+    background-color: #fff;
+margin-right: 2%;  
+}
+
+.votebutton:hover{
+    background-color:lightgray;
+
+}
+.commit{
+    width:50%
+}
+
 
 .button-vote:hover{
     background-color:rgb(246, 246, 246);
@@ -243,6 +271,7 @@ font-size: large;
     display: flex;
     padding: 10px;  
     margin: -9px;
+
 }
 a.button-vote{
     color:grey;
