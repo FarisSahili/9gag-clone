@@ -69,9 +69,11 @@
     }
     #shuffle{
         color: black;
+        font-weight: bold;
     }
     #getApp{
         color: black;
+    
     }
     #memeLand{
         color: black;
@@ -252,6 +254,13 @@
         margin: 4px;
         border: 1px solid rgb(147, 140, 140);
         width:100%; 
+    }
+    .page{
+        display: flex;
+        padding-top: 7%;
+        padding-left: 2%;
+        padding-right: 2%;
+        
     }
     .test{
         font-weight: normal;

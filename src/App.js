@@ -2,8 +2,9 @@
 import './App.css';
 function App() 
 {
-
-<section></section>
+return (
+<>
+</>
 );
 }
 export default App;
