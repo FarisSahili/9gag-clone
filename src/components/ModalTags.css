@@ -1,22 +1,15 @@
 
- span {
+  .spanItem {
    font-weight: 700;
    font-size: 14px;
    height: 24px;
    color: #999999;
-   display: inline-block;
+   display: block;
    margin-bottom: 4px;
-
  }
  
-  .modal {
-   overflow-y: auto;
-   display: block;
-   height: 80vh;
-   position: relative;
- }
 
- button {
+ .buttonItem {
    display: flex;
    outline: none;
    align-self: baseline;
@@ -45,3 +38,8 @@
  ::-webkit-scrollbar {
    display: none;
  }
+ .modal {
+  display: block;
+  height: 80vh;
+  position: relative;
+}
