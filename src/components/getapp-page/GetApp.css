@@ -1,94 +1,78 @@
 .logo-header{
-    height:22px ;
-    width: 60px;
+    height:22px;
+    width: 100%;
 }
-
 .navbar-nav{
         padding-right:8%;
-        padding-left:37%;
+        padding-left:38%;
         padding-top: 30px;
-        margin: 0.618em;
-        letter-spacing: 0.1em;
-        display: flex;
+        margin: 0.618rem; 
+        letter-spacing: 0.1rem;
         color: gray;
         font-family:system-ui;
         font-weight: bold;
-        font-size: 14px;
-}
+        font-size: 90%;
 
-  .navbar-brand{
-    padding-left: 120px;
+}
+.navbar-brand{
+    padding-left:9%;
     padding-top: 30px;
 }
 .navbar-toggler-icon{
-    padding-top: 50px;
-
+    padding-top: 15%;
 }
 
 #blue-button{
     color: rgb(80, 80, 250);
 }
- #Phones-photo{
-    height: 558px;  
-  width: 483px;
-  
-}  
+#Phones-photo{
+  height: 558px;  
+  width: 86%;
+}   
+
 @media screen and (max-width:1263px){
     .content-getapp-page{
         width: 50%;
         height: auto;
     }
-} 
+}  
  .content-getapp-page{
    display: block;
    height: 630px;
-   width:1263px;
+   width:427%;
 } 
 
-
- @media screen and (max-width:1000px) {
-    .phones-photo{
-        display: block;
-        width: 50%;
-    }
-} 
- .phones-photo{
+.phones-photo{
     display: flex;
     height: 468px;
-    width: 558px; 
+    width: 44%; 
     position: relative;
     right: 20%;
     left: 52%;
     top: 72px;
 } 
- .wr-content-get-app{
+.wr-content-get-app{
     height:180px;
     width: 40%;
-
     position: relative;
-    right: 10%;
-    left: 10%;
+    left: 9%;
     bottom: 350px;  
 } 
- .text-in-content-get-app{
-
+ .h1{
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;   
-    line-height: 90px;
     font-weight: bolder;
     text-decoration: none solid rgb(18,18,18);
     font-size: 450%;
     color:#121212;
-} 
-
- .two-photos-google-store-wr{
+}
+.two-photos-google-store-wr{
     display: block;
     height: 55px;
-    width: 483px; 
+    width: 38%; 
     position: relative;
     top: -300px;
     right: 100%;
-    left: 10%;
-
+    left: 9%;
 } 
  .img-App-store-in-get-app
 {
@@ -114,31 +98,29 @@
 
 .footer-wr-getapp{
     height: 350px;
-    width:1263px;
+    width: 428%;
     background:#f6f6f6;
 } 
 .footer-getapp{
-
     font-family:system-ui;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 90%;
     height: auto;
-    width: 224px; 
+    width: 40%; 
     position: relative;
     top: 80px;
-    right: 888px;
-    left: 112px;
+    left: 9%;
     bottom: 180px;
     position: #000; 
 } 
  .nav-link{
     line-height: 20px;
     padding: 2px;
-
 }
 #footer
 {
     color: #000;
+    width: 45%;
 }
 #footer:hover{
     color: #cccbcb;

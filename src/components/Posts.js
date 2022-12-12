@@ -1,28 +1,45 @@
- import PostCard from './PostCard/PostCard'
-import img1 from './image/post1.jpg'
+ import PostCard from './postcard/PostCard'
+import img1 from './image/imgn.jpg'
 import img2 from './image/aVbMoW8_460swp.webp'
 import img3 from './image/axo1R8Y_460swp.webp'
 import img4 from './image/awZXdxy_460swp (1).webp'
 import img5 from './image/az2XRZj_461swp.webp'
 import img6 from './image/avQORnq_460swp.webp'
+import img11 from './image/img11.jpg'
+
+
 import icon1 from './image/icon1.jpg'
 import icon2 from './image/icon2.jpg'
 import icon3 from './image/icon3.jpg'
 import icon4 from './image/icon4.jpg'
 import icon5 from './image/icon5.jpg'
 import icon6 from './image/icon6.jpg'
+import icon11 from './image/basil.jpg'
 
 const Posts = () => {
     const datawebsite = [
         {
             name: "gager name ",
             icon:icon1,
-            description: "funny",
-            image: img1,
+            description: "The end of an era.",
+            image:img1,
             time: 1,
-            type1: "life",
-            type2: "Happy",
-            up: 389,
+            type1: "world cup",
+            type2: "qatar 2022",
+            up: 2.8,
+            down: 30,
+            commt: 12,
+        },
+        {
+            
+            name: "basil-Turk",
+            icon:icon11,
+            description: "Big Conflict",
+            image:img11,
+            time: 1,
+            type1: "gitHub",
+            type2: "Web developer ",
+            up: 280,
             down: 30,
             commt: 12,
         },
