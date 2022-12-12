@@ -35,27 +35,14 @@ const Newpost_page=()=>
     </div>
     </div>
             
-            {/*<div className="dropdown">
-                    <p className="btn_rules btn" data-bs-toggle="dropdown"><p className='g99'>9GAG Rules</p>
-                    </p>
-                    <ul className="rules_menu dropdown-menu">
-                        <ol>
-                        <li className='rules'>No pornography</li>
-                        <li className='rules'>No violence or gory contents</li>
-                        <li className='rules'>No hate speech and bullying</li>
-                        <li className='rules'>No spamming and manipulation</li>
-                        <li className='rules'>No deceptive content</li>
-                        <li className='rules'>No illegal activities</li>
-                        <li className='rules'>No impersonation</li>
-                        <li className='rules'>No copyright infringement</li>
-                        </ol>
-</ul>*/}
+            
                     
                     <div className="container" >
             
                         <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
                     
-                            <img src={Choos_photo} className="ph-photo"/>
+                            {/*<img src={Choos_photo} className="ph-photo"/>*/}
+                            
                             <input  placeholder="Add at least 1 tag" className="add form-control" data-bs-toggle="collapse" href="#collapseExample"></input>
                             <div className="collapse" id="collapseExample">
                             <div className="card-body">
