@@ -1,4 +1,4 @@
-/* .page-commints{
+.page-commints{
     height: auto;
     width: auto;
 }
@@ -10,7 +10,7 @@
     position: absolute;
     right: 820px;
     left: 280px;
-    top: 1300px; 
+    top: 750px; 
 }
  .button-wr{
     height:41px;
@@ -18,7 +18,7 @@
     position: absolute;
     right: 50px;
     left: 810px;
-    top: 1300px; 
+    top: 750px; 
    
 }
 .page-link{
@@ -31,6 +31,11 @@
     background: none; 
     border: var(--bs-pagination-border-width)snow var(--bs-pagination-border-color);
    
+}
+.input-Comment{
+
+    width: 629px;
+    height: 50px;
 }
 .text-start{
     color: black;
@@ -51,7 +56,7 @@
    position: absolute;
    right:351px;
    left:272px;
-   top: 1350px;
+   top: 800px;
 }  
 
 .btn-primary{
@@ -79,7 +84,7 @@
     position: absolute;
     right:351px;
     left:272px;
-    top: 1450px;
+    top: 900px;
 }
 .comments-and-accounts{
     background:#f5f2f2;
@@ -105,4 +110,4 @@
     position: absolute;
     left:55px; 
     top: 30px;
-} */
+}  
