@@ -15,7 +15,22 @@ import Pinterest from './photo-post-card/pinterest.ico';
 import Twitter from './photo-post-card/twitter.ico';
 import Telegram from './photo-post-card/telegram.ico';
 
-
+const SaveIcons = ({ isSelected, onClick }) => {
+    return (
+      <div className="save-icon">
+<button  className ="save-button" onClick={() => onClick()}>
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         viewBox="0 0 12 12" 
+         fill={isSelected ? "red" : "white"}
+         className="bx bx-bookmark">
+            <path d="M18 2H6c-1.103 0-2 .897-2 2v18l8-4.572L20 22V4c0-1.103-.897-2-2-2zm0 16.553-6-3.428-6 3.428V4h12v14.553z">
+             </path>
+     </svg>
+</button>
+      </div>
+    )
+   };
+  
 
 const PostCard = (props) => {
 
@@ -29,13 +44,12 @@ const PostCard = (props) => {
 
                 <div className='gagger-name'>
                     <a>{props.op_user}</a>
-                    <span> {props.post_date}</span>
+                    <span> {props.post_time}</span>
                 </div>
   
                 <div className='save-icon'>
-                    <button className='save-button'>
-                            <img src={SaveIcon} className='SaveIcon' alt="this is save icon" type = "button" />
-                    </button>
+                    <button className='save-button' onClick={SaveIcons} />
+
                 </div>  
 
                     <div className='save-icon'>
@@ -83,7 +97,7 @@ const PostCard = (props) => {
                         <a className='share-icon'>
                             <img src={MessangerIcon} alt="this is MessangerIcon " /></a>
                         <div class="dropdown">
-                            <button className="dropdown" type="button" data-bs-toggle="dropdown">
+                            <button className="dropdown" type="button" data-bs-toggle="dropdown" >
                                 <img className='share-icon' src={ShareIcon} alt="this is ShareIcon " />
                             </button>
                             <ul className="dropdown-menu">

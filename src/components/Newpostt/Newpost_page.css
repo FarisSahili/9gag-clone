@@ -1,0 +1,114 @@
+.container{
+    border-radius: 0.5rem;
+    border: 0.12rem solid #e5e5e5;
+
+    margin: 1% 2rem 50rem 25%;
+    
+    width: 640px;
+    height: auto;
+}
+
+.titel{
+    margin: 2rem 0 0 1rem;
+    width: 36rem;
+    height: 3rem;
+    font-weight: bold;
+}
+.add{
+    margin: 2rem 0 0 1rem;
+    width: 36rem;
+    height: 3rem;
+    font-weight: bold;
+}
+.rules_dropdown{
+    width: 21rem;
+    height: 3rem;
+    margin: -2% 0 0 60%;
+
+    
+}
+.rules_menu{
+    width: 20rem;
+    height: auto;
+    
+    
+}
+.ph-photo{
+    margin: 1rem 0 0 1rem;
+    width: auto;
+    height: auto;
+}
+.rules{
+    width: auto;
+    height: 3rem;
+    font-weight: bold;
+}
+.add_list{
+    margin: 0rem 0 0 0px;
+    border-radius: 100px;
+    background-color: white;
+    border: none;
+}
+.add_list:hover{
+background-color: lightgrey;
+}
+
+.creat_post{
+    margin: 5% 0 0 25%;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+}
+.btn-group{
+    width: auto;
+    height: auto;
+    margin: 1rem 0 0 2rem;
+}
+
+.hidenbtn{
+    width: auto;
+    height: auto;
+    border-radius: 100px;
+    margin:  -7% 0 0 530px;
+    
+}
+
+.setting{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+.g99{
+    width: 0;
+    height: 60%;
+    margin: 2% 0 0 -2%;
+    font-weight: bold;
+}
+.tages{
+    width: auto;
+    height: 40px;
+    margin: 1em 0 0 0.5em;
+    border-radius: 0.5rem;
+    border: solid white;
+    font-weight: bold;
+}
+.tagestitl{
+    margin: 2% 0 0 2%;
+    color: gray;
+    font-weight: bold;
+}
+.dd{
+    padding: 10%;
+    height: auto;
+}
+.graphup{
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0.8%;
+}
+.settingpt{
+    margin: 0 0 0 0;
+}
+.gag-rules{
+    font-weight: bold;
+    
+}
