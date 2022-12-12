@@ -30,11 +30,11 @@ const myArray = [
             commentt:23,
         },
         {id : 2,
-            title: "funny",
-            op_user: "gager name",  // original poster,
+            title: "hahahah ",
+            op_user: "9hdw",  // original poster,
             op_user_avatar: icon2,  // original poster,
             post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 100,
+            up_votes : 90,
             down_votes : 10,
             content: img2, // post content (post media),
             tags : [
@@ -43,12 +43,12 @@ const myArray = [
             commentt:13,
         },
         {id : 3,
-            title: "funny",
-            op_user: "gager name",  // original poster,
+            title: "Someone asked for a rumble?",
+            op_user: "takedahiromitsu",  // original poster,
             op_user_avatar: icon3,  // original poster,
             post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 100,
-            down_votes : 10,
+            up_votes : 86,
+            down_votes : 12,
             content: img3, // post content (post media),
             tags : [
                 " sport","really"
@@ -57,12 +57,12 @@ const myArray = [
         },
         {
             id : 4,
-            title: "funny",
-            op_user: "gager name",  // original poster,
+            title: "How to tell people",
+            op_user: " heyheyhohojoeb",  // original poster,
             op_user_avatar: icon4,  // original poster,
             post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 100,
-            down_votes : 10,
+            up_votes : 543,
+            down_votes : 21,
             content: img4, // post content (post media),
             tags : [
                  "funny" ,"public"
@@ -85,8 +85,8 @@ const myArray = [
         },
         {
             id : 6,
-            title: "funny",
-            op_user: "gager name",  // original poster,
+            title: "ok",
+            op_user: "uskwm",  // original poster,
             op_user_avatar: icon6,  // original poster,
             post_date: "2022-01-01", //yyyy-mm-dd
             up_votes : 100,
