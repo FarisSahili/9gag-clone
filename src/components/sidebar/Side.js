@@ -5,9 +5,9 @@
 
  //function
 
+
+
  const Remove = ({ onClick }) => {
-
-
   return (
     
   <button   className="btn-remove" onClick={() => onClick()}>
@@ -20,6 +20,7 @@
   </button>
   ); 
 };
+
 
  const Star = ({ isSelected, onClick }) => {
   return (
@@ -41,6 +42,11 @@
 const Side= () =>
 {
 
+
+  const Clear = () => {
+  
+    document.getElementById('recent-menu').innerHTML = '';
+  }
   const favoriteSection= () =>{
     if (favorites.length > 0){
 
@@ -52,7 +58,7 @@ const Side= () =>
 
           {favorites.map((item, index) => {
             return (
-              <li key={index} onClick={() => 
+              <li className="li-filter" onClick={() => 
                 {
                 setRecent((current) => [...current, item]); 
                 }}>
@@ -80,14 +86,14 @@ const Side= () =>
 
   const recentSection= () =>{
     if (recent.length > 0){
-
   return(
 
-<ul className="sidebar-menu">
-<div className="contanier"> <span className="spanSections">Recents</span><button  onClick={() => setRecent([null])}  id="clear-btn"><a id="clear">Clear</a></button></div>
+<div>
+<div className="contanier"><span className="spanSections">Recents</span><button onClick={Clear}  id="clear-btn"><a id="clear">Clear</a></button></div>
+<ul id="recent-menu">
  {recent.map((item, index) => {
              return (
-              <li key={index}>
+              <li className="li-filter">
               <div className="rowContainer">
                 <div className="sidebarItem">{item}</div>
                 <div className="btnsContainer">
@@ -111,8 +117,9 @@ const Side= () =>
               </li>
              );
           })}    
-             
-            </ul>
+             </ul>
+             </div>
+      
             )}}// To hide recent text when there is no filter inside it
 
 
@@ -255,9 +262,10 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 <ul className="sidebar-menu-9gag">
 <h3 className="h3Sections">9GAG</h3> 
 
-<li><a><img className="icons-sidebar-9gag-sction" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAWFJREFUWEftl/ExBDEUh7+rgBJ0gA6owKgAFTgVoAMqoAM6UAIl0AEVnPmZi3GRfUnes+PmZt/fecm3v02+7M5Ys5qtGQ8bCbQHPCyTPgZeIqlHE9oBnoHtJcQ7sA+8eqEiQIJ4ApTQz1JCh4DgussLNASTANxQXqBH4Kjy+BqjPdVVHqB74KRxFY09axz7NawX6AY471kAuAXmrT09QKfAXevE2TilpLSq1QoUgUkQTVAtQDrWcs1flBxlirMGJBi5JokvCiU3yVGDUBZQbuEoTOo3bT4EVBNfFG5QnCWgsWFMm5eAWiwcTSj1/7J5DuQRXxRuRZw50CI6u7P/myMHugIunZN6264Brdt0l40BuAKQP0VNjBPQxiWk/VAq62CMuoeGErb0MQHpFU4J1cT6Lwl9GF+SFtAFoEu8WDUP6RNWfwu7hW7rtGhB/RhsZX1vwIH1718D8l6Y7r4JqBbdJ6C/TSVM8APAAAAAAElFTkSuQmCC"/></a><a className='label-section-9gag'>Home</a></li>
-<li><a><img className="icons-sidebar-9gag-sction" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAS1JREFUWEft1dENAiEQBNC5CrQTLUE7sBRbsANLsQMtwVK0AzOGNWQFhgNz8QN/1ONu8xgWbsKffaY/82CA1IqMhEZCiQQOADYimZONL9FDawA3gfo4lgBx8gq1OEihfgLahnW/q50Txnn/NaTlH+kGWXEW3gNQqBKGNbpAvvhDoPz9TwDceeeo0ZtBuZnmUCnMLiQaN3oTKFWcca9CQ3hUCWM9ZCjrx+q3fa44C/OM8ShejxuYy2TJ+IYmipN5f2rOITVTjnuUbXN+lzBfG1SBFMYKepRdn4VRCdVicqjZmBJoLsaj+D/XM8VzNLVkrZgYxd/qsEzCPKgXU/kWyd/mQfFh1dQDvaLUkhF1AXBsjb0HpbZ9T+2mZwdIxTYSGgmpBNT46KGRkEpAjb8Ay/9KJZw4IWIAAAAASUVORK5CYII="/></a><a className='label-section-9gag'>Trending</a></li>
-<li><a><img className="icons-sidebar-9gag-sction" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAnpJREFUWEftmNExRkEMhY8KUAEqQAWoABWgAlSAClABKkAHVIAK0AEVMJ/ZNZF/92728mCMvNzhZjfnnpxNsv+UfplN/TI8+jOAliRtSeI5k56QfS/pJT0v0rMrCb0MHUraTSAigQB3Iuko4oxPFNCGpGNJ89GNnd+TpH1JV631EUCwcuA2ek6b30giGKnCSCGgVyXxEXNuHXsNstUCdJ60kvcFCJvy/4htJ38LjLU7tcVDgDwz15IIgC56DNEDYt0sgiX2n7AaIOi+NN6cGMB8xzzbmyVN1QChi0wzzACwZuhlJb28lYSuaoaoM1PEWPCOJUA2VWgGoQ6lyfpXU5ECkz6ATKe/J/xLgAieFyC+loB7AIGD1J8lQMSatSx5QLBxlxxgJ1J3egGxvZXEsq3oHhBVlUqMnUraC6h4DKBqHA8IQWaBFk9BAeAYQPYUcxA4GB/mAVFxF9O7L1QOMDUGkJUGMYlVBPRmAreqeHa1gDjWMBuxYiwfdAwgdEbjzTbYGoxfCNCYlBHDV+EWKJuyBzNPTWhojKgtMwxtEabCoh5z7K1ePFNrlVYSPvaWymKvCag1gxqq8uHCSLze1lHCSF2pNVnbOl79ONxqrnwJNaJ3BqoRSXN9NCBCzZXNLKU9taWVUTt+FHtldEBrHeMWkFJp6BrQ2MCPsHwdQu1NH2li3LBDXvcIW6stpBKgjLQRQ8BUcUBlGxyHI/2qdA0CGIxxktCCvQYx+uZrkJ+nWhNl10WRYubvWRGW8AE0Pe9HLoo2KGyxcR5xW4CoM3xI8cpTWhxJWWkdFR195B8b8gxFo8w/NnAycypbwD/fjwUUDtDr+A+oxdg7vKCZJSqiUPwAAAAASUVORK5CYII="/></a> <a className='label-section-9gag'>Fresh</a></li>                      <li><a><img className="icons-sidebar-9gag-sction" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAQRJREFUWEftl1ENwjAQQN8cgAKQgAQcEBzgAFAAOAAF4ABwAg6QgAPILUCWpt11zQYNuX1ubff6rndtCzJ7isx4+BugIXAERh7DO2CRaj7V0BpYBX56B/o5AQlL6kSTO9YZMiAxYIa0JDFDbRoSm3Og5wx6A6bApfo+tV40CdmjZnZLYJsT0OaVsR+mXxtSgWTTnATifQZkn2pah+pCpgLJQhsEYi4L8PRtoNjZtLWoVUMGpGWZGTJDQOwyKCuKW6ljO1va+4p1tYiZoWwMxW6uM2Af2ISvzhU7dkxvlsldfRw4fhwqAHIclXa+u720E4j3EzumF0g7S3f+PfXE2BmYAWlqnzuIayV08ErbAAAAAElFTkSuQmCC"/></a> <a className='label-section-9gag' href="#">Top</a></li>
+<li className="label9gagSection"><a ><img className="icons-sidebar-9gag-sction" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAWFJREFUWEftl/ExBDEUh7+rgBJ0gA6owKgAFTgVoAMqoAM6UAIl0AEVnPmZi3GRfUnes+PmZt/fecm3v02+7M5Ys5qtGQ8bCbQHPCyTPgZeIqlHE9oBnoHtJcQ7sA+8eqEiQIJ4ApTQz1JCh4DgussLNASTANxQXqBH4Kjy+BqjPdVVHqB74KRxFY09axz7NawX6AY471kAuAXmrT09QKfAXevE2TilpLSq1QoUgUkQTVAtQDrWcs1flBxlirMGJBi5JokvCiU3yVGDUBZQbuEoTOo3bT4EVBNfFG5QnCWgsWFMm5eAWiwcTSj1/7J5DuQRXxRuRZw50CI6u7P/myMHugIunZN6264Brdt0l40BuAKQP0VNjBPQxiWk/VAq62CMuoeGErb0MQHpFU4J1cT6Lwl9GF+SFtAFoEu8WDUP6RNWfwu7hW7rtGhB/RhsZX1vwIH1718D8l6Y7r4JqBbdJ6C/TSVM8APAAAAAAElFTkSuQmCC"/></a><a className='label-section-9gag'>Home</a></li>
+<li className="label9gagSection"><a><img className="icons-sidebar-9gag-sction" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAS1JREFUWEft1dENAiEQBNC5CrQTLUE7sBRbsANLsQMtwVK0AzOGNWQFhgNz8QN/1ONu8xgWbsKffaY/82CA1IqMhEZCiQQOADYimZONL9FDawA3gfo4lgBx8gq1OEihfgLahnW/q50Txnn/NaTlH+kGWXEW3gNQqBKGNbpAvvhDoPz9TwDceeeo0ZtBuZnmUCnMLiQaN3oTKFWcca9CQ3hUCWM9ZCjrx+q3fa44C/OM8ShejxuYy2TJ+IYmipN5f2rOITVTjnuUbXN+lzBfG1SBFMYKepRdn4VRCdVicqjZmBJoLsaj+D/XM8VzNLVkrZgYxd/qsEzCPKgXU/kWyd/mQfFh1dQDvaLUkhF1AXBsjb0HpbZ9T+2mZwdIxTYSGgmpBNT46KGRkEpAjb8Ay/9KJZw4IWIAAAAASUVORK5CYII="/></a><a className='label-section-9gag'>Trending</a></li>
+<li className="label9gagSection"><a><img className="icons-sidebar-9gag-sction" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAnpJREFUWEftmNExRkEMhY8KUAEqQAWoABWgAlSAClABKkAHVIAK0AEVMJ/ZNZF/92728mCMvNzhZjfnnpxNsv+UfplN/TI8+jOAliRtSeI5k56QfS/pJT0v0rMrCb0MHUraTSAigQB3Iuko4oxPFNCGpGNJ89GNnd+TpH1JV631EUCwcuA2ek6b30giGKnCSCGgVyXxEXNuHXsNstUCdJ60kvcFCJvy/4htJ38LjLU7tcVDgDwz15IIgC56DNEDYt0sgiX2n7AaIOi+NN6cGMB8xzzbmyVN1QChi0wzzACwZuhlJb28lYSuaoaoM1PEWPCOJUA2VWgGoQ6lyfpXU5ECkz6ATKe/J/xLgAieFyC+loB7AIGD1J8lQMSatSx5QLBxlxxgJ1J3egGxvZXEsq3oHhBVlUqMnUraC6h4DKBqHA8IQWaBFk9BAeAYQPYUcxA4GB/mAVFxF9O7L1QOMDUGkJUGMYlVBPRmAreqeHa1gDjWMBuxYiwfdAwgdEbjzTbYGoxfCNCYlBHDV+EWKJuyBzNPTWhojKgtMwxtEabCoh5z7K1ePFNrlVYSPvaWymKvCag1gxqq8uHCSLze1lHCSF2pNVnbOl79ONxqrnwJNaJ3BqoRSXN9NCBCzZXNLKU9taWVUTt+FHtldEBrHeMWkFJp6BrQ2MCPsHwdQu1NH2li3LBDXvcIW6stpBKgjLQRQ8BUcUBlGxyHI/2qdA0CGIxxktCCvQYx+uZrkJ+nWhNl10WRYubvWRGW8AE0Pe9HLoo2KGyxcR5xW4CoM3xI8cpTWhxJWWkdFR195B8b8gxFo8w/NnAycypbwD/fjwUUDtDr+A+oxdg7vKCZJSqiUPwAAAAASUVORK5CYII="/></a> <a className='label-section-9gag'>Fresh</a></li>   
+<li className="label9gagSection"><a><img className="icons-sidebar-9gag-sction" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAQRJREFUWEftl1ENwjAQQN8cgAKQgAQcEBzgAFAAOAAF4ABwAg6QgAPILUCWpt11zQYNuX1ubff6rndtCzJ7isx4+BugIXAERh7DO2CRaj7V0BpYBX56B/o5AQlL6kSTO9YZMiAxYIa0JDFDbRoSm3Og5wx6A6bApfo+tV40CdmjZnZLYJsT0OaVsR+mXxtSgWTTnATifQZkn2pah+pCpgLJQhsEYi4L8PRtoNjZtLWoVUMGpGWZGTJDQOwyKCuKW6ljO1va+4p1tYiZoWwMxW6uM2Af2ISvzhU7dkxvlsldfRw4fhwqAHIclXa+u720E4j3EzumF0g7S3f+PfXE2BmYAWlqnzuIayV08ErbAAAAAElFTkSuQmCC"/></a> <a className='label-section-9gag' href="#">Top</a></li>
 </ul>
                 
 
@@ -275,7 +283,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
           <ul className="sidebar-menu">
             {ExplorePopular.map((item, index) => {
               return (
-                <li key={index} onClick={() => 
+                <li className="li-filter" onClick={() => 
                   {
                  setRecent((current) => [...current, item]);
                  {recentSection()};
@@ -311,7 +319,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
           <ul className="sidebar-menu">
          {Popular.map((item, index) => {
      return (
-      <li key={index} onClick={() => 
+      <li className="li-filter" onClick={() => 
         {
           setRecent((current) => [...current, item]);
           {recentSection()};
@@ -343,7 +351,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
   {AllSection.map((item, index) => {
     return (
 
-      <li key={index} onClick={() => 
+      <li className="li-filter" onClick={() => 
         {
           setRecent((current) => [...current, item]);
           {recentSection()};

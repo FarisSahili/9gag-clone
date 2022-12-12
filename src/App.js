@@ -1,9 +1,6 @@
 
 import './App.css';
-
-
-
-
+import Side from './components/Sidebar/side';
 
 
 
@@ -12,7 +9,8 @@ import './App.css';
 
 function App() 
 {
-
-<section></section>);
+return (
+  <Side/>
+)
 }
 export default App;

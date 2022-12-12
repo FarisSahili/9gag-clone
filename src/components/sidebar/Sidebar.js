@@ -1,5 +1,5 @@
 //import 
-import './SidebarStyle.css' ;
+import './sidebarStyle.css' ;
 
 
 
