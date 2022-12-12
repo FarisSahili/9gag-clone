@@ -31,24 +31,7 @@ const posts = [
                 "comment_body": "hahahah ",
                 "up_votes": 120,
                 "down_votes": 10,
-                "replies":[
-                    {
-                        "user": "userl",
-                        "avatar": "",
-                        "comment_date": "2022-01-01",
-                        "comment_body": "fun",
-                        "up_votes": 320,
-                        "down_votes": 12
-                    },
-                    {
-                        "user": "ali",
-                        "avatar": "",
-                        "comment_date": "2022-01-01",
-                        "comment_body": "Really",
-                        "up_votes": 120,
-                        "down_votes": 3
-                    },
-                ]
+                
             },
             {
                 "user": "khif",
@@ -96,24 +79,7 @@ const posts = [
                 "comment_body": "ok  ",
                 "up_votes": 20,
                 "down_votes": 39,
-                "replies":[
-                    {
-                        "user": "possible",
-                        "avatar": icon3,
-                        "comment_date": "2022-21-9",
-                        "comment_body": "fun",
-                        "up_votes": 33,
-                        "down_votes": 20
-                    },
-                    {
-                        "user": "divad",
-                        "avatar": icon4,
-                        "comment_date": "2022-3-2",
-                        "comment_body": "sure",
-                        "up_votes": 20,
-                        "down_votes": 3
-                    },
-                ]
+                 
             },
             {
                 "user": "uskwm",
@@ -161,24 +127,7 @@ const posts = [
                 "comment_body": "hahahah",
                 "up_votes": 20,
                 "down_votes": 39,
-                "replies":[
-                    {
-                        "user": "omar",
-                        "avatar": icon3,
-                        "comment_date": "2022-12-9",
-                        "comment_body": "not fun",
-                        "up_votes": 33,
-                        "down_votes": 20
-                    },
-                    {
-                        "user": "jsls",
-                        "avatar": icon3,
-                        "comment_date": "2022-28-2",
-                        "comment_body": "lol",
-                        "up_votes": 2,
-                        "down_votes": 32
-                    },
-                ]
+                 
             },
             {
                 "user": "lara",
@@ -226,24 +175,7 @@ const posts = [
                 "comment_body": "france",
                 "up_votes": 230,
                 "down_votes": 39,
-                "replies":[
-                    {
-                        "user": "omar",
-                        "avatar": icon3,
-                        "comment_date": "2022-12-9",
-                        "comment_body": "morocco win",
-                        "up_votes": 33,
-                        "down_votes": 20
-                    },
-                    {
-                        "user": "jsls",
-                        "avatar": icon3,
-                        "comment_date": "2022-28-2",
-                        "comment_body": " arab arab",
-                        "up_votes": 2,
-                        "down_votes": 32
-                    },
-                ]
+               
             },
             {
                 "user": "lara",
