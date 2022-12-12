@@ -1,4 +1,4 @@
-.container{
+.bcontainer{
     border-radius: 0.5rem;
     border: 0.12rem solid #e5e5e5;
 
@@ -7,7 +7,13 @@
     width: 640px;
     height: auto;
 }
-
+.scontainer{
+    border-radius: 1rem;
+    border:  black; 
+    width: auto;
+    height: 20px;
+    margin: auto 0 0 auto;
+}
 .titel{
     margin: 2rem 0 0 1rem;
     width: 36rem;

@@ -37,12 +37,14 @@ const Newpost_page=()=>
             
             
                     
-                    <div className="container" >
+                    <div className="bcontainer container" >
             
                         <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
                     
                             {/*<img src={Choos_photo} className="ph-photo"/>*/}
-                            
+                            <div className='scontainer container'>
+                                <p>basil</p>
+                            </div>
                             <input  placeholder="Add at least 1 tag" className="add form-control" data-bs-toggle="collapse" href="#collapseExample"></input>
                             <div className="collapse" id="collapseExample">
                             <div className="card-body">
