@@ -37,7 +37,7 @@ const Newpost_page=()=>
             
             
                     
-                    <div className="bcontainer container" >
+                    <div className="bcontainer container-md" >
             
                         <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
                     
