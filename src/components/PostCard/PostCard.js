@@ -28,7 +28,7 @@ const PostCard = (props) =>  {
                     </a>
                 <div className='gagger-name'>
                     <a>{props.op_user}</a>
-                    <span> {props.post_date}h</span>
+                    <span> {props.post_date}</span>
                 </div>
                     
                 <div className='save-icon'>
@@ -58,8 +58,8 @@ const PostCard = (props) =>  {
                             <img src={props.content} alt="" />
                             </div>
                         <div className='container-tag'>
-                                <a  className='Post-Card-Tag' >{props.tags}</a>
-                                <a  className='Post-Card-Tag' >{props.tags}</a>
+                                <a  className='Post-Card-Tag' >{props.tags[0]}</a>
+                                <a  className='Post-Card-Tag' >{props.tags[1]}</a>
                         </div>
                         <div className='button-card'>
                             <div className='vote-button'>

@@ -25,7 +25,7 @@ const myArray = [
             down_votes : 10,
             content: img1, // post content (post media),
             tags : [
-                "world cup" 
+                "world cup" ,"random"
             ],
             commentt:23,
         },
@@ -38,7 +38,7 @@ const myArray = [
             down_votes : 10,
             content: img2, // post content (post media),
             tags : [
-                "travel"
+                "travel","fun"
             ],
             commentt:13,
         },
@@ -51,7 +51,7 @@ const myArray = [
             down_votes : 10,
             content: img3, // post content (post media),
             tags : [
-                "world cup","funny","travel"
+                " sport","really"
             ],
             commentt:23,
         },
@@ -65,7 +65,7 @@ const myArray = [
             down_votes : 10,
             content: img4, // post content (post media),
             tags : [
-                 "funny" 
+                 "funny" ,"public"
             ],
             commentt:29,
         },
@@ -79,7 +79,7 @@ const myArray = [
             down_votes : 10,
             content: img5, // post content (post media),
             tags : [
-                 "morocco"
+                 "morocco","funny"
             ],
             commentt:203,
         },
@@ -93,7 +93,7 @@ const myArray = [
             down_votes : 10,
             content: img6, // post content (post media),
             tags : [
-                 "travel"
+                 "travel","world"
             ],
             commentt:203,
         },
@@ -132,7 +132,6 @@ function App(props) {
         <PostCard key={x.id}
         op_user={x.op_user} op_user_avatar={x.op_user_avatar}  title={x.title}  content={x.content} post_date={x.post_date} 
         tags={x.tags}   up_votes={x.up_votes}  down_votes={x.down_votes}  commentt={x.commentt}   
-           
         />
       ))}
      <button onClick={handleShuffle}>Shuffle</button>
