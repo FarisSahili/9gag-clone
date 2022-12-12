@@ -8,7 +8,7 @@ import SaveTo from "./ModalImage/image/5.png";
 import face1 from "./ModalImage/image/2021_Facebook_icon.svg.png";
 import google1 from "./ModalImage/image/Google_Icons.webp";
 import Apple1 from "./ModalImage/image/Apple-Logo.png";
-import LiftArow from "./ModalImage/image/left-arrow-alt-regular-24.png";
+import LeftArrow from "./ModalImage/image/left-arrow-alt-regular-24.png";
 const FullModalSignUP = () => {
   return (
     <>
@@ -139,7 +139,13 @@ const FullModalSignUP = () => {
                       with Apple
                     </a>
                   </button>
-                  <button className="ButEmail">Use email</button>
+                  <button
+                    className="ButEmail"
+                    data-bs-target="#exampleModalToggle4"
+                    data-bs-toggle="modal"
+                  >
+                    Use email
+                  </button>
                   <button
                     className="ButLogIn"
                     data-bs-target="#exampleModalToggle2"
@@ -244,11 +250,11 @@ const FullModalSignUP = () => {
           <div className="modal-content">
             <div className="modal-header">
               <button
-                className="LeftArroww"
+                className="LeftArrow"
                 data-bs-target="#exampleModalToggle2"
                 data-bs-toggle="modal"
               >
-                <img className="LeftArroww" src={LiftArow} alt="" />{" "}
+                <img className="LeftArrow" src={LeftArrow} alt="" />
               </button>
               <div className="head">Forgot Password</div>
             </div>
@@ -271,17 +277,63 @@ const FullModalSignUP = () => {
           </div>
         </div>
       </div>
+      <div
+        className="modal fade"
+        id="exampleModalToggle4"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel4"
+        tabindex="-1"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <h4>Sign Up</h4>
+            </div>
+            <div className="modal-body">
+
+              <form className="form-floating">
+                <input type="email" className="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com"/>
+                <label for="floatingInputInvalid">Invalid input</label>
+              </form>
 
 
+              <div className="form-floating mb-3">
+                <input
+                  type="email"
+                  className="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div className="form-floating">
+                <input
+                  type="password"
+                  className="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
 
-
-
-
-
-
-    
-
-
+              <button className="ButLogIn2">Sign Up</button>
+              <button
+                className="ButLogIn"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal"
+              >
+                Already a member? Log in
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

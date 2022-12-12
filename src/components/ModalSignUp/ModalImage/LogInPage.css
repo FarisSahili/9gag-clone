@@ -1,17 +1,14 @@
-.modal-header .btn-close {
-    margin: 0;
-    padding: 0;
+.logPage{
+    width: 32%;
+    height: 470px;
+    position: relative;
+    display: block;
+    padding-bottom: 20em;
+    margin:auto ;
+    margin-top: 10%;
+
 }
 
-.carousel-dark .carousel-indicators [data-bs-target] {
-    border-radius: 4px;
-    width: 8px;
-    height: 8px;
-    margin: 0 4px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: #9999;
-}
 
 a.facebook {
     text-decoration: none;
@@ -27,15 +24,12 @@ a.Apple {
     text-decoration: none;
     color: black;
 }
-
-.h4,
-h4 {
+h4.LOGin {
     margin-left: 20px;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 28px;
     width: 100%;
-
 }
 
 .P-Or {
@@ -46,21 +40,6 @@ h4 {
     padding: 0.3rem;
     margin-bottom: .5rem;
 }
-
-.para {
-    font-size: 12px;
-    line-height: .9rem;
-    text-align: center;
-    color: #9999;
-}
-
-.LeftArrow {
-    width: 2rem;
-    height: 2em;
-    border: 0;
-    background-color: white;
-}
-
 .ButFacebook {
     border-radius: 30px;
     height: 50px;
@@ -73,68 +52,11 @@ h4 {
     margin: 4px;
     background-color: white;
 }
-
 .facebook1 {
     position: absolute;
     width: 1.5rem;
     margin: 1px -130px;
 }
-
-.imgNum {
-    margin-left: 158px;
-    margin-bottom: 120px;
-}
-
-.imgNum2 {
-    margin-left: 190px;
-    margin-bottom: 100px;
-}
-
-.imgNum3 {
-    margin-left: 190px;
-    margin-bottom: 100px;
-}
-
-.imgNum4 {
-    margin-left: 190px;
-    margin-bottom: 112px;
-}
-
-.imgNum5 {
-    margin-left: 180px;
-    margin-bottom: 100px;
-}
-
-.head {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2rem;
-    width: 100%;
-    margin-left: 20px;
-}
-
-.Email1 {
-    font-size: .9rem;
-    line-height: 1.4em;
-    display: block;
-    color: #9999;
-    margin-bottom: 1rem;
-}
-
-.send {
-    border-radius: 2rem;
-    height: 3rem;
-    width: 29rem;
-    font-weight: bold;
-    font-size: 1rem;
-    border: 1px;
-    border-color: #e5e5e5;
-    border-style: solid;
-    background-color: #0077ff;
-    opacity: .4;
-    color: aliceblue;
-}
-
 .ButGoogle {
     border-radius: 30px;
     height: 50px;
@@ -208,7 +130,6 @@ h4 {
     margin: 4px;
     background-color: white;
 }
-
 .ButLogIn2 {
     border-radius: 30px;
     height: 50px;
@@ -223,7 +144,6 @@ h4 {
     opacity: .4;
     color: aliceblue;
 }
-
 .ButFacebook:hover,
 .ButGoogle:hover,
 .ButApple:hover,

@@ -1,13 +1,11 @@
 import './App.css';
-function App() 
-{
+import LogInPage from './components/ModalSignUp/ModalImage/LogInPage';
+//import FullModalSignUP from './components/ModalSignUp/FullModalSignUp';
 
 
-
+function App() {
   return (
-
-
-<section></section>
+<LogInPage/>
 );
 }
 export default App;
