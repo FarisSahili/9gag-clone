@@ -4,7 +4,7 @@ import "./ModalTags.css";
 const Star = ({ isSelected, onClick }) => {
   return (
     <div className="start">
-      <button onClick={() => onClick()}>
+      <button className="buttonItem" onClick={() => onClick()}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill={isSelected ? "gold" : "gray"}
@@ -22,7 +22,7 @@ const Star = ({ isSelected, onClick }) => {
 
 const XButton = ({ isSelected, onClick }) => {
   return (
-    <button onClick={() => onClick()}>
+    <button className="buttonItem" onClick={() => onClick()}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill={isSelected ? "red" : "gray"}
@@ -68,7 +68,7 @@ function ModalTags() {
     "girl celebrity",
   ]);
 
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState(["sprot"]);
   const [hidden, setHidden] = useState([]);
 
   const filterArrayFromFavorite = (selectedIndex) => {
@@ -103,11 +103,11 @@ function ModalTags() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
+
             
-              
-              <span>Favorites</span>
-               {
-                favorites .map((item, index) => {
+            <span className="spanItem">Favorites</span>
+               { 
+                favorites.map((item, index) => {
                   return (
                     <div className="rowContainer">
                       <div className="title">{item}</div>
@@ -118,14 +118,13 @@ function ModalTags() {
                             setPopularTags((current) => [...current, item]);
                           }}
                         />
-
                       </div>
                     </div>
                   );
                 })}
             </div>
             <div className="modal-body">
-              <span>Explore Popular Tags</span>
+              <span  className="spanItem">Explore Popular Tags</span>
               <ul className="list-group list-group-flush">
                 {popularTags.map((item, index) => {
                   return (
@@ -153,7 +152,7 @@ function ModalTags() {
             </div>
             <hr></hr>
             <div className="modal-body">
-              <span>Other Tags</span>
+              <span  className="spanItem">Other Tags</span>
               <ul className="list-group list-group-flush">
                 {otherTags.map((item, index) => {
                   return (
@@ -181,7 +180,7 @@ function ModalTags() {
             </div>
             <hr></hr>
             <div className="modal-body">
-              <span>Hidden</span>
+              <span  className="spanItem">Hidden</span>
               {hidden.map((item, index) => {
                 return (
                   <div className="rowContainer">

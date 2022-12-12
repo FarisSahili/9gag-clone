@@ -21,13 +21,12 @@ const PostCard = (props) =>  {
         <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
                     <a href = "gagger-page-html">
-                    <img src={props.icon} className='AvatarPic' alt = "this is avatar "/>
+                    <img src={props.op_user_avatar} className='AvatarPic' alt = "this is avatar "/>
                     </a>
 
                 <div className='gagger-name'>
-                    <a className='gagger'>{props.name}</a>
-                    <span> {props.time}h</span>
-
+                    <a>{props.op_user}</a>
+                    <span> {props.post_date}</span>
                 </div>
   
                 <div className='save-icon'>
@@ -52,20 +51,20 @@ const PostCard = (props) =>  {
              </div>
  </div>  
                             <div className='title-of-post'>
-                                    <h4 >{props.description}</h4>
+                                        <h4 >{props.title}</h4>
                             </div>
                             <div className='memes-media'>
-                            <img className='Media' src={props.image} alt="" />
+                            <img src={props.content} alt="" />
                             </div>
                         <div className='container-tag'>
-                                <a  className='Post-Card-Tag' >{props.type1}</a>
-                                <a  className='Post-Card-Tag' >{props.type2}</a>
+                                <a  className='Post-Card-Tag' >{props.tags[0]}</a>
+                                <a  className='Post-Card-Tag' >{props.tags[1]}</a>
                         </div>
                         <div className='button-card'>
                             <div className='vote-button'>
-                            <button type="button" className="votebutton"><img className='voteup' src={voteup} alt='voteup icon'/>{props.up}</button>
-                            <button type="button" className="votebutton"><img className='votedown' src={votedown} alt='vote down icon'/>{props.down}</button>
-                            <button type="button" className="votebutton"><img className='commit' src={CommitIcon} alt='commit icon'/>{props.commt}</button>
+                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>{props.up_votes}k</a>
+                                 <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/>  {props.down_votes}</a>
+                                 <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " />{props.commentt}</a>
                             </div>
 
                     <div className='share-buttons'>

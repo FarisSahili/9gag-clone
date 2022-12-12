@@ -19,7 +19,6 @@ import icon11 from './image/basil.jpg'
 const Posts = () => {
     const datawebsite = [
         {
-
             name: "gager name ",
             icon:icon1,
             description: "The end of an era.",
