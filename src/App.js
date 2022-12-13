@@ -1,21 +1,14 @@
 
+
 import './App.css';
 
 
 
 
-
 function App() 
-{
-
-
-
-return (
-<section></section>
-
-
-
-  
+{  return (
+<>
+</>
 );
 }
 export default App;

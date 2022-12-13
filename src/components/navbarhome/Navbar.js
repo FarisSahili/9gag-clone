@@ -47,9 +47,9 @@ const Navbar = () => {
                 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">  
-             
+             <div className='page'>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#" id="shuffle" ><b>🔀 Shuffle</b></a>
+              <a className="nav-link active" aria-current="page" href="#" id="shuffle" >🔀 Shuffle</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href ='./src/components/GetApp.js' id="getApp" ><b>📱 Get App</b></a>
@@ -67,6 +67,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="#" id="potatoz"><b> 📰 News</b></a>
             </li>
+            </div>
           </ul>
           <div class="dropdown" >
            <button id="search-but" className="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false" > 
@@ -99,7 +100,7 @@ const Navbar = () => {
             </div>  
             <button id="sign-but" type="button" className="buttons" > <b>Sign Up/ Log In</b></button>
 
-      
+            
             <div  className="btn-group dropstart">
                   <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="profile-but"  >
                           <svg id="prof" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">

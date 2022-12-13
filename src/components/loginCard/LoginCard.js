@@ -1,4 +1,4 @@
-import './Logincard.css';
+import './LoginCard.css';
 const Logincard = () =>  {
 
 

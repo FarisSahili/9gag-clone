@@ -15,11 +15,6 @@ border-radius: 5px;
     border-width:0;
     background-color: #f0eeee;
     text-align:center; 
-/* padding:1% 3%; */
-/* padding-left:10px;
-padding-right:10px;
-padding-top:2px;
-padding-bottom: 2px; */
 margin-bottom: 5px;
 margin-right: 8px;
 position: relative;
@@ -29,8 +24,6 @@ font-size:14px;
 height: 32px;
 width: 250px;
 line-height:15px;
-
-
 }
 .tag1{
     display: flex;
