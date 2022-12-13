@@ -26,7 +26,7 @@ const posts = [
         "comment" : [
             {
                 "user": "9hdw ",
-                "avatar": "",
+                "avatar": icon3,
                 "comment_date": "2022-01-01",
                 "comment_body": "hahahah ",
                 "up_votes": 120,
