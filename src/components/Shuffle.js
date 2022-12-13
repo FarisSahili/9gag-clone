@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import PostCard from './PostCard/PostCard'
+import PostCard from './postcard/PostCard'
 import img1 from './image/post1.jpg'
 import img2 from './image/aVbMoW8_460swp.webp'
 import img3 from './image/axo1R8Y_460swp.webp'

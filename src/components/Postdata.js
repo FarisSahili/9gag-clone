@@ -10,6 +10,7 @@ import icon3 from './image/icon3.jpg'
 import icon4 from './image/icon4.jpg'
 import icon5 from './image/icon5.jpg'
 import icon6 from './image/icon6.jpg'
+
 const posts = [
     {
         "id" : 1,
@@ -204,3 +205,5 @@ const posts = [
         ]
     }    
 ]
+
+export default posts;
