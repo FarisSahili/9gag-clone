@@ -3,10 +3,8 @@
  import React, { useState } from "react";
 
 
+
  //function
-
-
-
  const Remove = ({ onClick }) => {
   return (
     
@@ -39,8 +37,36 @@
  };
 
 
+
+
+
 const Side= () =>
 {
+
+
+
+
+
+
+  state = {
+    selectedTag: null
+  }
+
+  
+  handleTagClick = (item) => { 
+    this.setState({
+      selectedTag: item
+    });
+  }
+
+
+    const filterPosts = () => 
+    {
+    const { selectedTag } = this.state;
+    return this.props.posts.filter(post => post.tags.includes(selectedTag));// Return only the posts that have the selected tag
+  }
+
+  // {this.filterPosts().map(post =>
 
 
   const Clear = () => {
@@ -81,9 +107,6 @@ const Side= () =>
             </ul>
             )}}// To hide fav text when there is no filter inside it
 
-
-
-
   const recentSection= () =>{
     if (recent.length > 0){
   return(
@@ -122,14 +145,10 @@ const Side= () =>
       
             )}}// To hide recent text when there is no filter inside it
 
-
-
   const deleteItemFromFavorite = (selectedIndex) =>
    {
     setFavorites((current) =>current.filter((_item, index) => index !== selectedIndex));
   };// To delete items from fav
-
-
 
   const deleteItemFromRecent = (selectedIndex) =>
   {
@@ -230,8 +249,11 @@ const Side= () =>
 
 
   return(
+
+   
 <div className='wr-side-bar'> 
 
+<posts/>
 <button className="btn-start" type="button" data-bs-toggle="offcanvas" 
 data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img className="menue"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAH9JREFUWEft1UsKgDAMANH05npypTsXtYOGQAvTbaikLx9bLHbaYvmECVFFFFKIBCi+VQ9d9JpkfIgxEzKhLr5VDyVb5N91hchtJnREROWknaPkHPuHyufF2EtWeYbfd8qIXKGMUOUOev2Puocye4jKXRJ3yohVIYVIgOL2EAndFg4LJcntgd8AAAAASUVORK5CYII="/></button>
 
@@ -285,6 +307,8 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
               return (
                 <li className="li-filter" onClick={() => 
                   {
+                  
+                  {handleTagClick(item)};
                  setRecent((current) => [...current, item]);
                  {recentSection()};
                   }}>
@@ -305,12 +329,12 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
                   </div>
                 </li>
               
+          
+          
               );
              })}
             
             </ul>
-
-
 
 
 
@@ -347,7 +371,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 
  <h3 className="h3Sections">All Sections</h3> 
 
- <ul className="sidebar-menu">
+          <ul className="sidebar-menu">
   {AllSection.map((item, index) => {
     return (
 
@@ -371,7 +395,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
     </li>
     );
   })}
- </ul>
+           </ul>
 
 
 

@@ -1,7 +1,5 @@
 
 import './App.css';
-import Side from './components/Sidebar/side';
-
 
 
 
@@ -9,8 +7,15 @@ import Side from './components/Sidebar/side';
 
 function App() 
 {
+
+
+
 return (
-  <Side/>
-)
+<section></section>
+
+
+
+  
+);
 }
 export default App;
