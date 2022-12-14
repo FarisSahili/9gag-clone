@@ -5,25 +5,36 @@ import angelinaJolie from './angelina jolie.png';
 import ahmedHelmy from './ahmedhelmy.png';
 import johnnyDepp from './Jony-dep.png';
 import BayoumiFouad from './Bayoumi-Fouad.png';
+import ProfileComment  from './Profile-comment.png';
 
 
-
+// comment 
 const CommentPage = () => {
 
-    const[comment,setComment]=useState([]);
+    const[comment,setComment] = useState ([]) ;
+    const onChangeHandler = (event) => 
+    {
 
-    let temp = comment;
-    const onChangeHandler = (e) => {
-
-        setComment(e.target.value);
+        setComment(event.target.value);
     }
 
-    const[comments,setComments]=useState([]);
+//profile photo
+    const[userPhoto,setUserPhoto] = useState ([]) ;
+    const onChangePhoto = (event) => 
+    {
 
+        setUserPhoto(event.target.data);
+    }
+
+
+
+    const[comments,setComments]=useState([]);
     const onClickHandler = () =>
     {
-        setComments ((comments) => [...comments,comment]);
+        setComments ((comments) => [...comments,comment,userPhoto]);
+     
     };
+   
 
     return (
         <div className="page-commints" >
@@ -48,17 +59,20 @@ const CommentPage = () => {
             </form>
                 <button type="button" onClick={onClickHandler} className="btn btn-primary">Post</button> 
             </div>
+                 <head>
+                   <img src ={ProfileComment}  className='profile-comment'  value={userPhoto} onChange={onChangePhoto} />
+                </head>
+            <div className="rowContainer">
+              <div className="new-comment"> {comments}</div>
+              <div className='profile-comment'>{userPhoto}</div>
+              </div>
 
-            <div className='new-comment'>
-                {comments}
-                <br/>
-            </div>
-            <br/>
              <div className='comments-and-accounts'>
                 <img src={elonMusk} className="photo-co" />
                  <span className='time-of-comment'>1h</span> 
                 <a className='title-account' herf="#">Elon Musk</a>
                 <h5 className='the-comment'>The only referee who made it to a cover of PES.</h5>
+                <i className="fa-solid fa-up"></i>
             </div>
             <div className='comments-and-accounts'>
                 <img src={angelinaJolie} className="photo-co" />
@@ -93,5 +107,3 @@ export default CommentPage;
 /* {comment.map((text)=>(
                     <div>{text}</div>
                 ))*/
-
-
