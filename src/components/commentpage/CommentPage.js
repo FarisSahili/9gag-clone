@@ -1,10 +1,5 @@
 import './CommentPage.css';
 import { useState } from 'react';
-import elonMusk from './comments-page-photo.png';
-import angelinaJolie from './angelina jolie.png';
-import ahmedHelmy from './ahmedhelmy.png';
-import johnnyDepp from './Jony-dep.png';
-import BayoumiFouad from './Bayoumi-Fouad.png';
 import ProfileComment  from './Profile-comment.png';
 
 
@@ -18,22 +13,28 @@ const CommentPage = () => {
         setComment(event.target.value);
     }
 
-//profile photo
-    const[userPhoto,setUserPhoto] = useState ([]) ;
-    const onChangePhoto = (event) => 
-    {
-
-        setUserPhoto(event.target.data);
-    }
-
-
-
     const[comments,setComments]=useState([]);
-    const onClickHandler = () =>
+    const onClickComment = () =>
     {
-        setComments ((comments) => [...comments,comment,userPhoto]);
+        setComments ((comments) => [...comments,comment]);
      
     };
+
+
+//profile photo
+        const[userPhoto,setUserPhoto] = useState ([]) ;
+        const onChangePhoto = (event) => 
+        {
+
+            setUserPhoto(event.target.value);
+        }
+
+        const[photos,setPhotos]=useState([]);
+        const onClickPhoto = () =>
+        {
+            setPhotos ((photos) => [...photos,userPhoto]);
+        
+        };
    
 
     return (
@@ -56,46 +57,48 @@ const CommentPage = () => {
             <div className="card">
             <form className="d-flex" id='input-comment' >
             <input className="form-control me-2" type="search" value={comment} onChange={onChangeHandler} placeholder="leave a comment"/>
-            </form>
-                <button type="button" onClick={onClickHandler} className="btn btn-primary">Post</button> 
-            </div>
-                 <head>
+                <head>
                    <img src ={ProfileComment}  className='profile-comment'  value={userPhoto} onChange={onChangePhoto} />
                 </head>
-            <div className="rowContainer">
-              <div className="new-comment"> {comments}</div>
-              <div className='profile-comment'>{userPhoto}</div>
-              </div>
+            </form>
+                <button type="button" onClick={onClickComment} className="btn btn-primary">Post</button> 
+
+            </div>
+                 
+            <div>
+               <div className="new-comment"> {comments}</div> 
+              <div className='profile-comment'>{photos}</div>
+            </div>
 
              <div className='comments-and-accounts'>
-                <img src={elonMusk} className="photo-co" />
+                <img src={ProfileComment} className="photo-co" />
                  <span className='time-of-comment'>1h</span> 
-                <a className='title-account' herf="#">Elon Musk</a>
+                <a className='title-account' herf="#">scrublord__</a>
                 <h5 className='the-comment'>The only referee who made it to a cover of PES.</h5>
                 <i className="fa-solid fa-up"></i>
             </div>
             <div className='comments-and-accounts'>
-                <img src={angelinaJolie} className="photo-co" />
+                <img src={ProfileComment} className="photo-co" />
                  <span className='time-of-comment'>5h</span> 
-                <a className='title-account' herf="#">Angelina Jolie</a>
+                <a className='title-account' herf="#">bomes_jand</a>
                 <h5 className='the-comment'>It'd be good without that edit.</h5>
             </div>
             <div className='comments-and-accounts'>
-                <img src={ahmedHelmy} className="photo-co" />
+                <img src={ProfileComment} className="photo-co" />
                  <span className='time-of-comment'>9h</span> 
-                <a className='title-account' herf="#">Ahmed Helmy</a>
+                <a className='title-account' herf="#">spongero</a>
                 <h5 className='the-comment'>Hahahahahahaha</h5>
             </div> 
             <div className='comments-and-accounts'>
-                <img src={johnnyDepp} className="photo-co" />
+                <img src={ProfileComment} className="photo-co" />
                 <span className='time-of-comment'>12h</span>
-                <a className='title-account' herf="#">johnny Depp</a>
+                <a className='title-account' herf="#">sealinosus</a>
                 <h5 className='the-comment'>I like it</h5>
             </div>  
             <div className='comments-and-accounts'>
-                <img src={BayoumiFouad} className="photo-co" />
+                <img src={ProfileComment} className="photo-co" />
                 <span className='time-of-comment'>15h</span>
-                <a className='title-account' herf="#">Bayoumi Fouad</a>
+                <a className='title-account' herf="#">SUPRRLOAD</a>
                 <h5 className='the-comment'>what????</h5>
             </div>  
         </div>
