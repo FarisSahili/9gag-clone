@@ -4,6 +4,9 @@
 .active-Down {
     background-color: orangered;
 }
+#my-button:active {
+    background-color: blue;
+}
 .button-vote {
     border-radius: 5px;
     border-color:gray;
