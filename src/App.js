@@ -1,16 +1,15 @@
 
-
 import './App.css';
-import Postdata from './components/Postdata'
+import Posts from './components/Posts';
+import Shuffle from './components/Shuffle';
 import Count from './components/postcard/count'
-import bookmark from './components/postcard/photo-post-card/bookmark'
-
+import Content from './components/content'
+import PostCard from './components/postcard/PostCard';
 function App() 
-{  return (
+{
+return (
 <>
-<Count/>
-<bookmark/>
-</>
+<  Count/></>
 );
 }
 export default App;
