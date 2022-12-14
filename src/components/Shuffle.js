@@ -12,6 +12,7 @@ import icon3 from './image/icon3.jpg'
 import icon4 from './image/icon4.jpg'
 import icon5 from './image/icon5.jpg'
 import icon6 from './image/icon6.jpg'
+import { Link } from "react-router-dom";
 
 const myArray = [
     
@@ -114,6 +115,7 @@ function shuffle(arra1) {
 }
 
 function App(props) {
+  <Link to="/Shuffle" />
   const [list, setList] = useState(myArray);
   useEffect(() => {
     const mountArray = shuffle(myArray);
