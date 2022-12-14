@@ -11,7 +11,7 @@ import Apple1 from "./ModalImage/image/Apple-Logo.png";
 import LeftArrow from "./ModalImage/image/left-arrow-alt-regular-24.png";
 const FullModalSignUP = () => {
   return (
-    <>
+    <div className="FullModal">
       <div
         className="modal fade"
         id="exampleModalToggle"
@@ -200,24 +200,22 @@ const FullModalSignUP = () => {
               </div>
               <div className="P-Or">or</div>
               <div className="title2">
-                <div className="form-floating mb-3">
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="floatingInput"
-                    placeholder="name@example.com"
-                  />
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div className="form-floating">
-                  <input
-                    type="password"
-                    className="form-control"
-                    id="floatingPassword"
-                    placeholder="Password"
-                  />
-                  <label for="floatingPassword">Password</label>
-                </div>
+                <input
+                  type="email"
+                  className="row form-control"
+                  id="floatingInput"
+                  placeholder="Email address"
+                  aria-label="Email address"
+                />
+                <label for="floatingInput"></label>
+                <input
+                  type="password"
+                  className="row form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                  aria-label="Password"
+                />
+                <label for="floatingPassword"></label>
                 <button className="ButLogIn2">Log in</button>
                 <button
                   className="Forgot"
@@ -296,12 +294,16 @@ const FullModalSignUP = () => {
               <h4>Sign Up</h4>
             </div>
             <div className="modal-body">
-
               <form className="form-floating">
-                <input type="email" className="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com"/>
+                <input
+                  type="email"
+                  className="form-control is-invalid"
+                  id="floatingInputInvalid"
+                  placeholder="name@example.com"
+                  value="test@example.com"
+                />
                 <label for="floatingInputInvalid">Invalid input</label>
               </form>
-
 
               <div className="form-floating mb-3">
                 <input
@@ -334,7 +336,7 @@ const FullModalSignUP = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
