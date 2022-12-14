@@ -45,25 +45,26 @@ const Side= () =>
 
 
 
-  state = {
-    selectedTag: null
-  }
+
+  // state = {
+  //   selectedTag: null
+  // }
 
   
-  handleTagClick = (item) => { 
-    this.setState({
-      selectedTag: item
-    });
-  }
+  // handleTagClick = (item) => { 
+  //   this.setState({
+  //     selectedTag: item
+  //   });
+  // }
 
 
-    const filterPosts = () => 
-    {
-    const { selectedTag } = this.state;
-    return this.props.posts.filter(post => post.tags.includes(selectedTag));// Return only the posts that have the selected tag
-  }
+  //   const filterPosts = () => 
+  //   {
+  //   const { selectedTag } = this.state;
+  //   return this.props.posts.filter(post => post.tags.includes(selectedTag));// Return only the posts that have the selected tag
+  // }
 
-  // {this.filterPosts().map(post =>
+  //  {this.filterPosts().map(post =>
 
 
   const Clear = () => {
