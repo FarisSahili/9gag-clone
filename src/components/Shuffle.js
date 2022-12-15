@@ -12,93 +12,10 @@ import icon3 from './image/icon3.jpg'
 import icon4 from './image/icon4.jpg'
 import icon5 from './image/icon5.jpg'
 import icon6 from './image/icon6.jpg'
-import { Link } from "react-router-dom";
+import Posts from './Postdata'
+//import { Link } from "react-router-dom";
 
-const myArray = [
-    
-        {
-            id : 1,
-            title: "funny",
-            op_user: "gager name",  // original poster,
-            op_user_avatar: icon1,  // original poster,
-            post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 90,
-            down_votes : 10,
-            content: img1, // post content (post media),
-            tags : [
-                "world cup" ,"random"
-            ],
-            commentt:23,
-        },
-        {id : 2,
-            title: "hahahah ",
-            op_user: "9hdw",  // original poster,
-            op_user_avatar: icon2,  // original poster,
-            post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 90,
-            down_votes : 10,
-            content: img2, // post content (post media),
-            tags : [
-                "travel","fun"
-            ],
-            commentt:13,
-        },
-        {id : 3,
-            title: "Someone asked for a rumble?",
-            op_user: "takedahiromitsu",  // original poster,
-            op_user_avatar: icon3,  // original poster,
-            post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 86,
-            down_votes : 12,
-            content: img3, // post content (post media),
-            tags : [
-                " sport","really"
-            ],
-            commentt:23,
-        },
-        {
-            id : 4,
-            title: "How to tell people",
-            op_user: " heyheyhohojoeb",  // original poster,
-            op_user_avatar: icon4,  // original poster,
-            post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 543,
-            down_votes : 21,
-            content: img4, // post content (post media),
-            tags : [
-                 "funny" ,"public"
-            ],
-            commentt:29,
-        },
-        {
-            id : 5,
-            title: "funny",
-            op_user: "gager name",  // original poster,
-            op_user_avatar: icon5,  // original poster,
-            post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 100,
-            down_votes : 10,
-            content: img5, // post content (post media),
-            tags : [
-                 "morocco","funny"
-            ],
-            commentt:203,
-        },
-        {
-            id : 6,
-            title: "ok",
-            op_user: "uskwm",  // original poster,
-            op_user_avatar: icon6,  // original poster,
-            post_date: "2022-01-01", //yyyy-mm-dd
-            up_votes : 100,
-            down_votes : 10,
-            content: img6, // post content (post media),
-            tags : [
-                 "travel","world"
-            ],
-            commentt:203,
-        },
-    ];
+ 
 
 function shuffle(arra1) {
   var ctr = arra1.length,
@@ -115,17 +32,17 @@ function shuffle(arra1) {
 }
 
 function App(props) {
-  <Link to="/Shuffle" />
-  const [list, setList] = useState(myArray);
+  //<Link to="/Shuffle" />
+  const [list, setList] = useState(Posts);
   useEffect(() => {
-    const mountArray = shuffle(myArray);
+    const mountArray = shuffle(Posts);
     setList(mountArray);
   }, []);
 
   function handleShuffle() {
     const changes = shuffle([...list]);
     setList(changes);
-    console.log("Shuffle", myArray);
+    console.log("Shuffle", Posts);
   }
  
   return (
