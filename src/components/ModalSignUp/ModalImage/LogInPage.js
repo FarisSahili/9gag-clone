@@ -97,12 +97,10 @@ const LogInPage = () => {
             type="password"
             className="form-control"
             id="floatingPassword"
-            placeholder="Enter Password"
-            
+            placeholder="Enter Password" 
             aria-label="Password"
           />
           <label for="floatingPassword"></label>
-
           <button className="ButLogIn2">Log in</button>
           <button className="Forgot">Forgot Password ?</button>
         </div>
