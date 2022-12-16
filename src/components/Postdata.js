@@ -2,13 +2,10 @@ import img1 from './image/post1.jpg'
 import img2 from './image/aVbMoW8_460swp.webp'
 import img3 from './image/axo1R8Y_460swp.webp'
 import img4 from './image/awZXdxy_460swp (1).webp'
-import img5 from './image/az2XRZj_461swp.webp'
-import img6 from './image/avQORnq_460swp.webp'
 import icon1 from './image/icon1.jpg'
 import icon2 from './image/icon2.jpg'
 import icon3 from './image/icon3.jpg'
 import icon4 from './image/icon4.jpg'
-import icon5 from './image/icon5.jpg'
 import icon6 from './image/icon6.jpg'
 const posts = [
     {

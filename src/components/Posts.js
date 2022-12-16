@@ -14,7 +14,6 @@ import icon5 from './image/icon5.jpg'
 import icon6 from './image/icon6.jpg'
 import icon11 from './image/basil.jpg'
 
-const Posts = () => {
     const datawebsite = [
         {
             name: "gager name ",
@@ -103,15 +102,6 @@ const Posts = () => {
 
         },
     ];
-    return (
-        <>
-            {datawebsite.map((post) => {
-                return <PostCard key={post.name} name={post.name} icon={post.icon} description={post.description} image={post.image}
-                    type1={post.type1} type2={post.type2}
-                    up={post.up} down={post.down} commt={post.commt} time={post.time}
-                />
-            })}
-        </>
-    )
-}
-export default Posts;
+
+
+export default datawebsite;

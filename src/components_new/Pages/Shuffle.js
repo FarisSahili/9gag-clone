@@ -12,7 +12,7 @@ import icon3 from './image/icon3.jpg'
 import icon4 from './image/icon4.jpg'
 import icon5 from './image/icon5.jpg'
 import icon6 from './image/icon6.jpg'
-import Posts from './Postdata'
+import postData from './data.js'
 //import { Link } from "react-router-dom";
 
  
@@ -33,15 +33,15 @@ function shuffle(arra1) {
 
 function RecommendedPosts(props) {
   //<Link to="/Shuffle" />
-  const [list, setList] = useState(Posts);
+  const [list, setList] = useState(postData);
   useEffect(() => {
-      setList(shuffle(Posts))     
+      setList(shuffle(postData))     
     }, []);
 
   function handleShuffle() {
     const changes = shuffle([...list]);
     setList(changes);
-    console.log("Shuffle", Posts);
+    console.log("Shuffle", postData);
   }
  
   return (
