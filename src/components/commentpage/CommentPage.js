@@ -52,31 +52,14 @@ const CommentPage = () => {
             <div>
                 <div className="new-comment"> {comments}</div>
             </div>
+
+            <div className='comments-and-accounts'>
+                <img src={ProfileComment} className="photo-co" />
+                <span className='time-of-comment'>5h</span>
+                <a className='title-account' herf="#">bomes_jand</a>
+                <h5 className='the-comment'>It'd be good without that edit.</h5>
+            </div>
             
-            <div className='comments-and-accounts'>
-                <img src={ProfileComment} className="photo-co" />
-                <span className='time-of-comment'>5h</span>
-                <a className='title-account' herf="#">bomes_jand</a>
-                <h5 className='the-comment'>It'd be good without that edit.</h5>
-            </div>
-            <div className='comments-and-accounts'>
-                <img src={ProfileComment} className="photo-co" />
-                <span className='time-of-comment'>5h</span>
-                <a className='title-account' herf="#">bomes_jand</a>
-                <h5 className='the-comment'>It'd be good without that edit.</h5>
-            </div>
-            <div className='comments-and-accounts'>
-                <img src={ProfileComment} className="photo-co" />
-                <span className='time-of-comment'>5h</span>
-                <a className='title-account' herf="#">bomes_jand</a>
-                <h5 className='the-comment'>It'd be good without that edit.</h5>
-            </div>
-            <div className='comments-and-accounts'>
-                <img src={ProfileComment} className="photo-co" />
-                <span className='time-of-comment'>5h</span>
-                <a className='title-account' herf="#">bomes_jand</a>
-                <h5 className='the-comment'>It'd be good without that edit.</h5>
-            </div>
         </div>
     );
 }
