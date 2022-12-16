@@ -25,8 +25,6 @@ const Tags = ()=>{
 </div>
 
 
-
-
 <div className="tab-bar" >
   <ul className="menu">
 

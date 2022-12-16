@@ -41,9 +41,6 @@
 
 
 
-
-
-
 const Side= () =>
 {
 
@@ -135,26 +132,18 @@ const Side= () =>
 
 
 
- const [filteredPosts, setFilteredPosts] = useState([]); //  array of filtered posts
+//  const [filteredPosts, setFilteredPosts] = useState([]); //  array of filtered posts
 
 
-   const handleTagClick = (item) =>
-    {
-   const filtered = posts.filter((posts) => posts.tags.includes(item)); // filter posts that include the clicked tag
-   setFilteredPosts(filtered); 
-   }
+//    const handleTagClick = (item) =>
+//     {
+//    const filtered = posts.filter((posts) => posts.tags.includes(item)); // filter posts that include the clicked tag
+//    setFilteredPosts(filtered); 
+//    }
 
 
 
-  const Clear = () =>
-  {
- 
 
-     document.getElementById('recent-menu').innerHTML = '';
-     setRecent.length = 0;
-   
-   
-  }
 
   const favoriteSection= () =>{
     if (favorites.length > 0){
@@ -190,8 +179,18 @@ const Side= () =>
             </ul>
             )}}
 
+
+            
+    const Clear = () =>
+    {
+      document.getElementById('recent-menu').innerHTML = '';
+      setRecent.length = 0
+    }
+
   const recentSection= () =>{
+
     if (recent.length > 0){
+    
   return(
 
 <div>
