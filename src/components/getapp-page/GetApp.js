@@ -9,13 +9,13 @@ const GetApp = () => {
     <>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#"><img src={LogoGetApp} className='logo-header' /></a>
+          <a className="navbar-brand" id ="nav-logo-getapp" href="#"><img src={LogoGetApp} className='logo-header' /></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"  id ="toggler-getapp"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link" href="#">FAQ</a>
+            <div className="navbar-nav" id ="nav-getapp">
+              <a className="nav-link" href="#" >FAQ</a>
               <a className="nav-link" href="#">RULES</a>
               <a className="nav-link" href="#">TIPS</a>
               <a className="nav-link" href="#">CULTURE</a>
@@ -23,7 +23,7 @@ const GetApp = () => {
               <a className="nav-link" href="#">JOBS</a>
 
               <a className="nav-link" aria-current="page" id="blue-button" href="#">GET THE APP</a>
-            </div>
+            </div> 
           </div>
         </div>
       </nav>
@@ -38,7 +38,7 @@ const GetApp = () => {
             </div>
 
             <div className='wr-content-get-app col'>
-              <p className="h1">Best LOLs and WTF GIFs</p>
+              <p className="h1"  id ="h1-getapp" >Best LOLs and WTF GIFs</p>
             </div>
 
             <div className='two-photos-google-store-wr col'>
