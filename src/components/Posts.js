@@ -1,4 +1,4 @@
- import PostCard from './postcard/PostCard'
+ import PostCard from './postcard/PostCard.js.old'
 import img1 from './image/imgn.jpg'
 import img2 from './image/aVbMoW8_460swp.webp'
 import img3 from './image/axo1R8Y_460swp.webp'
