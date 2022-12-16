@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ModalTags.css";
+import "./CustomTags.css";
 
 const Star = ({ isSelected, onClick }) => {
   return (
