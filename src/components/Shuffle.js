@@ -35,9 +35,8 @@ function App(props) {
   //<Link to="/Shuffle" />
   const [list, setList] = useState(Posts);
   useEffect(() => {
-    const mountArray = shuffle(Posts);
-    setList(mountArray);
-  }, []);
+      setList(shuffle(Posts))     
+    }, []);
 
   function handleShuffle() {
     const changes = shuffle([...list]);
@@ -47,11 +46,11 @@ function App(props) {
  
   return (
     <div>
-     <button onClick={handleShuffle}>Shuffle</button>
+     <button onClick={handleShuffle}> 🔀 Shuffle</button>
       {list.map((x,index) => (
         <PostCard key={x.id}
         op_user={x.op_user} op_user_avatar={x.op_user_avatar}  title={x.title}  content={x.content} post_date={x.post_date} 
-        tags={x.tags}   up_votes={x.up_votes}  down_votes={x.down_votes}  commentt={x.commentt}   
+        tags={x.tags}   up_votes={x.up_votes}  down_votes={x.down_votes}  comment={x.comment}   
         />
       ))}
     
