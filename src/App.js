@@ -1,23 +1,19 @@
+
 import './App.css';
-import Side from './components/Sidebar/Side';
-// import Clear from './components/Sidebar/Clear';
-// import Tags from './components/Sidebar/Tags';
 
-
-
-
-
+import Shuffle from './components/Shuffle';
+import Count from './components/postcard/count'
+import Card from './components/postcard/card';
+import PostCard from './components/postcard/PostCard';
+import Posts from './components/Posts';
+import TagButton from './components/tagbutton/tagButton';
+import Postcards from './components/Postdata';
 function App() 
-{  
-    
-    return (
-
+{
+return (
 <>
-{/* <Tags/> */}
-{/* <Clear/> */}
-<Side/>
+<Postcards/> 
 </>
-
-)
-};
+);
+}
 export default App;
