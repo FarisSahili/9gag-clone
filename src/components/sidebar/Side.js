@@ -1,7 +1,7 @@
 //import
  import './SidebarStyle.css' ;
  import React, { useState } from "react";
-
+//  import PostCard from '../postcard/PostCard';
 
 
  //function
@@ -18,7 +18,6 @@
   </button>
   ); 
 };
-
 
  const Star = ({ isSelected, onClick }) => {
   return (
@@ -40,37 +39,123 @@
 
 
 
+
+
+
+
+
 const Side= () =>
 {
 
-
-
-
-  // state = {
-  //   selectedTag: null
-  // }
-
-  
-  // handleTagClick = (item) => { 
-  //   this.setState({
-  //     selectedTag: item
-  //   });
-  // }
-
-
-  //   const filterPosts = () => 
-  //   {
-  //   const { selectedTag } = this.state;
-  //   return this.props.posts.filter(post => post.tags.includes(selectedTag));// Return only the posts that have the selected tag
-  // }
-
-  //  {this.filterPosts().map(post =>
-
-
-  const Clear = () => {
-  
-    document.getElementById('recent-menu').innerHTML = '';
+  const [posts, setPosts] = useState([
+   
+    {
+      id : 1,
+      title: "funny",
+      op_user: "gager name",  // original poster,
+      // op_user_avatar: icon1,  // original poster,
+      post_date: "2022-01-01", //yyyy-mm-dd
+      up_votes : 90,
+      down_votes : 10,
+      content: null, // post content (post media),
+      tags : [
+          "world cup" ,"random" 
+      ],
+      commentt:23,
+  },
+  {id : 2,
+      title: "hahahah ",
+      op_user: "9hdw",  // original poster,
+      // op_user_avatar: icon2,  // original poster,
+      post_date: "2022-01-01", //yyyy-mm-dd
+      up_votes : 90,
+      down_votes : 10,
+      content: null, // post content (post media),
+      tags : [
+          "travel","fun"
+      ],
+      commentt:13,
+  },
+  {id : 3,
+      title: "Someone asked for a rumble?",
+      op_user: "takedahiromitsu",  // original poster,
+      // op_user_avatar: icon3,  // original poster,
+      post_date: "2022-01-01", //yyyy-mm-dd
+      up_votes : 86,
+      down_votes : 12,
+      content: null, // post content (post media),
+      tags : [
+          " sport","really"
+      ],
+      commentt:23,
+  },
+  {
+      id : 4,
+      title: "How to tell people",
+      op_user: " heyheyhohojoeb",  // original poster,
+      // op_user_avatar: icon4,  // original poster,
+      post_date: "2022-01-01", //yyyy-mm-dd
+      up_votes : 543,
+      down_votes : 21,
+      content: null, // post content (post media),
+      tags : [
+           "funny" ,"public"
+      ],
+      commentt:29,
+  },
+  {
+      id : 5,
+      title: "funny",
+      op_user: "gager name",  // original poster,
+      // op_user_avatar: icon5,  // original poster,
+      post_date: "2022-01-01", //yyyy-mm-dd
+      up_votes : 100,
+      down_votes : 10,
+      content: null, // post content (post media),
+      tags : [
+           "morocco","funny"
+      ],
+      commentt:203,
+  },
+  {
+      id : 6,
+      title: "ok",
+      op_user: "uskwm",  // original poster,
+      // op_user_avatar: icon6,  // original poster,
+      post_date: "2022-01-01", //yyyy-mm-dd
+      up_votes : 100,
+      down_votes : 10,
+      content: null, // post content (post media),
+      tags : [
+           "travel","world"
+      ],
+      commentt:203,
   }
+  ]); // array of posts
+
+
+
+ const [filteredPosts, setFilteredPosts] = useState([]); //  array of filtered posts
+
+
+   const handleTagClick = (item) =>
+    {
+   const filtered = posts.filter((posts) => posts.tags.includes(item)); // filter posts that include the clicked tag
+   setFilteredPosts(filtered); 
+   }
+
+
+
+  const Clear = () =>
+  {
+ 
+
+     document.getElementById('recent-menu').innerHTML = '';
+     setRecent.length = 0;
+   
+   
+  }
+
   const favoriteSection= () =>{
     if (favorites.length > 0){
 
@@ -103,7 +188,7 @@ const Side= () =>
           })}    
              
             </ul>
-            )}}// To hide fav text when there is no filter inside it
+            )}}
 
   const recentSection= () =>{
     if (recent.length > 0){
@@ -303,15 +388,28 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
           <ul className="sidebar-menu">
             {ExplorePopular.map((item, index) => {
               return (
-                <li className="li-filter" onClick={() => 
+                <li key={item} className="li-filter" onClick={() => 
                   {
-                  
-                  {handleTagClick(item)};
+
+                    // {filteredPosts.map((index) => (
+                    //   <PostCard
+                    //   key={id}
+                    //   op_user={op_user} 
+                    //   op_user_avatar={op_user_avatar}
+                    //   title={title}
+                    //   content={content}
+                    //   post_date={post_date} 
+                    //   tags={tags}  
+                    //   up_votes={up_votes}
+                    //   down_votes={down_votes}
+                    //   commentt={commentt} 
+                    //   />  
+                    // ))}
+                    
                  setRecent((current) => [...current, item]);
                  {recentSection()};
                   }}>
-              
-                  
+
                   <div className="rowContainer">
                   <div className="sidebarItem">{item}</div>
                   <div className="starContainer">

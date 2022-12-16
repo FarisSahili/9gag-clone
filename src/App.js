@@ -1,16 +1,16 @@
-
-
 import './App.css';
-import Postdata from './components/Postdata'
-import Count from './components/postcard/count'
-import bookmark from './components/postcard/photo-post-card/bookmark'
+import Side from './components/Sidebar/Side';
+
+
+
 
 function App() 
-{  return (
-<>
-<Count/>
-<bookmark/>
-</>
+{  
+    
+    return (
+ 
+
+ <Side/>
 );
 }
 export default App;
