@@ -212,16 +212,5 @@ const Postcards = () => {
             ]
         }
     ]
-
-    return (
-        <>
-            {posts.map((post) => {
-                return <PostCard key={post.id} name={post.op_user} icon={post.op_user_avatar} description={post.title} image={post.content}
-                    type1={post.tags}
-                    up={post.up_votes} down={post.down_votes}
-                />
-            })}
-        </>
-    )
 }
 export default Postcards;

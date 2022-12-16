@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
- 
-
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './components_new/Pages/Home/HomePage';
+import Layout from './components_new/Pages/Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" component={() => <Layout page="home" />} /> //navbar, sidebar
+      </Routes>
+    </BrowserRouter>
     <App />
   </React.StrictMode>
 );
