@@ -43,6 +43,9 @@ function ModalTags() {
   const [popularTags, setPopularTags] = useState([
     "9gag",
     "china",
+    "messi",
+    "elon musk",
+    "superman",
     "logo",
     "9gag den deutschen",
     "german",
