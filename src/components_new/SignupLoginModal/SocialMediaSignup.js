@@ -1,5 +1,5 @@
 import React from "react";
-import "./FullModalSignUp.css";
+import "./SocialMediaSignup.css";
 import gaga from "./ModalImage/image/1.png";
 import Upvote from "./ModalImage/image/2.png";
 import Downvote from "./ModalImage/image/3.png";

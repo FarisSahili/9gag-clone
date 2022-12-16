@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import "./LogInPage.css";
+import "./LoginModal.css";
 import faceBook from "../ModalImage/image/2021_Facebook_icon.svg.png";
 import gOOgle from "../ModalImage/image/Google_Icons.webp";
 import APPle from "../ModalImage/image/Apple-Logo.png";
