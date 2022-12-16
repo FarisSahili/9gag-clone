@@ -1,4 +1,4 @@
- import PostCard from './postcard/PostCard'
+ import PostCard from './PostCard/PostCard'
 import img1 from './image/imgn.jpg'
 import img2 from './image/aVbMoW8_460swp.webp'
 import img3 from './image/axo1R8Y_460swp.webp'
@@ -18,6 +18,7 @@ import icon11 from './image/basil.jpg'
 
     const datawebsite = [
         {
+
             name: "gager name ",
             icon:icon1,
             description: "The end of an era.",
