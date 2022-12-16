@@ -14,24 +14,7 @@ import Facebook from './photo-post-card/facebook.ico';
 import Pinterest from './photo-post-card/pinterest.ico';
 import Twitter from './photo-post-card/twitter.ico';
 import Telegram from './photo-post-card/telegram.ico';
-import post from '../Posts';
-// const SaveIcons = ({ isSelected, onClick }) => {
-//     return (
-//       <div className="save-icon">
-// <button  className ="save-button" onClick={() => onClick()}>
-//     <svg xmlns="http://www.w3.org/2000/svg" 
-//          viewBox="0 0 12 12" 
-//          fill={isSelected ? "red" : "white"}
-//          className="bx bx-bookmark">
-//             <path d="M18 2H6c-1.103 0-2 .897-2 2v18l8-4.572L20 22V4c0-1.103-.897-2-2-2zm0 16.553-6-3.428-6 3.428V4h12v14.553z">
-//              </path>
-//      </svg>
-// </button>
-//       </div>
-//     )
-//    };
-  
-
+import posts from '../Postdata';
 const PostCard = (props) => {
 
     return (
@@ -44,7 +27,7 @@ const PostCard = (props) => {
 
                 <div className='gagger-name'>
                     <a>{props.op_user}</a>
-                    <span> {props.post_time}</span>
+                    <span>1h</span>
                 </div>
   
                 <div className='save-icon'>
@@ -80,14 +63,14 @@ const PostCard = (props) => {
                             <img src={props.content} alt="" />
                             </div>
                         <div className='container-tag'>
-                                <a  className='Post-Card-Tag' >{props.tags[0]}</a>
-                                <a  className='Post-Card-Tag' >{props.tags[1]}</a>
+                                <a  className='Post-Card-Tag' >{props.tags}</a>
+                                <a  className='Post-Card-Tag' >{props.tags}</a>
                         </div>
                         <div className='button-card'>
                             <div className='vote-button'>
-                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>{props.up_votes}k</a>
-                                 <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/>  {props.down_votes}</a>
-                                 <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " />{props.commentt}</a>
+                                 <a className='button-vote'><img src = {voteup} alt="this is vote up icon"/>{props.up}k</a>
+                                 <a  className='button-vote'><img src = {votedown} alt ="this is vote down icon "/>  {props.down}</a>
+                                 <a className='button-vote'><img src = {CommitIcon} alt ="this is commit icon " />90</a>
                             </div>
 
                     <div className='share-buttons'>
@@ -116,20 +99,11 @@ const PostCard = (props) => {
                     </div>
                 </div>
             </div>
-
-            <>
-            {post.map((post) => {
-                return <PostCard key={post.id}
-                op_user={post.op_user} op_user_avatar={post.op_user_avatar}  title={post.title}  content={post.content} post_date={post.post_date} 
-                tags={post.tags}   up_votes={post.up_votes}  down_votes={post.down_votes}  commentt={post.commentt}   
-                
-                />
-            })}
-        </>
-
-        </div>
-    )
+        
+            </div>
+    
+        )
+    
 }
 
-export default PostCard;
-
+export default PostCard ;

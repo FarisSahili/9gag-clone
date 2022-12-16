@@ -13,24 +13,31 @@
     border-width:1px;
     background-color: white;
     justify-content: center; 
-padding:1% 1%;
-margin :3px;
-display: flex;
-position: relative;
-width:auto;
-height: 10%;
-font-size: 90%;
-cursor: pointer;
+    padding:1% 1%;
+    margin :3px;
+    display: flex;
+    position: relative;
+    width:auto;
+    height: 10%;
+    font-size: 90%;
+    cursor: pointer;
 }
-.button-vote:focus{
+.button-vote-active {
+    border-radius: 5px;
+    border-width:1px;
+    justify-content: center; 
+    padding:1% 1%;
+    margin :3px;
+    display: flex;
+    position: relative;
+    width:auto;
+    height: 10%;
+    font-size: 90%;
+    cursor: pointer;
     background-color: rgb(199, 212, 241);
     border-color:1px rgb(11, 11, 214);
-    
 }
-.save:focus{
-    background-color: red;
 
-}
 .save {
     background-color: white;
     width: auto;
