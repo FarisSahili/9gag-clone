@@ -2,7 +2,7 @@
     height:22px;
     width: 100%;
 }
-.navbar-nav{
+#nav-getapp{
         padding-right:8%;
         padding-left:38%;
         padding-top: 30px;
@@ -14,11 +14,11 @@
         font-size: 90%;
 
 }
-.navbar-brand{
+#nav-logo-getapp{
     padding-left:9%;
     padding-top: 30px;
 }
-.navbar-toggler-icon{
+#toggler-getapp{
     padding-top: 15%;
 }
 
@@ -58,7 +58,7 @@
     left: 9%;
     bottom: 350px;  
 } 
- .h1{
+#h1-getapp{
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;   
     font-weight: bolder;
     text-decoration: none solid rgb(18,18,18);
