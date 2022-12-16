@@ -1,6 +1,6 @@
 import ProfileComment from './Profile-comment.png';
 const Comment = () => {
-    
+
 return(
             <div className='comments-and-accounts'>
                 <img src={ProfileComment} className="photo-co" />
@@ -12,4 +12,4 @@ return(
 
 }
 
-export default Comment
+export default Comment;
