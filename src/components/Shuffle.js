@@ -31,7 +31,7 @@ function shuffle(arra1) {
   return arra1;
 }
 
-function App(props) {
+function RecommendedPosts(props) {
   //<Link to="/Shuffle" />
   const [list, setList] = useState(Posts);
   useEffect(() => {
@@ -58,4 +58,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default RecommendedPosts;
