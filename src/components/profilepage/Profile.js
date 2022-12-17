@@ -2,6 +2,7 @@ import "./Profile.css";
 import imagge from './happy-drake.jpg';
 
 
+
 const Profile = () => {
   return(
     <div className="container">
@@ -32,10 +33,10 @@ const Profile = () => {
                           <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
                           </svg>
                      </button>
-                     <ul id="dropdown-menu-id" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Copy link</a></li>
-                        <li><a class="dropdown-item" href="#">Report @icu2o</a></li>
-                        <li><a class="dropdown-item" href="#">Block @icu2o</a></li>
+                     <ul id="dropdown-menu-id" className="dropdown-menu">
+                        <li><a  className="dropdown-item" href="#">Copy link</a></li>
+                        <li><a  className="dropdown-item" href="#">Report @icu2o</a></li>
+                        <li><a  className="dropdown-item" href="#">Block @icu2o</a></li>
                     </ul> 
               </div>
          </div>
