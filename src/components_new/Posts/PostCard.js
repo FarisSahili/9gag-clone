@@ -1,8 +1,7 @@
-import postData from "../../data";
+import  postData  from "../../data"
 
 
 import './PostCard.css';
-import AvatarPic from './photo-post-card/avatar.png'
 import voteup from './photo-post-card/voteup.ico';
 import votedown from './photo-post-card/votedown.ico';
 import SaveIcon from './photo-post-card/saveicon.ico';
@@ -17,11 +16,10 @@ import Facebook from './photo-post-card/facebook.ico';
 import Pinterest from './photo-post-card/pinterest.ico';
 import Twitter from './photo-post-card/twitter.ico';
 import Telegram from './photo-post-card/telegram.ico';
-import video from './photo-post-card/video.mp4';
 import { useState } from 'react';
 
 
-const Card = () => {
+const PostCard = (props) => {
 
     const [Up, setUp] = useState(20);
     const [Down, setDown] = useState(30);
@@ -67,10 +65,10 @@ const Card = () => {
             <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
                     <a href="gagger-page-html">
-                        <img src={AvatarPic} className='AvatarPic' alt="this is avatar " />
+                        <img src={props.op_user_avatar} className='AvatarPic' alt="this is avatar " />
                     </a>
                     <div className='gagger-name'>
-                        <a>nouralhuda</a>
+                        <a>{props.op_user}</a>
                         <span>1h</span>
                     </div>
 
@@ -95,14 +93,13 @@ const Card = () => {
                     </div>
                 </div>
                 <div className='title-of-post'>
-                    <h4 >girls nnnnnnn</h4>
+                    <h4 >{props.title}</h4>
                 </div>
                 <div className='memes-media'>
-                    <video src={video} className='video-card' controls />
-                </div>
+{props.content}                </div>
                 <div className='container-tag'>
-                    <a className='Post-Card-Tag' href="tag-html">Funny</a>
-                    <a className='Post-Card-Tag' href="tag-html">Girls</a>
+                    <a className='Post-Card-Tag' href="tag-html">{props.tags}</a>
+                    <a className='Post-Card-Tag' href="tag-html">{props.tags}</a>
                 </div>
                 <div className='button-card'>
                     <div className='vote-button'>
@@ -150,8 +147,7 @@ const Card = () => {
         </div>
     )
 }
-export default Card;
-import React, { useState } from "react";
+export default PostCard;
 
 // const SaveIcons = ({ isSelected, onClick }) => {
 //     return (

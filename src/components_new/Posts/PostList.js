@@ -1,6 +1,5 @@
-import postData from './data.js'
-import PostCard from './components_new/Posts/PostCard.js'
-  
+import  postData  from "../../data"
+import PostCard from "./PostCard"
 const PostList =()=>{ 
     return(
     <>
