@@ -95,8 +95,8 @@ const PostCard = (props) => {
                 <div className='title-of-post'>
                     <h4 >{props.title}</h4>
                 </div>
-                <div className='memes-media'>
-{props.content}                </div>
+                <div className='memes-media'> < img src={props.content} ></img>
+                  </div>
                 <div className='container-tag'>
                     <a className='Post-Card-Tag' href="tag-html">{props.tags[0]}</a>
                     <a className='Post-Card-Tag' href="tag-html">{props.tags[1]}</a>
