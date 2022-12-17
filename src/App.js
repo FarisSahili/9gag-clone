@@ -1,18 +1,12 @@
 
 import './App.css';
 
-import Shuffle from './components/Shuffle';
-import Count from './components/postcard/count'
-import Card from './components/postcard/card';
-import PostCard from './components/postcard/PostCard';
-import Posts from './components/Posts';
-import TagButton from './components/tagbutton/tagButton';
-import Postcards from './components/Postdata';
+import Sidebar from './components_new/UI/Sidebar/Sidebar'
 function App() 
 {
 return (
 <>
-<Postcards/> 
+  <Sidebar/>
 </>
 );
 }
