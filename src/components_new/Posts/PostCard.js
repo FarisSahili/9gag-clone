@@ -21,7 +21,7 @@ import video from './photo-post-card/video.mp4';
 import { useState } from 'react';
 
 
-const Card = () => {
+const PostCard = (props) => {
 
     const [Up, setUp] = useState(20);
     const [Down, setDown] = useState(30);
@@ -67,7 +67,7 @@ const Card = () => {
             <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
                     <a href="gagger-page-html">
-                        <img src={AvatarPic} className='AvatarPic' alt="this is avatar " />
+                        <img src={props.op_user_avatar} className='AvatarPic' alt="this is avatar " />
                     </a>
                     <div className='gagger-name'>
                         <a>nouralhuda</a>
@@ -150,8 +150,8 @@ const Card = () => {
         </div>
     )
 }
-export default Card;
-import React, { useState } from "react";
+export default PostCard;
+ 
 
 // const SaveIcons = ({ isSelected, onClick }) => {
 //     return (

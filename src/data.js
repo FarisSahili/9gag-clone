@@ -1,3 +1,14 @@
+import img1 from './components/image/post1.jpg'
+import img2 from './components/image/aVbMoW8_460swp.webp'
+import img3 from './components/image/axo1R8Y_460swp.webp'
+import img4 from './components/image/img10.jpg'
+import icon1 from './components/image/icon1.jpg' 
+import icon2 from './components/image/icon2.jpg'
+import icon3 from './components/image/icon3.jpg'
+import icon4 from './components/image/icon4.jpg'
+import icon5 from './components/image/icon5.jpg'
+import icon6 from './components/image/icon6.jpg'
+
 const postData = [
   {
     id: 1,
