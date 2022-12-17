@@ -15,7 +15,7 @@ root.render(
   <React.StrictMode>
      <BrowserRouter>
        <Routes>
-       <Route path="/Pages/Shuffle" element={RecommendedPosts} />
+       <Route path="/pages/shuffle" element={RecommendedPosts} />
 
        </Routes>
    </BrowserRouter>

@@ -45,8 +45,7 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">  
                 
                 <li className="nav-item">
-                <Link to="/Shuffle" />
-                <a className="nav-link active" aria-current="page" href="#" id="shuffle" ><b>🔀 Shuffle</b></a>
+                <Link to="/Pages/Shuffle"  className="nav-link active" aria-current="page" id="shuffle" ><b>🔀 Shuffle</b></Link>
                 </li>
                 <li className="nav-item">
                 <a className="nav-link" href ='./src/components/GetApp.js' id="getApp" ><b>📱 Get App</b></a>
