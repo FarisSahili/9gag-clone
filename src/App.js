@@ -1,12 +1,15 @@
 
 import './App.css';
-import Navbar from './components_new/UI/Navbar';
+import AddNewPost from './components_new/Pages/SpecialPgaes/AddNewPostFile/AddNewPost';
+
+
 
 
 function App() 
 {
 return (
     <>
+    <AddNewPost />
     </>
 
 );

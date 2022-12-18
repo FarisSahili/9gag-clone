@@ -1,9 +1,9 @@
-import './Newpost_page.css';
-import Setting from './Setting.ico';
 import Graphup from './Graphup.ico';
 import imagenewpost from './imagenewpost.ico';
+import Setting from './Setting.ico';
+import AddNewPostt from './AddNewPostt.css';
 
-const Newpost_page=()=>
+const AddNewPost=()=>
 {
     console.log()
     return(
@@ -108,4 +108,4 @@ const Newpost_page=()=>
 
 
 }
-export default Newpost_page
+export default AddNewPost;
