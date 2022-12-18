@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import  postData  from "../../data"
 import PostCard from "../Posts/PostCard";
 import PostList from "../Posts/PostList.js";
+import Navbar from "../UI/Navbar";
 //import Post from "../../components/Post.js";
  
 function shuffle(arra1) {
@@ -35,6 +36,7 @@ function RecommendedPosts(props) {
  
   return (
     <div>
+      <Navbar/>
      <button onClick={handleShuffle}> 🔀 Shuffle</button>
       {list.map((x,index) => (
         <PostCard key={x.id}

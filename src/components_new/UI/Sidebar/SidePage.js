@@ -6,7 +6,7 @@ import './SidebarStyle.css' ;
 
 //function 
 
-const Tags = ()=>{
+const SidePage = ()=>{
 
 
 
@@ -44,4 +44,4 @@ const Tags = ()=>{
 
 
 //export 
-export default Tags
+export default SidePage
