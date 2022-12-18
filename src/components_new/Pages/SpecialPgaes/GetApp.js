@@ -1,8 +1,8 @@
 import './GetApp.css'
-import LogoGetApp from './get-app-logo/Logo-getapp.png'
-import imgContentPhones from './get-app-logo/content in get app page.png'
-import imgContentAppStore from './get-app-logo/appstore-in-get-app.png'
-import imgContentGooglePlay from './get-app-logo/googleplay-in-getapp.png'
+import LogoGetApp from './getAppPage-images/Logo-getapp.png'
+import imgContentPhones from './getAppPage-images/content in get app page.png'
+import imgContentAppStore from './getAppPage-images/appstore-in-get-app.png'
+import imgContentGooglePlay from './getAppPage-images/googleplay-in-getapp.png'
 
 const GetApp = () => {
     return (

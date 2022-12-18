@@ -1,6 +1,6 @@
 import './Interests.css' 
 
-const Scroll = () =>{
+const Interests = () =>{
 
     return (
   <div id ="scroll" >    
@@ -19,4 +19,4 @@ const Scroll = () =>{
    </div>
     )
 }
-export default Scroll 
+export default Interests;

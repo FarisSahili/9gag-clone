@@ -3,14 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
- 
+import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import RecommendedPosts from './components_new/Pages/Shuffle';
+import GetApp from './components_new/Pages/SpecialPgaes/GetApp';
+import HomePage from './components_new/Pages/Home/HomePage';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
-    <App />
+     <BrowserRouter>
+       <Routes>
+       <Route path="/Home" index element={<HomePage/>} />
+       <Route path="/shuffle" element={<RecommendedPosts/>} />
+       <Route path="/getapp" element={<GetApp/>} />
+       </Routes>
+   </BrowserRouter>
+    {/* <App /> */}
   </React.StrictMode>
 );
 

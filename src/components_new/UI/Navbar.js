@@ -1,16 +1,14 @@
 
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-
-
+const itemClicked = (event) => {
+    event.stopPropagation();
+}
 
 const Navbar = () => {
 
 
-    const itemClicked = (event) => {
-        event.stopPropagation();
-    }
-   
 
     return(        
           <div className='basic-navbar sticky-top'>
