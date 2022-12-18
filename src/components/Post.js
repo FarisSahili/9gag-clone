@@ -1,6 +1,7 @@
 //import
 import React, { Component } from 'react';
 import './Post.css';
+
 //functions
 const Post = (props) => {
     return (
@@ -15,8 +16,8 @@ const Post = (props) => {
   <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
 </svg>
  
-                        <a className="post-author">{props.name}</a>
-                        <span className="post-creation" >{props.time}h</span>
+                        <a className="post-author">{props.op_user}</a>
+                        <span className="post-creation" >{props.post_date}h</span>
                         </div>
                    
                  <div className="post-action">  
@@ -45,16 +46,16 @@ const Post = (props) => {
                    </div>
                 </div>
  
-                <h1>{props.description}</h1>
+                <h1>{props.title}</h1>
                 </header>
 
                 <div className="container">
-                <img src={props.image}  alt=""/>
+                <img src={props. content}  alt=""/>
                  </div> 
 
                 <div className="post-tag">
-                <a >{props.type1}</a> 
-                <a >{props.type2}</a>
+                <a >{props.tags[0]}</a> 
+                <a >{props.tags[1]}</a>
                     
                 </div>
 
@@ -65,7 +66,7 @@ const Post = (props) => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" color="gray" className="bi bi-arrow-up" viewBox="0 0 16 16">
   <path fillRule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
 </svg>
-<span>{props.up}k</span>
+<span>{props.up_votes}k</span>
 </a>
  </li>
  <li>
@@ -73,7 +74,7 @@ const Post = (props) => {
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" className="bi bi-arrow-down"  color="gray" viewBox="0 0 16 16">
   <path fillRule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
 </svg>
-<span> {props.down}</span>
+<span> {props. down_votes}</span>
 </a>
 </li>
 </ul>
@@ -84,7 +85,7 @@ const Post = (props) => {
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" color="gray" className="bi bi-chat-left" viewBox="0 0 16 16">
   <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
 </svg>
- <span >{props.commt}</span>
+ <span >{props.comment_count}</span>
 </a></li></ul>
 < div className='share right'>
  <div className='share-bar'>
