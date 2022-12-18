@@ -8,7 +8,7 @@ import icon3 from './image/icon3.jpg'
 import icon4 from './image/icon4.jpg'
 import icon6 from './image/icon6.jpg'
 import Card from './postcard/card'
-import PostCard from './postcard/PostCard'
+import PostCard from './postcard/PostCard.js.old'
 
 const Postcards = () => {
     const posts = [

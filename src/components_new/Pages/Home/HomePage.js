@@ -1,9 +1,13 @@
+import PostList from "../../Posts/PostList";
+import Navbar from "../../UI/Navbar";
+import Interests from "./Interests";
+
 const HomePage = (props) => {
     return(
         <>
-            <Navbar />
-            <Sidebar />
-            <h1>This is the HomePage</h1>
+            <Navbar/>
+            <Interests/>
+            <PostList/>
         </>
     );
 }
