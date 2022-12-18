@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 import './GetApp.css';
 
 import LogoGetApp from './getAppPage-images/Logo-getapp.png';
 import imgContentPhones from './getAppPage-images/content in get app page.png';
 import imgContentAppStore from './getAppPage-images/appstore-in-get-app.png';
 import imgContentGooglePlay from './getAppPage-images/googleplay-in-getapp.png';
-=======
-import './GetApp.css'
-import LogoGetApp from './getAppPage-images/Logo-getapp.png'
-import imgContentPhones from './getAppPage-images/content in get app page.png'
-import imgContentAppStore from './getAppPage-images/appstore-in-get-app.png'
-import imgContentGooglePlay from './getAppPage-images/googleplay-in-getapp.png'
->>>>>>> 61382ed332782c784d57692fed587f64b5d2d456
 
 const GetApp = () => {
     return (

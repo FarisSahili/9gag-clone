@@ -5,6 +5,7 @@ import  postData  from "../../data"
 import PostCard from "../Posts/PostCard";
 import PostList from "../Posts/PostList.js";
 import Navbar from "../UI/Navbar";
+import Sidebar from "../UI/Sidebar/Sidebar";
 //import Post from "../../components/Post.js";
  
 function shuffle(arra1) {
@@ -37,6 +38,7 @@ function RecommendedPosts(props) {
   return (
     <div>
       <Navbar/>
+      <Sidebar/>
      <button onClick={handleShuffle}> 🔀 Shuffle</button>
       {list.map((x,index) => (
         <PostCard key={x.id}

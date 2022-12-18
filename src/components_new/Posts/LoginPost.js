@@ -16,9 +16,9 @@ const Logincard = () =>  {
 
     </div>
     <div className="card-9gag-des" >
-      <h4 >
+      <h4 className='loginh4 ' >
         9GAG is the largest meme community on the internet </h4>
-      <p className="card-9gag-def" >
+      <p className="card-9gag-def pp" >
         This is the place to discover the latest memes for sharing and to grow your meme collection. 
       </p>
     </div>
