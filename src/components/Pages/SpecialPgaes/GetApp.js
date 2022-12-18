@@ -4,13 +4,14 @@ import LogoGetApp from './getAppPage-images/Logo-getapp.png';
 import imgContentPhones from './getAppPage-images/content in get app page.png';
 import imgContentAppStore from './getAppPage-images/appstore-in-get-app.png';
 import imgContentGooglePlay from './getAppPage-images/googleplay-in-getapp.png';
+import { Link } from 'react-router-dom';
 
 const GetApp = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                    <a className="navbar-brand" id="nav-logo-getapp" href="#"><img src={LogoGetApp} className='logo-header' /></a>
+                    <Link className="navbar-brand" to='/Home' id="nav-logo-getapp" href="#"><img src={LogoGetApp} className='logo-header' /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" id="toggler-getapp"></span>
                     </button>
