@@ -84,7 +84,7 @@
     position: relative;
     right:55%;
     left:23%;
-    top: 770px;
+    top: 800px;
     background:white;
 }
 .comments-and-accounts:hover{
@@ -103,20 +103,20 @@
     font-size: 70%; 
     position: relative;
     left:8%; 
-    bottom: 105px;
+    bottom: 50px;
 }
 .the-comment{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 85%; 
     position: relative;
     left:9%;
-    bottom: 103px; 
+    bottom: 45px; 
 }  
 .time-of-comment{
     font-size: x-small;
     position: relative;
     left: 25%;
-    bottom: 90px;
+    bottom: 20px;
 }
  
 .new-comment{
@@ -131,8 +131,8 @@
     background:white;
 }
 
-.profile-comment{
+/* .profile-comment{
     width:50px ;
     height: 50px;
     border-radius: 50%;
-}
+} */

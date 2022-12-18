@@ -1,8 +1,9 @@
-import './GetApp.css'
-import LogoGetApp from './get-app-logo/Logo-getapp.png'
-import imgContentPhones from './get-app-logo/content in get app page.png'
-import imgContentAppStore from './get-app-logo/appstore-in-get-app.png'
-import imgContentGooglePlay from './get-app-logo/googleplay-in-getapp.png'
+import './GetApp.css';
+
+import LogoGetApp from './getAppPage-images/Logo-getapp.png';
+import imgContentPhones from './getAppPage-images/content in get app page.png';
+import imgContentAppStore from './getAppPage-images/appstore-in-get-app.png';
+import imgContentGooglePlay from './getAppPage-images/googleplay-in-getapp.png';
 
 const GetApp = () => {
     return (
@@ -15,13 +16,12 @@ const GetApp = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav" id="nav-getapp">
-                            <a className="nav-link" href="#" >FAQ</a>
+                            <a className="nav-link" href="#">FAQ</a>
                             <a className="nav-link" href="#">RULES</a>
                             <a className="nav-link" href="#">TIPS</a>
                             <a className="nav-link" href="#">CULTURE</a>
                             <a className="nav-link" href="#">ADVERTISE</a>
                             <a className="nav-link" href="#">JOBS</a>
-
                             <a className="nav-link" aria-current="page" id="blue-button" href="#">GET THE APP</a>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const GetApp = () => {
                             <div className='wr-content-get-app col'>
                                 <p className="h1" id="h1-getapp" >Best LOLs and WTF GIFs</p>
                             </div>
-
+ 
                             <div className='two-photos-google-store-wr col'>
                                 <a>
                                     <img src={imgContentAppStore} className='img-App-store-in-get-app' href="#" />

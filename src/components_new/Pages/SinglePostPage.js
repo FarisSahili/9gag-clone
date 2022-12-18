@@ -1,11 +1,9 @@
-import './CommentPage.css';
+import './SinglePostPage.css';
 import { useState } from 'react';
 import ProfileComment from './Profile-comment.png';
-import Comment from './Comment';
-
 
 // comment 
-const CommentPage = () => {
+const SinglePostPage = () => {
 
     const [comment, setComment] = useState("");
     const onChangeComment = (event) => {
@@ -59,21 +57,35 @@ const CommentPage = () => {
                 <a className='title-account' herf="#">bomes_jand</a>
                 <h5 className='the-comment'>It'd be good without that edit.</h5>
             </div>
+            <div className='comments-and-accounts'>
+                <img src={ProfileComment} className="photo-co" />
+                <span className='time-of-comment'>5h</span>
+                <a className='title-account' herf="#">bomes_jand</a>
+                <h5 className='the-comment'>It'd be good without that edit.</h5>
+            </div>
+            <div className='comments-and-accounts'>
+                <img src={ProfileComment} className="photo-co" />
+                <span className='time-of-comment'>5h</span>
+                <a className='title-account' herf="#">bomes_jand</a>
+                <h5 className='the-comment'>It'd be good without that edit.</h5>
+            </div>
+            <div className='comments-and-accounts'>
+                <img src={ProfileComment} className="photo-co" />
+                <span className='time-of-comment'>5h</span>
+                <a className='title-account' herf="#">bomes_jand</a>
+                <h5 className='the-comment'>It'd be good without that edit.</h5>
+            </div>
             
         </div>
     );
 }
-export default CommentPage;
+export default SinglePostPage;
 
 {/* ={() => { { onClickComment }; { onClickPhoto }; }} */ }
 {/* <div className='profile-comment'>{photos}</div> */ }
 
 /* {comment.map((text)=>(
                     <div>{text}</div>
-
-
-
-
 
 <ul className="sidebar-menu">
 
