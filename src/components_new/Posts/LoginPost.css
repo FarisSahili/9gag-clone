@@ -35,7 +35,7 @@
 
 
 
-h4{
+.loginh4{
    
     text-align: left;
     font-style: normal; 
@@ -45,7 +45,7 @@ h4{
     display: block;
 
 }
-p { 
+.pp { 
     text-align: left;
 } 
 p.login-button{

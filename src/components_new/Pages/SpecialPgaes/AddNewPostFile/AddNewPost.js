@@ -2,12 +2,18 @@ import Graphup from './Graphup.ico';
 import imagenewpost from './imagenewpost.ico';
 import Setting from './Setting.ico';
 import AddNewPostt from './AddNewPostt.css';
+import Navbar from '../../../UI/Navbar';
+import Sidebar from '../../../UI/Sidebar/Sidebar';
+import NavPost from '../../NavPost';
 
 const AddNewPost=()=>
 {
     console.log()
     return(
+        
     <div>
+                <NavPost/>
+
         
             <h4 className='creat_post'>Create Post</h4>
             
