@@ -80,7 +80,8 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                         <ul id="prof-dropdowm" className="dropdown-menu">
                                                 <li><a  className="dropdown-item" href="#">Sign up or Log in</a></li>
                                                 <li><a  className="dropdown-item" href="#">Customize with Tags</a></li>
-
+                                               <li> <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> modal</button></li>
+     
                                                 <li>
                                                     <a id="dark-mode-link" className="dropdown-item" href="#" onClick={itemClicked}> <div id="f-div">Dark Mode<div id="s-div"  className="form-check form-switch">
                                                     <input  className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
