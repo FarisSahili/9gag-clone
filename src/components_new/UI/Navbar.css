@@ -49,13 +49,14 @@
 }
 #search-div{
     margin-top: 5px;
- }
+}
  #search-but{
     margin-top: 2%;
     width: 90%;
     border: #fff;
     background-color: #fff; 
     border-radius: 50px;
+    padding-left: 10px;
 }
 #sign-but{
     font-size: 90%;
@@ -69,8 +70,9 @@
 }
 #prof{
     color:rgb(174, 166, 166) ;
-    height: 110%;
-    width: 110%;
+    height: 120px;
+    width: 100%;
+
 }
 #prof:hover{
     color: rgb(189, 184, 184);
@@ -284,6 +286,5 @@
 }
 #search-icon{
     border-radius: 100%;
-    width: 100%;
     height: 100% ;
 }

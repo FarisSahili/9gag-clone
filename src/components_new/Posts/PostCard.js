@@ -63,12 +63,12 @@ const PostCard = (props) => {
         <div className='post-container'>
             <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
-                    <a href="gagger-page-html">
+                    <a className="aa" href="gagger-page-html">
                         <img src={props.op_user_avatar} className='AvatarPic' alt="this is avatar " />
                     </a>
                     <div className='gagger-name'>
-                        <a>{props.op_user}</a>
-                        <span>1h</span>
+                       <a className="aa">{props.op_user}</a>
+                        <span className="time">1h</span>
                     </div>
 
                     <div className='save-icon'>
@@ -97,8 +97,8 @@ const PostCard = (props) => {
                 <div className='memes-media'> < img src={props.content} ></img>
                   </div>
                 <div className='container-tag'>
-                    <a className='Post-Card-Tag' href="tag-html">{props.tags[0]}</a>
-                    <a className='Post-Card-Tag' href="tag-html">{props.tags[1]}</a>
+                    <a className='Post-Card-Tag aa' href="tag-html">{props.tags[0]}</a>
+                    <a className='Post-Card-Tag aa' href="tag-html">{props.tags[1]}</a>
                 </div>
                 <div className='button-card'>
                     <div className='vote-button'>

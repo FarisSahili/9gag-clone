@@ -10,7 +10,7 @@ display: flex;
 position: relative;
 }
 
- a {
+ .aa {
 display: block;
 margin-top: 0%;
 text-decoration:none solid black;
@@ -20,9 +20,6 @@ font-size: small;
 width:auto;
  }
 
- a:hover {
-    color: black;
- }
 /* Gagger Part  */
  .gagger-prof-pic{
     height: 20px;
@@ -52,7 +49,7 @@ a.gagger{
       /* 150px */
     display: flex;
  }
- span {
+ .time {
     display:flex;
     padding-top: 6%;
     color:  #999999 ;
