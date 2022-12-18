@@ -1,9 +1,6 @@
 
  
 import './App.css';
-// import NavPost from './components_new/Pages/NavPost';
-import NavPost from './components_new/Pages/NavPost';
-import Profile from './components_new/Pages/Profile';
 import Navbar from './components_new/UI/Navbar';
 
 function App() 
@@ -11,9 +8,7 @@ function App()
 return (
     
     <>
-    {/* <Navbar /> */}
-      <NavPost/>
-        <Profile />
+    <Navbar />
     </>
 
 );
