@@ -1,7 +1,6 @@
-
 //old file
 
-
+ import './SidebarStyle.css' ;
 
 //import 
 import './sidebarStyle.css' ;
