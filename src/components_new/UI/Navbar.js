@@ -2,8 +2,9 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-
-
+const itemClicked = (event) => {
+    event.stopPropagation();
+}
 
 const Navbar = () => {
 
