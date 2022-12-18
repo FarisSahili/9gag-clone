@@ -1,13 +1,19 @@
-import Choos_photo from './Choos_photo.png';
-import './Newpost_page.css';
-import Setting from './Setting.ico';
 import Graphup from './Graphup.ico';
+import imagenewpost from './imagenewpost.ico';
+import Setting from './Setting.ico';
+import AddNewPostt from './AddNewPostt.css';
+import Navbar from '../../../UI/Navbar';
+import Sidebar from '../../../UI/Sidebar/Sidebar';
+import NavPost from '../../NavPost';
 
-const Newpost_page=()=>
+const AddNewPost=()=>
 {
     console.log()
     return(
+        
     <div>
+                <NavPost/>
+
         
             <h4 className='creat_post'>Create Post</h4>
             
@@ -35,27 +41,29 @@ const Newpost_page=()=>
     </div>
     </div>
             
-            {/*<div className="dropdown">
-                    <p className="btn_rules btn" data-bs-toggle="dropdown"><p className='g99'>9GAG Rules</p>
-                    </p>
-                    <ul className="rules_menu dropdown-menu">
-                        <ol>
-                        <li className='rules'>No pornography</li>
-                        <li className='rules'>No violence or gory contents</li>
-                        <li className='rules'>No hate speech and bullying</li>
-                        <li className='rules'>No spamming and manipulation</li>
-                        <li className='rules'>No deceptive content</li>
-                        <li className='rules'>No illegal activities</li>
-                        <li className='rules'>No impersonation</li>
-                        <li className='rules'>No copyright infringement</li>
-                        </ol>
-</ul>*/}
+            
                     
-                    <div className="container" >
+                    <div className="bcontainer container-md" >
             
                         <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
                     
-                            <img src={Choos_photo} className="ph-photo"/>
+                            {/*<img src={Choos_photo} className="ph-photo"/>*/}
+                            <div className='scontainer container'>
+                                <img className='imgenewpost' src={imagenewpost} alt='imagenewpost icon'/>
+                                <p className='chooseico' >Choose a photo or video to upload</p>
+                                
+                                
+                                <input type="file" id="upload" hidden/>
+                                <label for="upload" className="choosebtn btn btn-primary form-control-file" >Choose file...</label>
+                                <p className='chooseor'>or</p>
+                                
+
+
+                                {/* <input type="file" id="myFile" name="filename"/>
+                                <input type="submit"></input> */}
+
+                            </div>
+
                             <input  placeholder="Add at least 1 tag" className="add form-control" data-bs-toggle="collapse" href="#collapseExample"></input>
                             <div className="collapse" id="collapseExample">
                             <div className="card-body">
@@ -106,4 +114,4 @@ const Newpost_page=()=>
 
 
 }
-export default Newpost_page
+export default AddNewPost;
