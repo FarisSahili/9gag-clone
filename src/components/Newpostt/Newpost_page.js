@@ -1,7 +1,7 @@
-import Choos_photo from './Choos_photo.png';
 import './Newpost_page.css';
 import Setting from './Setting.ico';
 import Graphup from './Graphup.ico';
+import imagenewpost from './imagenewpost.ico';
 
 const Newpost_page=()=>
 {
@@ -43,8 +43,21 @@ const Newpost_page=()=>
                     
                             {/*<img src={Choos_photo} className="ph-photo"/>*/}
                             <div className='scontainer container'>
-                                <p>basil</p>
+                                <img className='imgenewpost' src={imagenewpost} alt='imagenewpost icon'/>
+                                <p className='chooseico' >Choose a photo or video to upload</p>
+                                
+                                
+                                <input type="file" id="upload" hidden/>
+                                <label for="upload" className="choosebtn btn btn-primary form-control-file" >Choose file...</label>
+                                <p className='chooseor'>or</p>
+                                
+
+
+                                {/* <input type="file" id="myFile" name="filename"/>
+                                <input type="submit"></input> */}
+
                             </div>
+
                             <input  placeholder="Add at least 1 tag" className="add form-control" data-bs-toggle="collapse" href="#collapseExample"></input>
                             <div className="collapse" id="collapseExample">
                             <div className="card-body">
