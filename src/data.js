@@ -13,7 +13,7 @@ const postData = [
   {
     id: 1,
     title: "funny",
-    op_user: "gager name", // original poster,
+    op_user: "gager", // original poster,
     op_user_avatar: icon1, // original poster,
     post_date: "2022-01-01", //yyyy-mm-dd
     up_votes: 100,

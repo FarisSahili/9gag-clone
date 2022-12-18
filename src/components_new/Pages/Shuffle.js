@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 //import { Link } from "react-router-dom";
 import  postData  from "../../data"
 import PostCard from "../Posts/PostCard";
-import PostList from "../Posts/PostList.js";
+//import PostList from "../Posts/PostList.js";
 //import Post from "../../components/Post.js";
  
 function shuffle(arra1) {

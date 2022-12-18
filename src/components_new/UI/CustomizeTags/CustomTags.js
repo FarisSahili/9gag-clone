@@ -71,7 +71,7 @@ function ModalTags() {
     "girl celebrity",
   ]);
 
-  const [favorites, setFavorites] = useState(["sprot"]);
+  const [favorites, setFavorites] = useState(["sport"]);
   const [hidden, setHidden] = useState([]);
 
   const filterArrayFromFavorite = (selectedIndex) => {
@@ -98,6 +98,9 @@ function ModalTags() {
     
   };
   
+
+ 
+ 
   return (
     <>
       <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -110,27 +113,27 @@ function ModalTags() {
               <h5 className="modal-title">Customize with Tags</h5>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div className="modal-body">
-
-            
-            <span className="itemTitle">Favorites</span>
-               { 
-                favorites.map((item, index) => {
-                  return (
-                    <div className="rowContainer">
-                      <div className="title">{item}</div>
-                      <div className="btnsContainer">
-                        <Star isSelected={true}
-                          onClick={() => {
-                            deleteItemFromFavorite(index);
-                            setPopularTags((current) => [...current, item]);
-                          }}
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
+             
+    <div className="modal-body">
+    <span className="itemTitle">Favorites</span>
+       {favorites.map((item, index) => {
+          return (
+            <div className="rowContainer">
+              <div className="title">{item}</div>
+              <div className="btnsContainer">
+                <Star isSelected={true}
+                  onClick={() => {
+                    deleteItemFromFavorite(index);
+                    setPopularTags((current) => [...current, item]);
+                  }}
+                />
+              </div>
             </div>
+          );
+        })}
+    </div>
+ 
+            <hr></hr>
             <div className="modal-body">
               <span  className="itemTitle">Explore Popular Tags</span>
               <ul className="list-group list-group-flush">
