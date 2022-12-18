@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ModalTags.css";
+import "./CustomTags.css";
 
 const Star = ({ isSelected, onClick }) => {
   return (
@@ -43,6 +43,9 @@ function ModalTags() {
   const [popularTags, setPopularTags] = useState([
     "9gag",
     "china",
+    "messi",
+    "elon musk",
+    "superman",
     "logo",
     "9gag den deutschen",
     "german",
@@ -85,9 +88,14 @@ function ModalTags() {
     setOtherTags((current) => current.filter((item, index) => index !== selectedIndex)
     );
   };
+  const filterArrayFromothertagstofav = (selectedIndex) => {
+    setOtherTags((current) => current.filter((item, index) => index !== selectedIndex)
+    );
+  };
   const filterArrayFromhidden = (selectedIndex) => {
     setHidden((current) => current.filter((item, index) => index !== selectedIndex)
     );
+    
   };
   
   return (
@@ -105,7 +113,7 @@ function ModalTags() {
             <div className="modal-body">
 
             
-            <span className="spanItem">Favorites</span>
+            <span className="itemTitle">Favorites</span>
                { 
                 favorites.map((item, index) => {
                   return (
@@ -124,7 +132,7 @@ function ModalTags() {
                 })}
             </div>
             <div className="modal-body">
-              <span  className="spanItem">Explore Popular Tags</span>
+              <span  className="itemTitle">Explore Popular Tags</span>
               <ul className="list-group list-group-flush">
                 {popularTags.map((item, index) => {
                   return (
@@ -152,22 +160,22 @@ function ModalTags() {
             </div>
             <hr></hr>
             <div className="modal-body">
-              <span  className="spanItem">Other Tags</span>
+              <span  className="itemTitle">Other Tags</span>
               <ul className="list-group list-group-flush">
                 {otherTags.map((item, index) => {
                   return (
                     <div className="rowContainer">
                       <div className="title">{item}</div>
                       <div className="btnsContainer">
-                        <XButton
+                      <XButton
                           onClick={() => {
-                            filterArrayFromFavorite(index);
+                            filterArrayFromOtherFavorite(index);
                             setHidden((current) => [...current, item]);
                           }}
                         />
                         <Star
                           onClick={() => {
-                            filterArrayFromOtherFavorite(index);
+                            filterArrayFromothertagstofav(index);
                             setFavorites((current) => [...current, item]);
                           }}
                         />
@@ -180,13 +188,12 @@ function ModalTags() {
             </div>
             <hr></hr>
             <div className="modal-body">
-              <span  className="spanItem">Hidden</span>
+              <span  className="itemTitle">Hidden</span>
               {hidden.map((item, index) => {
                 return (
                   <div className="rowContainer">
                     <div className="title">{item}</div>
                     <div className="btnsContainer">
-
                       <XButton isSelected={true}
                         onClick={() => {
                           filterArrayFromhidden(index);
