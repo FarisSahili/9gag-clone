@@ -1,122 +1,84 @@
-#menu-div{
-    display: flex;
+.basic-navbar{
     height: 50px;
-    width: 50px;
-    margin-left: 50px;
+    width: 100%;
 }
+.components{
+  height: 48px;
+  width: 98%;
+  margin-left: 1%;
+  display: flex;
+}
+.left-components{
+    width: 40%;
+    display: flex;
+}   
 #menu-but{
     border: #fff;
     background-color: #fff;
 }
-.buttons{
-    border-radius: 50px;
-} 
-#post-but{
-    margin-top: 1%;
-    height: 23%;
-    padding:8px 16px 8px 14px;
-    margin-left: 100px;
-    background-color:#0975f1;
-    color:aliceblue;
-    border: 10px;
-    width: 90px;
-    margin-right: 80px;
-    margin-left: 10px;
-}
-#sign-but{
-    color:rgb(174, 166, 166) ;
-    border: #fff;
-    background-color: #fff;
-    margin-left: 10px;
-}
-#profile-but{
-    border-radius: 100px;
-    border: #fff;
-    background-color: #fff;
-}
-#search-but{
-    margin-top: 2%;
-    width: 20px ;
-    border: #fff;
-    background-color: #fff; 
-    padding-right: 50px;
-    margin-left: 30px;
-    border-radius: 50px;
-}
-#search-icon:hover{
-    background-color: #d9dde1;        
-}
-#search-but:focus #search-icon{
-    color:black ;
-}
-.post-pen{
-    height: 20px;
-    width:20px;
-}
-#prof{
-    color:rgb(174, 166, 166) ;
-    height: 40px;
-    width: 40px;
-}
-#prof:hover{
-    color: rgb(189, 184, 184);
-}
-#post-but:hover{
-    background-color: rgb(92, 59, 212);
-}
-#search-icon
-{
-  width: 25px;
-  border-radius: 50px;
+#menu-div{
+    padding-top: 1.5%;
 }
 #gag-img{
     height: 35px;
     width: 60px;
 }
-#shuffle{
-    color: black;
+.logo-div{
+    margin-left: 1.5%;
+    padding-top: 1%;
 }
-#getApp{
-    color: black;
-}
-#memeLand{
-    color: black;
-}
-#potatoz{
-    color: black;   
-}
-#WorldCup{
-    color: black;
-}
-#News{
-    color: black;
-}
-#navbar{
-    /* position: fixed; */
-    height: 50px;
-    width: 100%;
-}
-#search-icon{
-    margin-right: 20px;
+.left-links{
+    color:black;
+    text-decoration: none;
     cursor: pointer;
+    font-size: medium;
+    height: 10%;
+    width:10%;
 }
-#search-icon:hover{
-    background-color: #d9dde1;
+.left-links:hover{
+    color:black;
 }
-.left{
+.left-div{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.right-components{
+    width: 25%;
     display: flex;
-    /* background-color: black; */
+    margin-left: 40%;
 }
-/* .center{
-    background-color: #7b7575;
-} */
-.right{
-    display: flex;
-    margin-left: 16%;
-    /* background-color: #0975f1; */
+#search-div{
+    margin-top: 5px;
+ }
+ #search-but{
+    margin-top: 2%;
+    width: 90%;
+    border: #fff;
+    background-color: #fff; 
+    border-radius: 50px;
 }
-/*Dropdown*/
-
+#sign-but{
+    font-size: 90%;
+    color:rgb(174, 166, 166) ;
+    border: #fff;
+    background-color: #fff;
+}
+.sign-div{
+    margin-top: 4%;
+    margin-left: 1%;
+}
+#prof{
+    color:rgb(174, 166, 166) ;
+    height: 110%;
+    width: 110%;
+}
+#prof:hover{
+    color: rgb(189, 184, 184);
+}
+ .test{
+    position: relative;
+    font-weight: normal;
+}
 .dropdown-item{
     margin-top: 15px;
     height: 30px;
@@ -125,11 +87,20 @@
     color: black;
     background-color: #d2cece;
 }
-.dropdown-menu{
+/* ///////////   */
+.dropdown-item{
+    margin-top: 15px;
+    height: 30px;
+} 
+.dropdown-item:active{
+    color: black;
+    background-color: #d2cece;
+}
+#search-drpdown{
     box-shadow: 1px 1px 2px 2px lightgrey;  
     border: 1px;  
     width: 350px;
- }
+}
 #gag{   
     padding-left: 18px;
     margin-top: 20px;
@@ -177,8 +148,12 @@
     color: #7b7575;
 }
 #prof-dropdowm{
-     margin-right: -180px; 
-     margin-top: 50px;
+    box-shadow: 1px 1px 2px 2px lightgrey;  
+    border: 1px;  
+    width: 350px;
+    margin-top: 20%;
+    margin-left: 20%;
+    padding-top: 5%;
 } 
 #f-div{
     display: flex;
@@ -273,9 +248,42 @@
 }
 #navbar-hr{
     margin: 1px;
-    border: 0.5px solid rgb(147, 140, 140);
+    border: 0.1px solid rgb(147, 140, 140);
     width:100%; 
 }
-.test{
-    font-weight: normal;
+#post-but{
+    border: 10px;
+    width: 90%;
+    height: 38px;
+    border-radius: 20px;
+    background-color:#0975f1;
+    color:aliceblue;
+}
+.post-but-div{
+    padding-left: 2%;
+    padding-top: 2%;
+    width: 30%;
+    /* background-color: tomato; */
+}
+.post-pen{
+    padding-bottom: 2%;
+    height:20px;
+    width:20px;
+}
+#profile-but{
+    border-radius: 100px;
+    border: #fff;
+    background-color: #fff;
+    margin-left: 8%  ;
+}
+#search-icon:hover{
+    background-color: #d9dde1;
+}
+#search-icon:focus{
+   background-color:  black;
+}
+#search-icon{
+    border-radius: 100%;
+    width: 100%;
+    height: 100% ;
 }
