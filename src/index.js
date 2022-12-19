@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import RecommendedPosts from './components/Pages/Shuffle';
@@ -21,7 +20,6 @@ root.render(
        <Route path="/addnewpost" element={<AddNewPost/>} />
        </Routes>
    </BrowserRouter>
-    {/* <App /> */}
   </React.StrictMode>
 );
 
