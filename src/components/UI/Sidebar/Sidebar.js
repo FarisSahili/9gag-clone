@@ -23,6 +23,7 @@
 
 //import
 import './SidebarStyle.css' ;
+import Clear from './Clear';
 import React, { useState } from "react";
 //  import PostCard from '../postcard/PostCard';
 
@@ -362,11 +363,10 @@ const Sidebar= () =>
 
 <div className="offcanvas offcanvas-start" data-bs-scroll="true" 
 data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-<div className="offcanvas-header">
+
 <div id="myModal" class="modal fade" role="dialog">
 <div class="modal-dialog">
 
-</div>
 </div>
 </div>
 
@@ -378,7 +378,7 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
 <div className="card-body">
   <p className="card-title">New to 9GAG?</p>
   <p className="card-text">Sign up now to see more content! </p>
-  <button type="button"  className="btn-card btn btn-primary" data-toggle="modal" data-target="#myModal"  >Sign up</button>
+  <button type="button"  className="btn-card btn btn-primary"  data-target="#myModal"  >Sign up</button>
 </div>
 </div>
 
@@ -410,25 +410,9 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
              return (
                <li key={item} className="li-filter" onClick={() => 
                  {
-
-                   // {filteredPosts.map((index) => (
-                   //   <PostCard
-                   //   key={id}
-                   //   op_user={op_user} 
-                   //   op_user_avatar={op_user_avatar}
-                   //   title={title}
-                   //   content={content}
-                   //   post_date={post_date} 
-                   //   tags={tags}  
-                   //   up_votes={up_votes}
-                   //   down_votes={down_votes}
-                   //   commentt={commentt} 
-                   //   />  
-                   // ))}
-                   
                 setRecent((current) => [...current, item]);
                 {recentSection()};
-                 }}>
+                }}>
 
                  <div className="rowContainer">
                  <div className="sidebarItem">{item}</div>
@@ -436,10 +420,10 @@ data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="
               
                    <Star
                      onClick={() => 
-                       {
+                        {
                        setFavorites((current) => [...current, item]);
                        {favoriteSection()};
-                       }}/>
+                      }}/>
 
                  </div>
                  </div>
