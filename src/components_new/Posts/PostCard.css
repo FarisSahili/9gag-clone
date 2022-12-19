@@ -13,11 +13,14 @@ position: relative;
  .cardfont {
 display: block;
 margin-top: 0%;
-text-decoration:none solid black;
+text-decoration:1px solid black;
 font-weight: bold;
 color:black ; 
 font-size: small;
 width:auto;
+ }
+ .cardfont:hover{
+color: black;
  }
 
 /* Gagger Part  */
@@ -60,11 +63,9 @@ a.gagger{
   cursor: auto;
  }
  .SaveIcon{
-    height:90%;
-    width: 90%;
-    margin: 1px;
-    padding-right: 5px;
-    padding-top: 1px;
+   
+    width: 80%;
+    margin: 3px;
  }
  .DropdownIcon{
     height: 90%;
@@ -80,7 +81,7 @@ padding-left: 60% ;
 padding-top: 2%;
 align-items: center; 
    }
-   .dropdown{
+   .dd-card{
   
     display: flex;
 padding-top: 0%;
@@ -105,22 +106,33 @@ width: 100%;
     border-width: 0;
 
  }
- .dropdown-button{
+ .save-button-active{
     height: auto;
     width: 40px;
-    border-radius: 50%;
+    border-radius:50%;
     margin: 7px;
+    display: flex;
+    background-color:rgb(231, 20, 20) ;
+    cursor: pointer;
+    border-color: rgb(26, 244, 18) ;
+    border-width: 0;
+
+ }
+ .dropdown-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0px;
     display: flex;
     background-color:white ;
     cursor: pointer;
     border-color: white ;
     border-width: 0;
-    padding-top: 8px;
+    padding-top:15px;
     align-items: center;
 }
- .save-button:hover {
-    background-color:lightgray; 
- }
+
+
  .dropdown-button:hover{
     background-color:lightgray; 
 
@@ -315,7 +327,10 @@ width: 50px;
     background-color: white;
     border: none ;
 }
-.dropdown-item{
+.dd-menu{
+width: 20px;
+}
+.dd-item{
 font-weight:normal;
 padding : 4px;
 padding-left: 9px;
