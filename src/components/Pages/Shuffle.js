@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 //import { Link } from "react-router-dom";
 import  postData  from "../../data"
 import PostCard from "../Posts/PostCard";
-import PostList from "../Posts/PostList.js";
 import Navbar from "../UI/Navbar";
 import Sidebar from "../UI/Sidebar/Sidebar";
 //import Post from "../../components/Post.js";

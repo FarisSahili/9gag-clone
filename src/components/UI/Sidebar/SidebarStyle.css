@@ -7,20 +7,15 @@ width: 50px;
 
 /*offcanvas */
 
-::-webkit-scrollbar 
-{
-  display: none;
-}
+
 
 #offcanvasScrolling
 {
-  width: 260px;
-  margin-top:80px;
+  width: 240px;
+  margin-top:50px;
 }
 
 .btn-start{
- 
-
   background-color: transparent;
   border-width: 0px;
   padding-left: 1px;
@@ -38,10 +33,9 @@ width: 50px;
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  padding: 10px 16px; 
   color: #fff; 
   border-radius: 100px; 
-  width: 170px;
+  width: 155px;
   height: 42px;
   font-weight: bold;
  
@@ -80,8 +74,6 @@ width: 50px;
 
 
 
-
-
 /*9gag section */
     
 .label-section-9gag
@@ -99,10 +91,8 @@ width: 50px;
   padding: 0px;
   width: 1.4rem;
   height: 1.3rem;
-  
-  
-
 }
+
 .sidebar-menu 
 {
   padding: 0px;
@@ -112,6 +102,8 @@ width: 50px;
 {
   padding: 0px;
 }
+
+
 .sidebar-menu-9gag
 {
   padding: 0px;
@@ -239,7 +231,8 @@ color: rgb(171, 171, 171);
   justify-content: center;
   align-items: center;
   border-width: 0px;
-  padding-left: 130px;
+  padding-left: 100px;
+
 }
 
 
