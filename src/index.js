@@ -18,13 +18,13 @@ root.render(
   <React.StrictMode>
      <BrowserRouter>
        <Routes>
-       <Route path="/Home" index element={<HomePage/>} />
+       <Route path="/Home" index element={<HomePage/>}  />
        <Route path="/shuffle" element={<RecommendedPosts/>} />
        <Route path="/getapp" element={<GetApp/>} />
        <Route path="/addnewpost" element={<AddNewPost/>} />
        </Routes>
    </BrowserRouter>
-    {/* <App /> */}
+    <App />
   </React.StrictMode>
 );
 
