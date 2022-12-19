@@ -9,6 +9,7 @@ const HomePage = (props) => {
         <>
             <Navbar/>
             <Sidebar/>
+
             <Interests/>
             <PostList/>
         </>
