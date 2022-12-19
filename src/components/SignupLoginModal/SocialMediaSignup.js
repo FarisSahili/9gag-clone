@@ -1,14 +1,14 @@
 import React from "react";
 import "./SocialMediaSignup.css";
-import gaga from "./imagemodal/1.png";
-import Upvote from "./imagemodal/2.png";
-import Downvote from "./imagemodal/3.png";
-import Comment from "./imagemodal/4.png";
-import SaveTo from "./imagemodal/5.png";
-import face1 from "./imagemodal/Facebook.svg.png";
-import google1 from "./imagemodal/Google_Icons.webp";
-import Apple1 from "./imagemodal/Apple-Logo.png";
-import LeftArrow from "./imagemodal/left.png";
+import gaga from "./1.png";
+import Upvote from "./2.png";
+import Downvote from "./3.png";
+import Comment from "./4.png";
+import SaveTo from "./5.png";
+import face1 from "./Facebook.svg.png";
+import google1 from "./Google_Icons.webp";
+import Apple1 from "./Apple-Logo.png";
+import LeftArrow from "./left.png";
 const FullModalSignUP = () => {
   return (
     <div className="FullModal">
