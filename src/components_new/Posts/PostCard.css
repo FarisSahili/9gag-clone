@@ -10,7 +10,7 @@ display: flex;
 position: relative;
 }
 
- .aa {
+ .cardfont {
 display: block;
 margin-top: 0%;
 text-decoration:none solid black;
@@ -39,29 +39,32 @@ a.gagger{
     padding-top: 5%;
     padding-left: 1%;
      }
- .gagger-name{
+ .gagger{
     font-size: 15px;
     cursor: pointer;
     padding-left: 3%;
-    padding-top: 0px;
+    padding-top: 1%;
     height: 50%;
     width: 100%;
       /* 150px */
     display: flex;
  }
+
+
  .time {
     display:flex;
-    padding-top: 6%;
+    padding-top: 1%;
     color:  #999999 ;
     font-size: small;
   padding-left: 1%;
+  cursor: auto;
  }
  .SaveIcon{
     height:90%;
     width: 90%;
     margin: 1px;
     padding-right: 5px;
-padding-top: 1px;
+    padding-top: 1px;
  }
  .DropdownIcon{
     height: 90%;
@@ -96,10 +99,10 @@ width: 100%;
     border-radius:50%;
     margin: 7px;
     display: flex;
-background-color:white ;
-cursor: pointer;
-border-color: white ;
-border-width: 0;
+    background-color:white ;
+    cursor: pointer;
+    border-color: white ;
+    border-width: 0;
 
  }
  .dropdown-button{
@@ -108,12 +111,12 @@ border-width: 0;
     border-radius: 50%;
     margin: 7px;
     display: flex;
-background-color:white ;
-cursor: pointer;
-border-color: white ;
-border-width: 0;
-padding-top: 8px;
-align-items: center;
+    background-color:white ;
+    cursor: pointer;
+    border-color: white ;
+    border-width: 0;
+    padding-top: 8px;
+    align-items: center;
 }
  .save-button:hover {
     background-color:lightgray; 
@@ -123,9 +126,10 @@ align-items: center;
 
  }
 
-h4{
+.postcardh4{
     padding-top : 3%;
     cursor: pointer;
+    font-weight: bold;
 }
 .title-of-post{
     padding-top: 1%;
@@ -141,6 +145,7 @@ h4{
 color :  #0099FF;
 }
 /* Media of Post  */
+
 .Media{
     cursor: pointer;
     margin-top: 5px;
@@ -148,6 +153,7 @@ color :  #0099FF;
     border-radius: 20px;
     height: auto;
     width: 100%;
+    align-items: center;
     
 }
 .video-card{
@@ -184,6 +190,7 @@ cursor: pointer;
 }
 .Post-Card-Tag:hover{
     background-color:lightgray;
+    color: black;
 
 }
 /* Vote & share Part */
@@ -199,7 +206,7 @@ padding: 2px;
 .button-vote-comment{
     border-radius: 5px;
     border-color:rgb(219, 208, 208);
-    border-width:0px;
+    border-width:1px;
     background-color: white;
     justify-content: center; 
     padding:1% 1%;
@@ -217,15 +224,20 @@ padding: 2px;
 .button-vote-comment:hover{
 background-color:rgb(246, 246, 246);
 }
+.comment-img{
+    width: 45%;
+    padding-top: 5px;
+    padding-right: 1px;
+    color: #0099FF;
+}
 .button-vote {
     border-radius: 5px;
-    border-color:rgb(212, 206, 206);
-    border-width:0px;
+    border-color:rgb(219, 208, 208);
+    border-width:1px;
     background-color: white;
     justify-content: center; 
-padding-right:8px ; 
-padding-left: 7px;
-   margin :3px;
+    padding:1% 1%;
+    margin :3px;
     display: flex;
     position: relative;
     width:auto;
@@ -234,7 +246,10 @@ padding-left: 7px;
     cursor: pointer;
     font-weight: bold;
     color: grey;
+    padding-top: 6px;
+
 }
+
 .button-vote-active {
     border-radius: 5px;
     border-width:0px;

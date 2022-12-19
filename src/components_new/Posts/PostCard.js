@@ -63,11 +63,11 @@ const PostCard = (props) => {
         <div className='post-container'>
             <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
-                    <a className="aa" href="gagger-page-html">
+                    <a className="cardfont" >
                         <img src={props.op_user_avatar} className='AvatarPic' alt="this is avatar " />
                     </a>
-                    <div className='gagger-name'>
-                       <a className="aa">{props.op_user}</a>
+                    <div className='gagger'>
+                       <a className="cardfont">{props.op_user}</a>
                         <span className="time">1h</span>
                     </div>
 
@@ -92,19 +92,22 @@ const PostCard = (props) => {
                     </div>
                 </div>
                 <div className='title-of-post'>
-                    <h4 >{props.title}</h4>
+                    <h4 className="postcardh4" >{props.title}</h4>
                 </div>
-                <div className='memes-media'> < img src={props.content} ></img>
+                <div className='Media'> <img className='Media' src={props.content} />
                   </div>
                 <div className='container-tag'>
-                    <a className='Post-Card-Tag aa' href="tag-html">{props.tags[0]}</a>
-                    <a className='Post-Card-Tag aa' href="tag-html">{props.tags[1]}</a>
+                    <a className='Post-Card-Tag cardfont' href="tag-html">{props.tags[0]}</a>
+                    <a className='Post-Card-Tag cardfont' href="tag-html">{props.tags[1]}</a>
+                    <a className='Post-Card-Tag cardfont' href="tag-html">{props.tags[2]}</a>
+
+
                 </div>
                 <div className='button-card'>
                     <div className='vote-button'>
                         <button onClick={Upvote} id="up" className='button-vote'><img className='arrowu' src={voteup} alt="this is vote up icon" />{Up}</button>
                         <button onClick={Downvote} id="down" className='button-vote'><img className='arrowd' src={votedown} alt="this is vote down icon " />{Down}</button>
-                        <button className='button-vote-comment'><img src={CommitIcon} alt="this is commit icon " />90</button>
+                        <button className='button-vote-comment'><img className="comment-img"  src={CommitIcon} alt="this is commit icon " />90</button>
                     </div>
 
                     <div className='share-buttons'>
