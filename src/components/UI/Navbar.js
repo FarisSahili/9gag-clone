@@ -35,6 +35,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                            <a className="left-links"><b>🏴‍☠️ Memeland</b></a>
                         </div>
                         <div className='left-div'>
+                        <Link to='/SocialMediaSignup' className="left-links">ibrahim</Link>
                         </div>
                 </div>  
                 <div className='right-components'>
@@ -66,6 +67,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                         </li>
                                 </ul>
                         </div>  
+                        
                         <div className='sign-div'>
                             <button id="sign-but" type="button" className="buttons" > <b>Sign Up/ Log In</b></button>
                         </div>
