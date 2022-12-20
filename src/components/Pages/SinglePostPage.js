@@ -37,20 +37,22 @@ const SinglePostPage = () => {
                 </div>
             </div>
 
-            <div className="card">
+            <div className="card" id='card-input'>
                 <form className="d-flex" id='input-comment' >
                     <input className="form-control me-2" type="search" value={comment} onChange={onChangeComment} placeholder="leave a comment" />
                     <head>
                         <img src={ProfileComment}  onChange={handeImage} className='profile-comment' />
                     </head>
                 </form>
-                <button type="button" onClick = {() =>{  onClickComment() ;  handeImage(); }}  className="btn btn-primary">Post</button>
+                <button type="button" onClick = {() =>{  onClickComment() ;  handeImage(); }} id='button-post'  className="btn btn-primary">Post</button>
             </div>
 
             <div>
                 <div className="new-comment"> {comments}</div>
             </div>
 
+            <Comment/>
+            <Comment/>
             <div className='comments-and-accounts'>
                 <img src={ProfileComment} className="photo-co" />
                 <span className='time-of-comment'>5h</span>

@@ -31,7 +31,7 @@ const postData = [
       {
         user: "9hdw ",
         avatar: "",
-        comment_time: "1h",
+        comment_date: "2022-01-01",
         comment_body: "hahahah ",
         up_votes: 120,
         down_votes: 10,
@@ -39,7 +39,7 @@ const postData = [
       {
         user: "khif",
         avatar: icon3,
-        comment_time: "3h",
+        comment_date: "2020-02-11",
         comment_body: "why not",
         up_votes: 2,
         down_votes: 13,
@@ -47,7 +47,7 @@ const postData = [
       {
         user: "atti18",
         avatar: icon4,
-        comment_time: "23h",
+        comment_date: "2022-08-03",
         comment_body: "Laugh track starts",
         up_votes: 22,
         down_votes: 19,
@@ -55,7 +55,7 @@ const postData = [
       {
         user: "takedahiromitsu",
         avatar: icon2,
-        comment_time: "14h",
+        comment_date: "2022-11-02",
         comment_body: "Someone asked for a rumble?",
         up_votes: 38,
         down_votes: 2,
@@ -78,7 +78,7 @@ const postData = [
       {
         user: "note",
         avatar: icon1,
-        comment_time: "10h",
+        comment_date: "2022-11-18",
         comment_body: "ok  ",
         up_votes: 20,
         down_votes: 39,
@@ -86,7 +86,7 @@ const postData = [
       {
         user: "uskwm",
         avatar: icon3,
-        comment_time: "12h",
+        comment_date: "2022-9-13",
         comment_body: "noooooo",
         up_votes: 22,
         down_votes: 133,
@@ -94,7 +94,7 @@ const postData = [
       {
         user: "art",
         avatar: icon6,
-        comment_time: "20h",
+        comment_date: "2022-02-20",
         comment_body: "sure for now",
         up_votes: 42,
         down_votes: 39,
@@ -102,7 +102,7 @@ const postData = [
       {
         user: "ahmed",
         avatar: icon3,
-        comment_time: "3h",
+        comment_date: "2022-12-03",
         comment_body: "Someone asked about this?",
         up_votes: 28,
         down_votes: 4,
@@ -125,7 +125,7 @@ const postData = [
       {
         user: "notsi",
         avatar: icon2,
-        comment_time: "18h",
+        comment_date: "2022-03-18",
         comment_body: "hahahah",
         up_votes: 20,
         down_votes: 39,
@@ -133,7 +133,7 @@ const postData = [
       {
         user: "lara",
         avatar: icon3,
-        comment_time: "5h",
+        comment_date: "2022-12-13",
         comment_body: "lol",
         up_votes: 22,
         down_votes: 133,
@@ -141,7 +141,7 @@ const postData = [
       {
         user: "totto",
         avatar: icon6,
-        comment_time: "16h",
+        comment_date: "2022-02-20",
         comment_body: "really ",
         up_votes: 42,
         down_votes: 39,
@@ -149,7 +149,7 @@ const postData = [
       {
         user: "thisi",
         avatar: icon6,
-        comment_time: "4h",
+        comment_date: "2022-12-03",
         comment_body: "not possible",
         up_votes: 28,
         down_votes: 4,
@@ -172,7 +172,7 @@ const postData = [
       {
         user: "notsi",
         avatar: icon2,
-        comment_time: "10h",
+        comment_date: "2022-03-18",
         comment_body: "france",
         up_votes: 230,
         down_votes: 39,
@@ -180,7 +180,7 @@ const postData = [
       {
         user: "lara",
         avatar: icon3,
-        comment_time: "3h",
+        comment_date: "2022-12-13",
         comment_body: "lol",
         up_votes: 22,
         down_votes: 133,
@@ -188,7 +188,7 @@ const postData = [
       {
         user: "totto",
         avatar: icon6,
-        comment_time: "3h",
+        comment_date: "2022-02-20",
         comment_body: "really ",
         up_votes: 42,
         down_votes: 39,
@@ -196,7 +196,7 @@ const postData = [
       {
         user: "thisi",
         avatar: icon6,
-        comment_time: "19h",
+        comment_date: "2022-12-03",
         comment_body: "not possible",
         up_votes: 28,
         down_votes: 4,

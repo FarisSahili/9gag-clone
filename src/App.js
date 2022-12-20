@@ -1,14 +1,14 @@
 
 import './App.css';
-import SinglePostPage from './components/Pages/SinglePostPage';
-// import Navbar from './components_new/UI/Navbar';
+
+import PostComments from './components/Posts/Comments/PostComments';
 
 
 function App() 
 {
 return (
     <>
-    <SinglePostPage/>
+    <PostComments/>
     </>
 
 );
