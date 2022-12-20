@@ -11,6 +11,34 @@ const Navbar = () => {
         event.stopPropagation();
     }
    
+    /*const dropdowns=document.querySelectorAll('.Dropdown');
+    dropdowns.forEach(Dropdown=>{
+    const select=Dropdown.querySelector('.select');
+    const caret=Dropdown.querySelector('.caret');
+    const menu=Dropdown.querySelector('.menu');
+    const options=Dropdown.querySelectorAll('.menu li');
+    const selected=Dropdown.querySelector('.test');
+    select.addEventListener('click', () =>{
+     
+        select.classList.toggle('select-clicked');
+        caret.classList.toggle('caret-rotate');
+        menu.classList.toggle('menu-open');
+    })
+    options.forEach(option => {
+      option.addEventListener('click',() => {
+         test.innerText = option.innerText;
+         select.classList.remove('select-clicked');
+         caret.classList.remove('caret-rotate');
+         menu.classList.remove('menu-open');
+         options.forEach(option => {
+           option.classList.remove('active');
+         });
+    option.classList.add('active');
+      });
+     });
+    });*/
+
+
 
     return(        
           <div className='basic-navbar sticky-top'>
@@ -23,16 +51,16 @@ const Navbar = () => {
                             <a id="gag-but" className="navbar-brand" href="#" ><img id="gag-img" src='./image/image.png'  /></a>
                         </div>
                         <div className='left-div'>
-                           <a className="left-links"><b>🔀 Shuffle</b></a>
+                           <a className="left-links">🔀 Shuffle</a>
                         </div>
                         <div className='left-div'>
-                           <a className="left-links"><b>📱 Get App</b></a>
+                           <a className="left-links">📱 Get App</a>
                         </div>
                         <div className='left-div'>
-                           <a className="left-links"><b>🏴‍☠️ Memeland</b></a>
+                           <a className="left-links">🏴‍☠️ Memeland</a>
                         </div>
                         <div className='left-div'>
-                           <a className="left-links"><b>🥔 Potatoz</b></a>
+                           <a className="left-links">🥔 Potatoz</a>
                         </div>
                 </div>  
                 <div className='right-components'>

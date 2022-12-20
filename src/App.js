@@ -1,21 +1,17 @@
 
 import './App.css';
-<<<<<<< HEAD
-import Navbar from './components_new/UI/Navbar';
-=======
-
->>>>>>> 31581f77f46d387253d12154df51e9dfb6d02c69
+import NavPost from './components_new/Pages/NavPost';
+import Profile from './components_new/Pages/Profile';
+// import Navbar from './components_new/UI/Navbar';
 
 function App() 
 {
 return (
     <>
-<<<<<<< HEAD
-    <Navbar />
+       <NavPost />
+       {/* <Navbar /> */}
+       <Profile />
     </>
-=======
-</>
->>>>>>> 31581f77f46d387253d12154df51e9dfb6d02c69
 
 );
 }
