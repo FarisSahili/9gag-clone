@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
-import RecommendedPosts from './components_new/Pages/Shuffle';
-import GetApp from './components_new/Pages/SpecialPgaes/GetApp';
-import HomePage from './components_new/Pages/Home/HomePage';
+import RecommendedPosts from './components/Pages/Shuffle';
+import GetApp from './components/Pages/SpecialPgaes/GetApp';
+import HomePage from './components/Pages/Home/HomePage';
+import AddNewPost from './components/Pages/SpecialPgaes/AddNewPostFile/AddNewPost';
 
 
 
@@ -19,6 +20,7 @@ root.render(
        <Route path="/Home" index element={<HomePage/>} />
        <Route path="/shuffle" element={<RecommendedPosts/>} />
        <Route path="/getapp" element={<GetApp/>} />
+       <Route path="/addnewpost" element={<AddNewPost/>} />
        </Routes>
    </BrowserRouter>
     {/* <App /> */}
