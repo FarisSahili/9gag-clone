@@ -1,15 +1,17 @@
 import ProfileComment from '../../image/Profile-comment.png';
-import postData from '../../../data';
-const Comment = (props) => {
-
+import '../../Pages/SinglePostPage.css'
+const PostComment = (ct,cn,cb) => {
+   console.log("5");
 return(
+    <>
         <div className='comments-and-accounts'>
             <img src={ProfileComment} className="photo-co" />
-            <span className='time-of-comment'>{props.comment_time}</span>
-            <a className='title-account' herf="#">{props.user_name_comment}</a>
-            <h5 className='the-comment'>{props.comment_body}</h5>
+            <span className='time-of-comment'>{ct}</span>
+            <a className='title-account'>{cn}</a>
+            <h5 className='the-comment'>{cb}</h5>
         </div>  
+        </>
     )
 }
 
-export default Comment;
+export default PostComment;
