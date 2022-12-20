@@ -10,7 +10,7 @@ const HomePage = (props) => {
         <>
             <Navbar/>
             <Sidebar/>
-<SocialMediaSignup/>
+            <SocialMediaSignup/>
             <Interests/>
             <PostList/>
         </>

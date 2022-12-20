@@ -229,7 +229,7 @@ const SocialMediaSignup = () => {
           </div>
         </div>
       </div>
-      <button
+      <li
         className="btn btn-danger"
         data-bs-toggle="modal"
         href="#exampleModalToggle"
@@ -238,7 +238,7 @@ const SocialMediaSignup = () => {
 
       >
         Open first modal
-      </button>
+      </li>
       <div
         className="modal fade"
         id="exampleModalToggle3"

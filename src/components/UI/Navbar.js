@@ -35,7 +35,9 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                            <a className="left-links"><b>🏴‍☠️ Memeland</b></a>
                         </div>
                         <div className='left-div'>
-                        <Link to='/SocialMediaSignup' className="left-links">ibrahim</Link>
+                        <button className="btn-start" type="button" data-bs-toggle="modal"
+        href="#exampleModalToggle"
+        role="button" > Modalll</button>
                         </div>
                 </div>  
                 <div className='right-components'>
@@ -80,7 +82,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                         </button>
                                 
                                         <ul id="prof-dropdowm" className="dropdown-menu">
-                                                <li><a  className="dropdown-item" href="#">Sign up or Log in</a></li>
+                                                <li><a  className="dropdown-item"          >Sign up or Log in</a></li>
                                                 <li><a  className="dropdown-item" href="#">Customize with Tags</a></li>
      
                                                 <li>
