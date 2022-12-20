@@ -10,14 +10,14 @@ import CommitIcon from './photo-post-card/commit.ico';
 import WhatsAppIcon from './photo-post-card/Whatsapp.ico';
 import MessangerIcon from './photo-post-card/Messenger.ico';
 import ShareIcon from './photo-post-card/Share.ico';
-import Link from './photo-post-card/link.ico';
+import LinkIcon from './photo-post-card/link.ico';
 import Email from './photo-post-card/email.ico';
 import Facebook from './photo-post-card/facebook.ico';
 import Pinterest from './photo-post-card/pinterest.ico';
 import Twitter from './photo-post-card/twitter.ico';
 import Telegram from './photo-post-card/telegram.ico';
 import { useState } from 'react';
-
+import { Link } from "react-router-dom";
 
 const PostCard = (props) => {
 
@@ -44,12 +44,10 @@ const PostCard = (props) => {
         if (upvote) {
             setUpvote(false)
             setUp(Up - 1)
-            document.getElementById("up").className = "button-vote";
         }
         else {
             setUpvote(true)
             setUp(Up + 1)
-            document.getElementById("up").className = "button-vote-active";
 
 
         }
@@ -61,13 +59,11 @@ const PostCard = (props) => {
         if (downvote) {
             setdownvote(false)
             setDown(Down - 1)
-            document.getElementById("down").className = "button-vote";
 
         }
         else {
             setdownvote(true)
             setDown(Down + 1)
-            document.getElementById("down").className = "button-vote-active";
 
         }
     }
@@ -75,17 +71,17 @@ const PostCard = (props) => {
         <div className='post-container'>
             <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
-                    <a className="cardfont" >
-                        <img src={props.op_user_avatar} className='AvatarPic' alt="this is avatar " />
+                    <a className="card-font" >
+                        <img src={props.op_user_avatar} className='avatar-pic' alt="this is avatar " />
                     </a>
                     <div className='gagger'>
-                       <a className="cardfont">{props.op_user}</a>
+                       <a className="card-font">{props.op_user}</a>
                         <span className="time">1h</span>
                     </div>
 
                     <div className='save-icon'>
                         <button onClick={Save} className='save-button'>
-                            <img id="savebut" src={SaveIcon} className='SaveIcon' alt="this is save icon" type="button" />
+                            <img id="savebut" src={SaveIcon} className='save-icon' alt="this is save icon" type="button" />
                         </button>
                     </div>
                     <div className="dropdown dd-card">
@@ -109,9 +105,9 @@ const PostCard = (props) => {
                 <div className='Media'> <img className='Media' src={props.content} />
                   </div>
                 <div className='container-tag'>
-                    <a className='Post-Card-Tag cardfont' >{props.tags[0]}</a>
-                    <a className='Post-Card-Tag cardfont' >{props.tags[1]}</a>
-                    <a className='Post-Card-Tag cardfont' >{props.tags[2]}</a>
+                    <a className='Post-Card-Tag cardFont' >{props.tags[0]}</a>
+                    <a className='Post-Card-Tag cardFont' >{props.tags[1]}</a>
+                    <a className='Post-Card-Tag cardFont' >{props.tags[2]}</a>
 
 
                 </div>
@@ -119,7 +115,8 @@ const PostCard = (props) => {
                     <div className='vote-button'>
                         <button onClick={Upvote} id="up" className='button-vote'><img className='arrowu' src={voteup} alt="this is vote up icon" />{Up}</button>
                         <button onClick={Downvote} id="down" className='button-vote'><img className='arrowd' src={votedown} alt="this is vote down icon " />{Down}</button>
-                        <button className='button-vote-comment'><img className="comment-img"  src={CommitIcon} alt="this is commit icon " />90</button>
+                        {/* <Link to='/comment' className='button-vote-comment'><img className="comment-img"  src={CommitIcon} alt="this is commit icon " />90</Link> */}
+
                     </div>
 
                     <div className='share-buttons'>
@@ -133,7 +130,7 @@ const PostCard = (props) => {
                                 <a className='share-icon'><img src={ShareIcon} alt="this is ShareIcon " /></a>
                             </button>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" ><img className='dropdown-share-icon' src={Link} alt="this is Copylink Icon" />Copy Link</a></li>
+                                <li><a className="dropdown-item" ><img className='dropdown-share-icon' src={LinkIcon} alt="this is Copylink Icon" />Copy Link</a></li>
                                 <li><a className="dropdown-item" ><img className='dropdown-share-icon' src={Email} alt="this is Email Icon" />Email</a></li>
                                 <li><a className="dropdown-item" >
                                     <img className='dropdown-share-icon' src={Facebook} alt="this is Facebook Icon" />Facebook</a></li>
