@@ -1,0 +1,189 @@
+.logPage{
+    width: 32%;
+    height: 470px;
+    position: relative;
+    display: block;
+    padding-bottom: 20em;
+    margin:auto ;
+    margin-top: 10%;
+
+}
+
+
+a.facebook {
+    text-decoration: none;
+    color: black;
+}
+
+a.Google {
+    text-decoration: none;
+    color: black;
+}
+
+a.Apple {
+    text-decoration: none;
+    color: black;
+}
+h4.LOGin {
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    width: 100%;
+}
+
+.P-Or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    padding: 0.3rem;
+    margin-bottom: .5rem;
+}
+.ButFacebook {
+    border-radius: 30px;
+    height: 50px;
+    width: 29rem;
+    font-weight: bold;
+    font-size: .9rem;
+    border: 1px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    margin: 4px;
+    background-color: white;
+}
+.facebook1 {
+    position: absolute;
+    width: 1.5rem;
+    margin: 1px -130px;
+}
+.ButGoogle {
+    border-radius: 30px;
+    height: 50px;
+    width: 29rem;
+    font-weight: bold;
+    font-size: .9rem;
+    border: 1px;
+    margin: 4px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    background-color: white;
+}
+
+.google1 {
+    position: absolute;
+    width: 2.5rem;
+    margin: -10px -145px ;
+
+}
+
+.ButApple {
+    border-radius: 30px;
+    height: 50px;
+    width: 29rem;
+    font-weight: bold;
+    font-size: .9rem;
+    border: 1px;
+    margin: 4px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    background-color: white;
+}
+
+.apple1 {
+    position: absolute;
+    width: 3.5rem;
+    margin: -7px -160px;
+}
+
+.ButEmail {
+    border-radius: 30px;
+    height: 50px;
+    width: 29rem;
+    font-weight: bold;
+    font-size: .9rem;
+    border: 1px;
+    margin: 4px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    background-color: white;
+}
+
+.ButLogIn {
+    border-radius: 30px;
+    height: 50px;
+    width: 29rem;
+    font-weight: bold;
+    font-size: .9rem;
+    border: 0px;
+    margin: 4px;
+    background-color: white;
+}
+
+.Forgot {
+    border-radius: 30px;
+    height: 50px;
+    width: 29rem;
+    font-weight: bold;
+    font-size: .9rem;
+    border: 0px;
+    margin: 4px;
+    background-color: white;
+}
+.ButLogIn2 {
+    border-radius: 30px;
+    height: 50px;
+    width: 29rem;
+    font-weight: bold;
+    font-size: .9rem;
+    border: 1px;
+    margin: 4px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    background-color: #0077ff;
+    opacity: .4;
+    color: aliceblue;
+}
+.ButFacebook:hover,
+.ButGoogle:hover,
+.ButApple:hover,
+.ButEmail:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.content-of-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+}
+.input-field{
+    width: 100%;
+
+}
+.input-field .input-control{
+    display: block;
+    outline: none;
+    border-radius: 8px;
+    height: 40px;
+    width:100%;
+    border: 1px solid #ced4da;
+}
+
+
+.input-field .input-control.valid-email{
+    border: 1px solid #1882f8;
+}
+.input-field .input-control.invalid-email{
+    border: 2px solid red;
+}
+.check-color{
+    color: #1882f8;
+}
+.success-color{
+    color: rgb(78, 231, 78);
+}
+.error-color{
+    color:red ;
+}
