@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+<<<<<<< HEAD
 // import App from './App';
+=======
+>>>>>>> 1d460951518af3a0543cadf692e4bc188e0d4d5f
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import RecommendedPosts from './components/Pages/Shuffle';
