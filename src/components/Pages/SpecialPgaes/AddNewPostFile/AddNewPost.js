@@ -13,7 +13,7 @@ const AddNewPost=()=>
         
     <div>
                 <NavPost/>
-
+ki
         
             <div><h4 className='creat_post'>Create Post</h4></div>
             
