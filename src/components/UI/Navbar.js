@@ -1,11 +1,12 @@
-
 import { Link } from 'react-router-dom';
-import LogoNavHome from './NavBarHomeImg/logoNavHome.png';
+// import LogoNavHome from './Pages/NavBarHomeImg/logoNavHome.png';
 import './Navbar.css';
 import RecommendedPosts from '../Pages/Shuffle';
 import handleShuffle from '../Pages/Shuffle';
 import CostuomTags from './CustomizeTags/CustomTags'
 import SocialMediaSignup from '../SignupLoginModal/SocialMediaSignup';
+import LogoNavHome from './NavBarHomeImg/logoNavHome.png'
+
 const itemClicked = (event) => {
     event.stopPropagation();
 }
@@ -14,6 +15,7 @@ const Navbar = () => {
 
 
 
+    
     return(        
           <div className='basic-navbar sticky-top'>
              <div className='components'>
@@ -35,6 +37,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                            <a className="left-links"><b>🏴‍☠️ Memeland</b></a>
                         </div>
                         <div className='left-div'>
+                           <a className="left-links"><b>🥔 Potatoz</b></a>
                         </div>
                 </div>  
                 <div className='right-components'>
@@ -160,7 +163,6 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                 </div>
              </div>
              <hr id="navbar-hr"/>
-
           </div>
 
 

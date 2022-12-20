@@ -1,5 +1,4 @@
 .basic-navbar{
-    background-color:white;
     width: 100%;
 }
 .components{
@@ -17,7 +16,10 @@
     background-color: #fff;
 }
 #menu-div{
-    padding-top: 1.5%;
+    padding-left: 1%;
+    padding-top: 0.8%;
+    height:50%;
+    padding-bottom: 1%;
 }
 #gag-img{
     height: 35px;
@@ -43,43 +45,38 @@
     margin-top: 2%;
 }
 .right-components{
-    width: 40%;
+    width: 30%;
     display: flex;
-    margin-left: 40%;
-}
-#search-div{
-    margin-top: 5px;
+    margin-left: 30%;
 }
  #search-but{
-    color: #0975f1;
-    margin-top: 2%;
-    width: 90%;
+    margin-top: 6%;
+    width: 50%;
     border: #fff;
     border-radius: 50px;
     padding-left: 10px;
-}
-#sign-but{
-    font-size: 100%;
-    color:rgb(174, 166, 166);
-    border: #fff;
     background-color: #fff;
 }
+#sign-but{
+    height: 100%;
+    width: 100%;
+    font-size: 90%;
+    color:rgb(174, 166, 166);
+    border: #fff;
+}
 .sign-div{
-    height: 20px;
-    width:100%;
-    margin-top: 4%;
-    margin-left: 1%;
+    text-align: start;
+    background-color: #020b15;
+    margin-top: 13px;
+    width: 40%;
+    height: 30px;
     font-size: large;
 }
 #prof{
+    height: 50px;
+    width: 40px;
     color:rgb(174, 166, 166) ;
-    height: 16px;
-    width: 16px;
-    /* height: 120px; */
-    /* width: 100%; */
-    padding-bottom: 20%;
-
-
+    padding-bottom: 20%; 
 }
 #prof:hover{
     color: rgb(189, 184, 184);
@@ -136,7 +133,8 @@
     padding-left: 100px;
 } 
 #search-div{
-    margin-top: 5px;
+    text-align: right;
+    margin-top: 2px;
     width: 20%;
  }
 #basic-addon1{
@@ -265,21 +263,20 @@
     width:100%; 
 }
 #post-but{
+    margin-left: 0%;
+    text-align: center;
     border: 10px;
-    width: 90%;
+    width: 80%;
     height: 38px;
     border-radius: 20px;
-    background-color:#0975f1;
+    padding-top: 10%;
     color:aliceblue;
     text-decoration: 1px solid white;
 }
-
-
 .post-but-div{
     padding-left: 2%;
     padding-top: 2%;
     width: 30%;
-    /* background-color: tomato; */
 }
 .post-pen{
     padding-bottom: 2%;
@@ -289,14 +286,14 @@
 #profile-but{
     border-radius: 100px;
     border: #fff;
-    /* background-color: #fff; */
-    margin-bottom: 10%;
+    background-color:#fff
     
 }
 #profile-div{
-    margin-top: 1%;
+    margin-left: 0%;
+    margin-top: 0%;
     width: 15%;
-    height: 80%;
+    height: 90%;
 }
 #search-icon:hover{
     background-color: #d9dde1;
