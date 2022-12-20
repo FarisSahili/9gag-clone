@@ -20,7 +20,7 @@ const AddNewPost=()=>
             <div className="rules_dropdown dropdown accordion" id="accordionExample">
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
-                <button className="gag-rules accordion-button"data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+                <button className="gag-rules accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" >
                 9GAG Rules
                 </button>
                 </h2>
@@ -47,8 +47,7 @@ const AddNewPost=()=>
             
                         <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
                     
-                            {/*<img src={Choos_photo} className="ph-photo"/>*/}
-                            <div className='scontainer container'>
+                            <div className='scontainer'>
                                 <img className='imgenewpostt' src={imagenewpost} alt='imagenewpost icon'/>
                                 <p className='chooseicot' >Choose a photo or video to upload</p>
                                 
@@ -56,17 +55,15 @@ const AddNewPost=()=>
                                 <input type="file" id="upload" hidden/>
                                 <label for="upload" className="choosebtn btn btn-primary form-control-file" >Choose file...</label>
                                 <p className='chooseor'>or</p>
+                                <input  placeholder="Paste image or video URL" className="urlinput form-control gap-2"  required></input>
+                                <button type="button" className="hidenchoose btn " disabled>Use Like</button>
+                                <p className='supportfile'>Support links with PNG, JPG, GIF or MP4 file.</p>
                                 
-
-
-                                {/* <input type="file" id="myFile" name="filename"/>
-                                <input type="submit"></input> */}
-
                             </div>
-
+                            
                             <input  placeholder="Add at least 1 tag" className="add form-control" data-bs-toggle="collapse" href="#collapseExample"></input>
                             <div className="collapse" id="collapseExample">
-                            <div className="card-body">
+                            <div className="cardd">
                                 <p className='tagestitl'>Add tags to categorize posts</p>
                                 <button type="button" className="tages"><span><img className='graphup' src={Graphup} alt='Graph icon'/></span>
                                 world cup <span>+</span>
@@ -88,7 +85,7 @@ const AddNewPost=()=>
                                 </button>
                             </div>
                             </div>
-
+                            
                             <div className="btn-group dropup">
                                 <button type="button" className="add_list toggle-button" data-bs-toggle="dropdown">
                                     <img className='setting' src={Setting} alt='setting icon'/>
