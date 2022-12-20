@@ -7,7 +7,8 @@ import RecommendedPosts from './components/Pages/Shuffle';
 import GetApp from './components/Pages/SpecialPgaes/GetApp';
 import HomePage from './components/Pages/Home/HomePage';
 import AddNewPost from './components/Pages/SpecialPgaes/AddNewPostFile/AddNewPost';
-
+//import handleShuffle from './components/Pages/Shuffle';
+import ModalTags from './components/UI/CustomizeTags/CustomTags';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
@@ -18,6 +19,8 @@ root.render(
        <Route path="/shuffle" element={<RecommendedPosts/>} />
        <Route path="/getapp" element={<GetApp/>} />
        <Route path="/addnewpost" element={<AddNewPost/>} />
+       <Route path="/" element={<ModalTags/>}></Route>
+       
        </Routes>
    </BrowserRouter>
   </React.StrictMode>
