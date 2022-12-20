@@ -42,7 +42,7 @@
     font-size: 100%; 
     background: none; 
 }
-.card{
+#card-input{
    color: black;
    font-size: 100%;
    width: 50%;
@@ -58,7 +58,7 @@
     width: 101.5%;
     height: 70px;
 }
-.btn-primary{
+#button-post{
     font-size: 80%;
     font-family:system-ui;
     width: 8%;
@@ -67,16 +67,6 @@
     left: 92%; 
    
 }
-/* .btn-light{
-    background: rgb(231, 229, 229);
-    font-size: 100%;
-    font-family:system-ui;
-    font-weight: bold;
-    position: relative;
-    top: 10px;
-    left: 78%; 
-    
-}  */
 .comments-and-accounts{
     border-radius: 18px; 
     height: 70px;
