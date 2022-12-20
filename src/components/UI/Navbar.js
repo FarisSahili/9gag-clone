@@ -4,6 +4,7 @@ import LogoNavHome from './NavBarHomeImg/logoNavHome.png';
 import './Navbar.css';
 import RecommendedPosts from '../Pages/Shuffle';
 import handleShuffle from '../Pages/Shuffle';
+import ModalTags from './CustomizeTags/CustomTags';
 
 const itemClicked = (event) => {
     event.stopPropagation();
@@ -13,11 +14,13 @@ const Navbar = () => {
 
 
 
-    return(        
+    return(     
+        
           <div className='basic-navbar sticky-top'>
              <div className='components'>
                 <div className='left-components'>
                         <div id="menu-div">
+                            
                         <button className="btn-start" type="button" data-bs-toggle="offcanvas" 
 data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img className="menue"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAH9JREFUWEft1UsKgDAMANH05npypTsXtYOGQAvTbaikLx9bLHbaYvmECVFFFFKIBCi+VQ9d9JpkfIgxEzKhLr5VDyVb5N91hchtJnREROWknaPkHPuHyufF2EtWeYbfd8qIXKGMUOUOev2Puocye4jKXRJ3yohVIYVIgOL2EAndFg4LJcntgd8AAAAASUVORK5CYII="/></button>
                         </div>  
@@ -78,8 +81,11 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                         </button>
                                 
                                         <ul id="prof-dropdowm" className="dropdown-menu">
-                                                <li><a  className="dropdown-item" href="#">Sign up or Log in</a></li>
-                                  <li><Link to="/" className="dropdown-item" >Customize with Tags</Link></li>
+                                                <a  className="dropdown-item" href="#">Sign up or Log in</a>
+                                                
+                                           
+                                          <a href="#"   className="dropdown-item" > modal</a>
+                                           
                                    
                                                 <li>
                                                     <a id="dark-mode-link" className="dropdown-item" href="#" onClick={itemClicked}> <div id="f-div">Dark Mode<div id="s-div"  className="form-check form-switch">
@@ -92,7 +98,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                                 <li><a className="dropdown-item" href="#">Report Problems</a></li>
 
                                             
-                                        
+                                              
                                                 <li>
                                                 <div className='Dropdown'>   
                                                     <div className='select'>  
@@ -157,6 +163,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                     <Link to='/addnewpost' id="post-but" type="button" className="buttons"><img className='post-pen' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXJJREFUSEvt1v1NwkAYBvDnJRViAthOoCPUCZQNcAM20RHcwDiBI8gIt4F1gn4cibQcPXOJNYVeP+hdQ2Lsv5D+eN57yHuEMz10Jhd/B/4Kw5uR47wB8AGwXIiHS88LjidrNXG22fhSyncAbgmKiGgxnk5ZGbcGyzB0M8dRya40vYlyIW7Lya3BCsuSZCWJXrSFlfJ1Mp+vis+MYTXei90uIM+L2vDJbPbrGcGlMw3GQiwacVuJNUViDXicC+Ebn3FNe9WkdfgzEd0bt7oBLXpzgKu2F0fQ++/UAdXiupZ3LtcJqHJi3XhPTmwbVT+gNfEQaCs8FNoID4nWwkOjtXCaJAGIrjvcTlrbW/eOSrl+FvnHkKg2cZokSxCpG0TT0ztp7VpMOX8C8NigGqPaxFvO1wTc1cBWUP2oOVcLvXp9kfKTRqPl8Zbp0AXtVw7KVSpWLAFGwBpSsny/Z7qbYl+0klitsC3g2kaMtpNJun9YTeAbfjfzH40wiiEAAAAASUVORK5CYII="/> <b>  Post </b>
                                     </Link>
                                 </div> 
+                              
                 </div>
              </div>
              <hr id="navbar-hr"/>

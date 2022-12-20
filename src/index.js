@@ -19,8 +19,6 @@ root.render(
        <Route path="/shuffle" element={<RecommendedPosts/>} />
        <Route path="/getapp" element={<GetApp/>} />
        <Route path="/addnewpost" element={<AddNewPost/>} />
-       <Route path="/" element={<ModalTags/>}></Route>
-       
        </Routes>
    </BrowserRouter>
   </React.StrictMode>
