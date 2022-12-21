@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import RecommendedPosts from './components/Pages/Shuffle';
@@ -18,7 +17,8 @@ root.render(
   <React.StrictMode>
      <BrowserRouter>
        <Routes>
-       <Route path="/Home" index element={<HomePage/>} />
+       <Route path="/" element={<HomePage/>}  />
+       <Route path="/home" element={<HomePage/>}  />
        <Route path="/shuffle" element={<RecommendedPosts/>} />
        <Route path="/getapp" element={<GetApp/>} />
        <Route path="/addnewpost" element={<AddNewPost/>} />
@@ -27,7 +27,7 @@ root.render(
        
        </Routes>
    </BrowserRouter>
-    <App />
+    {/* <App /> */}
   </React.StrictMode>
 );
 
