@@ -1,4 +1,5 @@
 import PostList from "../../Posts/PostList";
+import SocialMediaSignup from "../../SignupLoginModal/SocialMediaSignup";
 import Navbar from "../../UI/Navbar";
 import Sidebar from "../../UI/Sidebar/Sidebar";
 import SinglePostPage from "../SinglePostPage";
@@ -10,6 +11,7 @@ const HomePage = (props) => {
         <>
             <Navbar/>
             <Sidebar/>
+            <SocialMediaSignup/>
             <Interests/>
             <PostList/> 
         </>

@@ -38,6 +38,9 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                         </div>
                         <div className='left-div'>
                            <a className="left-links"><b>🥔 Potatoz</b></a>
+                        <button className="btn-start" type="button" data-bs-toggle="modal"
+        href="#exampleModalToggle"
+        role="button" > Modalll</button>
                         </div>
                 </div>  
                 <div className='right-components'>
@@ -69,8 +72,12 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                         </li>
                                 </ul>
                         </div>  
+                        
                         <div className='sign-div'>
                             <button id="sign-but" type="button" className="buttons" > <b>Sign Up/ Log In</b></button>
+                            {/* <button className="btn-start" type="button" data-bs-toggle="modal"
+        href="#exampleModalToggle"
+        role="button" > Modalll</button> */}
                         </div>
                         <div  id='profile-div' className="btn-group dropstart">
                                         <button type="button" className="btn btn-secondary " data-bs-toggle="dropdown" aria-expanded="false" id="profile-but"  >
@@ -81,7 +88,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                         </button>
                                 
                                         <ul id="prof-dropdowm" className="dropdown-menu">
-                                                <li><a  className="dropdown-item" href="#">Sign up or Log in</a></li>
+                                                <li><a  className="dropdown-item"          >Sign up or Log in</a></li>
                                                 <li><a  className="dropdown-item" href="#">Customize with Tags</a></li>
      
                                                 <li>
