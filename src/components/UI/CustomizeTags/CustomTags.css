@@ -7,7 +7,6 @@
 
 }
 
- 
 .buttonItem {
   display: flex;
   outline: none;
@@ -26,7 +25,7 @@
   display: flex;
 }
 
-.rowContainer {
+.rowContainer  {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
@@ -45,8 +44,14 @@
 }
 
 .btn{
-  margin:0%;
-  padding: 0%;
   float: right;
-
+    background-color:#0975f1;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.fav{
+  margin: 0%;
 }

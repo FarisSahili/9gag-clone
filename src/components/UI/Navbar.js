@@ -39,6 +39,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                         <div className='left-div'>
                            <a className="left-links"><b>🥔 Potatoz</b></a>
                         </div>
+                         
                 </div>  
                 <div className='right-components'>
                         <div className="dropdown" id='search-div' >
@@ -84,7 +85,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                                 <a  className="dropdown-item" href="#">Sign up or Log in</a>
                                                 
                                            
-                                          <a href="#"   className="dropdown-item" > modal</a>
+                                          <Link to="/" className="dropdown-item">Modal tags</Link>
                                            
                                    
                                                 <li>
