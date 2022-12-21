@@ -26,6 +26,18 @@ const PostCard = (props) => {
 
     const [upvote, setUpvote] = useState(false)
     const [downvote, setdownvote] = useState(false)
+    const [save, setsave] = useState(true)
+    function Save() {
+        if (save){
+            setsave(false)
+            document.getElementById("savebut").className ="save-button-active";
+        }
+        else {
+            setsave(true)
+            document.getElementById("savebut").className ="save-button";
+  
+        }
+    }
     function Upvote() {
         // number=101
         // console.log(number)
@@ -63,25 +75,25 @@ const PostCard = (props) => {
         <div className='post-container'>
             <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
-                    <a className="aa" href="gagger-page-html">
+                    <a className="cardfont" >
                         <img src={props.op_user_avatar} className='AvatarPic' alt="this is avatar " />
                     </a>
-                    <div className='gagger-name'>
-                       <a className="aa">{props.op_user}</a>
+                    <div className='gagger'>
+                       <a className="cardfont">{props.op_user}</a>
                         <span className="time">1h</span>
                     </div>
 
                     <div className='save-icon'>
-                        <button className='save-button'>
-                            <img src={SaveIcon} className='SaveIcon' alt="this is save icon" type="button" />
+                        <button onClick={Save} className='save-button'>
+                            <img id="savebut" src={SaveIcon} className='SaveIcon' alt="this is save icon" type="button" />
                         </button>
                     </div>
-                    <div className="dropdown">
+                    <div className="dropdown dd-card">
                         <button className='dropdown-button' data-bs-toggle="dropdown" type="button">
                             <img src={DropdownIcon} className='dropdownIcon' alt="this is save icon" type="button" />
                         </button>
-                        <ul className="dropdown-menu">
-                            <li><button className="dropdown-item" type="button">Download Media</button></li>
+                        <ul className="dropdown-menu dd-menu">
+                            <li><button className="dropdown-item dd-item" type="button">Download Media</button></li>
                             <li><button className="dropdown-item" type="button">Save</button></li>
                             <li><button className="dropdown-item" type="button">I Don't Like This</button></li>
                             <li><button className="dropdown-item" type="button">I've seen this</button></li>
@@ -92,19 +104,22 @@ const PostCard = (props) => {
                     </div>
                 </div>
                 <div className='title-of-post'>
-                    <h4 >{props.title}</h4>
+                    <h4 className="postcardh4" >{props.title}</h4>
                 </div>
-                <div className='memes-media'> < img src={props.content} ></img>
+                <div className='Media'> <img className='Media' src={props.content} />
                   </div>
                 <div className='container-tag'>
-                    <a className='Post-Card-Tag aa' href="tag-html">{props.tags[0]}</a>
-                    <a className='Post-Card-Tag aa' href="tag-html">{props.tags[1]}</a>
+                    <a className='Post-Card-Tag cardfont' >{props.tags[0]}</a>
+                    <a className='Post-Card-Tag cardfont' >{props.tags[1]}</a>
+                    <a className='Post-Card-Tag cardfont' >{props.tags[2]}</a>
+
+
                 </div>
                 <div className='button-card'>
                     <div className='vote-button'>
                         <button onClick={Upvote} id="up" className='button-vote'><img className='arrowu' src={voteup} alt="this is vote up icon" />{Up}</button>
                         <button onClick={Downvote} id="down" className='button-vote'><img className='arrowd' src={votedown} alt="this is vote down icon " />{Down}</button>
-                        <button className='button-vote-comment'><img src={CommitIcon} alt="this is commit icon " />90</button>
+                        {/* <Link to='/comment'className='button-vote-comment'><img className="comment-img"  src={CommitIcon} alt="this is commit icon " />90</Link> */}
                     </div>
 
                     <div className='share-buttons'>
@@ -118,14 +133,14 @@ const PostCard = (props) => {
                                 <a className='share-icon'><img src={ShareIcon} alt="this is ShareIcon " /></a>
                             </button>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#"><img className='dropdown-share-icon' src={Link} alt="this is Copylink Icon" />Copy Link</a></li>
-                                <li><a className="dropdown-item" href="#"><img className='dropdown-share-icon' src={Email} alt="this is Email Icon" />Email</a></li>
-                                <li><a className="dropdown-item" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252F9gag.com%252Fgag%252FaBd8dDN%253Fref%253Dfb.s%26switched_accounts%3D1&display=popup">
+                                <li><a className="dropdown-item" ><img className='dropdown-share-icon' src={Link} alt="this is Copylink Icon" />Copy Link</a></li>
+                                <li><a className="dropdown-item" ><img className='dropdown-share-icon' src={Email} alt="this is Email Icon" />Email</a></li>
+                                <li><a className="dropdown-item" >
                                     <img className='dropdown-share-icon' src={Facebook} alt="this is Facebook Icon" />Facebook</a></li>
-                                <li><a className="dropdown-item" href="#"><img className='dropdown-share-icon' src={Pinterest} alt="this is pinterest Icon" />pinterest</a></li>
-                                <li><a className="dropdown-item" href="https://twitter.com/intent/tweet?via=9GAG&source=tweetbutton&original_referer=https%3A%2F%2F9gag.com%2Fgag%2FaBd8dDN%3Fref%3Dt&text=When%20you%20are%20the%20life%20and%20soul%20of%20the%20party...&url=https%3A%2F%2F9gag.com%2Fgag%2FaBd8dDN%3Fref%3Dt">
+                                <li><a className="dropdown-item"><img className='dropdown-share-icon' src={Pinterest} alt="this is pinterest Icon" />pinterest</a></li>
+                                <li><a className="dropdown-item" >
                                     <img className='dropdown-share-icon' src={Twitter} alt="this is Twitter Icon" />Twitter</a></li>
-                                <li><a className="dropdown-item" href="https://t.me/share/url?text=Bottomless%20table&url=https%3A%2F%2F9gag.com%2Fgag%2Fa3ZM8Y3%3Fref%3Dtgm"><img className='dropdown-share-icon' src={Telegram} alt="this is telegram Icon" />Telegram</a></li>
+                                <li><a className="dropdown-item"><img className='dropdown-share-icon' src={Telegram} alt="this is telegram Icon" />Telegram</a></li>
 
                             </ul>
 
