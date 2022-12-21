@@ -4,7 +4,7 @@ import ProfileComment from '../image/Profile-comment.png';
 import Navbar from '../UI/Navbar';
 import PostComments from '../Posts/Comments/PostComments';
 import Sidebar from '../UI/Sidebar/Sidebar';
-import postData from '../../data';
+
 
 // comment 
 const SinglePostPage = () => {
@@ -19,10 +19,7 @@ const SinglePostPage = () => {
         setComments((comments) => [...comments, comment]);
     };
 
-    // img
-    const handeImage = (event) => {
-        return event = document.createElement("./Profile-comment.png")
-    };
+ 
 
 
     return (
@@ -47,50 +44,28 @@ const SinglePostPage = () => {
                 <div className="card" id='card-input'>
                     <form className="d-flex" id='input-comment' >
                         <input className="form-control me-2" type="search" value={comment} onChange={onChangeComment} placeholder="leave a comment" />
-                        <head>
-                            <img src={ProfileComment} onChange={handeImage} className='profile-comment' />
-                        </head>
                     </form>
-                    <button type="button" onClick={() => { onClickComment(); handeImage(); }} id='button-post' className="btn btn-primary">Post</button>
+                    <button type="button" onClick={() => { onClickComment(); }} id='button-post' className="btn btn-primary">Post</button>
+                </div>
+
+                <div className='vote-button'>
+                    
+                    {/* <Link to='/comment'className='button-vote-comment'><img className="comment-img"  src={CommitIcon} alt="this is commit icon " />90</Link> */}
                 </div>
 
 
-             
-                    {/* <div className="new-comment"> {comments}</div> */}
-                     <PostComments />  
-              
+                <div className='comments-and-accounts'>
+                    <img src={ProfileComment} className="photo-co" />
+                    <span className='time-of-comment'>1m</span>
+                    <a className='title-account'>You</a>
+                    <h5 className='the-comment'> {comments}</h5>
+                    <a class="nav-link dropdown-toggle" id='reply-comment' href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> View replies</a>
 
-
-             
-
+                </div>
+                <PostComments />
             </div>
         </>
 
     );
 }
 export default SinglePostPage;
-
-{/* ={() => { { onClickComment }; { onClickPhoto }; }} */ }
-{/* <div className='profile-comment'>{photos}</div> */ }
-
-/* {comment.map((text)=>(
-                    <div>{text}</div>
-
-<ul className="sidebar-menu">
-
-  <h3 className="h3Sections">favorites</h3> 
-
-          {favorites.map((item, index) => {
-            return (
-              <li className="li-filter" onClick={() => 
-                {
-                setRecent((current) => [...current, item]); 
-                }}>
-
-              <div className="rowContainer">
-                <div className="sidebarItem">{item}</div>
-                <div className="star-btn-container">
-                  <Star isSelected={true}  o
-
-
-                ))*/
