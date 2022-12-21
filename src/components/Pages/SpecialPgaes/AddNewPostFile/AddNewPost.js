@@ -5,15 +5,23 @@ import AddNewPostt from './AddNewPostt.css';
 import Navbar from '../../../UI/Navbar';
 import Sidebar from '../../../UI/Sidebar/Sidebar';
 import NavPost from '../../NavPost';
+import React, { useState } from "react";
 
 const AddNewPost=()=>
 {
-    console.log()
+
+    let [inputValue, setInputValue] = useState(""); // create a state variable to store the input value
+    
+    let handleInputChange = (event) =>
+    {
+        setInputValue(event.target.value); // update the state variable with the input value
+    };
+
     return(
         
     <div>
                 <NavPost/>
-ki
+
         
             <div><h4 className='creat_post'>Create Post</h4></div>
             
@@ -55,9 +63,15 @@ ki
                                 <input type="file" id="upload" hidden/>
                                 <label for="upload" className="choosebtn btn btn-primary form-control-file" >Choose file...</label>
                                 <p className='chooseor'>or</p>
-                                <input  placeholder="Paste image or video URL" className="urlinput form-control gap-2"  required></input>
-                                <button type="button" className="hidenchoose btn " disabled>Use Like</button>
-                                <p className='supportfile'>Support links with PNG, JPG, GIF or MP4 file.</p>
+                                {/* <input  type="text" onChange={handleInputChange} placeholder="Paste image or video URL" className="urlinput form-control gap-2"  required>{inputValue}</input>
+                                <button type="button" className="hidenchoose btn btn-secondary">Use Link</button> */}
+    <div>
+    <input type="text" onChange={handleInputChange} placeholder="Paste image or video URL" className="urlinput form-control gap-2"  />
+    <p className='supportfile'>Support links with PNG, JPG, GIF or MP4 file.</p>
+        {inputValue && <button type="button" className="hidenchoose btn btn-secondary">Use Link</button>} {/* render the button only if inputValue is not empty */}
+        {inputValue || <button type="button" className="hidenchoose btn btn-secondary" disabled>Use Link</button>}
+    </div>
+                                
                                 
                             </div>
                             

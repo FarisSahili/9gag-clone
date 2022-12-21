@@ -55,60 +55,60 @@ const itemClicked = (event) => {
                   </li>
                 </ul>
               
-                <div className="dropdown" >
-                <button id="search-but" className="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false" > 
-                  <img id="search-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAjRJREFUSEv
-                        lllFO20AQhme8m742nKDpCRoeKxwgUnYl3sIJCjegJyCcoPQEDScgb0g2UqAE9ZHcoOEEmFds71RrOZEdbO86kssD+xIpmp1vZv6ZWSO80cE34oI1+M739
-                        4Hoi4PYVkQBAcx3pbzdNPBK8J+rq07cap0C0VEJIADECQvDs68HB4s6QZSCZ75/AgA/bJ0R0UlPyp+29oXgmeeNAfHbygnRhXKcSczYTb/fD6bTaZvF8b6
-                        j1DBnhzh2B4NjG/gr8Fqmj0g03JFyXubs3vO6hDgBgE+pzXdXiHMTPAdONOX8b3rpMeS8qzM0OdEVaEWRDi6Bsyj6bNI8B86WGIm2qzJdDybN/CH5n+jCl
-                        bKsIROTPNj3yfZiURUygQeuEFtVlVqB9ZwiwFQbK8TD3cFA61br/L6+HjpEl0nSAP2eEDdlDlbgbFOFnG/ZaLvuNNX6yabJshmPEOBUX3KFsN5o6/BZKhc
-                        BnPWEGP33jE1yNaaxaSpyJb3z/QABPtqMg6GrjXI1MscmfV/NcW5zIS5CxrZtujvp5jh+AKIOATxHnHdM96p3NeIClTo07mrHudTQOsvH7nVCHCPR5IXz2
-                        +Xr9CGK9ghxWPRWI9HxjpRjq81VMI/W77Eurw4s+0Sa4OYvEMZGOrOk2wuObqSI83NdiXvPOyLEX0uzKrj1hkp3eZcA2oQ4Z0otirS3hVuD67wWNvBGwDr
-                        ILLyo5I2Bl3D9W9ThjYI3Gqc6mm5i+/4y/gdaBUkuj2W3yQAAAABJRU5ErkJggg=="/>
-                  </button>
-                  <ul id="search-drpdown" className="dropdown-menu">
-                          <li>
-                            <nav className="navbar navbar-light bg-light">
-                              <form className="form-inline">
-                                <div className="input-group">
-                                  <div id="search-div" className="input-group-prepend">
-                                  <span className="input-group-text" id="basic-addon1"><svg id="nested-search" xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
-                                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                    </svg></span>
+                  <div className="dropdown" >
+                  <button id="search-but" className="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false" > 
+                    <img id="search-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAjRJREFUSEv
+                          lllFO20AQhme8m742nKDpCRoeKxwgUnYl3sIJCjegJyCcoPQEDScgb0g2UqAE9ZHcoOEEmFds71RrOZEdbO86kssD+xIpmp1vZv6ZWSO80cE34oI1+M739
+                          4Hoi4PYVkQBAcx3pbzdNPBK8J+rq07cap0C0VEJIADECQvDs68HB4s6QZSCZ75/AgA/bJ0R0UlPyp+29oXgmeeNAfHbygnRhXKcSczYTb/fD6bTaZvF8b6
+                          j1DBnhzh2B4NjG/gr8Fqmj0g03JFyXubs3vO6hDgBgE+pzXdXiHMTPAdONOX8b3rpMeS8qzM0OdEVaEWRDi6Bsyj6bNI8B86WGIm2qzJdDybN/CH5n+jCl
+                          bKsIROTPNj3yfZiURUygQeuEFtVlVqB9ZwiwFQbK8TD3cFA61br/L6+HjpEl0nSAP2eEDdlDlbgbFOFnG/ZaLvuNNX6yabJshmPEOBUX3KFsN5o6/BZKhc
+                          BnPWEGP33jE1yNaaxaSpyJb3z/QABPtqMg6GrjXI1MscmfV/NcW5zIS5CxrZtujvp5jh+AKIOATxHnHdM96p3NeIClTo07mrHudTQOsvH7nVCHCPR5IXz2
+                          +Xr9CGK9ghxWPRWI9HxjpRjq81VMI/W77Eurw4s+0Sa4OYvEMZGOrOk2wuObqSI83NdiXvPOyLEX0uzKrj1hkp3eZcA2oQ4Z0otirS3hVuD67wWNvBGwDr
+                          ILLyo5I2Bl3D9W9ThjYI3Gqc6mm5i+/4y/gdaBUkuj2W3yQAAAABJRU5ErkJggg=="/>
+                    </button>
+                    <ul id="search-drpdown" className="dropdown-menu">
+                            <li>
+                              <nav className="navbar navbar-light bg-light">
+                                <form className="form-inline">
+                                  <div className="input-group">
+                                    <div id="search-div" className="input-group-prepend">
+                                    <span className="input-group-text" id="basic-addon1"><svg id="nested-search" xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg></span>
+                                    </div>
+                                    <input id="search-input" type="text" className="form-control" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1" />
                                   </div>
-                                  <input id="search-input" type="text" className="form-control" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1" />
-                                </div>
-                              </form> 
-                            </nav> 
-                            
-                          </li>
-                  </ul>
-                  </div>  
-                  
-                  <div className="dropdown">
-                          <button id="notification-but" type="button" className="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false" > 
-                              <svg id="notification-img" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-bell-fill" viewBox="0 0 16 16">
-                              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
-                              </svg>
-                          </button>
-                          <ul  id="notification-dropdown" className="dropdown-menu">
-                              <div className="buttons-div">  
-                                  <button id="All" className="buttonss" onClick={allClicked}> All</button>
-                                  <button id="Mentions" className="buttonss" onClick={MentionsClicked} > Mentions</button>
-                              </div>
-                              <div className="text-div" >  
-                                <b className="text">No notifications yet</b>
-                              </div>
-                          </ul>
-                  </div>
-
-                  <div  className="btn-group dropstart">
-                        <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="profile-but"  >
-                                <img id="prof" src='./image/basil.jpg' />
-                        </button>
-                
-                      <ul id="prof-dropdowm" className="dropdown-menu">
+                                </form> 
+                              </nav> 
                               
+                            </li>
+                    </ul>
+                    </div>  
+                    
+                    <div className="dropdown">
+                            <button id="notification-but" type="button" className="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false" > 
+                                <svg id="notification-img" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                                </svg>
+                            </button>
+                            <ul  id="notification-dropdown" className="dropdown-menu">
+                                <div className="buttons-div">  
+                                    <button id="All" className="buttonss" onClick={allClicked}> All</button>
+                                    <button id="Mentions" className="buttonss" onClick={MentionsClicked} > Mentions</button>
+                                </div>
+                                <div className="text-div" >  
+                                  <b className="text">No notifications yet</b>
+                                </div>
+                            </ul>
+                    </div>
+
+                    <div  className="btn-group dropstart">
+                          <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="profile-but"  >
+                                  <img id="prof" src='./image/basil.jpg' />
+                          </button>
+                  
+                        <ul id="prof-dropdowm" className="dropdown-menu">
+                                
                               <li><a  className="dropdown-item" href="#">Sign up or Log in</a></li>
                               <li><a  className="dropdown-item" href="#">Customize with Tags</a></li>
 
