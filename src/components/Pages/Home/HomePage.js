@@ -7,20 +7,22 @@ import SinglePostPage from "../SinglePostPage";
 import Interests from "./Interests";
 import Dark from "../../../dark";
 import RecommendedPosts from "../Shuffle";
+import TagButton from "../../Tags/Tag";
 
 const HomePage = (props) => {
-    return(
+    return (
         <>
         
             <Navbar/>
             <ModalTags/>
-            <Sidebar/>
-            <Interests/>
-            <PostList/>
+ 
          
+            {/* <Sidebar/> */}
+            <Interests/>
+            <TagButton/>
+            <PostList/>   
         
-
-      </>
+        </>
     );
 }
 

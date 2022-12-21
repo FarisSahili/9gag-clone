@@ -214,40 +214,6 @@ const postData = [
     content: media3, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   }
   ,
   {
@@ -261,40 +227,6 @@ const postData = [
     content: media4, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   } 
   ,
    {
@@ -308,40 +240,6 @@ const postData = [
     content: media5, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   } ,
    {
     id: 8,
@@ -354,40 +252,6 @@ const postData = [
     content: media6, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   }
   , 
    {
@@ -401,40 +265,6 @@ const postData = [
     content: media1, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   }
 
 ];

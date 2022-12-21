@@ -126,7 +126,7 @@ const PostCard = (props) => {
                     <div className='vote-button'>
                     <button  onClick={Upvote} type="button" id="up" className="btn btn-outline-secondary buttton"><img className='arrowu' src={voteup} alt="up vote icon " /><b>{Up}</b></button>
                     <button onClick={Downvote} type="button" id="down" className="btn btn-outline-secondary buttton"><img className='arrowd' src={votedown} alt=" down vote icon " /><b>{Down}</b></button>
-                    <button  type="button" id="comment-but" className="btn btn-outline-secondary buttton"><img className="comment-img"  src={CommitIcon} alt="comment icon " /><b>{props. comment_count}</b></button>
+                    <Link to='/comment'  type="button" id="comment-but" className="btn btn-outline-secondary buttton"><img className="comment-img"  src={CommitIcon} alt="comment icon " /><b>{props. comment_count}</b></Link>
 
 
                         {/* <button onClick={Upvote} id="up" className='button-vote'><img className='arrowu' src={voteup} alt="this is vote up icon" />{Up}</button> */}
