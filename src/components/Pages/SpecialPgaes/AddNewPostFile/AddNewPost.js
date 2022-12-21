@@ -5,17 +5,25 @@ import AddNewPostt from './AddNewPostt.css';
 import Navbar from '../../../UI/Navbar';
 import Sidebar from '../../../UI/Sidebar/Sidebar';
 import NavPost from '../../NavPost';
+import React, { useState } from "react";
 
 const AddNewPost=()=>
 {
-    console.log()
+
+    let [inputValue, setInputValue] = useState("");
+    
+    let handleInputChange = (event) =>
+    {
+        setInputValue(event.target.value); 
+    };
+
     return(
         
     <div>
                 <NavPost/>
-ki
+
         
-            <div><h4 className='creat_post'>Create Post</h4></div>
+            <div><h3 className='creat_post'>Create Post</h3></div>
             
             <div className="rules_dropdown dropdown accordion" id="accordionExample">
             <div className="accordion-item">
@@ -45,7 +53,7 @@ ki
                     
                     <div className="bcontainer container-md" >
             
-                        <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
+                        <input  placeholder="Titel 280" className="titel form-control gap-2" maxlength="280" required></input>
                     
                             <div className='scontainer'>
                                 <img className='imgenewpostt' src={imagenewpost} alt='imagenewpost icon'/>
@@ -55,9 +63,13 @@ ki
                                 <input type="file" id="upload" hidden/>
                                 <label for="upload" className="choosebtn btn btn-primary form-control-file" >Choose file...</label>
                                 <p className='chooseor'>or</p>
-                                <input  placeholder="Paste image or video URL" className="urlinput form-control gap-2"  required></input>
-                                <button type="button" className="hidenchoose btn " disabled>Use Like</button>
-                                <p className='supportfile'>Support links with PNG, JPG, GIF or MP4 file.</p>
+    <div>
+    <input type="text" onChange={handleInputChange} placeholder="Paste image or video URL" className="urlinput form-control gap-2"  />
+    <p className='supportfile'>Support links with PNG, JPG, GIF or MP4 file.</p>
+        {inputValue && <button type="button" className="hidenchoose btn btn-secondary">Use Link</button>}
+        {inputValue || <button type="button" className="hidenchoose btn btn-secondary" disabled>Use Link</button>}
+    </div>
+                                
                                 
                             </div>
                             
