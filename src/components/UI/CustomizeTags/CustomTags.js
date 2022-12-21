@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CustomTags.css";
+import Ctag from './9gagtags.jpg'
 function ModalTags() {
 
   const Star = ({ isSelected, onClick }) => {
@@ -101,7 +102,7 @@ function ModalTags() {
     <>
 
       <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Customize with Tags
+     <img src={Ctag} className="ctag"></img>
       </button>
       <div className="modal fade " id="exampleModal" aria-hidden="true" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" >
         <div className="modal-dialog" role="document">

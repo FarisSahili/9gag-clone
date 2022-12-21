@@ -36,8 +36,7 @@ function RecommendedPosts(props) {
  
   return (
     <div>
-      <Navbar/>
-      <Sidebar/>
+
      <button onClick={handleShuffle}> 🔀 Shuffle</button>
       {list.map((x,index) => (
         <PostCard key={x.id}

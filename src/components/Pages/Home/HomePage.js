@@ -6,17 +6,18 @@ import Sidebar from "../../UI/Sidebar/Sidebar";
 import SinglePostPage from "../SinglePostPage";
 import Interests from "./Interests";
 import Dark from "../../../dark";
+import RecommendedPosts from "../Shuffle";
 
 const HomePage = (props) => {
     return(
         <>
         
             <Navbar/>
-            
             <Sidebar/>
             <Interests/>
-            <PostList/> 
-        </>
+        
+
+      </>
     );
 }
 
