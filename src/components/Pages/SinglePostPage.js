@@ -4,6 +4,7 @@ import ProfileComment from '../image/Profile-comment.png';
 import Navbar from '../UI/Navbar';
 import PostComments from '../Posts/Comments/PostComments';
 import Sidebar from '../UI/Sidebar/Sidebar';
+import PostCard from '../Posts/PostCard';
 
 
 // comment 

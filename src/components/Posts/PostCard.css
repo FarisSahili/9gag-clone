@@ -1,4 +1,4 @@
-/* container */
+/* container  */
 .post-container {
     text-align: left; 
     padding-top: 2%; 
@@ -9,8 +9,8 @@ width: 540px;
 display: flex;
 position: relative;
 }
-
- .cardfont {
+/* css for a  */
+ .card-font {
 display: block;
 margin-top: 0%;
 text-decoration:1px solid black;
@@ -19,7 +19,7 @@ color:black ;
 font-size: small;
 width:auto;
  }
- .cardfont:hover{
+ .card-font:hover{
 color: black;
  }
 
@@ -31,12 +31,13 @@ color: black;
     position: relative;
     display: flex;
  }
- .AvatarPic {
+ .avatar-pic {
     height: 30px;
     width:30px;
     display: flex;
     border-radius: 50%;
 }
+/* gagger-name */
 a.gagger{
     width:80px;
     padding-top: 5%;
@@ -53,7 +54,7 @@ a.gagger{
     display: flex;
  }
 
-
+/* post time */
  .time {
     display:flex;
     padding-top: 1%;
@@ -62,41 +63,22 @@ a.gagger{
   padding-left: 1%;
   cursor: auto;
  }
- .SaveIcon{
+ /* save icon  */
+ .save-icon{
    
-    width: 80%;
+    width: 110%;
     margin: 3px;
  }
- .DropdownIcon{
-    height: 90%;
-    width: 90%;
-    margin: 1px; 
-    padding-right: 5px;
-    padding-top: 1px;
 
- }
-   .save-icon{
+ .save-icon{
     display: flex;
-padding-left: 60% ;
-padding-top: 2%;
-align-items: center; 
-   }
-   .dd-card{
-  
-    display: flex;
-padding-top: 0%;
-align-items: center; 
-width: 100%;
-   }
-  .drop-down-icon{
-    display: flex;
-padding-left: 0% ;
-align-items: center; 
-width: 100%;
+    padding-left: 60% ;
+    padding-top: 2%;
+    align-items: center; 
    }
    .save-button{
     height: auto;
-    width: 40px;
+    width: 100%;
     border-radius:50%;
     margin: 7px;
     display: flex;
@@ -108,7 +90,7 @@ width: 100%;
  }
  .save-button-active{
     height: auto;
-    width: 40px;
+    width: 100%;
     border-radius:50%;
     margin: 7px;
     display: flex;
@@ -118,6 +100,29 @@ width: 100%;
     border-width: 0;
 
  }
+   /* Drop down css  */
+   .dd-card{
+  
+    display: flex;
+    padding-top: 0%;
+    align-items: center; 
+    width: 100%;
+   }
+  .drop-down-icon{
+    display: flex;
+padding-left: 0% ;
+align-items: center; 
+width: 100%;
+   }
+   .DropdownIcon{
+    height: 90%;
+    width: 90%;
+    margin: 1px; 
+    padding-right: 5px;
+    padding-top: 1px;
+
+ }
+
  .dropdown-button{
     height: 40px;
     width: 40px;
@@ -137,7 +142,7 @@ width: 100%;
     background-color:lightgray; 
 
  }
-
+/* title  */
 .postcardh4{
     padding-top : 3%;
     cursor: pointer;
@@ -156,6 +161,7 @@ width: 100%;
 .title-of-post:hover{
 color :  #0099FF;
 }
+
 /* Media of Post  */
 
 .Media{
@@ -168,7 +174,7 @@ color :  #0099FF;
     align-items: center;
     
 }
-.video-card{
+/* .video-card{
     
     cursor: pointer;
 margin-top: 5px;
@@ -178,27 +184,29 @@ margin-top: 5px;
     width: 600px;
     max-height: auto;
     max-width: auto;
-}
+} */
+
 /* Tags */
 .container-tag{
     display: flex;
-padding: 1%;
-padding-left: 0%;
+    padding: 1%;
+    padding-left: 0%;
 }
 .Post-Card-Tag{
     border-radius: 5px;
     border-color:#f0eeee;
-    border-width: auto;
+    border-width: 100%;
     background-color: #f0eeee;
     justify-content: center; 
-padding:1% 1%;
-margin :3px;
-display: flex;
-position: relative;
-width:auto;
-height: 10%;
-font-size: 90%;
-cursor: pointer;
+    padding:2% 2%;
+    margin :3px;
+    display: flex;
+    position: relative;
+    width:auto;
+    height: 10%;
+    font-size: 90%;
+    cursor: pointer;
+    font-weight: bold;
 }
 .Post-Card-Tag:hover{
     background-color:lightgray;
@@ -206,6 +214,16 @@ cursor: pointer;
 
 }
 /* Vote & share Part */
+#up,#down,#comment-but{
+    background-color:white;
+    
+}
+#up:hover,#down:hover,#comment-but:hover{
+    background-color: #f0eeee;
+    color: grey;
+}
+
+
 .vote-button{
 display: flex;
 padding-top: 1%;
@@ -215,7 +233,7 @@ height:50px;
 padding: 2px;
 
 }
-.button-vote-comment{
+/* .button-vote-comment{
     border-radius: 5px;
     border-color:rgb(219, 208, 208);
     border-width:1px;
@@ -235,7 +253,7 @@ padding: 2px;
 }
 .button-vote-comment:hover{
 background-color:rgb(246, 246, 246);
-}
+} */
 .comment-img{
     width: 45%;
     padding-top: 5px;
@@ -278,6 +296,9 @@ background-color:rgb(246, 246, 246);
     border-color:1px  #0099FF;
     font-weight: bold;
     color: #0099FF;
+}
+.buttton{
+    width:100px;
 }
 .share-buttons{
     display: flex;
