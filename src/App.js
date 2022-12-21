@@ -1,15 +1,12 @@
 
 import './App.css';
-import Navbar from './components/UI/Navbar';
-// import Navbar from './components_new/UI/Navbar';
-
-
+import NavPost from './components/Pages/NavPost';
 function App() 
 {
 return (
     <>
+    <NavPost />
     </>
-
 );
 }
 
