@@ -107,7 +107,6 @@ const PostCard = (props) => {
                 <div className='container-tag'>
                     <a className='Post-Card-Tag cardFont' >{props.tags[0]}</a>
                     <a className='Post-Card-Tag cardFont' >{props.tags[1]}</a>
-                    <a className='Post-Card-Tag cardFont' >{props.tags[2]}</a>
 
 
                 </div>

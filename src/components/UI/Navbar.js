@@ -38,9 +38,6 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                         </div>
                         <div className='left-div'>
                            <a className="left-links"><b>🥔 Potatoz</b></a>
-                        <button className="btn-start" type="button" data-bs-toggle="modal"
-        href="#exampleModalToggle"
-        role="button" > Modalll</button>
                         </div>
                 </div>  
                 <div className='right-components'>
@@ -75,9 +72,6 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                         
                         <div className='sign-div'>
                             <button id="sign-but" type="button" className="buttons" > <b>Sign Up/ Log In</b></button>
-                            {/* <button className="btn-start" type="button" data-bs-toggle="modal"
-        href="#exampleModalToggle"
-        role="button" > Modalll</button> */}
                         </div>
                         <div  id='profile-div' className="btn-group dropstart">
                                         <button type="button" className="btn btn-secondary " data-bs-toggle="dropdown" aria-expanded="false" id="profile-but"  >
