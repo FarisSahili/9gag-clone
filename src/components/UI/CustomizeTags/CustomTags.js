@@ -1,7 +1,43 @@
 import React, { useState } from "react";
 import "./CustomTags.css";
-import Ctag from './9gagtags.jpg'
-function ModalTags() {
+import CustomizeTagsPic from './CustomizeTagsPic.png'
+function ModalTags (){
+  
+
+  const favoriteSection= () =>{
+    if (favorites.length > 0){
+ 
+  return(
+<>
+ <span className="itemTitle">Favorites</span>
+ 
+          {favorites.map((item, index) => {
+            return (
+              <ul className="list-group list-group-flush" onClick={() => 
+                {
+                setOtherTags((current) => [...current, item]);  }}>
+              <div className="rowContainer">
+              <div className="title">{item}</div>
+              <div className="btnsContainer">
+              <Star isSelected={true}
+                  onClick={() => {
+                    deleteItemFromFavorite(index);
+                    setPopularTags((current) => [...current, item]);
+                    }}/>
+                </div>
+              </div>
+              </ul>
+            );
+          })}    
+             </>
+    
+            )}}
+ 
+
+
+
+
+
 
   const Star = ({ isSelected, onClick }) => {
     return (
@@ -71,7 +107,7 @@ function ModalTags() {
     "girl celebrity",
   ]);
 
-  const [favorites, setFavorites] = useState(["sport"]);
+  const [favorites, setFavorites] = useState([]);
   const [hidden, setHidden] = useState([]);
 
   const filterArrayFromFavorite = (selectedIndex) => {
@@ -80,57 +116,46 @@ function ModalTags() {
   };
 
   const deleteItemFromFavorite = (selectedIndex) => {
-    setFavorites((current) => current.filter((item, index) => index !== selectedIndex)
+    setFavorites((current) => current.filter((_item, index) => index !== selectedIndex)
     );
   };
 
   const filterArrayFromOtherFavorite = (selectedIndex) => {
-    setOtherTags((current) => current.filter((item, index) => index !== selectedIndex)
+    setOtherTags((current) => current.filter((_item, index) => index !== selectedIndex)
     );
   };
   const filterArrayFromothertagstofav = (selectedIndex) => {
-    setOtherTags((current) => current.filter((item, index) => index !== selectedIndex)
+    setOtherTags((current) => current.filter((_item, index) => index !== selectedIndex)
     );
   };
   const filterArrayFromhidden = (selectedIndex) => {
-    setHidden((current) => current.filter((item, index) => index !== selectedIndex)
+    setHidden((current) => current.filter((_item, index) => index !== selectedIndex)
     );
     
   };
   
+
+  
+  
   return (
     <>
-
-      <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-     <img src={Ctag} className="ctag"></img>
+ <div className="modalbutton">
+      <button type="button" className="butn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+     <img src={CustomizeTagsPic} className="ctag"></img>
       </button>
+      </div>
       <div className="modal fade " id="exampleModal" aria-hidden="true" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" >
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">Customize with Tags</h5>
+               
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
     <div className="modal-body">
-    <span className="itemTitle">Favorites</span>
-       {favorites.map((item, index) => {
-          return (
-            <div className="rowContainer">
-              <div className="title">{item}</div>
-              <div className="btnsContainer">
-                <Star isSelected={true}
-                  onClick={() => {
-                    deleteItemFromFavorite(index);
-                    setPopularTags((current) => [...current, item]);
-                  }}
-                />
-              </div>
-            </div>
-          );
-        })}
+    {favoriteSection()}
     </div>
- 
-            <hr></hr>
+
             <div className="modal-body">
               <span  className="itemTitle">Explore Popular Tags</span>
               <ul className="list-group list-group-flush">
@@ -170,7 +195,7 @@ function ModalTags() {
                       <XButton
                           onClick={() => {
                             filterArrayFromOtherFavorite(index);
-                            setHidden((current) => [...current, item]);
+                            setHidden((current) => [...current,item]);
                           }}
                         />
                         <Star

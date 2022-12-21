@@ -7,7 +7,6 @@
 
 }
 
- 
 .buttonItem {
   display: flex;
   outline: none;
@@ -26,7 +25,7 @@
   display: flex;
 }
 
-.rowContainer {
+.rowContainer  {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
@@ -43,10 +42,23 @@
  position:relative
  
 }
+.ctag{
+  height: 200px;
+  width:300px;
+border-radius: 5%;
 
-.btn{
-  margin:0%;
-  padding: 0%;
+ }
+.butn{
+  padding-top: 10%;
   float: right;
+  background-color:white ;
+border: none;
 
+}
+.modalbutton{
+  padding-right: 5%;
+padding-left: 60%;
+}
+.fav{
+  margin: 0%;
 }
