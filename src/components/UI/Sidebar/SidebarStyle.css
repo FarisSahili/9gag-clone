@@ -217,6 +217,7 @@
 .bi :hover 
 {
   opacity: 1;
+  
 }
 
 /*li and ul style */
@@ -231,7 +232,7 @@
 .li-filter 
 {
   list-style-type: none;
-  margin: 8px;
+  margin: 10px;
   padding: 3px;
   margin-top: -1px;
 }
