@@ -9,7 +9,7 @@
     position: relative;
     right: 50%;
     left: 24%;
-    top: 98px; 
+    top: 80px; 
 }
  .button-wr{
     display: block;
@@ -17,8 +17,8 @@
     width: 2%;
     position: relative;
     right: 20%;
-    left: 71.5%;
-    top: 75px; 
+    left: 72.5%;
+    top: 50px; 
    
 }
 .page-link{
@@ -51,8 +51,8 @@
    font-weight: bold;
    position: relative;
    right:55%;
-   left:23%;
-   top: 50px;
+   left:24%;
+   top: 65px;
 }
 #input-comment{
     width: 101.5%;
@@ -102,7 +102,7 @@
     font-size: 85%; 
     position: relative;
     left:8%;
-    bottom: 28px; 
+    bottom: 34px; 
 }  
 .time-of-comment{
     font-size: x-small;

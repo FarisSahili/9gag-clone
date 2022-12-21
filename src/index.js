@@ -20,12 +20,12 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage/>} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/shuffle" element={<RecommendedPosts />} />
         <Route path="/getapp" element={<GetApp />} />
         <Route path="/addnewpost" element={<AddNewPost />} />
-        <Route path="/comment" element={<SinglePostPage/>} />
+        <Route path="/comment" element={<SinglePostPage/>} /> 
       </Routes>
     </BrowserRouter>
     {/* <App /> */}
