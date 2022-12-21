@@ -8,7 +8,7 @@ const HomePage = (props) => {
     return (
         <>
             <Navbar/>
-            <Sidebar/>
+            {/* <Sidebar/> */}
             <Interests/>
             <PostList/>  
          
