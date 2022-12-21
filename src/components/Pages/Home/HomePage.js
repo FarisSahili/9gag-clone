@@ -6,12 +6,13 @@ import Interests from "./Interests";
 
 
 const HomePage = (props) => {
-    return(
+    return (
         <>
             <Navbar/>
             <Sidebar/>
             <Interests/>
-            <PostList/> 
+            <PostList/>   
+        
         </>
     );
 }
