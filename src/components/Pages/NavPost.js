@@ -1,5 +1,5 @@
 import "./NavPost.css";
-
+import LogoNavHome from '../image/image.png';
 
 
 
@@ -29,7 +29,7 @@ const itemClicked = (event) => {
                   <div id="menu-div">
                     <button id="menu-but" type='button'> <img id="menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAIVJREFUSEvtlcENgCAQBPeoQa3H0rQzbUep4TAQX0KIj40YPQrYSSYDCBodacSFgR8zb6qT6sG5SVUDy7sH5utWUXUvQoNG4B5CxnkXmKW4tmNVJzsdMAKgBeaB1aouxnWqpsXtgeWWahqxMmTXKcn531sdv0VmYJtqtmdxMQ1Xt0z191Uf+B0nH2ATIcQAAAAASUVORK5CYII="/></button>
                   </div>   
-                    <a id="gag-but" className="navbar-brand" href="#" ><img id="gag-img" src='./image/image.png'  /></a>
+                    <a id="gag-but" className="navbar-brand" href="#" ><img id="gag-img" src={LogoNavHome}  /></a>
                       
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">  

@@ -10,11 +10,11 @@ import React, { useState } from "react";
 const AddNewPost=()=>
 {
 
-    let [inputValue, setInputValue] = useState(""); // create a state variable to store the input value
+    let [inputValue, setInputValue] = useState("");
     
     let handleInputChange = (event) =>
     {
-        setInputValue(event.target.value); // update the state variable with the input value
+        setInputValue(event.target.value); 
     };
 
     return(
@@ -23,7 +23,7 @@ const AddNewPost=()=>
                 <NavPost/>
 
         
-            <div><h4 className='creat_post'>Create Post</h4></div>
+            <div><h3 className='creat_post'>Create Post</h3></div>
             
             <div className="rules_dropdown dropdown accordion" id="accordionExample">
             <div className="accordion-item">
@@ -53,7 +53,7 @@ const AddNewPost=()=>
                     
                     <div className="bcontainer container-md" >
             
-                        <input  placeholder="Titel" className="titel form-control gap-2" maxlength="250" required></input>
+                        <input  placeholder="Titel 280" className="titel form-control gap-2" maxlength="280" required></input>
                     
                             <div className='scontainer'>
                                 <img className='imgenewpostt' src={imagenewpost} alt='imagenewpost icon'/>
@@ -63,12 +63,10 @@ const AddNewPost=()=>
                                 <input type="file" id="upload" hidden/>
                                 <label for="upload" className="choosebtn btn btn-primary form-control-file" >Choose file...</label>
                                 <p className='chooseor'>or</p>
-                                {/* <input  type="text" onChange={handleInputChange} placeholder="Paste image or video URL" className="urlinput form-control gap-2"  required>{inputValue}</input>
-                                <button type="button" className="hidenchoose btn btn-secondary">Use Link</button> */}
     <div>
     <input type="text" onChange={handleInputChange} placeholder="Paste image or video URL" className="urlinput form-control gap-2"  />
     <p className='supportfile'>Support links with PNG, JPG, GIF or MP4 file.</p>
-        {inputValue && <button type="button" className="hidenchoose btn btn-secondary">Use Link</button>} {/* render the button only if inputValue is not empty */}
+        {inputValue && <button type="button" className="hidenchoose btn btn-secondary">Use Link</button>}
         {inputValue || <button type="button" className="hidenchoose btn btn-secondary" disabled>Use Link</button>}
     </div>
                                 
