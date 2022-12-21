@@ -59,7 +59,7 @@ const SinglePostPage = () => {
                     <span className='time-of-comment'>1m</span>
                     <a className='title-account'>You</a>
                     <h5 className='the-comment'> {comments}</h5>
-                    <a class="nav-link dropdown-toggle" id='reply-comment' href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> View replies</a>
+                    
 
                 </div>
                 <PostComments />
