@@ -89,7 +89,7 @@ const postDataComment = [
         comment_time: "2h",
         comment_body: "That is an arousing armpi",
         up_votes: 28,
-        down_votes: 4,
+        down_votes: 64,
     },
     {
         id_comment:10,
@@ -97,8 +97,8 @@ const postDataComment = [
         avatar: media4,
         comment_time: "5h",
         comment_body: "It's definitely a foot. No question.",
-        up_votes: 28,
-        down_votes: 4,
+        up_votes: 67,
+        down_votes: 31,
     }
 ];
 

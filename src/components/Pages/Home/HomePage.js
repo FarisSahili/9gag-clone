@@ -8,11 +8,11 @@ import Interests from "./Interests";
 const HomePage = (props) => {
     return (
         <>
-            {/* <Navbar/>
+            <Navbar/>
             <Sidebar/>
             <Interests/>
-            <PostList/>  */}
-            <SinglePostPage />
+            <PostList/>   
+        
         </>
     );
 }
