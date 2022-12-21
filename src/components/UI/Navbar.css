@@ -84,7 +84,7 @@
 #prof:hover{
     color: rgb(189, 184, 184);
 }
- .test{
+.test{
     position: relative;
     font-weight: normal;
 }
@@ -96,9 +96,6 @@
     color: black;
     background-color: #d2cece;
 }
-
-/* ///////////   */
-
 .dropdown-item{
     margin-top: 15px;
     height: 30px;
