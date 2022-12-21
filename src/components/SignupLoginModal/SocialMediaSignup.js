@@ -1,14 +1,14 @@
 import React from "react";
 import "./SocialMediaSignup.css";
-import gaga from "./ModalImage/image/1.png";
-import Upvote from "./ModalImage/image/2.png";
-import Downvote from "./ModalImage/image/3.png";
-import Comment from "./ModalImage/image/4.png";
-import SaveTo from "./ModalImage/image/5.png";
-import face1 from "./ModalImage/image/2021_Facebook_icon.svg.png";
-import google1 from "./ModalImage/image/Google_Icons.webp";
-import Apple1 from "./ModalImage/image/Apple-Logo.png";
-import LeftArrow from "./ModalImage/image/left-arrow-alt-regular-24.png";
+import gaga from "./1.png";
+import Upvote from "./2.png";
+import Downvote from "./3.png";
+import Comment from "./4.png";
+import SaveTo from "./5.png";
+import face1 from "./Facebook.svg.png";
+import google1 from "./Google_Icons.webp";
+import Apple1 from "./Apple-Logo.png";
+import LeftArrow from "./left.png";
 const FullModalSignUP = () => {
   return (
     <div className="FullModal">
@@ -229,14 +229,13 @@ const FullModalSignUP = () => {
           </div>
         </div>
       </div>
-      <a
+      <button
         className="btn btn-primary"
         data-bs-toggle="modal"
-        href="#exampleModalToggle"
         role="button"
       >
         Open first modal
-      </a>
+      </button>
       <div
         className="modal fade"
         id="exampleModalToggle3"

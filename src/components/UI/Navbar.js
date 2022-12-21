@@ -4,7 +4,8 @@ import LogoNavHome from './NavBarHomeImg/logoNavHome.png';
 import './Navbar.css';
 import RecommendedPosts from '../Pages/Shuffle';
 import handleShuffle from '../Pages/Shuffle';
-
+import CostuomTags from './CustomizeTags/CustomTags'
+import SocialMediaSignup from '../SignupLoginModal/SocialMediaSignup';
 const itemClicked = (event) => {
     event.stopPropagation();
 }
@@ -16,7 +17,7 @@ const Navbar = () => {
     return(        
           <div className='basic-navbar sticky-top'>
              <div className='components'>
-                <div className='left-components'>
+                <div className='left-components'>   
                         <div id="menu-div">
                         <button className="btn-start" type="button" data-bs-toggle="offcanvas" 
 data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img className="menue"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAH9JREFUWEft1UsKgDAMANH05npypTsXtYOGQAvTbaikLx9bLHbaYvmECVFFFFKIBCi+VQ9d9JpkfIgxEzKhLr5VDyVb5N91hchtJnREROWknaPkHPuHyufF2EtWeYbfd8qIXKGMUOUOev2Puocye4jKXRJ3yohVIYVIgOL2EAndFg4LJcntgd8AAAAASUVORK5CYII="/></button>
@@ -34,7 +35,6 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                            <a className="left-links"><b>🏴‍☠️ Memeland</b></a>
                         </div>
                         <div className='left-div'>
-                           <a className="left-links"><b>🥔 Potatoz</b></a>
                         </div>
                 </div>  
                 <div className='right-components'>
@@ -69,7 +69,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                         <div className='sign-div'>
                             <button id="sign-but" type="button" className="buttons" > <b>Sign Up/ Log In</b></button>
                         </div>
-                        <div  className="btn-group dropstart">
+                        <div  id='profile-div' className="btn-group dropstart">
                                         <button type="button" className="btn btn-secondary " data-bs-toggle="dropdown" aria-expanded="false" id="profile-but"  >
                                                 <svg id="prof" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-person-circle" viewBox="0 0 16 16">
                                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -80,7 +80,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                         <ul id="prof-dropdowm" className="dropdown-menu">
                                                 <li><a  className="dropdown-item" href="#">Sign up or Log in</a></li>
                                                 <li><a  className="dropdown-item" href="#">Customize with Tags</a></li>
-
+     
                                                 <li>
                                                     <a id="dark-mode-link" className="dropdown-item" href="#" onClick={itemClicked}> <div id="f-div">Dark Mode<div id="s-div"  className="form-check form-switch">
                                                     <input  className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
