@@ -2,6 +2,8 @@
 //import
 import "./SidebarStyle.css";
 import React, { useState } from "react";
+import postData from "../../../data";
+import PostCard from "../../Posts/PostCard";
 
 
 
@@ -10,9 +12,7 @@ import React, { useState } from "react";
 
 
 
-
-
-
+]
 //function
 const Remove = ({ onClick }) => {
   return (
@@ -47,20 +47,22 @@ const Star = ({ isSelected, onClick }) => {
 
 
 
- 
 
 
 
 const Sidebar = () => {
 
-  
-  // const [filteredPosts, setFilteredPosts] = useState([]); // array of filtered posts
+    
+   const [Posts, setPosts] = useState([postData]); // array of posts
 
-  // const handleTagClick = (item) => 
-  // {
-  //   const filtered = posts.filter((posts) => posts.tags.includes(item)); // filter posts that include the clicked tag
-  //   setFilteredPosts(filtered);
-  // };
+  
+   const [filteredPosts, setFilteredPosts] = useState([]); // array of filtered posts
+
+   const handleTagClick = (item) => 
+  {
+     const filtered = Posts.filter((Posts) => Posts.tags.includes(item)); // filter posts that include the clicked tag
+    setFilteredPosts(filtered);
+  };
 
   const favoriteSection = () => 
   {
@@ -129,6 +131,7 @@ const Sidebar = () => {
                 <Remove 
                     onClick={() => 
                     {
+
                       deleteItemFromRecent(index);
                      
                     }}/>
@@ -147,10 +150,10 @@ const Sidebar = () => {
              );
           })}    
              </ul>
-             </>
+</>
             
       
-            )}}// To hide recent text when there is no filter inside it
+ )}}// To hide recent text when there is no filter inside it
  
 
   const deleteItemFromFavorite = (selectedIndex) => {
@@ -259,7 +262,7 @@ const Sidebar = () => {
       >
         <div id="myModal" class="modal fade" role="dialog">
           <div class="modal-dialog"></div>
-        </div>
+      </div>
 
         <div className="offcanvas-body">
           <div className="card">
@@ -270,7 +273,7 @@ const Sidebar = () => {
                 Sign up
               </button>
             </div>
-          </div>
+        </div>
 
           <div className="section">
             <ul className="sidebar-menu-9gag">
@@ -330,6 +333,21 @@ const Sidebar = () => {
                   <li key={item} className="li-filter"
                     onClick={() => 
                       {
+                        {handleTagClick()};
+                        {filteredPosts.map((index) => (
+                          <PostCard key={id}
+                           op_user={op_user} 
+                           op_user_avatar={op_user_avatar}  
+                           title={title}  
+                           content={content} 
+                           post_date={post_date} 
+                           tags={tags}   
+                           up_votes={up_votes}  
+                           down_votes={down_votes}  
+                           comment={comment}   
+                          />
+                        ))}
+                      
                      
                       setRecent((current) => [...current, item]);
                       {recentSection()};
