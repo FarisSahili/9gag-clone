@@ -38,13 +38,12 @@ function RecommendedPosts(props) {
   return (
     <div>
       <Sidebar/>
-      <nav className=" navbar navbar-expand-lg ">
+      <nav className="navbar bg-light" >
       <button className="btn-start" type="button" data-bs-toggle="offcanvas" 
 data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img className="menue"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAH9JREFUWEft1UsKgDAMANH05npypTsXtYOGQAvTbaikLx9bLHbaYvmECVFFFFKIBCi+VQ9d9JpkfIgxEzKhLr5VDyVb5N91hchtJnREROWknaPkHPuHyufF2EtWeYbfd8qIXKGMUOUOev2Puocye4jKXRJ3yohVIYVIgOL2EAndFg4LJcntgd8AAAAASUVORK5CYII="/></button>
             
-            <Link to='/Home' className="navbarbrand" ><img className="gagimg" src={LogoNavHome}/></Link>
-      
                 <button className="btnshuffle " onClick={handleShuffle}><b>🔀 Shuffle</b></button>
+                <Link to='/Home' className="navbarbrand" ><img className="gagimg" src={LogoNavHome}/></Link>
            </nav>           
       {list.map((x) => (
         <PostCard key={x.id}
@@ -53,7 +52,6 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
         />
       ))}
     </div>
-    
   );
       }
 export default RecommendedPosts;
