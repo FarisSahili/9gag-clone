@@ -31,13 +31,13 @@ a.Apple {
     color: black;
 }
 
-.h4,
-h4 {
-    margin-left: 20px;
+#LogIn {
+    margin:auto;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     width: 100%;
+    margin-left: 10px;
 
 }
 
@@ -46,20 +46,18 @@ h4 {
     justify-content: center;
     align-items: center;
     font-size: 100%;
-    padding: 0.3rem;
-    margin-bottom: .5rem;
+    padding: 1%;
+    margin-bottom: 2%;
 }
 
 .para {
     font-size: 12px;
-    line-height: .9rem;
+    line-height:100%;
     text-align: center;
     color: #9999;
 }
 
 .LeftArrow {
-    width: 2rem;
-    height: 2em;
     border: 0;
     background-color: white;
 }
@@ -69,7 +67,7 @@ h4 {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 100%;
     border: 1px;
     border-color: #e5e5e5;
     border-style: solid;
@@ -79,8 +77,8 @@ h4 {
 
 .facebook1 {
     position: absolute;
-    width: 1.5rem;
-    margin: 1px -130px;
+    width: 6%;
+    margin: -5px -130px;
 }
 
 .imgNum {
@@ -111,25 +109,25 @@ h4 {
 .head {
     font-style: normal;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 20px;
     width: 100%;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .Email1 {
-    font-size: .9rem;
-    line-height: 1.4em;
+    font-size: 14px;
+    line-height: 25px;
     display: block;
     color: #9999;
-    margin-bottom: 1rem;
+    margin-bottom:2%;
 }
 
 .send {
-    border-radius: 2rem;
-    height: 3rem;
+    border-radius: 30px;
+    height:50px;
     width: 100%;
     font-weight: bold;
-    font-size: 1rem;
+    font-size:18px;
     border: 1px;
     border-color: #e5e5e5;
     border-style: solid;
@@ -143,7 +141,7 @@ h4 {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: .9rem;
+    font-size:100%;
     border: 1px;
     margin: 4px;
     border-color: #e5e5e5;
@@ -153,9 +151,8 @@ h4 {
 
 .google1 {
     position: absolute;
-    width: 2.5rem;
-    margin: -10px -145px ;
-
+    width: 9%;
+    margin: -13px -146px;
 }
 
 .ButApple {
@@ -163,7 +160,7 @@ h4 {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 100%;
     border: 1px;
     margin: 4px;
     border-color: #e5e5e5;
@@ -173,8 +170,8 @@ h4 {
 
 .apple1 {
     position: absolute;
-    width: 3.5rem;
-    margin: -7px -160px;
+    width: 13%;
+    margin: -11px -161px;
 }
 
 .ButEmail {
@@ -182,7 +179,7 @@ h4 {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 100%;
     border: 1px;
     margin: 4px;
     border-color: #e5e5e5;
@@ -195,7 +192,7 @@ h4 {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: .9rem;
+    font-size:100%;
     border: 0px;
     margin: 4px;
     background-color: white;
@@ -206,7 +203,7 @@ h4 {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 100%;
     border: 0px;
     margin: 4px;
     background-color: white;
@@ -217,7 +214,7 @@ h4 {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 100%;
     border: 1px;
     margin: 4px;
     border-color: #e5e5e5;

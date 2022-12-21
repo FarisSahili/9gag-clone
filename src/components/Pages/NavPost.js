@@ -9,7 +9,6 @@ import basil from '../image/basil.jpg';
 
 
 
-
   const NavPost = () =>{
 
       let text=document.getElementsByClassName('text')

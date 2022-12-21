@@ -1,46 +1,64 @@
 .itemTitle {
-    font-weight: 700;
-    font-size: 14px;
-    height: 24px;
-    color: #999999;
-    display: inline-block;
-  
-  }
-  
-   
-  .buttonItem {
-    display: flex;
-    outline: none;
-    align-self: baseline;
-    background-color: transparent;
-    justify-content: center;
-    border-width: 0px;
-  }
+  font-weight: 700;
+  font-size: 14px;
+  height: 24px;
+  color: #999999;
+  display: inline-block;
+
+}
+
+.buttonItem {
+  display: flex;
+  outline: none;
+  align-self: baseline;
+  background-color: transparent;
+  justify-content: center;
+  border-width: 0px;
+}
+
+.star {
+  display: flex;
+  align-self: baseline;
+}
+
+.btnsContainer {
+  display: flex;
+}
+
+.rowContainer  {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+#exampleModal  {
  
-  .star {
-    display: flex;
-    align-self: baseline;
-  }
+ height: 80vh;
+ position:relative
  
-  .btnsContainer {
-    display: flex;
-  }
- 
-  .rowContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: space-between;
-  }
- 
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  .modal {
-   overflow-y: auto;
-   display: block;
-   height: 80vh;
-   position: relative;
+}
+.ctag{
+  height: 200px;
+  width:300px;
+border-radius: 5%;
+
  }
- 
+.butn{
+  padding-top: 10%;
+  float: right;
+  background-color:white ;
+border: none;
+
+}
+.modalbutton{
+  padding-right: 5%;
+padding-left: 60%;
+}
+.fav{
+  margin: 0%;
+}
