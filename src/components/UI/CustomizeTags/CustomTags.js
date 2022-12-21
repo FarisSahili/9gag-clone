@@ -32,12 +32,7 @@ function ModalTags (){
     
             )}}
  
-
-
-
-
-
-
+ 
   const Star = ({ isSelected, onClick }) => {
     return (
       <div className="start">

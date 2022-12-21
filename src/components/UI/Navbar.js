@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import LogoNavHome from './NavBarHomeImg/logoNavHome.png';
 import './Navbar.css';
 import RecommendedPosts from '../Pages/Shuffle';
+ 
 import handleShuffle from '../Pages/Shuffle';
+import CostuomTags from './CustomizeTags/CustomTags'
+import SocialMediaSignup from '../SignupLoginModal/SocialMediaSignup';
 import ModalTags from './CustomizeTags/CustomTags';
-
 const itemClicked = (event) => {
     event.stopPropagation();
 }
@@ -18,7 +20,7 @@ const Navbar = () => {
         
           <div className='basic-navbar sticky-top'>
              <div className='components'>
-                <div className='left-components'>
+                <div className='left-components'>   
                         <div id="menu-div">
                             
                         <button className="btn-start" type="button" data-bs-toggle="offcanvas" 
@@ -28,7 +30,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                             <Link to='/Home' id="gag-but" className="navbar-brand" href="#" ><img id="gag-img" src={LogoNavHome} /></Link>
                         </div>
                         <div className='left-div'>
-                           <Link to='/shuffle' className="left-links"  onClick={RecommendedPosts}><b>🔀 Shuffle</b></Link>
+                           <Link to='/shuffle' className="left-links"  onClick={<RecommendedPosts/>}><b>🔀 Shuffle</b></Link>
                         </div>
                         <div className='left-div'>
                            <Link to='/getapp' className="left-links"><b>📱 Get App</b></Link>
@@ -36,9 +38,9 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                         <div className='left-div'>
                            <a className="left-links"><b>🏴‍☠️ Memeland</b></a>
                         </div>
-                        <div className='left-div'>
-                           <a className="left-links"><b>🥔 Potatoz</b></a>
+                        <div className='left-div'> 
                         </div>
+                        
                          
                 </div>  
                 <div className='right-components'>
@@ -73,7 +75,8 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                         <div className='sign-div'>
                             <button id="sign-but" type="button" className="buttons" > <b>Sign Up/ Log In</b></button>
                         </div>
-                        <div  className="btn-group dropstart">
+                         
+                        <div  id='profile-div' className="btn-group dropstart">
                                         <button type="button" className="btn btn-secondary " data-bs-toggle="dropdown" aria-expanded="false" id="profile-but"  >
                                                 <svg id="prof" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-person-circle" viewBox="0 0 16 16">
                                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -82,12 +85,9 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                         </button>
                                 
                                         <ul id="prof-dropdowm" className="dropdown-menu">
-                                                <a  className="dropdown-item" href="#">Sign up or Log in</a>
-                                                
-                                           
-                                          <Link to="/" className="dropdown-item">Modal tags</Link>
-                                           
-                                   
+                                                <li><a  className="dropdown-item" href="#">Sign up or Log in</a></li>
+                                                <li><a  className="dropdown-item" href="#">Customize with Tags</a></li>
+     
                                                 <li>
                                                     <a id="dark-mode-link" className="dropdown-item" href="#" onClick={itemClicked}> <div id="f-div">Dark Mode<div id="s-div"  className="form-check form-switch">
                                                     <input  className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
@@ -164,15 +164,12 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
                                     <Link to='/addnewpost' id="post-but" type="button" className="buttons"><img className='post-pen' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXJJREFUSEvt1v1NwkAYBvDnJRViAthOoCPUCZQNcAM20RHcwDiBI8gIt4F1gn4cibQcPXOJNYVeP+hdQ2Lsv5D+eN57yHuEMz10Jhd/B/4Kw5uR47wB8AGwXIiHS88LjidrNXG22fhSyncAbgmKiGgxnk5ZGbcGyzB0M8dRya40vYlyIW7Lya3BCsuSZCWJXrSFlfJ1Mp+vis+MYTXei90uIM+L2vDJbPbrGcGlMw3GQiwacVuJNUViDXicC+Ebn3FNe9WkdfgzEd0bt7oBLXpzgKu2F0fQ++/UAdXiupZ3LtcJqHJi3XhPTmwbVT+gNfEQaCs8FNoID4nWwkOjtXCaJAGIrjvcTlrbW/eOSrl+FvnHkKg2cZokSxCpG0TT0ztp7VpMOX8C8NigGqPaxFvO1wTc1cBWUP2oOVcLvXp9kfKTRqPl8Zbp0AXtVw7KVSpWLAFGwBpSsny/Z7qbYl+0klitsC3g2kaMtpNJun9YTeAbfjfzH40wiiEAAAAASUVORK5CYII="/> <b>  Post </b>
                                     </Link>
                                 </div> 
-                              
+                                
                 </div>
              </div>
              <hr id="navbar-hr"/>
 
           </div>
-
-
-
     )
     }//end func
     export default Navbar;

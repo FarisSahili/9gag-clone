@@ -9,13 +9,19 @@ import HomePage from './components/Pages/Home/HomePage';
 import AddNewPost from './components/Pages/SpecialPgaes/AddNewPostFile/AddNewPost';
 import ModalTags from './components/UI/CustomizeTags/CustomTags';
  
+import SinglePostPage from './components/Pages/SinglePostPage';
+
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <React.StrictMode>
      <BrowserRouter>
        <Routes>
-       <Route path="/Home" index element={<HomePage/>} />
+       <Route path="/" element={<HomePage/>}  />
+       <Route path="/home" element={<HomePage/>}  />
        <Route path="/shuffle" element={<RecommendedPosts/>} />
        <Route path="/getapp" element={<GetApp/>} />
        <Route path="/addnewpost" element={<AddNewPost/>} />

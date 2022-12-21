@@ -1,0 +1,17 @@
+
+.btnshuffle{
+    color:black;
+    cursor: pointer;
+    background-color: transparent;
+    border-width: 0px;
+    padding-left: 40%;
+    font-size: larger;
+    font-weight: 700;
+}
+ 
+.gagimg{
+    height: 35px;
+     padding-left: 20%;
+    background-color: transparent;
+
+}
