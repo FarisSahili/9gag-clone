@@ -216,7 +216,7 @@ margin-top: 5px;
 /* Vote & share Part */
 #up,#down,#comment-but{
     background-color:white;
-    
+    width: 25%;
 }
 #up:hover,#down:hover,#comment-but:hover{
     background-color: #f0eeee;

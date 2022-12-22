@@ -21,8 +21,8 @@ import { Link } from "react-router-dom";
 
 const PostCard = (props) => {
 
-    const [Up, setUp] = useState(20);
-    const [Down, setDown] = useState(30);
+    const [Up, setUp] = useState(props.up_votes);
+    const [Down, setDown] = useState(props.down_votes);
 
     const [upvote, setUpvote] = useState(false)
     const [downvote, setdownvote] = useState(false)
@@ -126,7 +126,7 @@ const PostCard = (props) => {
                     <div className='vote-button'>
                     <button  onClick={Upvote} type="button" id="up" className="btn btn-outline-secondary buttton"><img className='arrowu' src={voteup} alt="up vote icon " /><b>{Up}</b></button>
                     <button onClick={Downvote} type="button" id="down" className="btn btn-outline-secondary buttton"><img className='arrowd' src={votedown} alt=" down vote icon " /><b>{Down}</b></button>
-                    <Link to='/comment'  type="button" id="comment-but" className="btn btn-outline-secondary buttton"><img className="comment-img"  src={CommitIcon} alt="comment icon " /><b>{props. comment_count}</b></Link>
+                    <button  type="button" id="comment-but" className="btn btn-outline-secondary buttton"><img className="comment-img"  src={CommitIcon} alt="comment icon " /><b>{props. comment_count}</b></button>
 
 
                         {/* <button onClick={Upvote} id="up" className='button-vote'><img className='arrowu' src={voteup} alt="this is vote up icon" />{Up}</button> */}
