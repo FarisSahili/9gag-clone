@@ -151,7 +151,7 @@ const Navbar = () => {
                                     </Link>
                                 </div>  
                 </div>
-             </div> 
+              </div> 
              <hr id="navbar-hr"/>
           </div>
 

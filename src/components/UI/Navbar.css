@@ -88,7 +88,7 @@
 .right-components{
     width: 25%;
     display: flex;
-    margin-left: 38%;
+    margin-left: auto;
 }
 #pofile-ul{
     margin-right: 50px;
@@ -201,6 +201,8 @@
     width: 350px;
 }
 #sign-but{
+    width:max-content ;
+    height:max-content;
     padding-top: 12px;
     font-size: 100%; 
     color:rgb(157, 151, 151);
