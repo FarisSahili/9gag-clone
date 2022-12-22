@@ -88,7 +88,7 @@
 .right-components{
     width: 25%;
     display: flex;
-    margin-left: 38%;
+    margin-left: auto;
 }
 #pofile-ul{
     margin-right: 50px;
@@ -181,6 +181,7 @@
 #search-but{
     background-color: #fff;
     padding-right: 35px;
+    margin-top: 1px;
     width: 30px;
     height: 40px;
     border-radius: 50%;
@@ -200,8 +201,9 @@
     width: 350px;
 }
 #sign-but{
-    padding-top: 15px;
-    width: 120px;
+    width:max-content ;
+    height:max-content;
+    padding-top: 12px;
     font-size: 100%; 
     color:rgb(157, 151, 151);
     border: #fff;
@@ -215,10 +217,12 @@
 }
 #profile-btn{
     border: #fff;
-    padding-left: 20px;
     background-color: #fff;
+    padding-left: 20px;
 }
 #prof{
+    margin-top: 1px;
+    color: #b1a9a9;
     height: 35px;
     width: 35px;
 }
@@ -235,12 +239,15 @@
 }
 #post-but{
     color: #fff;
-    padding-top: 10px;
+    padding-top: 7px;
     text-decoration: none;
-    background-color: #135199;
-    width: 80px;
+    background-color: #1f76da;
+    width: 90px;
     height: 38px;
     border-radius: 20px;
+}
+#post-but:hover{
+    background-color: #1963b8;
 }
 .post-pen{
     height:20px;
