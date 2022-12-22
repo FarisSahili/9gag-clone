@@ -18,8 +18,8 @@ import media6 from './components/image/media/media6.jpg'
 const postData = [
   {
     id: 1,
-    title: "Js",
-    op_user: "nouralhuda312", // original poster,
+    title: "lol",
+    op_user: "يمان غسان", // original poster,
     op_user_avatar: icon1, // original poster,
     post_date: "2022-01-01", //yyyy-mm-dd
     up_votes: 100,
