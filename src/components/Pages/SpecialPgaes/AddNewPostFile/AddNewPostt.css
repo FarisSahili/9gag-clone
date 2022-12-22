@@ -43,18 +43,18 @@
 }
 .urlinput{
     width: 20rem;
-    
     margin: 1.5rem 0 0 5rem;
     
 }
 .hidenchoose{
-    margin: -3.5rem 0 0 27rem;
+    margin: -6.5rem 0 0 27rem;
     width: auto;
     height: 2rem;
     border-radius: 3rem;
+    
 }
 .supportfile{
-    margin: -0.5rem 0 0 5.2rem;
+    margin: 0.5rem 0 0 5rem;
     color: rgb(192, 192, 192);
 }
 .add{
@@ -67,19 +67,12 @@
     width: 21rem;
     height: 3rem;
     margin: -2% 0 0 60%;
-
     
 }
 .rules_menu{
     width: 20rem;
     height: auto;
     
-    
-}
-.ph-photo{
-    margin: 1rem 0 0 1rem;
-    width: auto;
-    height: auto;
 }
 .rules{
     width: auto;

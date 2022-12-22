@@ -42,8 +42,14 @@
  position:relative
  
 }
+.ctag{
+  height: 200px;
+  width:300px;
+border-radius: 5%;
 
-.btn{
+ }
+.butn{
+  padding-top: 10%;
   float: right;
   padding: 10px 32px;
   text-align: center;

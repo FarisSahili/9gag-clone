@@ -21,12 +21,12 @@ const postData = [
     title: "lol",
     op_user: "يمان غسان", // original poster,
     op_user_avatar: icon1, // original poster,
-    post_date: "2022-01-01", //yyyy-mm-dd
+    post_time: 1, //yyyy-mm-dd
     up_votes: 100,
     down_votes: 10,
     content: media1, // post content (post media)
     tags: ["world cup", "funny", "travel"],
-    comment_count: 150,
+    comment_count: 10,
     comment: [
       {
         user: "9hdw ",
@@ -67,7 +67,7 @@ const postData = [
     title: "How to tell people",
     op_user: "yaman ghasan", // original poster,
     op_user_avatar: icon2, // original poster,
-    post_date: "2022-09-12", //yyyy-mm-dd
+      post_time: 2, //yyyy-mm-dd
     up_votes: 200,
     down_votes: 12,
     content: img2, // post content (post media)
@@ -114,7 +114,7 @@ const postData = [
     title: "I've been bamboozled many times",
     op_user: "el_homero", // original poster,
     op_user_avatar: icon6, // original poster,
-    post_date: "2012-29-12", //yyyy-mm-dd
+      post_time: 8, //yyyy-mm-dd
     up_votes: 20,
     down_votes: 12,
     content: img3, // post content (post media)
@@ -161,7 +161,7 @@ const postData = [
     title: "France Random Chat",
     op_user: "9GAGGERkl", // original poster,
     op_user_avatar: icon2, // original poster,
-    post_date: "2022-03-2", //yyyy-mm-dd
+      post_time: 9, //yyyy-mm-dd
     up_votes: 230,
     down_votes: 172,
     content: img4, // post content (post media)
@@ -208,46 +208,12 @@ const postData = [
     title: "How to tell people",
     op_user: "heyheyhohojoeb", // original poster,
     op_user_avatar: icon2, // original poster,
-    post_date: "2022-09-12", //yyyy-mm-dd
+      post_time: 10, //yyyy-mm-dd
     up_votes: 200,
     down_votes: 12,
     content: media3, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   }
   ,
   {
@@ -255,46 +221,12 @@ const postData = [
     title: "How to tell people",
     op_user: "heyheyhohojoeb", // original poster,
     op_user_avatar: icon2, // original poster,
-    post_date: "2022-09-12", //yyyy-mm-dd
+      post_time: 11, //yyyy-mm-dd
     up_votes: 200,
     down_votes: 12,
     content: media4, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   } 
   ,
    {
@@ -302,92 +234,24 @@ const postData = [
     title: "How to tell people",
     op_user: "heyheyhohojoeb", // original poster,
     op_user_avatar: icon2, // original poster,
-    post_date: "2022-09-12", //yyyy-mm-dd
+      post_time: 5, //yyyy-mm-dd
     up_votes: 200,
     down_votes: 12,
     content: media5, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   } ,
    {
     id: 8,
     title: "How to tell people",
     op_user: "heyheyhohojoeb", // original poster,
     op_user_avatar: icon2, // original poster,
-    post_date: "2022-09-12", //yyyy-mm-dd
+      post_time: 23, //yyyy-mm-dd
     up_votes: 200,
     down_votes: 12,
     content: media6, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   }
   , 
    {
@@ -395,46 +259,12 @@ const postData = [
     title: "How to tell people",
     op_user: "heyheyhohojoeb", // original poster,
     op_user_avatar: icon2, // original poster,
-    post_date: "2022-09-12", //yyyy-mm-dd
+      post_time: 15, //yyyy-mm-dd
     up_votes: 200,
     down_votes: 12,
     content: media1, // post content (post media)
     tags: ["world cup", "morocco", "brazil"],
     comment_count: 155,
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
   }
 
 ];

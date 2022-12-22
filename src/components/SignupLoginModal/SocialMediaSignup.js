@@ -5,11 +5,12 @@ import Upvote from "./2.png";
 import Downvote from "./3.png";
 import Comment from "./4.png";
 import SaveTo from "./5.png";
-import face1 from "./Facebook.svg.png";
+import face1 from "./facebook.png.png";
 import google1 from "./Google_Icons.webp";
 import Apple1 from "./Apple-Logo.png";
 import LeftArrow from "./left.png";
-const FullModalSignUP = () => {
+import { Button } from "bootstrap";
+const SocialMediaSignup = () => {
   return (
     <div className="FullModal">
       <div
@@ -95,7 +96,6 @@ const FullModalSignUP = () => {
                         <h2>Downvote to bury</h2>
                       </div>
                     </div>
-
                     <div className="carousel-item">
                       <div className="imgNum4">
                         <img src={Comment} className="d-block " alt="" />
@@ -175,7 +175,7 @@ const FullModalSignUP = () => {
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
-              <h4>Log in</h4>
+              <h4 id="LogIn">Log in</h4>
             </div>
             <div className="modal-body Second">
               <div className="bodyBut">
@@ -229,13 +229,16 @@ const FullModalSignUP = () => {
           </div>
         </div>
       </div>
-      <button
-        className="btn btn-primary"
+      <li
+        className="btn btn-danger"
         data-bs-toggle="modal"
-        role="button"
+        href="#exampleModalToggle"
+        role="button" 
+       
+
       >
         Open first modal
-      </button>
+      </li>
       <div
         className="modal fade"
         id="exampleModalToggle3"
@@ -339,4 +342,4 @@ const FullModalSignUP = () => {
   );
 };
 
-export default FullModalSignUP;
+export default SocialMediaSignup;
