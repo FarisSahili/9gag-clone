@@ -286,6 +286,7 @@
 #search-butP{
     background-color: #fff;
     padding-right: 35px;
+    padding-top: 10px;
     width: 30px;
     height: 40px;
     border-radius: 50%;
@@ -313,10 +314,10 @@
 }
 #post-butP{
     color: #fff;
-    padding-top: 10px;
+    padding-top: 7px;
     text-decoration: none;
-    background-color: #135199;
-    width: 80px;
+    background-color: #1f76da;
+    width: 90px;
     height: 38px;
     border-radius: 20px;
 }
