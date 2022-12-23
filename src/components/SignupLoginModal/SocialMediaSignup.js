@@ -9,12 +9,12 @@ import face1 from "./facebook.png.png";
 import google1 from "./Google_Icons.webp";
 import Apple1 from "./Apple-Logo.png";
 import LeftArrow from "./left.png";
-import { Button } from "bootstrap";
+import Signuppic from "./Signuppic.png";
 const SocialMediaSignup = () => {
   return (
     <div className="FullModal">
       <div
-        className="modal fade"
+        className="modal "
         id="exampleModalToggle"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel"
@@ -160,7 +160,7 @@ const SocialMediaSignup = () => {
         </div>
       </div>
       <div
-        className="modal fade"
+        className="modal"
         id="exampleModalToggle2"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel2"
@@ -229,18 +229,16 @@ const SocialMediaSignup = () => {
           </div>
         </div>
       </div>
-      <li
-        className="btn btn-danger"
+      <button
+      type="button"
+        id="signbutton"
         data-bs-toggle="modal"
         href="#exampleModalToggle"
-        role="button" 
-       
-
-      >
-        Open first modal
-      </li>
+        >
+      <img src={Signuppic} className="signphoto"></img>
+      </button>
       <div
-        className="modal fade"
+        className="modal"
         id="exampleModalToggle3"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel3"
@@ -278,7 +276,7 @@ const SocialMediaSignup = () => {
         </div>
       </div>
       <div
-        className="modal fade"
+        className="modal "
         id="exampleModalToggle4"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel4"

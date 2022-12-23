@@ -14,12 +14,15 @@ const HomePage = (props) => {
         <>
         
             <Navbar/>
-            <ModalTags/>
-            <Sidebar/>
+            <SocialMediaSignup/> 
             <Interests/>
+            <ModalTags/> 
+            <Sidebar/>
+           
             <TagButton/>
-            <PostList/>   
-        <Clear/>
+            <PostList/>  
+          
+      
         </>
     );
 }
