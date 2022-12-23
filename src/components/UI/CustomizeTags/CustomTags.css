@@ -49,8 +49,8 @@ border-radius: 5%;
 
  }
 .butn{
-  position:static;
-  margin-top: 5%;
+  position:relative;
+  margin-top: 2%;
   margin-right: 2%;
   margin-left: 78%;
   float: right;
@@ -59,12 +59,20 @@ border-width: 0;
 border-color: white;
 border-radius: 5%;
 }
-@media screen and (max-width:900px) {
-  .butn {
-   width:90%;
-   height: 90%;
-
-  }
-  
+.flex-container {
+  display: flex;
+  flex-direction: row;
 }
- 
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+/* @media screen {
+  .butn{
+      margin-left:0;
+
+  } */
+

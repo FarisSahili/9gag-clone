@@ -13,6 +13,7 @@ import SocialMediaSignup from './components/SignupLoginModal/SocialMediaSignup';
 import SinglePostPage from './components/Pages/SinglePostPage';
 import PostComments from './components/Posts/Comments/PostComments';
 import Profile from './components/Pages/Profile';
+import LogInPage from './components/SignupLoginModal/LoginModal';
 
 
 
@@ -30,7 +31,8 @@ root.render(
         <Route path="/addnewpost" element={<AddNewPost />} />
         <Route path="/comment" element={<SinglePostPage/>} /> 
         <Route path="/gaggerpage" element={<Profile/>} /> 
-        <Route path="SocialMediaSignup" element={<SocialMediaSignup/>} /> 
+        <Route path="/SocialMediaSignup" element={<LogInPage/>} /> 
+
       </Routes>
     </BrowserRouter>
     {/* <App /> */}

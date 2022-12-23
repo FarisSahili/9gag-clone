@@ -136,7 +136,7 @@ function ModalTags (){
     <>
  <div className="modalbutton">
 
-      <button type="button" className="butn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <button type="button" className="butn flex-container" data-bs-toggle="modal" data-bs-target="#exampleModal">
      <img src={CustomizeTagsPic} className="ctag"></img>
       </button>
  
