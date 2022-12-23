@@ -1,14 +1,10 @@
-import Navbar from "../UI/Navbar";
-import NavPost from "./NavPost";
 import "./Profile.css"; 
-import imagge from './avatar.png';
+import imagge from '../image/happy-drake.jpg';
 
 
 
 const Profile = () => {
   return(
-     <>
-     <Navbar/>
     <div className="container">
          <div className="photo-div">  
             <img  className="img" src={imagge} /> 
@@ -17,7 +13,7 @@ const Profile = () => {
                     <h4><b>DRAKE</b></h4>
                   </div>
                   <div className="prof-details">
-                    <p>@drake321 <span className="profile-span">.</span> 380 days</p>
+                    <p>@icu2o <span className="profile-span">.</span> 380 days</p>
                   </div> 
               </div>     
          </div> 
@@ -46,7 +42,6 @@ const Profile = () => {
          </div>
             <hr id="prof-hr"/>
     </div>
-    </>
   )
 }
 
