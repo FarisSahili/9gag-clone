@@ -7,7 +7,7 @@
 
 #offcanvasScrolling 
 {
-  width: 240px;
+  width: 14.4rem;
   margin-top: 50px;
 }
 
@@ -77,6 +77,10 @@
   padding: 0px;
 }
 
+.sidebar-menu-recent
+{
+  padding: 0px;
+}
 #recent-menu
 {
   padding: 0px;
@@ -130,7 +134,18 @@
   font-size: 14px;
   color: rgb(65, 65, 65);
   padding: 0px;
+  text-decoration: none; 
+
+
 }
+
+
+.sidebarItem:hover
+{
+  color: rgb(0, 0, 0);
+}
+
+
 .sidebarItemRecent
 {
 
@@ -138,7 +153,13 @@
   color: rgb(65, 65, 65);
   position: relative; 
   top: 6px;
+  text-decoration: none; 
 }
+.sidebarItemRecent:hover
+{
+  color: rgb(0, 0, 0);
+}
+
 
 .rowContainer 
 {
@@ -193,19 +214,17 @@
   color: rgb(143, 142, 142);
   font-size: 14px;
   font-weight: 700;
-  width: 100%;
-  line-height: 30px;
+  line-height: 20px;
 }
 
 .clear-btn 
 {
   outline: none;
-  align-self: baseline;
   background-color: transparent;
-  justify-content: center;
-  align-items: center;
   border-width: 0px;
-  padding-left: 100px;
+  padding-left: 110px;
+  width: 10px;
+
 }
 
 .remove 
@@ -344,6 +363,7 @@ i
   display: flex;
   align-items: center;
   margin-bottom: 12px;
+  width: auto;
 }
 
 body 
@@ -397,4 +417,59 @@ body
   max-height: 100%;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+
+
+
+
+/* sidebar page tags post*/
+
+
+
+.Tag-Button-sidebar{
+font-size:14px;
+border-color:#f0eeee;
+border-width:0;
+height: 35px;
+margin-right: 5px;
+margin-bottom: 5px;
+position: relative;
+background-color: #F0EEEE;
+border-radius: 5px;
+display: inline-block;
+font-weight: bold;
+width: auto;
+padding-right: 8px;
+
+
+
+}
+.Tag-Button-sidebar:hover{
+  background-color:lightgray;
+}
+.sidebarItemButton
+{
+  font-size: 12px;
+  color: rgb(65, 65, 65);
+  padding: 0px;
+  margin-top: 30px;
+
+}
+.containerL
+{
+width: 660px;
+justify-content: center;
+width:700px;
+height:85px;
+margin-left:25%;
+display: flex;
+justify-content: space-between;
+ 
+  
+}
+.firstSection
+{
+margin-top: 160px;
+
 }

@@ -6,6 +6,7 @@ import handleShuffle from '../Pages/Shuffle';
 import CostuomTags from './CustomizeTags/CustomTags'
 import SocialMediaSignup from '../SignupLoginModal/SocialMediaSignup';
 import ModalTags from './CustomizeTags/CustomTags';
+import LogoNavHome from './logoNavHome.png';
 const itemClicked = (event) => {
     event.stopPropagation();
 }

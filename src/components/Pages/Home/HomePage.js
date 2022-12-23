@@ -16,7 +16,7 @@ const HomePage = (props) => {
             <ModalTags/>
  
          
-            {/* <Sidebar/> */}
+            <Sidebar/>
             <Interests/>
             <TagButton/>
             <PostList/>   
