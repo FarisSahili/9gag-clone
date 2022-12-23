@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import RecommendedPosts from '../Pages/Shuffle';
+ 
 import handleShuffle from '../Pages/Shuffle';
 import CostuomTags from './CustomizeTags/CustomTags'
 import SocialMediaSignup from '../SignupLoginModal/SocialMediaSignup';
-import LogoNavHome from './NavBarHomeImg/logoNavHome.png'
-
+import ModalTags from './CustomizeTags/CustomTags';
 const itemClicked = (event) => {
     event.stopPropagation();
 }
@@ -154,9 +154,6 @@ const Navbar = () => {
               </div> 
              <hr id="navbar-hr"/>
           </div>
-
-
-
     )
     }//end func
     export default Navbar;
