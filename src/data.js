@@ -22,7 +22,7 @@ const postData = [
   {
     id: 1,
     title: "🤣🤣🤣🤣🤣🤣🤣🤣🤣",
-    op_user: "Yaman Ghasan",  
+    op_user: "YamanGhasan",  
     op_user_avatar: icon1, 
     post_time: 1, //yyyy-mm-dd
     up_votes: 100,
@@ -34,7 +34,7 @@ const postData = [
   {
     id: 2,
     title: "How to tell people",
-    op_user: "nour al huda",  
+    op_user: "nouralhuda",  
     op_user_avatar: icon2,  
       post_time: 2,  
     up_votes: 200,
@@ -148,7 +148,7 @@ const postData = [
   {
     id: 11,
     title: " !!!",
-    op_user: "gager name", 
+    op_user: "gagername", 
     op_user_avatar: icon5,  
       post_time: 15, 
     up_votes: 22,
@@ -160,7 +160,7 @@ const postData = [
   {
     id: 12,
     title: " hhahahahah",
-    op_user: "ooops", 
+    op_user: "nour", 
     op_user_avatar: icon3,  
       post_time: 15, 
     up_votes: 22,
@@ -173,7 +173,7 @@ const postData = [
   {
     id: 13,
     title: "uhh",
-    op_user: "mommo", 
+    op_user: "faris", 
     op_user_avatar: icon2,  
       post_time: 33, 
     up_votes: 22,
