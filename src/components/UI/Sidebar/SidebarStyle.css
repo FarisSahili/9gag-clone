@@ -92,8 +92,8 @@
 
 .bi 
 {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.5rem;
+  height: 1.3rem;
 }
 
 .star-btn 
@@ -116,22 +116,28 @@
   justify-content: center;
   align-items: center;
   border-width: 0px;
-  padding-left: 1px;
+  padding-right: 0rem;
+
+
+ 
   
 }
 
-.btnsContainer 
-{
-  display: flex;
 
- 
-}
 
 .sidebarItem 
 {
   font-size: 14px;
   color: rgb(65, 65, 65);
   padding: 0px;
+}
+.sidebarItemRecent
+{
+
+  font-size: 14px;
+  color: rgb(65, 65, 65);
+  position: relative; 
+  top: 6px;
 }
 
 .rowContainer 
@@ -191,7 +197,7 @@
   line-height: 30px;
 }
 
-#clear-btn 
+.clear-btn 
 {
   outline: none;
   align-self: baseline;
@@ -205,8 +211,9 @@
 .remove 
 {
   opacity: 0.1;
-  width: 32px;
-  height: 32px;
+  width: 27px;
+  height: 27px;
+
 }
 
 .remove:hover 
@@ -214,11 +221,13 @@
   opacity: 0.7;
 }
 
-.bi :hover 
+
+.bi:hover 
 {
   opacity: 1;
-  
 }
+
+
 
 /*li and ul style */
 
