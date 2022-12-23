@@ -1,18 +1,9 @@
-
 //import
 import "./SidebarStyle.css";
 import React, { useState } from "react";
 import postData from "../../../data";
 import PostCard from "../../Posts/PostCard";
 
-
-
-
-
-
-
-
-]
 //function
 const Remove = ({ onClick }) => {
   return (
@@ -45,27 +36,18 @@ const Star = ({ isSelected, onClick }) => {
   );
 };
 
-
-
-
-
-
 const Sidebar = () => {
+  //  const [Posts, setPosts] = useState([postData]); // array of posts
 
-    
-   const [Posts, setPosts] = useState([postData]); // array of posts
+  //  const [filteredPosts, setFilteredPosts] = useState([]); // array of filtered posts
 
-  
-   const [filteredPosts, setFilteredPosts] = useState([]); // array of filtered posts
+  //  const handleTagClick = (item) =>
+  // {
+  //    const filtered = Posts.filter((Post) => Post.tags.includes(item)); // filter posts that include the clicked tag
+  //   setFilteredPosts(filtered);
+  // };
 
-   const handleTagClick = (item) => 
-  {
-     const filtered = Posts.filter((Posts) => Posts.tags.includes(item)); // filter posts that include the clicked tag
-    setFilteredPosts(filtered);
-  };
-
-  const favoriteSection = () => 
-  {
+  const favoriteSection = () => {
     if (favorites.length > 0) {
       return (
         <ul className="sidebar-menu">
@@ -74,24 +56,24 @@ const Sidebar = () => {
           {favorites.map((item, index) => {
             return (
               <div className="rowContainer">
-              <li className="li-filter"
+                <li
+                 key={index}
+                  className="li-filter"
                   onClick={() => {
-                  setRecent((current) => [...current, item]);
-                }}
-              >
-              
-
-                
+                    setRecent((current) => [...current, item]);
+                  }}
+                >
                   <div className="sidebarItem">{item}</div>
-                  </li>
-                  <div className="star-btn-container">
-                    <Star isSelected={true}
-                          onClick={() => {
-                           deleteItemFromFavorite(index);
-                      }}
-                    />
-                  </div>
+                </li>
+                <div className="star-btn-container">
+                  <Star
+                    isSelected={true}
+                    onClick={() => {
+                      deleteItemFromFavorite(index);
+                    }}
+                  />
                 </div>
+              </div>
             );
           })}
         </ul>
@@ -104,57 +86,46 @@ const Sidebar = () => {
     setRecent.length = 0;
   };
 
+  const recentSection = () => {
+    if (recent.length > 0) {
+      return (
+        <>
+          <div className="contanier">
+            <span className="spanSections">Recents</span>
+            <button onClick={Clear} id="clear-btn">
+              <a id="clear">Clear</a>
+            </button>
+          </div>
+          <ul id="recent-menu">
+            {recent.map((item, index) => {
+              return (
+                <li key={index} className="li-filter">
+                  <div className="rowContainer">
+                    <div className="sidebarItem">{item}</div>
+                    <div className="btnsContainer">
+                      <Remove
+                        onClick={() => {
+                          deleteItemFromRecent(index);
+                        }}
+                      />
 
-  const recentSection= () =>{
-
-    if (recent.length > 0){
-    
-  return(
- 
- <>
-
- <div className="contanier">
-<span className="spanSections">Recents</span>
-<button onClick={Clear}  id="clear-btn">
-<a id="clear">Clear</a>
-</button>
-</div>
- <ul id="recent-menu">
- {recent.map((item, index) => {
-             return (
-              
-              <li className="li-filter">
-              <div className="rowContainer">
-                <div className="sidebarItem">{item}</div>
-                <div className="btnsContainer">
-                  
-                <Remove 
-                    onClick={() => 
-                    {
-
-                      deleteItemFromRecent(index);
-                     
-                    }}/>
- 
-                  <Star isSelected={false}  onClick={() => {  
- 
+                      <Star
+                        isSelected={false}
+                        onClick={() => {
                           setFavorites((current) => [...current, item]);
-                          {favoriteSection()};
-                          
-                    
-                    }}/>
-                </div>
-              </div>
-              </li>
-               
-             );
-          })}    
-             </ul>
-</>
-            
-      
- )}}// To hide recent text when there is no filter inside it
- 
+                          { favoriteSection(); }
+                        }}
+                      />
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      );
+    }
+  }; // To hide recent text when there is no filter inside it
 
   const deleteItemFromFavorite = (selectedIndex) => {
     setFavorites((current) =>
@@ -251,18 +222,17 @@ const Sidebar = () => {
 
   return (
     <div className="wr-side-bar">
-  
       <div
         className="offcanvas offcanvas-start"
         data-bs-scroll="true"
         data-bs-backdrop="false"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasScrolling"
         aria-labelledby="offcanvasScrollingLabel"
       >
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog"></div>
-      </div>
+        <div id="myModal" className="modal fade" role="dialog">
+          <div className="modal-dialog"></div>
+        </div>
 
         <div className="offcanvas-body">
           <div className="card">
@@ -273,7 +243,7 @@ const Sidebar = () => {
                 Sign up
               </button>
             </div>
-        </div>
+          </div>
 
           <div className="section">
             <ul className="sidebar-menu-9gag">
@@ -321,123 +291,122 @@ const Sidebar = () => {
 
             {favoriteSection()}
 
+
             {recentSection()}
 
             <h3 className="h3Sections">Explore Popular Tags</h3>
-
             <ul className="sidebar-menu">
-              {ExplorePopular.map((item) => {
-              
+              {ExplorePopular.map((item ,index) => {
                 return (
                   <div className="filtersSections">
-                  <li key={item} className="li-filter"
-                    onClick={() => 
-                      {
-                        {handleTagClick()};
-                        {filteredPosts.map((index) => (
-                          <PostCard key={id}
-                           op_user={op_user} 
-                           op_user_avatar={op_user_avatar}  
-                           title={title}  
-                           content={content} 
-                           post_date={post_date} 
-                           tags={tags}   
-                           up_votes={up_votes}  
-                           down_votes={down_votes}  
-                           comment={comment}   
-                          />
-                        ))}
-                      
-                     
-                      setRecent((current) => [...current, item]);
-                      {recentSection()};
-                      
-                    }}
-                  >
-                
-                    
+                    <li
+                      key={index}
+                      className="li-filter"
+                      onClick={() => {
+                        // {handleTagClick()};
+                        // {filteredPosts.map((index) => (
+                        //   <PostCard key={id}
+                        //    op_user={op_user}
+                        //    op_user_avatar={op_user_avatar}
+                        //    title={title}
+                        //    content={content}
+                        //    post_date={post_date}
+                        //    tags={tags}
+                        //    up_votes={up_votes}
+                        //    down_votes={down_votes}
+                        //    comment={comment}
+                        //   />
+                        // ))}
+
+                        setRecent((current) => [...current, item]);
+                        { recentSection();}
+                      }}
+                    >
                       <div className="sidebarItem">{item}</div>
-                      </li>
-                      <div className="starContainer">
-                      
-                        <Star
-                          onClick={() => {
-                            setFavorites((current) => [...current, item]);
-                            {favoriteSection();}
-                          }}
-                        />
-                      </div>
+                    </li>
+                    <div className="starContainer">
+                      <Star
+                        onClick={() => {
+                          setFavorites((current) => [...current, item]);
+                          {
+                            favoriteSection();
+                          }
+                        }}
+                      />
                     </div>
-                    
+                  </div>
                 );
-            
-              
-                })}
+              })}
             </ul>
 
-            <h3 className="h3Sections">Popular </h3>
 
+
+            <h3 className="h3Sections">Popular </h3>
             <ul className="sidebar-menu">
               {Popular.map((item, index) => {
                 return (
                   <div className="filtersSections">
-                  <li
-                    className="li-filter"
-                    onClick={() => {
-                      setRecent((current) => [...current, item]);
-                      {
-                        recentSection();
-                      }
-                    }}
-                   >
-                   
-                   
+                    <li
+                      key={index}
+                      className="li-filter"
+                      onClick={() => {
+                        setRecent((current) => [...current, item]);
+                        {
+                          recentSection();
+                        }
+                      }}
+                    >
                       <div className="sidebarItem">{item}</div>
-                      </li>
-                      <div className="starContainer">
-                        <Star
-                          onClick={() => {
-                            setFavorites((current) => [...current, item]);
-                            {
-                              favoriteSection();
-                            }
-                          }}
-                        />
-                      </div>
+                    </li>
+                    <div className="starContainer">
+                      <Star
+                        onClick={() => {
+                          setFavorites((current) => [...current, item]);
+                          {
+                            favoriteSection();
+                          }
+                        }}
+                      />
                     </div>
+                  </div>
                 );
               })}
             </ul>
 
-            <h3 className="h3Sections">All Sections</h3>
 
+
+            <h3 className="h3Sections">All Sections</h3>
             <ul className="sidebar-menu">
               {AllSection.map((item, index) => {
                 return (
                   <div className="filtersSections">
-                  <li className="li-filter"
-                    onClick={() => 
-                    {
-                      setRecent((current) => [...current, item]);
-                      {recentSection();}
-                    }}
-                  >
+                    <li
+                      key={index}
+                      className="li-filter"
+                      onClick={() => {
+                        setRecent((current) => [...current, item]);
+                        {
+                          recentSection();
+                        }
+                      }}
+                    >
                       <div className="sidebarItem">{item}</div>
-                      </li>
-                      <div className="starContainer">
-                        <Star 
-                        onClick={() => 
+                    </li>
+                    <div className="starContainer">
+                      <Star
+                        onClick={() => {
+                          setFavorites((current) => [...current, item]);
                           {
-                            setFavorites((current) => [...current, item]);
-                            {favoriteSection();}
-                          }}
-                        />
-                      </div>
+                            favoriteSection();
+                          }
+                        }}
+                      />
                     </div>
-                    
+                  </div>
                 );
               })}
             </ul>
+
           </div>
         </div>
       </div>
