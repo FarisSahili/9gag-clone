@@ -13,9 +13,11 @@ const HomePage = (props) => {
         <>
         
             <Navbar/>
-            {/* <Sidebar/> */}
+            <Sidebar/> 
+            <ModalTags/>
             <Interests/>
             <PostList/>  
+           
         
         </>
     );

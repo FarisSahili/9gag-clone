@@ -17,7 +17,7 @@ const SinglePostPage = () => {
 
     const [comments, setComments] = useState("");
     const onClickComment = () => {
-        setComments((comments) => [...comments, comment]);
+        setComments((comments) => [...comments,comment]);
     };
 
  
@@ -59,8 +59,7 @@ const SinglePostPage = () => {
                     <img src={ProfileComment} className="photo-co" />
                     <span className='time-of-comment'>1m</span>
                     <a className='title-account'>You</a>
-                    <h5 className='the-comment'> {comments}</h5>
-                    
+                    <h5 className='the-comment'>{comments} </h5>
 
                 </div>
                 <PostComments />
