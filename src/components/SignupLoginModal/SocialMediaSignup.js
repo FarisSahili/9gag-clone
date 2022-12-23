@@ -234,7 +234,6 @@ const SocialMediaSignup = () => {
         data-bs-toggle="modal"
         href="#exampleModalToggle"
         role="button" 
-       
 
       >
         Open first modal
