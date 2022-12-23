@@ -198,7 +198,7 @@ margin-top: 5px;
     border-width: 100%;
     background-color: #f0eeee;
     justify-content: center; 
-    padding:2% 2%;
+    padding:1% 2%;
     margin :3px;
     display: flex;
     position: relative;
@@ -216,7 +216,7 @@ margin-top: 5px;
 /* Vote & share Part */
 #up,#down,#comment-but{
     background-color:white;
-    width: 25%;
+    width: 24%;
 }
 #up:hover,#down:hover,#comment-but:hover{
     background-color: #f0eeee;
