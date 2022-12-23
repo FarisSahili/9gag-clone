@@ -122,12 +122,7 @@ const Sidebar = () => {
   };
 
   const Clear = () => {
-    document.getElementsByClassName("sidebar-menu-recent").innerHTML = "";
-    if (recent.length == 0) {
-      document.getElementsByClassName("spanSections").innerHTML = "";
-      document.getElementById("clear").innerHTML = "";
-      
-    }
+    document.getElementById("recent-menu").innerHTML = "";
     setRecent.length = 0;
   };
 
@@ -414,3 +409,4 @@ const Sidebar = () => {
 //export
 
 export default Sidebar;
+

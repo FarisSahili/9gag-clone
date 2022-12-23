@@ -13,7 +13,6 @@ const itemClicked = (event) => {
 
 const Navbar = () => {
 
-   
     return(        
           <div className='basic-navbar sticky-top'>
              <div className='components'>
