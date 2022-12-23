@@ -6,6 +6,7 @@ import handleShuffle from '../Pages/Shuffle';
 import CostuomTags from './CustomizeTags/CustomTags'
 import SocialMediaSignup from '../SignupLoginModal/SocialMediaSignup';
 import ModalTags from './CustomizeTags/CustomTags';
+import LogoNavHome from './NavBarHomeImg/logoNavHome.png'
 const itemClicked = (event) => {
     event.stopPropagation();
 }
@@ -25,7 +26,7 @@ const Navbar = () => {
                             <Link to='/Home' id="gag-but" className="navbar-brand" href="#" ><img id="gag-img" src={LogoNavHome} /></Link>
                         </div>
                         
-                           <Link to='/shuffle' className="left-links" id='Shuffle' onClick={RecommendedPosts}><b>🔀 Shuffle</b></Link>
+                           <Link to='/shuffle' className="left-links" id='Shuffle' ><b>🔀 Shuffle</b></Link>
                            <Link to='/getapp' className="left-links" id='GetApp'><b>📱 Get App</b></Link>
                            <a className="left-links" id='Memeland'><b>🏴‍☠️ Memeland</b></a>
                            <a className="left-links" id='Potatoz'><b>🥔 Potatoz</b></a>
