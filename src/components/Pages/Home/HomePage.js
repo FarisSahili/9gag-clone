@@ -7,6 +7,7 @@ import Interests from "./Interests";
 import Dark from "../../../dark";
 import RecommendedPosts from "../Shuffle";
 import TagButton from "../../Tags/Tag";
+import Clear from "../../UI/Sidebar/Clear";
 
 const HomePage = (props) => {
     return (
@@ -18,7 +19,7 @@ const HomePage = (props) => {
             <Interests/>
             <TagButton/>
             <PostList/>   
-        
+        <Clear/>
         </>
     );
 }

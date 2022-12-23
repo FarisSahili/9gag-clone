@@ -1,8 +1,12 @@
 import "./SidebarStyle.css";
 
 const Clear = () => {
-  return;
+  return(
+ 
   <div className="clear-modal" tabindex="-1">
+       <button type="button" className="butn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        nour
+     </button>
     <div className="modal-body">
       <p>Clear all Recents? </p>
     </div>
@@ -19,7 +23,8 @@ const Clear = () => {
         Clear
       </button>
     </div>
-  </div>;
+  </div>
+  )
 };
 
 export default Clear;
