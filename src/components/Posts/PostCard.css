@@ -217,7 +217,9 @@ margin-top: 5px;
 #up,#down,#comment-but{
     background-color:white;
     width: 24%;
-}
+    border-radius: 5%;
+    border-color: #e3e5e7;
+margin-right: 1%;}
 #up:hover,#down:hover,#comment-but:hover{
     background-color: #f0eeee;
     color: grey;
@@ -231,7 +233,6 @@ margin-right: 2%;
 width:400px;
 height:50px;
 padding: 2px;
-
 }
 /* .button-vote-comment{
     border-radius: 5px;
@@ -299,6 +300,7 @@ background-color:rgb(246, 246, 246);
 }
 .buttton{
     width:100px;
+    color: #979797;
 }
 .share-buttons{
     display: flex;

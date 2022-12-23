@@ -69,14 +69,14 @@ const PostCard = (props) => {
         }
     }
     return (
-        <article className='post-container'>
+        <div className='post-container'>
             <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
-                    <a className="card-font" >
+                    <Link to='/gaggerpage' className="card-font" >
                         <img src={props.op_user_avatar} className='avatar-pic' alt=" op-avatar " />
-                    </a>
+                    </Link>
                     <div className='gagger'>
-                       <a className="card-font">{props.op_user}</a>
+                       <Link to='/gaggerpage' className="card-font">{props.op_user}</Link>
                         <span className="time">{props.post_time}h</span>
                     </div>
 
@@ -85,7 +85,7 @@ const PostCard = (props) => {
                             <img id="savebut" src={SaveIcon} className='save-icon' alt="this is save icon" type="button" />
                         </button>
                     </div>
-                    {/* <div className="dropdown dd-card">
+                    <div className="dropdown dd-card">
                         <button className='dropdown-button' data-bs-toggle="dropdown" type="button">
                             <img src={DropdownIcon} className='dropdownIcon' alt="save icon" type="button" />
                         </button>
@@ -98,18 +98,8 @@ const PostCard = (props) => {
                             <li><button className="dropdown-item dd-item" type="button">Report Post</button></li>
                             <li><button className="dropdown-item dd-item" type="button">Block</button></li>
                         </ul>
-                    </div> */}
-                    {/* <div class="btn-group">
-                    <button id="dropdownMenuButton dropdown-toggle" className='dropdown-button' data-bs-toggle="dropdown" type="button" aria-expanded="false">
-                            <img src={DropdownIcon} className='dropdownIcon' alt="save icon" type="button" />
-                        </button>
-  
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-  </ul>
-</div> */}
+                    </div>
+                 
                 </div>
                 <div className='title-of-post'>
                     <h4 className="postcardh4" >{props.title}</h4>
@@ -124,9 +114,9 @@ const PostCard = (props) => {
                 </div>
                 <div className='button-card'>
                     <div className='vote-button'>
-                    <button  onClick={Upvote} type="button" id="up" className="btn btn-outline-secondary buttton"><img className='arrowu' src={voteup} alt="up vote icon " /><b>{Up}</b></button>
+                    <button  onClick={Upvote} type="button" id="up" className="btn btn-outline-secondary buttton"><img className='arrowu' src={voteup} alt="up vote icon " /><b >{Up}</b></button>
                     <button onClick={Downvote} type="button" id="down" className="btn btn-outline-secondary buttton"><img className='arrowd' src={votedown} alt=" down vote icon " /><b>{Down}</b></button>
-                    <button  type="button" id="comment-but" className="btn btn-outline-secondary buttton"><img className="comment-img"  src={CommitIcon} alt="comment icon " /><b>{props. comment_count}</b></button>
+                        <Link to='/comment' id="comment-but" className="btn btn-outline-secondary buttton"><img className="comment-img"  src={CommitIcon} alt="this is commit icon " /><b>{props. comment_count}</b></Link>
 
 
                         {/* <button onClick={Upvote} id="up" className='button-vote'><img className='arrowu' src={voteup} alt="this is vote up icon" />{Up}</button> */}
@@ -141,7 +131,7 @@ const PostCard = (props) => {
 
                         <a className='share-icon'>
                             <img src={MessangerIcon} alt="this is MessangerIcon " /></a>
-                        <div class="dropdown">
+                        <div className="dropdown">
                             <button className="dropdown" type="button" data-bs-toggle="dropdown">
                                 <a className='share-icon'><img src={ShareIcon} alt="this is ShareIcon " /></a>
                             </button>
@@ -171,7 +161,7 @@ const PostCard = (props) => {
             })}
         </>            */}
 
-        </article>
+        </div>
     )
 }
 export default PostCard;

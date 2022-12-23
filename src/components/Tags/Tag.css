@@ -1,10 +1,11 @@
-.container{
-    display:block;
-    position: relative;
+.container-tag-button{
     width:700px;
-    /* height:10%; */
-padding-top: 1%;  
-padding-left: 1%;
+    height:85px;
+
+margin-left:25%;
+display: flex;
+flex-wrap: wrap;
+
 }
 .Tag-Button{
  font-size:14px;
@@ -20,10 +21,8 @@ border-radius: 5px;
 text-align: center;
 font-weight: bold;
 width: auto;
-}
-.tag1{
-    display: flex;
-flex-wrap: wrap;
+padding-right: 8px;
+padding-top: 0;
 }
 .Tag-Button:hover{
     background-color:lightgray;

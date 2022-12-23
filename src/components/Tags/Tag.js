@@ -2,10 +2,10 @@
 import './Tag.css';
 //function
 
-const TagButton = (props) => {
+const TagButton = () => {
 return (
-    <div className='container'>
- <div className='tag1'>
+    <div className='container-tag-button'>
+
                              <button  className='Tag-Button'  href = "tag-html" >World Cup</button>
                              <button  className='Tag-Button'  href = "tag-html" >Spain</button>  
                               <button  className='Tag-Button'  href = "tag-html">Morocco</button>
@@ -13,12 +13,11 @@ return (
                                 <button  className='Tag-Button'  href = "tag-html" >Jaban</button>
                                 <button className='Tag-Button' href = "tag-html">Wednesday</button>
                                 <button className='Tag-Button' href = "tag-html">Pokemon</button>
-        
                                 <button className='Tag-Button' href = "tag-html">Chainsaw man</button>        
                                 <button className='Tag-Button' href = "tag-html">Latest news</button>
                                 <button className='Tag-Button' href = "tag-html">Most commented</button>
                                 <button className='Tag-Button' href = "tag-html">Weekly highlights</button>
-                           </div>  
+                         
                            </div>  
 );
 }
