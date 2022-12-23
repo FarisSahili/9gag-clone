@@ -1,4 +1,4 @@
-import img1 from './components/image/post1.jpg'
+
 import img2 from './components/image/aVbMoW8_460swp.webp'
 import img3 from './components/image/axo1R8Y_460swp.webp'
 import img4 from './components/image/img10.jpg'
@@ -10,261 +10,177 @@ import icon5 from './components/image/icon5.jpg'
 import icon6 from './components/image/icon6.jpg'
 import media1 from './components/image/media/media1.jpg'
 import media3 from './components/image/media/media3.jpg'
-import media4 from './components/image/media/media4.jpg'
 import media5 from './components/image/media/media5.jpg'
-import media6 from './components/image/media/media6.jpg'
-
-
+import meme1 from './components/image/meme1.jpg'
+import meme2 from './components/image/meme2.jpg'
+import meme3 from './components/image/meme3.png'
+import meme4 from './components/image/meme4.jpg'
+import meme5 from './components/image/meme5.png'
+import meme6 from './components/image/meme6.jpg'
+import meme7 from './components/image/meme7.jpg'
 const postData = [
   {
     id: 1,
-    title: "lol",
-    op_user: "يمان غسان", // original poster,
-    op_user_avatar: icon1, // original poster,
+    title: "🤣🤣🤣🤣🤣🤣🤣🤣🤣",
+    op_user: "Yaman Ghasan",  
+    op_user_avatar: icon1, 
     post_time: 1, //yyyy-mm-dd
     up_votes: 100,
     down_votes: 10,
-    content: media1, // post content (post media)
-    tags: ["world cup", "funny", "travel"],
+    content: media1,  
+    tags: ["java script", "funny"],
     comment_count: 10,
-    comment: [
-      {
-        user: "9hdw ",
-        avatar: "",
-        comment_date: "2022-01-01",
-        comment_body: "hahahah ",
-        up_votes: 120,
-        down_votes: 10,
-      },
-      {
-        user: "khif",
-        avatar: icon3,
-        comment_date: "2020-02-11",
-        comment_body: "why not",
-        up_votes: 2,
-        down_votes: 13,
-      },
-      {
-        user: "atti18",
-        avatar: icon4,
-        comment_date: "2022-08-03",
-        comment_body: "Laugh track starts",
-        up_votes: 22,
-        down_votes: 19,
-      },
-      {
-        user: "takedahiromitsu",
-        avatar: icon2,
-        comment_date: "2022-11-02",
-        comment_body: "Someone asked for a rumble?",
-        up_votes: 38,
-        down_votes: 2,
-      },
-    ],
   },
   {
     id: 2,
     title: "How to tell people",
-    op_user: "yaman ghasan", // original poster,
-    op_user_avatar: icon2, // original poster,
-      post_time: 2, //yyyy-mm-dd
+    op_user: "nour al huda",  
+    op_user_avatar: icon2,  
+      post_time: 2,  
     up_votes: 200,
     down_votes: 12,
-    content: img2, // post content (post media)
-    tags: ["world cup", "morocco", "brazil"],
+    content: img2,  
+    tags: ["school", "world"],
     comment_count: 155,
-
-    comment: [
-      {
-        user: "note",
-        avatar: icon1,
-        comment_date: "2022-11-18",
-        comment_body: "ok  ",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "uskwm",
-        avatar: icon3,
-        comment_date: "2022-9-13",
-        comment_body: "noooooo",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "art",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "sure for now",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "ahmed",
-        avatar: icon3,
-        comment_date: "2022-12-03",
-        comment_body: "Someone asked about this?",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
+ 
   },
   {
     id: 3,
-    title: "I've been bamboozled many times",
-    op_user: "el_homero", // original poster,
-    op_user_avatar: icon6, // original poster,
-      post_time: 8, //yyyy-mm-dd
+    title: "many times",
+    op_user: "faris",  
+    op_user_avatar: icon6,  
+      post_time: 8,  
     up_votes: 20,
     down_votes: 12,
-    content: img3, // post content (post media)
-    tags: ["football", "cozy", "france"],
+    content: img3,  
+    tags: ["football", "cozy" ],
     comment_count: 50,
-
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "hahahah",
-        up_votes: 20,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
+ 
   },
   {
     id: 4,
-    title: "France Random Chat",
-    op_user: "9GAGGERkl", // original poster,
-    op_user_avatar: icon2, // original poster,
-      post_time: 9, //yyyy-mm-dd
+    title: "lol",
+    op_user: "lojain",  
+    op_user_avatar: icon1,  
+      post_time: 9,  
     up_votes: 230,
     down_votes: 172,
-    content: img4, // post content (post media)
-    tags: ["football", "france"],
+    content: img4,  
+    tags: ["school", "project"],
     comment_count: 190,
-
-    comment: [
-      {
-        user: "notsi",
-        avatar: icon2,
-        comment_date: "2022-03-18",
-        comment_body: "france",
-        up_votes: 230,
-        down_votes: 39,
-      },
-      {
-        user: "lara",
-        avatar: icon3,
-        comment_date: "2022-12-13",
-        comment_body: "lol",
-        up_votes: 22,
-        down_votes: 133,
-      },
-      {
-        user: "totto",
-        avatar: icon6,
-        comment_date: "2022-02-20",
-        comment_body: "really ",
-        up_votes: 42,
-        down_votes: 39,
-      },
-      {
-        user: "thisi",
-        avatar: icon6,
-        comment_date: "2022-12-03",
-        comment_body: "not possible",
-        up_votes: 28,
-        down_votes: 4,
-      },
-    ],
+ 
   },
   {
     id: 5,
-    title: "How to tell people",
-    op_user: "heyheyhohojoeb", // original poster,
-    op_user_avatar: icon2, // original poster,
-      post_time: 10, //yyyy-mm-dd
+    title: "hahahahah",
+    op_user: "Ibrahem", 
+    op_user_avatar: icon2, 
+      post_time: 10, 
     up_votes: 200,
     down_votes: 12,
-    content: media3, // post content (post media)
-    tags: ["world cup", "morocco", "brazil"],
+    content: media3,  
+    tags: ["programming", "code"],
     comment_count: 155,
   }
   ,
   {
     id: 6,
-    title: "How to tell people",
-    op_user: "heyheyhohojoeb", // original poster,
-    op_user_avatar: icon2, // original poster,
-      post_time: 11, //yyyy-mm-dd
+    title: "whyyyyy",
+    op_user: "gager", 
+    op_user_avatar: icon3,  
+      post_time: 11, 
     up_votes: 200,
     down_votes: 12,
-    content: media4, // post content (post media)
-    tags: ["world cup", "morocco", "brazil"],
+    content: meme3, 
+    tags: ["parent", "home"],
     comment_count: 155,
   } 
   ,
    {
     id: 7,
-    title: "How to tell people",
-    op_user: "heyheyhohojoeb", // original poster,
-    op_user_avatar: icon2, // original poster,
-      post_time: 5, //yyyy-mm-dd
+    title: "every time",
+    op_user: "Ibrahim Khdeir ", 
+    op_user_avatar: icon5,  
+      post_time: 5, 
     up_votes: 200,
     down_votes: 12,
-    content: media5, // post content (post media)
-    tags: ["world cup", "morocco", "brazil"],
+    content: media5,  
+    tags: ["funny", "final"],
     comment_count: 155,
   } ,
    {
     id: 8,
-    title: "How to tell people",
-    op_user: "heyheyhohojoeb", // original poster,
-    op_user_avatar: icon2, // original poster,
-      post_time: 23, //yyyy-mm-dd
+    title: "lol",
+    op_user: "Yaman " ,
+    op_user_avatar: icon3,  
+      post_time: 23,  
     up_votes: 200,
     down_votes: 12,
-    content: media6, // post content (post media)
-    tags: ["world cup", "morocco", "brazil"],
+    content: meme1,  
+    tags: ["world", "lol"],
     comment_count: 155,
   }
   , 
    {
     id: 9,
     title: "How to tell people",
-    op_user: "heyheyhohojoeb", // original poster,
-    op_user_avatar: icon2, // original poster,
-      post_time: 15, //yyyy-mm-dd
+    op_user: "raghad ", 
+    op_user_avatar: icon2,  
+      post_time: 15, 
     up_votes: 200,
     down_votes: 12,
-    content: media1, // post content (post media)
-    tags: ["world cup", "morocco", "brazil"],
+    content: meme2,  
+    tags: ["palestine", "final"],
     comment_count: 155,
+  },
+  {
+    id: 10,
+    title: "really !!!",
+    op_user: "basil", 
+    op_user_avatar: icon4,  
+      post_time: 15, 
+    up_votes: 200,
+    down_votes: 12,
+    content: meme4, 
+    tags: ["music", "fun"],
+    comment_count: 155,
+  },
+  {
+    id: 11,
+    title: " !!!",
+    op_user: "gager name", 
+    op_user_avatar: icon5,  
+      post_time: 15, 
+    up_votes: 22,
+    down_votes: 12,
+    content: meme5, 
+    tags: ["lol", "fun"],
+    comment_count: 53,
+  },
+  {
+    id: 12,
+    title: " hhahahahah",
+    op_user: "ooops", 
+    op_user_avatar: icon3,  
+      post_time: 15, 
+    up_votes: 22,
+    down_votes: 12,
+    content: meme6, 
+    tags: ["money", "funny"],
+    comment_count: 53,
+  }
+  ,
+  {
+    id: 13,
+    title: "uhh",
+    op_user: "mommo", 
+    op_user_avatar: icon2,  
+      post_time: 33, 
+    up_votes: 22,
+    down_votes: 12,
+    content: meme7, 
+    tags: ["money", "life"],
+    comment_count: 53,
   }
 
 ];
