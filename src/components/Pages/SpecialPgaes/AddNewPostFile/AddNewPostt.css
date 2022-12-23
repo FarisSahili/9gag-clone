@@ -21,25 +21,41 @@
     height: 3rem;
     font-weight: bold;
 }
-.imgenewpost{
+.imgenewpostt{
     width: 7%;
     height: 12.5%;
-    margin: 2.5rem 0 0 16.2rem;
+    margin: 2.5rem 0 0 16.6rem;
 }
-.chooseico{
+.chooseicot{
     color: black;
-    margin: 1rem 0 0 9.5rem;
+    margin: 1.5rem 0 0 10.4rem;
     font-weight: bold;
 }
 .choosebtn{
     font-weight: bold;
     border-radius: 2rem;
-    margin: 1rem 0 0 13.5rem;
+    margin: 1.5rem 0 0 13.8rem;
     width: 8rem;
     
 }
 .chooseor{
-    margin: 1rem 0 0 17rem;
+    margin: 1rem 0 0 17.5rem;
+}
+.urlinput{
+    width: 20rem;
+    margin: 1.5rem 0 0 5rem;
+    
+}
+.hidenchoose{
+    margin: -6.5rem 0 0 27rem;
+    width: auto;
+    height: 2rem;
+    border-radius: 3rem;
+    
+}
+.supportfile{
+    margin: 0.5rem 0 0 5rem;
+    color: rgb(192, 192, 192);
 }
 .add{
     margin: 2rem 0 0 1rem;
@@ -51,19 +67,12 @@
     width: 21rem;
     height: 3rem;
     margin: -2% 0 0 60%;
-
     
 }
 .rules_menu{
     width: 20rem;
     height: auto;
     
-    
-}
-.ph-photo{
-    margin: 1rem 0 0 1rem;
-    width: auto;
-    height: auto;
 }
 .rules{
     width: auto;
@@ -81,7 +90,7 @@ background-color: lightgrey;
 }
 
 .creat_post{
-    margin: 5% 0 0 25%;
+    margin: 4% 0 0 25%;
     font-weight: bold;
     width: auto;
     height: auto;
@@ -119,13 +128,14 @@ background-color: lightgrey;
     font-weight: bold;
 }
 .tagestitl{
-    margin: 2% 0 0 2%;
+    margin: 1rem 0 0 1rem;
     color: gray;
     font-weight: bold;
 }
 .dd{
     padding: 10%;
     height: auto;
+    
 }
 .graphup{
     width: 1.2rem;

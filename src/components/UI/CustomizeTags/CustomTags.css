@@ -1,46 +1,68 @@
 .itemTitle {
-    font-weight: 700;
-    font-size: 14px;
-    height: 24px;
-    color: #999999;
-    display: inline-block;
-  
-  }
-  
-   
-  .buttonItem {
-    display: flex;
-    outline: none;
-    align-self: baseline;
-    background-color: transparent;
-    justify-content: center;
-    border-width: 0px;
-  }
+  font-weight: 700;
+  font-size: 14px;
+  height: 24px;
+  color: #999999;
+  display: inline-block;
+
+}
+
+.buttonItem {
+  display: flex;
+  outline: none;
+  align-self: baseline;
+  background-color: transparent;
+  justify-content: center;
+  border-width: 0px;
+}
+
+.star {
+  display: flex;
+  align-self: baseline;
+}
+
+.btnsContainer {
+  display: flex;
+}
+
+.rowContainer  {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+#exampleModal  {
  
-  .star {
-    display: flex;
-    align-self: baseline;
-  }
+ height: 80vh;
+ position:relative
  
-  .btnsContainer {
-    display: flex;
-  }
- 
-  .rowContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: space-between;
-  }
- 
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  .modal {
-   overflow-y: auto;
-   display: block;
-   height: 80vh;
-   position: relative;
+}
+.ctag{
+  height: 200px;
+  width:300px;
+border-radius: 5%;
+
  }
+.butn{
+  padding-top: 10%;
+  float: right;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(174, 166, 166);
+ background: rgba(255, 255, 255, 0.037);
+ border-radius: 20%;
+ 
+    width: 10%;
+ 
+    border: 2px solid rgb(176, 173, 173);
+ 
+}
  
