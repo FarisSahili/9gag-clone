@@ -14,7 +14,7 @@ const SocialMediaSignup = () => {
   return (
     <div className="FullModal">
       <div
-        className="modal fade"
+        className="modal "
         id="exampleModalToggle"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel"
@@ -160,7 +160,7 @@ const SocialMediaSignup = () => {
         </div>
       </div>
       <div
-        className="modal fade"
+        className="modal"
         id="exampleModalToggle2"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel2"
@@ -239,7 +239,7 @@ const SocialMediaSignup = () => {
         Open first modal
       </li>
       <div
-        className="modal fade"
+        className="modal"
         id="exampleModalToggle3"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel3"
@@ -277,7 +277,7 @@ const SocialMediaSignup = () => {
         </div>
       </div>
       <div
-        className="modal fade"
+        className="modal "
         id="exampleModalToggle4"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel4"
