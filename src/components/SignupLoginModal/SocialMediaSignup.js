@@ -217,7 +217,7 @@ const SocialMediaSignup = () => {
                   aria-label="Password"
                 />
                 <label for="floatingPassword"></label>
-                <Link to='/SocialMediaSignup' className="ButLogIn2">Log in</Link>
+                <button className="ButLogIn2"><Link  to='/SocialMediaSignup' className="link">Log in</Link></button>
                 <button
                   className="Forgot"
                   data-bs-target="#exampleModalToggle3"
@@ -236,7 +236,7 @@ const SocialMediaSignup = () => {
         data-bs-toggle="modal"
         href="#exampleModalToggle"
         >
-      <img src={Signuppic} className="signphoto"></img>
+      <img src={Signuppic} className="signphoto" alt=""/>
       </button>
       <div
         className="modal"
@@ -295,18 +295,11 @@ const SocialMediaSignup = () => {
               <h4>Sign Up</h4>
             </div>
             <div className="modal-body">
-              <form className="form-floating">
-                <input
-                  type="email"
-                  className="form-control is-invalid"
-                  id="floatingInputInvalid"
-                  placeholder="name@example.com"
-                  value="test@example.com"
-                />
-                <label for="floatingInputInvalid">Invalid input</label>
-              </form>
-
+              <div className="inputName">
+                      <input type="text" className="form-control" placeholder="Username"  ></input>
+                    </div>
               <div className="form-floating mb-3">
+                    
                 <input
                   type="email"
                   className="form-control"
