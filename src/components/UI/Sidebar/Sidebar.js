@@ -1,8 +1,6 @@
 //import
 import "./SidebarStyle.css";
 import React, { useState } from "react";
-
-import postData from "../../../data";
 import { Link } from "react-router-dom";
 
 //function
@@ -29,7 +27,7 @@ const Star = ({ isSelected, onClick }) => {
           fill={isSelected ? "gold" : "gainsboro"}
           className="bi bi-star-fill"
           viewBox="0 0 14 17 "
-        
+          
         >
           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
         </svg>
@@ -44,16 +42,22 @@ const Sidebar = () => {
 
 
 
-   const [Posts, setPosts] = useState([postData]); // array of posts
+  //  const [Posts, setPosts] = useState([postData]); // array of posts
 
-   const [filteredPosts, setFilteredPosts] = useState([]); // array of filtered posts
+  //  const [filteredPosts, setFilteredPosts] = useState([]); // array of filtered posts
 
-   const handleTagClick = (item) =>
-  {
-     const filtered = Posts.filter((Post) => Post.tags.includes(item)); // filter posts that include the clicked tag
-    setFilteredPosts(filtered);
+  //  const handleTagClick = (item) =>
+  // {
+  //    const filtered = Posts.filter((Post) => Post.tags.includes(item)); // filter posts that include the clicked tag
+  //   setFilteredPosts(filtered);
 
-  };
+  // };
+
+
+  function clear (){
+    
+
+  }
 
   const favoriteSection = () => {
     if (favorites.length > 0) {
@@ -101,11 +105,12 @@ const Sidebar = () => {
           {recent.map((item, index) => {
             return (
               <div className="rowContainer">
-                <li key={index} className="li-filter">
+                <li key={index} className="li-filter" >
                 <Link to='/sidepage' className="sidebarItemRecent" >{item}</Link>
                 </li>
                 <div className="btnsContainer">
-                  <Remove
+               
+                <Remove
                     onClick={() => {
                       deleteItemFromRecent(index);
                     }}
@@ -238,6 +243,7 @@ const Sidebar = () => {
         data-bs-scroll="true"
         data-bs-backdrop="false"
         tabIndex="-1"
+        
         id="offcanvasScrolling"
         aria-labelledby="offcanvasScrollingLabel"
       >
@@ -309,9 +315,10 @@ const Sidebar = () => {
                     <li
                       key={index}
                       className="li-filter"
+                   
                       onClick={() => {
 
-                       {handleTagClick(item)};
+                       
                         setRecent((current) => [...current, item]);
               
 
@@ -347,7 +354,7 @@ const Sidebar = () => {
                      
                       }}
                     >
-                      <Link to='/sidepage' className="sidebarItem" ><a>{item}</a></Link>
+                      <Link to='/sidepage' className="sidebarItem" >{item}</Link>
                     </li>
                     <div className="starContainer">
                       <Star

@@ -12,6 +12,7 @@
   position: fixed;
   box-shadow: 2px 0 3px rgba(0, 0, 0, 0.2);
 
+  
 }
 
 
@@ -117,15 +118,16 @@
 .sidebarItem 
 {
   font-size: 14px;
-  color: rgb(65, 65, 65);
-  text-decoration: none; 
  
+  text-decoration: none; 
+  color: rgb(56, 56, 56);
 }
 
 
 .sidebarItem:hover
 {
   color: rgb(0, 0, 0);
+
 }
 
 
@@ -133,10 +135,11 @@
 {
 
   font-size: 14px;
-  color: rgb(65, 65, 65);
+  color: rgb(83, 83, 83);
   position: relative; 
   top: 6px;
   text-decoration: none; 
+  font-style: normal;
 }
 .sidebarItemRecent:hover
 {
@@ -184,8 +187,10 @@
 
 .remove 
 {
-  opacity: 0.1;
- 
+  opacity: 0.02;
+  width: 31px;
+  height: 31px;
+
 
 }
 
@@ -280,6 +285,7 @@
   margin: 10px;
   padding: 3px;
   margin-top: -2px;
+  margin-left: -2px;
 }
 
 
@@ -341,7 +347,7 @@ i
   display: block;
   box-sizing: border-box;
   line-height: 20px;
-  height: 40px;
+  height: 3rem;
   padding: 10px 16px;
 }
 
@@ -393,7 +399,7 @@ body
 {
   background-color: rgb(65, 65, 231);
   display: inline-block;
-  height: 36px;
+  height: 2.3rem;
   padding: 8px 16px;
   font-weight: 700;
   line-height: 20px;
@@ -409,7 +415,7 @@ body
 
 .pin-icon 
 {
-  width: 24px;
+  width: 1.4rem;
   margin-right: 2px;
 }
 
@@ -436,7 +442,7 @@ body
 font-size:14px;
 border-color:#f0eeee;
 border-width:0;
-height: 35px;
+height: 2rem;
 margin-right: 5px;
 margin-bottom: 5px;
 position: relative;
@@ -453,6 +459,7 @@ padding-right: 8px;
 .Tag-Button-sidebar:hover{
   background-color:lightgray;
 }
+
 .sidebarItemButton
 {
   font-size: 12px;
@@ -475,6 +482,13 @@ justify-content: space-between;
 }
 .firstSection
 {
-margin-top: 110px;
+margin-top: 10%;
 
+}
+
+
+/* post part */
+.postPartL
+{
+  padding-top: 14rem;
 }
