@@ -13,9 +13,7 @@ function ModalTags (){
  
           {favorites.map((item, index) => {
             return (
-              <ul className="list-group list-group-flush" onClick={() => 
-                {
-                setOtherTags((current) => [...current, item]);  }}>
+              <ul className="list-group list-group-flush">
               <div className="rowContainer">
               <div className="title">{item}</div>
               <div className="btnsContainer">
@@ -111,33 +109,32 @@ function ModalTags (){
   };
 
   const deleteItemFromFavorite = (selectedIndex) => {
-    setFavorites((current) => current.filter((_item, index) => index !== selectedIndex)
+    setFavorites((current) => current.filter((item, index) => index !== selectedIndex)
     );
   };
 
   const filterArrayFromOtherFavorite = (selectedIndex) => {
-    setOtherTags((current) => current.filter((_item, index) => index !== selectedIndex)
+    setOtherTags((current) => current.filter((item, index) => index !== selectedIndex)
     );
   };
   const filterArrayFromothertagstofav = (selectedIndex) => {
-    setOtherTags((current) => current.filter((_item, index) => index !== selectedIndex)
+    setOtherTags((current) => current.filter((item, index) => index !== selectedIndex)
     );
   };
   const filterArrayFromhidden = (selectedIndex) => {
-    setHidden((current) => current.filter((_item, index) => index !== selectedIndex)
+    setHidden((current) => current.filter((item, index) => index !== selectedIndex)
     );
     
   };
   
-
-  
-  
   return (
     <>
  <div className="modalbutton">
-      <button type="button" className="butn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+      <button type="button" className="butn flex-container" data-bs-toggle="modal" data-bs-target="#exampleModal">
      <img src={CustomizeTagsPic} className="ctag"></img>
       </button>
+ 
       </div>
       <div className="modal fade " id="exampleModal" aria-hidden="true" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" >
         <div className="modal-dialog" role="document">
@@ -217,7 +214,7 @@ function ModalTags (){
                       <XButton isSelected={true}
                         onClick={() => {
                           filterArrayFromhidden(index);
-                          setFavorites((current) => [...current, item]);
+                          setPopularTags((current) => [...current, item]);
                         }}
                       />
                     </div>

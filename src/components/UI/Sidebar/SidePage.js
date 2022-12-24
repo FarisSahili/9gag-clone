@@ -3,7 +3,8 @@ import Navbar from "../Navbar";
 import Sidebar from "./Sidebar";
 import "./SidebarStyle.css";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import PostCard from "../../Posts/PostCard";
+import filteredPosts from "./Sidebar"
 
 //function
 
@@ -20,8 +21,24 @@ const SidePage = () => {
     "meme",
     "movie tv",
   ]);
+  
+
+//   function openSidebar()
+//   {
+// document.getElementById('menu').style.width='250px';
+// document.getElementById('content').style.marginLeft='250px';
+//   }
+
+
+//   function openSidebar()
+//   {
+// document.getElementById('menu').style.width='0';
+// document.getElementById('content').style.marginLeft='0';
+//   }
 
   return (
+
+
     <>
 
       <>
@@ -29,6 +46,8 @@ const SidePage = () => {
         <Sidebar />
       </>
 
+
+    <div className="content">
       <div className="containerL">
         <div className="sectionsPage">
         <div className="firstSection">
@@ -66,7 +85,7 @@ const SidePage = () => {
         <div className="secondtSection">
           {tagButtons.map((item, index) => {
             return (
-              <button className="Tag-Button-sidebar">
+              <button  className="Tag-Button-sidebar" key={index}>
                 <b className="sidebarItemButton">{item}</b>
               </button>
             );
@@ -74,6 +93,11 @@ const SidePage = () => {
         </div>
       </div>
       </div>
+
+
+      </div>
+
+
     </>
   );
 };

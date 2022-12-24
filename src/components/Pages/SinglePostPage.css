@@ -163,17 +163,13 @@
 .but-down-comment:hover{
     color: rgb(0, 0, 0);
 }
-
-
-
-
 #reply-comment{
     font-weight: bold;
     font-size: 12px;
     position: absolute;
     top: 50px;
     left: 100px;
-    color: rgb(66, 66, 218);
+    color: rgb(72, 72, 214);
 }
 #dropdown-comment{
     position: relative;

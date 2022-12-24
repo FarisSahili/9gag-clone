@@ -9,26 +9,32 @@
 {
   width: 14.4rem;
   margin-top: 50px;
+  position: fixed;
+  box-shadow: 2px 0 3px rgba(0, 0, 0, 0.2);
+
 }
 
+
+/*icone inside navbar*/
 .btn-start 
 {
   background-color: transparent;
   border-width: 0px;
-  padding-left: 1px;
+  padding-left: 0.1rem;
 }
+
+
 
 /*card styel*/
 
 .btn-card 
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
   color: #fff;
   border-radius: 100px;
-  width: 155px;
-  height: 42px;
+  width: 9.5rem;
+  height: 2.5rem;
   font-weight: bold;
 }
 
@@ -52,8 +58,10 @@
 
 .card-text 
 {
-  font-size: 14.3px;
+  font-size: 14px;
 }
+
+
 
 /*9gag section */
 
@@ -62,7 +70,12 @@
   font-weight: bold;
   font-size: 14px;
   size: 10px;
-  padding-left: 6px;
+  padding-left: 0.3rem;
+}
+
+.label9gagSection:hover 
+{
+  background-color: rgba(100, 99, 99, 0.1);
 }
 
 .icons-sidebar-9gag-sction
@@ -72,6 +85,17 @@
   height: 1.4rem;
 }
 
+.label9gagSection 
+{
+  padding: 3px;
+  list-style-type: none;
+}
+.label9gagSection a 
+{
+  color: #010101;
+  text-decoration: none;
+}
+
 
 
 .sidebar-menu 
@@ -79,64 +103,23 @@
   padding: 0px;
 }
 
+/*filters inside each section */
 
-.sidebar-menu-recent{
+#sidebar-menu-recent{
   padding: 0px;
 }
-
-
 
 .sidebar-menu-9gag 
 {
   padding: 0px;
 }
 
-/*all section*/
-
-
-.bi 
-{
-  width: 1.5rem;
-  height: 1.3rem;
-}
-
-.star-btn 
-{
-  display: flex;
-  outline: none;
-  align-self: baseline;
-  background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  border-width: 0px;
-}
-
-.btn-remove
-{
-  display: flex;
-  outline: none;
-  align-self: baseline;
-  background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  border-width: 0px;
-  padding-right: 0rem;
-
-
- 
-  
-}
-
-
-
 .sidebarItem 
 {
   font-size: 14px;
   color: rgb(65, 65, 65);
-  padding: 0px;
   text-decoration: none; 
-
-
+ 
 }
 
 
@@ -161,6 +144,59 @@
 }
 
 
+
+
+
+/*star icon in all section*/
+
+.bi 
+{
+  width: 1.5rem;
+  height: 1.3rem;
+}
+
+.star-btn 
+{
+  display: flex;
+  outline: none;
+  align-self: baseline;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+}
+
+
+/*remove icon only in recent section*/
+.btn-remove
+{
+  display: flex;
+  outline: none;
+  align-self: baseline;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+  padding-right: 0rem;
+
+
+}
+
+.remove 
+{
+  opacity: 0.1;
+ 
+
+}
+
+.remove:hover 
+{
+  opacity: 0.7;
+}
+
+
+
+/*div contain filters*/
 .rowContainer 
 {
   display: flex;
@@ -169,28 +205,27 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.rowContainer:hover
+{
+  background-color: rgba(100, 99, 99, 0.1);
+}
+
 .filtersSections
 {
   display: flex;
   margin-bottom: 10px;
   justify-content: space-between;
   
+}
 
-}
-.rowContainer:hover
-{
-  background-color: rgba(100, 99, 99, 0.1);
-}
 .filtersSections:hover
 {
   background-color: rgba(100, 99, 99, 0.1);
 }
 
-.bi 
-{
-  color: rgb(171, 171, 171);
-}
 
+/*text at top*/
 .h3Sections
 {
   color: rgb(143, 142, 142);
@@ -209,6 +244,9 @@
   line-height: 30px;
 }
 
+
+
+/*clear text inside recent section*/
 #clear 
 {
   color: rgb(143, 142, 142);
@@ -222,38 +260,17 @@
   outline: none;
   background-color: transparent;
   border-width: 0px;
-  padding-left: 110px;
-  width: 10px;
+  margin-left: 102px;
+  width: 2.5rem;
 
 }
 
-.remove 
-{
-  opacity: 0.1;
-  width: 27px;
-  height: 27px;
 
-}
-
-.remove:hover 
-{
-  opacity: 0.7;
-}
-
-
-.bi:hover 
-{
-  opacity: 1;
-}
 
 
 
 /*li and ul style */
 
-.label9gagSection:hover 
-{
-  background-color: rgba(100, 99, 99, 0.1);
-}
 
 
 
@@ -262,25 +279,13 @@
   list-style-type: none;
   margin: 10px;
   padding: 3px;
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
-.label9gagSection 
-{
-  padding: 3px;
-  list-style-type: none;
-}
 
-.sidebar 
-{
-  width: 216px;
-}
 
-.label9gagSection a 
-{
-  color: #010101;
-  text-decoration: none;
-}
+
+
 
 /*post part style */
 i 
@@ -386,7 +391,7 @@ body
 
 .btn-tag 
 {
-  background-color: rgb(30, 30, 220);
+  background-color: rgb(65, 65, 231);
   display: inline-block;
   height: 36px;
   padding: 8px 16px;
@@ -470,6 +475,6 @@ justify-content: space-between;
 }
 .firstSection
 {
-margin-top: 160px;
+margin-top: 110px;
 
 }

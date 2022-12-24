@@ -1,5 +1,5 @@
 import "./Profile.css"; 
-// import imagge from './happy-drake.jpg';
+import imagge from '../image/happy-drake.jpg';
 
 
 
@@ -7,7 +7,7 @@ const Profile = () => {
   return(
     <div className="container">
          <div className="photo-div">  
-            <img  className="img" src='./image/happy-drake.jpg' /> 
+            <img  className="img" src={imagge} /> 
               <div className="prof">
                   <div  className="prof-name">
                     <h4><b>DRAKE</b></h4>

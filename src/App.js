@@ -1,15 +1,8 @@
-
-
 import './App.css';
-import Navbar from './components/UI/Navbar';
-
-function App() 
-{
-return (
-    <>
-    <Navbar/>
-
-    </>
-);
+const App = () => {
+    return (
+        <>
+        </>
+    );
 }
 export default App;
