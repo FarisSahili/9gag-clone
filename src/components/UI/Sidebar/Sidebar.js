@@ -2,6 +2,7 @@
 import "./SidebarStyle.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import SidePage from "./SidePage";
 
 //function
 const Remove = ({ onClick }) => {
@@ -54,9 +55,13 @@ const Sidebar = () => {
   // };
 
 
+
+
   function clear (){
       setRecent([]);
-  }
+  }// to clear recent section
+
+
 
   const favoriteSection = () => {
     if (favorites.length > 0) {
@@ -64,7 +69,7 @@ const Sidebar = () => {
         <ul className="sidebar-menu">
           <h3 className="h3Sections">Favorites</h3>
 
-          {favorites.map((item, index) => {
+          {favorites.map((item, index ) => {
             return (
               <div className="rowContainer">
                 <li
@@ -80,7 +85,10 @@ const Sidebar = () => {
                   <Star
                     isSelected={true}
                     onClick={() => {
-                      deleteItemFromFavorite(index);
+                    
+                       deleteItemFromFavorite(item,index);
+                   
+                    
 
                     }}
                   />
@@ -92,6 +100,9 @@ const Sidebar = () => {
       );
     }
   };
+
+
+
 
   const recentSection = () => {
     if (recent.length > 0) {
@@ -107,7 +118,9 @@ const Sidebar = () => {
           {recent.map((item, index) => {
             return (
               <div className="rowContainer">
-                <li key={index} className="li-filter" >
+                <li 
+                key={index} 
+                className="li-filter" >
                 <Link to='/sidepage' className="sidebarItemRecent" >{item}</Link>
                 </li>
                 <div className="btnsContainer">
@@ -119,9 +132,11 @@ const Sidebar = () => {
                   />
 
                   <Star
-                    isSelected={false}
+                 
                     onClick={() => {
+                   
                       setFavorites((current) => [...current, item]);
+                     
                       
                     }}
                   />
@@ -137,17 +152,36 @@ const Sidebar = () => {
 
 
 
-  const deleteItemFromFavorite = (selectedIndex) => {
-    setFavorites((current) =>
-      current.filter((_item, index) => index !== selectedIndex)
-    );
-  }; // To delete items from fav
+  const deleteItemFromFavorite = (item,selectedIndex ) => {
+    setFavorites((current) =>current.filter((_item, index) => index !== selectedIndex));
+    setExplorePopular((current) => [ item ,...current]);
+  }; // To delete items from fav to  Explore Popular
+
+
 
   const deleteItemFromRecent = (selectedIndex) => {
     setRecent((current) =>
       current.filter((_item, index) => index !== selectedIndex)
     );
   }; // when i click at x button
+
+
+  const deleteItemFromExplorePopular = (selectedIndex) => {
+    setExplorePopular((current) => current.filter((item, index) => index !== selectedIndex)
+    );
+  };
+
+  const deleteItemFromPopular = (selectedIndex) => {
+    setPopular((current) => current.filter((item, index) => index !== selectedIndex)
+    );
+  };
+
+  
+  const deleteItemFromAllSection = (selectedIndex) => {
+    setAllSection((current) => current.filter((item, index) => index !== selectedIndex)
+    );
+  };
+
 
   const [favorites, setFavorites] = useState([]);
   const [recent, setRecent] = useState([]);
@@ -310,15 +344,18 @@ const Sidebar = () => {
 
             {recentSection()}
 
+
+
+
+
             <h3 className="h3Sections">Explore Popular Tags</h3>
             <ul className="sidebar-menu">
-              {ExplorePopular.map((item, index) => {
+              {ExplorePopular.map((item, index ) => {
                 return (
                   <div className="filtersSections">
                     <li
                       key={index}
                       className="li-filter"
-                   
                       onClick={() => {
 
                        
@@ -327,14 +364,15 @@ const Sidebar = () => {
 
                       }}
                     >
-                      <Link to='/sidepage' className="sidebarItem" >{item}</Link>
-                      
+                      <Link to='/sidepage' className="sidebarItem" s={item} >{item}</Link>
+                    
                     </li>
                     
                     <div className="starContainer">
                       <Star
                         onClick={() => {
-                          setFavorites((current) => [...current, item]);
+                          setFavorites((current) => [ item , ...current ]);
+                          deleteItemFromExplorePopular(index , item);
                         
                         }}
                       />
@@ -344,9 +382,13 @@ const Sidebar = () => {
               })}
             </ul>
 
+
+
+
+
             <h3 className="h3Sections">Popular </h3>
             <ul className="sidebar-menu">
-              {Popular.map((item, index) => {
+              {Popular.map((item, index ) => {
                 return (
                   <div className="filtersSections">
                     <li
@@ -354,6 +396,7 @@ const Sidebar = () => {
                       className="li-filter"
                       onClick={() => {
                         setRecent((current) => [...current, item]);
+                       
                      
                       }}
                     >
@@ -363,6 +406,7 @@ const Sidebar = () => {
                       <Star
                         onClick={() => {
                           setFavorites((current) => [...current, item]);
+                          deleteItemFromPopular(index , item);
                        
                         }}
                       />
@@ -372,9 +416,16 @@ const Sidebar = () => {
               })}
             </ul>
 
+
+
+
+
+
+
+
             <h3 className="h3Sections">All Sections</h3>
             <ul className="sidebar-menu">
-              {AllSection.map((item, index) => {
+              {AllSection.map((item, index ) => {
                 return (
                   <div className="filtersSections">
                     <li
@@ -386,12 +437,13 @@ const Sidebar = () => {
                       }}
                     >
                        <Link to='/sidepage' className="sidebarItem" >{item}</Link>
+                      
                     </li>
                     <div className="starContainer">
                       <Star
                         onClick={() => {
                           setFavorites((current) => [...current, item]);
-                     
+                          deleteItemFromAllSection(index , item);
                         }}
                       />
                     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "./SocialMediaSignup.css";
 import gaga from "./1.png";
 import Upvote from "./2.png";
@@ -9,9 +10,23 @@ import face1 from "./facebook.png";
 import google1 from "./Google_Icons.webp";
 import Apple1 from "./Apple-Logo.png";
 import LeftArrow from "./left.png";
-import Signuppic from "./Signuppic.png"
+import Signuppic from "./Signuppic.png";
 import { Link } from "react-router-dom";
 const SocialMediaSignup = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState(false);
+
+  const emailValidation = (e) => {
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    var emailValue = e.target.value;
+    setEmail(emailValue);
+    if (email.match(pattern)) {
+      setMessage(true);
+    } else {
+      setMessage(false);
+    }
+  };
+
   return (
     <div className="FullModal">
       <div
@@ -217,7 +232,11 @@ const SocialMediaSignup = () => {
                   aria-label="Password"
                 />
                 <label for="floatingPassword"></label>
-                <Link to='/SocialMediaSignup' className="ButLogIn2">Log in</Link>
+                <button className="ButLogIn2">
+                  <Link to="/SocialMediaSignup" className="link">
+                    Log in
+                  </Link>
+                </button>
                 <button
                   className="Forgot"
                   data-bs-target="#exampleModalToggle3"
@@ -231,12 +250,12 @@ const SocialMediaSignup = () => {
         </div>
       </div>
       <button
-      type="button"
+        type="button"
         className="signupbutton"
         data-bs-toggle="modal"
         href="#exampleModalToggle"
-        >
-      <img src={Signuppic} className="signphoto"></img>
+      >
+        <img src={Signuppic} className="signphoto" alt="" />
       </button>
       <div
         className="modal"
@@ -292,28 +311,48 @@ const SocialMediaSignup = () => {
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
-              <h4>Sign Up</h4>
+              <h4 id="SignUp">Sign Up</h4>
             </div>
             <div className="modal-body">
-              <form className="form-floating">
+              <div className="inputName">
                 <input
-                  type="email"
-                  className="form-control is-invalid"
-                  id="floatingInputInvalid"
-                  placeholder="name@example.com"
-                  value="test@example.com"
-                />
-                <label for="floatingInputInvalid">Invalid input</label>
-              </form>
-
+                  type="text"
+                  className="form-control"
+                  placeholder="Username"
+                ></input>
+              </div>
               <div className="form-floating mb-3">
                 <input
-                  type="email"
-                  className="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
+                  type="text"
+                  id="email"
+                  className={
+                    email.length === 0
+                      ? " input-control fill.email"
+                      : message
+                      ? "input-control valid-email"
+                      : "input-control invalid-email"
+                  }
+                  placeholder="Email address"
+                  autoComplete="off"
+                  onChange={emailValidation}
+                  value={email}
+                  aria-label="Email address"
                 />
-                <label for="floatingInput">Email address</label>
+                <p
+                  className={
+                    email.length === 0
+                      ? "text-massage fill-color"
+                      : message
+                      ? "text-message success-color"
+                      : "text-message error-color"
+                  }
+                >
+                  {email.length === 0
+                    ? "Please enter a valid email"
+                    : message
+                    ? "the email you entered is valid"
+                    : "the email you entered is invalid"}
+                </p>
               </div>
               <div className="form-floating">
                 <input

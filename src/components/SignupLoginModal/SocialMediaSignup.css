@@ -1,17 +1,25 @@
-.signupbutton{
+.signupbutton {
     margin-right: 2%;
-    
     float: right;
     background-color: white;
-  border-width: 0;
-  border-color: white;
-  border-radius: 5%;
-
+    border-width: 0;
+    border-color: white;
+    border-radius: 5%;
 }
-.signphoto{
+
+.signphoto {
     height: 200px;
-    width:300px;
-  border-radius: 5%;
+    width: 300px;
+    border-radius: 5%;
+}
+#SignUp{
+    margin: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 10px;
+
 }
 .modal-header .btn-close {
     margin: 0;
@@ -43,8 +51,14 @@ a.Apple {
     color: black;
 }
 
+a.link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 #LogIn {
-    margin:auto;
+    margin: auto;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -64,7 +78,7 @@ a.Apple {
 
 .para {
     font-size: 12px;
-    line-height:100%;
+    line-height: 100%;
     text-align: center;
     color: #9999;
 }
@@ -131,15 +145,15 @@ a.Apple {
     line-height: 25px;
     display: block;
     color: #9999;
-    margin-bottom:2%;
+    margin-bottom: 2%;
 }
 
 .send {
     border-radius: 30px;
-    height:50px;
+    height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size:18px;
+    font-size: 18px;
     border: 1px;
     border-color: #e5e5e5;
     border-style: solid;
@@ -153,7 +167,7 @@ a.Apple {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size:100%;
+    font-size: 100%;
     border: 1px;
     margin: 4px;
     border-color: #e5e5e5;
@@ -186,6 +200,15 @@ a.Apple {
     margin: -11px -161px;
 }
 
+.inputName {
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 100%;
+    border-color: #e5e5e5;
+    background-color: white;
+}
+
 .ButEmail {
     border-radius: 30px;
     height: 50px;
@@ -204,7 +227,7 @@ a.Apple {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size:100%;
+    font-size: 100%;
     border: 0px;
     margin: 4px;
     background-color: white;
@@ -235,9 +258,36 @@ a.Apple {
     opacity: .4;
     color: aliceblue;
 }
+
 .ButFacebook:hover,
 .ButGoogle:hover,
 .ButApple:hover,
 .ButEmail:hover {
     background-color: rgb(194, 194, 194);
+}
+p.text-massage.fill-color {
+    width: 200px;
+}
+
+.input-field .input-control.valid-email{
+    border: 1px solid #1882f8;
+}
+.input-field .input-control.invalid-email{
+    border: 2px solid red;
+}
+.check-color{
+    color: #1882f8;
+}
+.success-color{
+    color: rgb(78, 231, 78);
+}
+.error-color{
+    color:red ;
+}
+input#email {
+    outline: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ced4da;
 }
