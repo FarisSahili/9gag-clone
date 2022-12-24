@@ -9,7 +9,6 @@ import HomePage from './components/Pages/Home/HomePage';
 import AddNewPost from './components/Pages/SpecialPgaes/AddNewPostFile/AddNewPost';
 import SocialMediaSignup from './components/SignupLoginModal/SocialMediaSignup';
 import SinglePostPage from './components/Pages/SinglePostPage';
-import PostComments from './components/Posts/Comments/PostComments';
 import Profile from './components/Pages/Profile';
 import LogInPage from './components/SignupLoginModal/LoginModal';
 

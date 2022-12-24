@@ -117,48 +117,11 @@
     background-color: #e8e0e0;
     color:black ;
 }
-.dropdown-nested{
-    padding-top: 10px;
-    height: 40px;
-    border-radius: 0%;
-    text-align:start;
-    width: 100%;
-    color: #7b7575;
-    font-weight: bold;
-}
-.dropdown-nested:active{
-    background-color: #e8e0e0;
-    color: #7b7575;
-}
-.dropdown-nested:hover{
-    background-color: #e4e8eb;
-    color: #7b7575;
-}
-.dropdown-nested:focus{
-    background-color: #e8e0e0;
-    color: #7b7575;
-}
-.nested-dropdown{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    height: 30px;
-    margin-left: 14px; 
-    width: 100%;
-}
-.nested-dropdown:hover{
-    background-color: #e4e8eb;
-    color: #02080e;
-}
-.nested-dropdown:active{
-    background-color: #e8e0e0;
-    color: #02080e;
-}
 #gag{   
-    padding-left: 18px;
-    margin-top: 20px;
+    padding-left: 4%;
+    margin-top: 15px;
     font-size: small;
-    color: #ccc5c5;
+    color: #b0a9a9;
 }
 .carets-div{
     display: flex;
@@ -203,7 +166,7 @@
 #sign-but{
     width:max-content ;
     height:max-content;
-    padding-top: 12px;
+    padding-top: 16%;
     font-size: 100%; 
     color:rgb(157, 151, 151);
     border: #fff;
@@ -239,7 +202,7 @@
 }
 #post-but{
     color: #fff;
-    padding-top: 7px;
+    padding-top: 8%;
     text-decoration: none;
     background-color: #1f76da;
     width: 90px;
@@ -280,4 +243,63 @@
 }
 .input-group-text{
     margin-top: 5px;
+}
+/*   */
+#Terms{
+    padding-left: 13px;
+    color:#9f9b9b;
+    font-weight: bold;
+}
+#Terms:hover{
+    background-color: #e8e0e0;
+}
+#Terms:focus{
+    box-shadow:none;
+    border: none;
+}
+#Advertise{
+    padding-left: 13px;
+    color:#9f9b9b;
+    font-weight: bold;
+}
+#Advertise:hover{
+    background-color: #e8e0e0;
+}
+#Advertise:focus{
+    box-shadow:none;
+    border: none;
+}
+#Contact{
+    padding-left: 13px;
+    color:#9f9b9b;
+    font-weight: bold;
+}
+#Contact:hover{
+    background-color: #e8e0e0;
+}
+#Contact:focus{
+    box-shadow:none;
+    border: none;
+}
+.nested-dropdpwn-items{
+    height: 40px;
+    margin-top:8px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.nested-dropdpwn-items:hover{
+    background-color: #e8e0e0;
+}
+.AB{
+    margin-top: -25px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+    background-color:#fff
+}
+.nested-dropdpwn-hr{
+    color: #a8a3a3;
+    margin: 5px;
 }
