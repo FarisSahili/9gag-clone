@@ -6,7 +6,6 @@ import Sidebar from "../../UI/Sidebar/Sidebar";
 import Interests from "./Interests";
 import RecommendedPosts from "../Shuffle";
 import TagButton from "../../Tags/Tag";
-import Clear from "../../UI/Sidebar/Clear";
 import Logincard from "../../Posts/LoginPost";
 import Dark from "../../../dark";
 import homegag from './homegag.png'
