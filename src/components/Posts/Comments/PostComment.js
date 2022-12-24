@@ -92,8 +92,8 @@ const PostComment = (props) => {
                 <ul className="dropdown-menu">
                     <li><a className="dropdown-item" href="#scrollspyHeading3">Copy link</a></li>
                     <li><a className="dropdown-item" href="#scrollspyHeading4">Follow thread</a></li>
-                    <li><hr className="dropdown-divider" /></li>
                     <li><a className="dropdown-item" href="#scrollspyHeading5">Report comment</a></li>
+                    <li><a className="dropdown-item" href="#scrollspyHeading7">Block @{props.user_name_comment}</a></li>
                 </ul>
         </div>
     )
