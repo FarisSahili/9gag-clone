@@ -1,10 +1,9 @@
 import { useState } from "react";
 import React from "react";
 import "./LoginModal.css";
-import faceBook from "../ModalImage/image/2021_Facebook_icon.svg.png";
-import gOOgle from "../ModalImage/image/Google_Icons.webp";
-import APPle from "../ModalImage/image/Apple-Logo.png";
-
+import face1 from "./facebook.png";
+import google1 from "./Google_Icons.webp";
+import Apple1 from "./Apple-Logo.png";
 const LogInPage = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState(false);
@@ -42,18 +41,18 @@ const LogInPage = () => {
         <h4 className="LOGin">Log in</h4>
         <button className="ButFacebook">
           <a className="facebook" href>
-            <img className="facebook1" src={faceBook} alt="" /> Continue with
+            <img className="facebook1" src={face1} alt="" /> Continue with
             Facebook
           </a>
         </button>
         <button className="ButGoogle">
           <a className="Google" href>
-            <img className="google1" src={gOOgle} alt="" /> Continue with Google
+            <img className="google1" src={google1} alt="" /> Continue with Google
           </a>
         </button>
         <button className="ButApple">
           <a className="Apple" href>
-            <img className="apple1" src={APPle} alt="" /> Continue with Apple
+            <img className="apple1" src={Apple1} alt="" /> Continue with Apple
           </a>
         </button>
 

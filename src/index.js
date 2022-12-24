@@ -7,11 +7,10 @@ import RecommendedPosts from './components/Pages/Shuffle';
 import GetApp from './components/Pages/SpecialPgaes/GetApp';
 import HomePage from './components/Pages/Home/HomePage';
 import AddNewPost from './components/Pages/SpecialPgaes/AddNewPostFile/AddNewPost';
-import ModalTags from './components/UI/CustomizeTags/CustomTags';
-
 import SocialMediaSignup from './components/SignupLoginModal/SocialMediaSignup';
 import SinglePostPage from './components/Pages/SinglePostPage';
-import PostComments from './components/Posts/Comments/PostComments';
+import Profile from './components/Pages/Profile';
+import LogInPage from './components/SignupLoginModal/LoginModal';
 
 
 
@@ -23,12 +22,15 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage/>} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/shuffle" element={<RecommendedPosts />} />
+        <Route path="/home" index element={<HomePage />} />
+       
         <Route path="/getapp" element={<GetApp />} />
         <Route path="/addnewpost" element={<AddNewPost />} />
         <Route path="/comment" element={<SinglePostPage/>} /> 
         <Route path="SocialMediaSignup" element={<SocialMediaSignup/>} /> 
+        <Route path="/shuffle" element={<RecommendedPosts/>} />
+        <Route path="/gaggerpage" element={<Profile/>} /> 
+
       </Routes>
     </BrowserRouter>
     {/* <App /> */}

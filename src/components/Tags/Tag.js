@@ -1,35 +1,33 @@
 
 import './Tag.css';
-
 //function
 
 const TagButton = () => {
 return (
-    <div className='container'>
- <div className='tag1'>
-                             <button  className='Tag-Button'  href = "tag-html" >world cup</button>
-                             <button  className='Tag-Button'  href = "tag-html" >spain</button>  
-                              <button  className='Tag-Button'  href = "tag-html">morocco</button>
-                               <button  className='Tag-Button'  href = "tag-html" >brazil</button>
-                                <button  className='Tag-Button'  href = "tag-html" >jaban</button>
-                                <button  className='Tag-Button'  href = "tag-html" >qatar</button>
-                                <button className='Tag-Button' href = "tag-html">wednesday</button>
-        <button className='Tag-Button' href = "tag-html">pokemon</button>
-        <br/>
-        </div>
-        <div className='tag1'>
+    <div className='container-tag-button'>
 
-         <button className='Tag-Button' href = "tag-html">chainsaw man</button>        
-         <button className='Tag-Button' href = "tag-html">latest news</button>
-        <button className='Tag-Button' href = "tag-html">most commented</button>
-         <button className='Tag-Button' href = "tag-html">weekly highlights</button>
-                           </div>    
-                                </div>
+                             <button  className='Tag-Button'  href = "tag-html" >World Cup</button>
+                             <button  className='Tag-Button'  href = "tag-html" >Spain</button>  
+                              <button  className='Tag-Button'  href = "tag-html">Morocco</button>
+                               <button  className='Tag-Button'  href = "tag-html" >Brazil</button>
+                                <button  className='Tag-Button'  href = "tag-html" >Jaban</button>
+                                <button className='Tag-Button' href = "tag-html">Wednesday</button>
+                                <button className='Tag-Button' href = "tag-html">Pokemon</button>
+                                <button className='Tag-Button' href = "tag-html">Chainsaw man</button>        
+                                <button className='Tag-Button' href = "tag-html">Latest news</button>
+                                <button className='Tag-Button' href = "tag-html">Most commented</button>
+                                <button className='Tag-Button' href = "tag-html">Weekly highlights</button>
+                         
+                           </div>  
 );
-
-
 }
+// }
 
+//     {tagsData.map ((tag)=>{
+//         return<TagButton Key={tag.id} tag_name={tag.tag_name}
+//     />
+//     })}
+    
 //Export
 export default TagButton;
 

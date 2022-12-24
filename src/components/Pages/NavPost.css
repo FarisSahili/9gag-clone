@@ -74,46 +74,6 @@
     background-color: #e8e0e0;
     color:black ;
 }
-.dropdown-nested{
-    padding-top: 10px;
-    height: 40px;
-    border-radius: 0%;
-    text-align:start;
-    width: 100%;
-    color: #7b7575;
-    font-weight: bold;
-}
-.dropdown-nested:active{
-    background-color: #e8e0e0;
-    color: #7b7575;
-}
-.dropdown-nested:hover{
-    background-color: #e4e8eb;
-    color: #7b7575;
-}
-.dropdown-nested:focus{
-    background-color: #e8e0e0;
-    color: #7b7575;
-}
-.nested-dropdown{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    height: 30px;
-    margin-left: 14px; 
-    width: 100%;
-}
-.nested-dropdown:hover{
-    background-color: #e4e8eb;
-    color: #02080e;
-}
-.nested-dropdown:active{
-    background-color: #e8e0e0;
-    color: #02080e;
-}
-.carets-div{
-    display: flex;
-}
 .post-pen{
     height:20px;
     width:20px;
@@ -246,10 +206,10 @@
    margin-left: 180px;
 }
 #gagP{   
-    padding-left: 18px;
-    margin-top: 20px;
+    padding-left: 4%;
+    margin-top: 15px;
     font-size: small;
-    color: #ccc5c5;
+    color: #b0a9a9;
 }
 #profile-btnP{
     border: #fff;
@@ -314,12 +274,15 @@
 }
 #post-butP{
     color: #fff;
-    padding-top: 7px;
+    padding-top: 10%;
     text-decoration: none;
     background-color: #1f76da;
     width: 90px;
     height: 38px;
     border-radius: 20px;
+}
+#post-butP:hover{
+    background-color: #1963b8;
 }
 #navbar-hrP{
     margin: 1px;
@@ -340,3 +303,62 @@
     height: 16px;
     color: #7b7575;
 }   
+/*Accordion*/
+#TermsP{
+    padding-left: 13px;
+    color:#9f9b9b;
+    font-weight: bold;
+}
+#TermsP:hover{
+    background-color: #e8e0e0;
+}
+#TermsP:focus{
+    box-shadow:none;
+    border: none;
+}
+#AdvertiseP{
+    padding-left: 13px;
+    color:#9f9b9b;
+    font-weight: bold;
+}
+#AdvertiseP:hover{
+    background-color: #e8e0e0;
+}
+#AdvertiseP:focus{
+    box-shadow:none;
+    border: none;
+}
+#ContactP{
+    padding-left: 13px;
+    color:#9f9b9b;
+    font-weight: bold;
+}
+#ContactP:hover{
+    background-color: #e8e0e0;
+}
+#ContactP:focus{
+    box-shadow:none;
+    border: none;
+}
+.nested-dropdpwn-items{
+    height: 40px;
+    margin-top:8px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.nested-dropdpwn-items:hover{
+    background-color: #e8e0e0;
+}
+.AB{
+    margin-top: -25px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+    background-color:#fff
+}
+.nested-dropdpwn-hr{
+    color: #a8a3a3;
+    margin: 5px;
+}
