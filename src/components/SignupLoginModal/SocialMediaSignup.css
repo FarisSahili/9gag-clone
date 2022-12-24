@@ -1,17 +1,15 @@
-#signbutton {
-    margin-top: 3%;
+.signupbutton{
     margin-right: 2%;
     float: right;
     background-color: white;
-    border-width: 0;
-    border-color: white;
-    border-radius: 5%;
+  border-width: 0;
+  border-color: white;
+  border-radius: 5%;
 }
-
-.signphoto {
+.signphoto{
     height: 200px;
-    width: 300px;
-    border-radius: 5%;
+    width:300px;
+  border-radius: 5%;
 }
 
 .modal-header .btn-close {

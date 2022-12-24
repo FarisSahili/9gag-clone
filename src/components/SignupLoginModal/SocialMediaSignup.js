@@ -236,7 +236,7 @@ const SocialMediaSignup = () => {
         data-bs-toggle="modal"
         href="#exampleModalToggle"
         >
-      <img src={Signuppic} className="signphoto"/>
+      <img src={Signuppic} className="signphoto" alt=""/>
       </button>
       <div
         className="modal"
