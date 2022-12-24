@@ -249,10 +249,18 @@
   line-height: 30px;
 }
 
+.spanSectionsRecent
+{
+ color: rgb(143, 142, 142);
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  line-height: 30px;
+}
 
 
 /*clear text inside recent section*/
-#clear 
+.clear 
 {
   color: rgb(143, 142, 142);
   font-size: 14px;

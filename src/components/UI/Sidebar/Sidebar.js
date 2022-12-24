@@ -55,8 +55,7 @@ const Sidebar = () => {
 
 
   function clear (){
-    
-
+      setRecent([]);
   }
 
   const favoriteSection = () => {
@@ -97,11 +96,14 @@ const Sidebar = () => {
   const recentSection = () => {
     if (recent.length > 0) {
       return (
-        <ul id="sidebar-menu-recent">
-          <span className="spanSections">Recents</span>
-          <button className="clear-btn">
-            <a id="clear">Clear</a>
+        <>
+        <>
+           <span className="spanSectionsRecent">Recents</span>
+          <button onClick={clear} className="clear-btn">
+            <a className="clear">Clear</a>
           </button>
+        </>
+        <ul id="sidebar-menu-recent">
           {recent.map((item, index) => {
             return (
               <div className="rowContainer">
@@ -128,6 +130,7 @@ const Sidebar = () => {
             );
           })}
         </ul>
+        </>
       );
     }
   };
