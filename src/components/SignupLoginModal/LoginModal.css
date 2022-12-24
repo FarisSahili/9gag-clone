@@ -163,7 +163,6 @@ h4.LOGin {
 }
 .input-field{
     width: 100%;
-
 }
 
 .input-field .input-control{
@@ -181,12 +180,6 @@ p.text-massage.fill-color {
     border: 1px solid #1882f8;
 }
 .input-field .input-control.invalid-email{
-    border: 2px solid red;
-}
-.input-field .input-control.valid-password{
-    border: 1px solid #1882f8;
-}
-.input-field .input-control.invalid-password{
     border: 2px solid red;
 }
 .check-color{
