@@ -1,9 +1,12 @@
+import Navbar from '../UI/Navbar';
 import './LoginPost.css';
 const Logincard = () =>  {
 
 
 
     return (
+      <>
+
 <div className='container'>
     <div className="LoginCard" >
       <div className='content-card'>
@@ -38,7 +41,7 @@ const Logincard = () =>  {
 
 
 
-
+</>
 
     )
 }

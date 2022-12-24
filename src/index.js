@@ -9,12 +9,8 @@ import HomePage from './components/Pages/Home/HomePage';
 import AddNewPost from './components/Pages/SpecialPgaes/AddNewPostFile/AddNewPost';
 import SocialMediaSignup from './components/SignupLoginModal/SocialMediaSignup';
 import SinglePostPage from './components/Pages/SinglePostPage';
-<<<<<<< HEAD
-import PostComments from './components/Posts/Comments/PostComments';
 import Profile from './components/Pages/Profile';
-=======
- 
->>>>>>> 1c51923e651aae10fcf3ce82d54398fbf3a709d3
+import LogInPage from './components/SignupLoginModal/LoginModal';
 
 
 
@@ -26,14 +22,15 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage/>} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/home" index element={<HomePage />} />
        
         <Route path="/getapp" element={<GetApp />} />
         <Route path="/addnewpost" element={<AddNewPost />} />
         <Route path="/comment" element={<SinglePostPage/>} /> 
-        <Route path="/gaggerpage" element={<Profile/>} /> 
         <Route path="SocialMediaSignup" element={<SocialMediaSignup/>} /> 
         <Route path="/shuffle" element={<RecommendedPosts/>} />
+        <Route path="/gaggerpage" element={<Profile/>} /> 
+
       </Routes>
     </BrowserRouter>
     {/* <App /> */}

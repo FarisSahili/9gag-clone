@@ -115,21 +115,18 @@
                 }
   
     #scroll{
-   padding-top: 10%;
+   padding-top: 7%;
    padding-left: 25%;
    width: 520px;
    min-height: 55px;
    display: flex;
    box-sizing: content-box;
-  
    white-space: nowrap;
    
    
      }          
                   
   .ButtonScroll{
-   
-   
     display: flex;
   overflow-x: scroll;   
   overflow-x: hidden;  
