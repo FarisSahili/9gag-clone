@@ -1,7 +1,7 @@
 /* container  */
 .post-container {
     text-align: left; 
-    padding-top: 2%; 
+ padding-top: 2%;
     padding-left: 25%;
     padding-right: 500px; 
     padding: auto;
@@ -107,6 +107,7 @@ a.gagger{
     padding-top: 0%;
     align-items: center; 
     width: 100%;
+
    }
   .drop-down-icon{
     display: flex;
@@ -198,7 +199,7 @@ margin-top: 5px;
     border-width: 100%;
     background-color: #f0eeee;
     justify-content: center; 
-    padding:2% 2%;
+    padding:1% 2%;
     margin :3px;
     display: flex;
     position: relative;
@@ -216,7 +217,12 @@ margin-top: 5px;
 /* Vote & share Part */
 #up,#down,#comment-but{
     background-color:white;
-    
+    /* width: 24%; */
+    border-radius: 5%;
+    border-color: #e3e5e7;
+    margin-right: 1%;
+    width:100px;
+    color: #979797;
 }
 #up:hover,#down:hover,#comment-but:hover{
     background-color: #f0eeee;
@@ -231,8 +237,8 @@ margin-right: 2%;
 width:400px;
 height:50px;
 padding: 2px;
-
 }
+
 /* .button-vote-comment{
     border-radius: 5px;
     border-color:rgb(219, 208, 208);
@@ -280,25 +286,18 @@ background-color:rgb(246, 246, 246);
 
 }
 
-.button-vote-active {
-    border-radius: 5px;
-    border-width:0px;
-    justify-content: center; 
-    padding:1% 1%;
-    margin :3px;
-    display: flex;
-    position: relative;
-    width:auto;
-    height: 80%;
-    font-size: 90%;
-    cursor: pointer;
+.up-active{
+   
     background-color:  #cde3f3;
     border-color:1px  #0099FF;
-    font-weight: bold;
+
     color: #0099FF;
 }
-.buttton{
-    width:100px;
+
+.down-active{
+    background-color:  #151a1d;
+    border-color:1px  #00ff2a;
+    color: #00ff48;
 }
 .share-buttons{
     display: flex;
@@ -348,21 +347,23 @@ width: 50px;
     background-color: white;
     border: none ;
 }
-.dd-menu{
+.dd-men{
 width: 20px;
 }
-.dd-item{
+.dd-it{
 font-weight:normal;
-padding : 4px;
-padding-left: 9px;
-
-font-size: large;
+padding : 7px;
+padding-left: 15px;
+font-size: small;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-.dropdown-share-icon{
-    height: 21px;
+.dropdow{
+    height: 15px;
+    width: auto;
     padding-right: 10px;
-    padding-left: 3px;
+    padding-left: 4px;
+    align-items: center; 
 }
 
 .button-card{
@@ -373,4 +374,11 @@ font-size: large;
 }
 a.button-vote{
     color:grey;
+}
+.hr-card{
+    margin-left: 20%;
+    border-bottom: 1px solid lightgray;
+    width:10%; 
+    padding-left: 50%;
+
 }

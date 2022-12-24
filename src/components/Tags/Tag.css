@@ -1,31 +1,27 @@
-.container{
-    display:block;
-    position: relative;
-    width: 80%;
-    height:10%;
-padding-top: 1%;  
-padding-left: 15%;
-padding-right:25%;
-padding-bottom: 1%;
+.container-tag-button{
+    width:700px;
+    height:85px;
+margin-left:25%;
+display: flex;
+flex-wrap: wrap;
+
 }
 .Tag-Button{
-border-radius: 5px;
-    border-color:#f0eeee;
-    border-width:0;
-    background-color: #f0eeee;
-    text-align:center; 
+ font-size:14px;
+ border-color:#f0eeee;
+ border-width:0;
+display: block;
+height: 35px;
+margin-right: 5px;
 margin-bottom: 5px;
-margin-right: 8px;
 position: relative;
-font-style:normal;
+background-color: #f0eeee;
+border-radius: 5px;
+text-align: center;
 font-weight: bold;
-font-size:14px;
-height: 32px;
-width: 250px;
-line-height:15px;
-}
-.tag1{
-    display: flex;
+width: auto;
+padding-right: 8px;
+padding-top: 0;
 }
 .Tag-Button:hover{
     background-color:lightgray;
