@@ -1,0 +1,138 @@
+.page-commints{
+    height: auto;
+    width: auto;
+}
+
+.comments-num-wr{
+    height: 19px;
+    width: 10%;
+    position: relative;
+    right: 50%;
+    left: 23.2%;
+    top: 750px; 
+}
+ .button-wr{
+    display: block;
+    height:41px;
+    width: 2%;
+    position: relative;
+    right: 20%;
+    left: 71%;
+    top: 725px; 
+   
+}
+.page-link{
+    color: black;
+    background: rgb(255, 255, 255);
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 100%; 
+    background: none; 
+    border: var(--bs-pagination-border-width)snow var(--bs-pagination-border-color);
+   
+}
+
+.text-start{
+    color: black;
+    display: block ;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 100%; 
+    background: none; 
+}
+.card{
+   color: black;
+   font-size: 100%;
+   width: 50%;
+   height: 80px;
+   font-family:system-ui;
+   font-weight: bold;
+   position: relative;
+   right:55%;
+   left:23%;
+   top: 725px;
+}
+#input-comment{
+    width: 101.5%;
+    height: 70px;
+}
+.btn-primary{
+    font-size: 80%;
+    font-family:system-ui;
+    width: 8%;
+    position: relative;
+    top: 1px;
+    left: 92%; 
+   
+}
+/* .btn-light{
+    background: rgb(231, 229, 229);
+    font-size: 100%;
+    font-family:system-ui;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    left: 78%; 
+    
+}  */
+.comments-and-accounts{
+    border-radius: 18px; 
+    height: 70px;
+    width: 50%;
+    position: relative;
+    right:55%;
+    left:23%;
+    top: 770px;
+    background:white;
+}
+.comments-and-accounts:hover{
+    background:  rgb(243, 242, 242);
+}
+.photo-co{
+    width:9% ;
+    height: 50px;
+    border-radius: 50%;
+}
+.title-account{
+    color: black;
+    display: block ;
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 70%; 
+    position: relative;
+    left:8%; 
+    bottom: 105px;
+}
+.the-comment{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%; 
+    position: relative;
+    left:9%;
+    bottom: 103px; 
+}  
+.time-of-comment{
+    font-size: x-small;
+    position: relative;
+    left: 25%;
+    bottom: 90px;
+}
+ 
+.new-comment{
+
+    width: 50%;
+    font-size: 85%; 
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right:55%;
+    left:27%;
+    top: 740px;
+    background:white;
+}
+
+.profile-comment{
+    width:50px ;
+    height: 50px;
+    border-radius: 50%;
+}
