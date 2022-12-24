@@ -41,12 +41,12 @@
     display: flex;
     padding-left: 20px;
 }
-a{  
+.comment-div{  
     color: #7b7575;
     font-weight: bold;
     text-decoration: none;
 }
-a:hover{
+.comment-div:hover{
     color: black;
 }
 .comment-div{
