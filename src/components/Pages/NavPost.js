@@ -183,7 +183,6 @@ import basil from '../image/basil.jpg';
             <hr id="navbar-hrP"/>
            </div>  
             )
-
   }
   export default NavPost
   

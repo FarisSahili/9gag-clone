@@ -26,7 +26,7 @@ const SinglePostPage = () => {
     return (
         <>
             <Navbar />
-            {/* <Sidebar /> */}
+            <Sidebar /> 
             <div className="page-commints" >
                 <div className="comments-and-button-wr" >
                     <div className="comments-num-wr">

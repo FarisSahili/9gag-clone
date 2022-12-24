@@ -7,13 +7,15 @@ import RecommendedPosts from './components/Pages/Shuffle';
 import GetApp from './components/Pages/SpecialPgaes/GetApp';
 import HomePage from './components/Pages/Home/HomePage';
 import AddNewPost from './components/Pages/SpecialPgaes/AddNewPostFile/AddNewPost';
+import ModalTags from './components/UI/CustomizeTags/CustomTags';
+
 import SocialMediaSignup from './components/SignupLoginModal/SocialMediaSignup';
 import SinglePostPage from './components/Pages/SinglePostPage';
 import PostComments from './components/Posts/Comments/PostComments';
 
 
-//import handleShuffle from './components/Pages/Shuffle';
-// import ModalTags from './components/UI/CustomizeTags/CustomTags';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
@@ -26,6 +28,7 @@ root.render(
         <Route path="/getapp" element={<GetApp />} />
         <Route path="/addnewpost" element={<AddNewPost />} />
         <Route path="/comment" element={<SinglePostPage/>} /> 
+        <Route path="SocialMediaSignup" element={<SocialMediaSignup/>} /> 
       </Routes>
     </BrowserRouter>
     {/* <App /> */}

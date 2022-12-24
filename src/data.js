@@ -18,8 +18,8 @@ import media6 from './components/image/media/media6.jpg'
 const postData = [
   {
     id: 1,
-    title: "Js",
-    op_user: "nouralhuda312", // original poster,
+    title: "lol",
+    op_user: "يمان غسان", // original poster,
     op_user_avatar: icon1, // original poster,
     post_time: 1, //yyyy-mm-dd
     up_votes: 100,
@@ -65,7 +65,7 @@ const postData = [
   {
     id: 2,
     title: "How to tell people",
-    op_user: "heyheyhohojoeb", // original poster,
+    op_user: "yaman ghasan", // original poster,
     op_user_avatar: icon2, // original poster,
       post_time: 2, //yyyy-mm-dd
     up_votes: 200,
