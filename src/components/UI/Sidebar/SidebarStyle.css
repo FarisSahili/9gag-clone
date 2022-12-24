@@ -279,8 +279,10 @@
 }
 
 
-
-
+.clear
+{
+  text-decoration: none;
+}
 
 /*li and ul style */
 
