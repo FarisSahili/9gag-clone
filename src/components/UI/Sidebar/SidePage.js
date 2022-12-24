@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import PostCard from "../../Posts/PostCard";
 import filteredPosts from "./Sidebar";
 import PostList from "../../Posts/PostList";
+import { Link } from "react-router-dom";
 
 //function
 
@@ -37,7 +38,7 @@ const SidePage = (props) => {
             <div className="firstSection">
               <div className="profile-header">
                 <h1 className="h1Post">messi</h1>
-                <button className="btn-tag " href="#">
+                <Link to="/addnewpost" className="btn-tag " href="#">
                   <div>
                     <a>
                       <img
@@ -47,7 +48,7 @@ const SidePage = (props) => {
                     </a>
                   </div>
                   Use Tag
-                </button>
+                </Link>
               </div>
 
               <div className="tab-bar">

@@ -420,7 +420,9 @@ body
   border: none;
   display: flex;
 }
-
+.btn-tag:hover{
+  color: rgb(255, 255, 255);
+}
 .pin-icon 
 {
   width: 1.4rem;
