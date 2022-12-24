@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 //function
 
-const SidePage = (props) => {
+const SidePage = () => {
   const [tagButtons, setTagButtons] = useState([
     "funny",
     "awesome",
