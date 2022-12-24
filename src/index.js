@@ -11,7 +11,7 @@ import SocialMediaSignup from './components/SignupLoginModal/SocialMediaSignup';
 import SinglePostPage from './components/Pages/SinglePostPage';
 import Profile from './components/Pages/Profile';
 import LogInPage from './components/SignupLoginModal/LoginModal';
-
+import SidePage from './components/UI/Sidebar/SidePage';
 
 
 
@@ -27,6 +27,7 @@ root.render(
         <Route path="/getapp" element={<GetApp />} />
         <Route path="/addnewpost" element={<AddNewPost />} />
         <Route path="/comment" element={<SinglePostPage/>} /> 
+        <Route path="/sidepage" element={<SidePage/>} /> 
         <Route path="SocialMediaSignup" element={<SocialMediaSignup/>} /> 
         <Route path="/shuffle" element={<RecommendedPosts/>} />
         <Route path="/gaggerpage" element={<Profile/>} /> 

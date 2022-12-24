@@ -7,28 +7,35 @@
 
 #offcanvasScrolling 
 {
-  width: 240px;
+  width: 14.4rem;
   margin-top: 50px;
+  position: fixed;
+  box-shadow: 2px 0 3px rgba(0, 0, 0, 0.2);
+
+  
 }
 
+
+/*icone inside navbar*/
 .btn-start 
 {
   background-color: transparent;
   border-width: 0px;
-  padding-left: 1px;
+  padding-left: 0.1rem;
 }
+
+
 
 /*card styel*/
 
 .btn-card 
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
   color: #fff;
   border-radius: 100px;
-  width: 155px;
-  height: 42px;
+  width: 9.5rem;
+  height: 2.5rem;
   font-weight: bold;
 }
 
@@ -52,8 +59,10 @@
 
 .card-text 
 {
-  font-size: 14.3px;
+  font-size: 14px;
 }
+
+
 
 /*9gag section */
 
@@ -62,7 +71,12 @@
   font-weight: bold;
   font-size: 14px;
   size: 10px;
-  padding-left: 6px;
+  padding-left: 0.3rem;
+}
+
+.label9gagSection:hover 
+{
+  background-color: rgba(100, 99, 99, 0.1);
 }
 
 .icons-sidebar-9gag-sction
@@ -72,13 +86,27 @@
   height: 1.4rem;
 }
 
+.label9gagSection 
+{
+  padding: 3px;
+  list-style-type: none;
+}
+.label9gagSection a 
+{
+  color: #010101;
+  text-decoration: none;
+}
+
+
+
 .sidebar-menu 
 {
   padding: 0px;
 }
 
-#recent-menu
-{
+/*filters inside each section */
+
+#sidebar-menu-recent{
   padding: 0px;
 }
 
@@ -87,8 +115,42 @@
   padding: 0px;
 }
 
-/*all section*/
+.sidebarItem 
+{
+  font-size: 14px;
+ 
+  text-decoration: none; 
+  color: rgb(56, 56, 56);
+}
 
+
+.sidebarItem:hover
+{
+  color: rgb(0, 0, 0);
+
+}
+
+
+.sidebarItemRecent
+{
+
+  font-size: 14px;
+  color: rgb(83, 83, 83);
+  position: relative; 
+  top: 6px;
+  text-decoration: none; 
+  font-style: normal;
+}
+.sidebarItemRecent:hover
+{
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/*star icon in all section*/
 
 .bi 
 {
@@ -107,6 +169,8 @@
   border-width: 0px;
 }
 
+
+/*remove icon only in recent section*/
 .btn-remove
 {
   display: flex;
@@ -119,27 +183,25 @@
   padding-right: 0rem;
 
 
- 
-  
 }
 
-
-
-.sidebarItem 
+.remove 
 {
-  font-size: 14px;
-  color: rgb(65, 65, 65);
-  padding: 0px;
+  opacity: 0.02;
+  width: 31px;
+  height: 31px;
+
+
 }
-.sidebarItemRecent
+
+.remove:hover 
 {
-
-  font-size: 14px;
-  color: rgb(65, 65, 65);
-  position: relative; 
-  top: 6px;
+  opacity: 0.7;
 }
 
+
+
+/*div contain filters*/
 .rowContainer 
 {
   display: flex;
@@ -148,28 +210,27 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.rowContainer:hover
+{
+  background-color: rgba(100, 99, 99, 0.1);
+}
+
 .filtersSections
 {
   display: flex;
   margin-bottom: 10px;
   justify-content: space-between;
   
+}
 
-}
-.rowContainer:hover
-{
-  background-color: rgba(100, 99, 99, 0.1);
-}
 .filtersSections:hover
 {
   background-color: rgba(100, 99, 99, 0.1);
 }
 
-.bi 
-{
-  color: rgb(171, 171, 171);
-}
 
+/*text at top*/
 .h3Sections
 {
   color: rgb(143, 142, 142);
@@ -188,53 +249,41 @@
   line-height: 30px;
 }
 
-#clear 
+.spanSectionsRecent
 {
-  color: rgb(143, 142, 142);
+ color: rgb(143, 142, 142);
   font-size: 14px;
   font-weight: 700;
   width: 100%;
   line-height: 30px;
 }
 
+
+/*clear text inside recent section*/
+.clear 
+{
+  color: rgb(143, 142, 142);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
 .clear-btn 
 {
   outline: none;
-  align-self: baseline;
   background-color: transparent;
-  justify-content: center;
-  align-items: center;
   border-width: 0px;
-  padding-left: 100px;
-}
-
-.remove 
-{
-  opacity: 0.1;
-  width: 27px;
-  height: 27px;
+  margin-left: 102px;
+  width: 2.5rem;
 
 }
 
-.remove:hover 
-{
-  opacity: 0.7;
-}
 
-
-.bi:hover 
-{
-  opacity: 1;
-}
 
 
 
 /*li and ul style */
 
-.label9gagSection:hover 
-{
-  background-color: rgba(100, 99, 99, 0.1);
-}
 
 
 
@@ -243,25 +292,14 @@
   list-style-type: none;
   margin: 10px;
   padding: 3px;
-  margin-top: -1px;
+  margin-top: -2px;
+  margin-left: -2px;
 }
 
-.label9gagSection 
-{
-  padding: 3px;
-  list-style-type: none;
-}
 
-.sidebar 
-{
-  width: 216px;
-}
 
-.label9gagSection a 
-{
-  color: #010101;
-  text-decoration: none;
-}
+
+
 
 /*post part style */
 i 
@@ -317,7 +355,7 @@ i
   display: block;
   box-sizing: border-box;
   line-height: 20px;
-  height: 40px;
+  height: 3rem;
   padding: 10px 16px;
 }
 
@@ -344,6 +382,7 @@ i
   display: flex;
   align-items: center;
   margin-bottom: 12px;
+  width: auto;
 }
 
 body 
@@ -366,9 +405,9 @@ body
 
 .btn-tag 
 {
-  background-color: rgb(30, 30, 220);
+  background-color: rgb(65, 65, 231);
   display: inline-block;
-  height: 36px;
+  height: 2.3rem;
   padding: 8px 16px;
   font-weight: 700;
   line-height: 20px;
@@ -384,7 +423,7 @@ body
 
 .pin-icon 
 {
-  width: 24px;
+  width: 1.4rem;
   margin-right: 2px;
 }
 
@@ -397,4 +436,67 @@ body
   max-height: 100%;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+
+
+
+
+/* sidebar page tags post*/
+
+
+
+.Tag-Button-sidebar{
+font-size:14px;
+border-color:#f0eeee;
+border-width:0;
+height: 2rem;
+margin-right: 5px;
+margin-bottom: 5px;
+position: relative;
+background-color: #F0EEEE;
+border-radius: 5px;
+display: inline-block;
+font-weight: bold;
+width: auto;
+padding-right: 8px;
+
+
+
+}
+.Tag-Button-sidebar:hover{
+  background-color:lightgray;
+}
+
+.sidebarItemButton
+{
+  font-size: 12px;
+  color: rgb(65, 65, 65);
+  padding: 0px;
+  margin-top: 30px;
+
+}
+.containerL
+{
+width: 660px;
+justify-content: center;
+width:700px;
+height:85px;
+margin-left:25%;
+display: flex;
+justify-content: space-between;
+ 
+  
+}
+.firstSection
+{
+margin-top: 10%;
+
+}
+
+
+/* post part */
+.postPartL
+{
+  padding-top: 14rem;
 }
