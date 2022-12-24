@@ -15,7 +15,14 @@
   
 }
 
+.spanSections{
+  text-decoration: none;
+}
 
+.btn-tag
+{
+  text-decoration: none;
+}
 /*icone inside navbar*/
 .btn-start 
 {
