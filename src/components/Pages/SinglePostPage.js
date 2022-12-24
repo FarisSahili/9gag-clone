@@ -4,7 +4,7 @@ import ProfileComment from '../image/Profile-comment.png';
 import Navbar from '../UI/Navbar';
 import PostComments from '../Posts/Comments/PostComments';
 import Sidebar from '../UI/Sidebar/Sidebar';
-import PostCard from '../Posts/PostCard';
+
 
 
 // comment 
@@ -49,10 +49,7 @@ const SinglePostPage = () => {
                     <button type="button" onClick={() => { onClickComment(); }} id='button-post' className="btn btn-primary">Post</button>
                 </div>
 
-                <div className='vote-button'>
-                    
-                    {/* <Link to='/comment'className='button-vote-comment'><img className="comment-img"  src={CommitIcon} alt="this is commit icon " />90</Link> */}
-                </div>
+                
 
 
                 <div className='comments-and-accounts'>

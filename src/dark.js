@@ -15,7 +15,7 @@ setTheme('dark');
     document.body.className = theme;
   }, [theme]);
   return (
-      <button onClick={toggleTheme}>Toggle Theme</button>
+      <button onClick={toggleTheme} className='dark-mode-button'>Dark Mode</button>
    
   );
 }
