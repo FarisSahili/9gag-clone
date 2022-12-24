@@ -77,6 +77,7 @@ const PostCard = (props) => {
         }
     }
     return (
+        <>
         <div className='post-container'>
             <div className='gagger-part'>
                 <div className='gagger-prof-pic'>
@@ -170,6 +171,8 @@ const PostCard = (props) => {
         </>            */}
 
         </div>
+                    <hr className="hr-card"/>
+</>
     )
 }
 export default PostCard;
