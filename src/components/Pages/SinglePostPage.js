@@ -17,16 +17,16 @@ const SinglePostPage = () => {
 
     const [comments, setComments] = useState("");
     const onClickComment = () => {
-        setComments((comments) => [...comments,comment]);
+        setComments((comments) => [...comments, comment]);
     };
 
- 
+
 
 
     return (
         <>
             <Navbar />
-            <Sidebar /> 
+            <Sidebar />
             <div className="page-commints" >
                 <div className="comments-and-button-wr" >
                     <div className="comments-num-wr">
@@ -49,7 +49,7 @@ const SinglePostPage = () => {
                     <button type="button" onClick={() => { onClickComment(); }} id='button-post' className="btn btn-primary">Post</button>
                 </div>
 
-                
+
 
 
                 <div className='comments-and-accounts'>

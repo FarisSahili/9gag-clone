@@ -7,14 +7,12 @@ import Interests from "./Interests";
 import RecommendedPosts from "../Shuffle";
 import TagButton from "../../Tags/Tag";
 import Logincard from "../../Posts/LoginPost";
-
 import Content from "./Content";
 const HomePage = (props) => {
     return (
         <>
             <Navbar/>
             <Sidebar/>
-        
             <aside>
             <SocialMediaSignup/> 
             <ModalTags/> 

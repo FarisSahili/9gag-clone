@@ -7,7 +7,6 @@ import Interests from "./Interests";
 import RecommendedPosts from "../Shuffle";
 import TagButton from "../../Tags/Tag";
 import Logincard from "../../Posts/LoginPost";
-
 import homegag from './homegag.png'
 import './Content.css'
 const Content = (props) => {
