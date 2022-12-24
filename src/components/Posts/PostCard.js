@@ -31,25 +31,25 @@ const PostCard = (props) => {
     function Save() {
         if (save) {
             setsave(false)
-            document.getElementById("savebut").className = "save-button-active";
+            // document.getElementById("savebut").className = "save-button-active";
         }
         else {
             setsave(true)
-            document.getElementById("savebut").className = "save-button";
+            // document.getElementById("savebut").className = "save-button";
 
         }
     }
 
     function Upvoteb() {
-        // number=101
-        // console.log(number)
         if (upvote) {
             setUpvote(false)
             setUp(Up - 1)
+            
         }
         else {
             setUpvote(true)
             setUp(Up + 1)
+
             if (downvote) {
                 setUpvote(false)
                 setUp(Up + 1)
@@ -59,16 +59,14 @@ const PostCard = (props) => {
     }
 
     function Downvoteb() {
-        // number=101
-        // console.log(number)
         if (downvote) {
             setdownvote(false)
             setDown(Down + 1)
-
         }
         else {
             setdownvote(true)
             setDown(Down + 1)
+
             if (upvote) {
                 setUpvote(false)
                 setDown(Down + 1)
@@ -94,8 +92,7 @@ const PostCard = (props) => {
                             <img id="savebut" src={SaveIcon} className='save-icon' alt="this is save icon" type="button" />
                         </button>
                     </div>
-                    <div className="dd-card dropdown ">
-                        <button className='dropdown-button' data-bs-toggle="dropdown" type="button">
+                        <button className='dropdown-button dropdown' data-bs-toggle="dropdown" type="button">
                             <img src={DropdownIcon} className='dropdownIcon' alt="save icon" type="button" />
                         </button>
                         <ul className="dd-men dropdown-menu ">
@@ -105,11 +102,10 @@ const PostCard = (props) => {
                             <li><button className="dd-it dropdown-item " type="button">I've seen this</button></li>
                             <li><button className="dd-it dropdown-item " type="button">Hide Post</button></li>
                             <li><button className="dd-it dropdown-item " type="button">Report Post</button></li>
-                            <li><button className="dd-it dropdown-item " type="button">Block</button></li>
+                            <li><button className="dd-it dropdown-item " type="button">Block@{props.op_user}</button></li>
                         </ul>
                     </div>
 
-                </div>
                 <div className='title-of-post'>
                     <h4 className="postcardh4" >{props.title}</h4>
                 </div>
@@ -123,8 +119,8 @@ const PostCard = (props) => {
                 </div>
                 <div className='button-card'>
                     <div className='vote-button'>
-                        <button onClick={Upvoteb} type="button" id="up" className={[upvote ? 'btn btn-outline-primary': 'btn btn-outline-secondary']}><img className='arrowu' src={voteup} alt="up vote icon " /><b >{Up}</b></button>
-                        <button onClick={Downvoteb} type="button" id="down" className={[downvote ? 'btn btn-outline-primary' : 'btn btn-outline-secondary']}><img className='arrowd' src={votedown} alt=" down vote icon " /><b>{Down}</b></button>
+                        <button onClick={Upvoteb} type="button" id="up" className='btn btn-outline-secondary'><img className='arrowu' src={voteup} alt="up vote icon " /><b >{Up}</b></button>
+                        <button onClick={Downvoteb} type="button" id="down" className="btn btn-outline-secondary"><img className='arrowd' src={votedown} alt=" down vote icon " /><b>{Down}</b></button>
                         <Link to='/comment' id="comment-but" className="btn btn-outline-secondary buttton"><img className="comment-img" src={CommitIcon} alt="this is commit icon " /><b>{props.comment_count}</b></Link>
 
 
@@ -140,8 +136,8 @@ const PostCard = (props) => {
 
                         <a className='share-icon'>
                             <img src={MessangerIcon} alt="this is MessangerIcon " /></a>
-                        <div className="dropdown">
-                            <button className="dropdown" type="button" data-bs-toggle="dropdown">
+                        <div className="dropdown dd-post">
+                            <button className="dropdown dd-post" type="button" data-bs-toggle="dropdown">
                                 <a className='share-icon'><img src={ShareIcon} alt="this is ShareIcon " /></a>
                             </button>
                             <ul className="dd-men dropdown-menu ">

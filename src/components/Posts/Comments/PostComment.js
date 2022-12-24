@@ -87,13 +87,13 @@ const PostComment = (props) => {
             <h5 className='the-comment'>{props.comment_body}</h5>
             <a onClick={Upvote} className='but-up-comment'><img className='icon-up-comment' src={voteup} alt="this is vote up icon" />{Up}</a>
             <a onClick={Downvote} className='but-down-comment'><img className='icon-down-comment' src={votedown} alt="this is vote down icon " />{Down}</a>
-            <a class="nav-link dropdown-toggle" id='reply-comment' href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> View replies</a>            
+            <a class="nav-link dropdown-toggle" id='reply-comment'> View replies</a>            
                 <a className="nav-link dropdown-toggle" id='dropdown-comment' data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"></a>
                 <ul className="dropdown-menu">
                     <li><a className="dropdown-item" href="#scrollspyHeading3">Copy link</a></li>
                     <li><a className="dropdown-item" href="#scrollspyHeading4">Follow thread</a></li>
-                    <li><hr className="dropdown-divider" /></li>
                     <li><a className="dropdown-item" href="#scrollspyHeading5">Report comment</a></li>
+                    <li><a className="dropdown-item" href="#scrollspyHeading7">Block @{props.user_name_comment}</a></li>
                 </ul>
         </div>
     )

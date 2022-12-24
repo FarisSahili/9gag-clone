@@ -1,8 +1,8 @@
 //import
 import "./SidebarStyle.css";
 import React, { useState } from "react";
-import postData from "../../../data";
-import PostCard from "../../Posts/PostCard";
+import { Link } from "react-router-dom";
+import SidePage from "./SidePage";
 
 //function
 const Remove = ({ onClick }) => {
@@ -28,6 +28,7 @@ const Star = ({ isSelected, onClick }) => {
           fill={isSelected ? "gold" : "gainsboro"}
           className="bi bi-star-fill"
           viewBox="0 0 14 17 "
+          
         >
           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
         </svg>
@@ -36,7 +37,12 @@ const Star = ({ isSelected, onClick }) => {
   );
 };
 
+
 const Sidebar = () => {
+
+
+
+
   //  const [Posts, setPosts] = useState([postData]); // array of posts
 
   //  const [filteredPosts, setFilteredPosts] = useState([]); // array of filtered posts
@@ -45,15 +51,25 @@ const Sidebar = () => {
   // {
   //    const filtered = Posts.filter((Post) => Post.tags.includes(item)); // filter posts that include the clicked tag
   //   setFilteredPosts(filtered);
+
   // };
+
+
+
+
+  function clear (){
+      setRecent([]);
+  }// to clear recent section
+
+
 
   const favoriteSection = () => {
     if (favorites.length > 0) {
       return (
         <ul className="sidebar-menu">
-          <h3 className="h3Sections">favorites</h3>
+          <h3 className="h3Sections">Favorites</h3>
 
-          {favorites.map((item, index) => {
+          {favorites.map((item, index ) => {
             return (
               <div className="rowContainer">
                 <li
@@ -63,13 +79,17 @@ const Sidebar = () => {
                     setRecent((current) => [...current, item]);
                   }}
                 >
-                  <div className="sidebarItem">{item}</div>
+                  <Link to='/sidepage' className="sidebarItem" >{item}</Link>
                 </li>
                 <div className="star-btn-container">
                   <Star
                     isSelected={true}
                     onClick={() => {
-                      deleteItemFromFavorite(index);
+                    
+                       deleteItemFromFavorite(item,index);
+                   
+                    
+
                     }}
                   />
                 </div>
@@ -81,32 +101,43 @@ const Sidebar = () => {
     }
   };
 
+
+
+
   const recentSection = () => {
     if (recent.length > 0) {
       return (
-        <ul className="sidebar-menu">
-          <span className="spanSections">Recents</span>
-          <button onClick={Clear} className="clear-btn">
-            <a id="clear">Clear</a>
+        <>
+        <>
+           <span className="spanSectionsRecent">Recents</span>
+          <button onClick={clear} className="clear-btn">
+            <a className="clear">Clear</a>
           </button>
+        </>
+        <ul id="sidebar-menu-recent">
           {recent.map((item, index) => {
             return (
               <div className="rowContainer">
-                <li key={index} className="li-filter">
-                  <div className="sidebarItemRecent">{item}</div>
+                <li 
+                key={index} 
+                className="li-filter" >
+                <Link to='/sidepage' className="sidebarItemRecent" >{item}</Link>
                 </li>
                 <div className="btnsContainer">
-                  <Remove
+               
+                <Remove
                     onClick={() => {
                       deleteItemFromRecent(index);
                     }}
                   />
 
                   <Star
-                    isSelected={false}
+                 
                     onClick={() => {
+                   
                       setFavorites((current) => [...current, item]);
-                      {favoriteSection();}
+                     
+                      
                     }}
                   />
                 </div>
@@ -114,20 +145,19 @@ const Sidebar = () => {
             );
           })}
         </ul>
+        </>
       );
     }
   };
 
-  const Clear = () => {
-    document.getElementById("recent-menu").innerHTML = "";
-    setRecent.length = 0;
-  };
 
-  const deleteItemFromFavorite = (selectedIndex) => {
-    setFavorites((current) =>
-      current.filter((_item, index) => index !== selectedIndex)
-    );
-  }; // To delete items from fav
+
+  const deleteItemFromFavorite = (item,selectedIndex ) => {
+    setFavorites((current) =>current.filter((_item, index) => index !== selectedIndex));
+    setExplorePopular((current) => [ item ,...current]);
+  }; // To delete items from fav to  Explore Popular
+
+
 
   const deleteItemFromRecent = (selectedIndex) => {
     setRecent((current) =>
@@ -135,23 +165,43 @@ const Sidebar = () => {
     );
   }; // when i click at x button
 
+
+  const deleteItemFromExplorePopular = (selectedIndex) => {
+    setExplorePopular((current) => current.filter((item, index) => index !== selectedIndex)
+    );
+  };
+
+  const deleteItemFromPopular = (selectedIndex) => {
+    setPopular((current) => current.filter((item, index) => index !== selectedIndex)
+    );
+  };
+
+  
+  const deleteItemFromAllSection = (selectedIndex) => {
+    setAllSection((current) => current.filter((item, index) => index !== selectedIndex)
+    );
+  };
+
+
   const [favorites, setFavorites] = useState([]);
   const [recent, setRecent] = useState([]);
 
   const [ExplorePopular, setExplorePopular] = useState([
-    "world cup",
-    "brazil",
-    "football",
-    "fifa",
-    "jaban",
-    "sport",
-    "qatar 2022",
-    "cat",
+    "messi",
+    "rage comic",
+    "comic",
+    "ukraine",
+    "Latest News",
+    "music",
+    "memes",
   ]); //array for Explore Popular filters
 
   const [Popular, setPopular] = useState([
+    "drawing",
+    "movie tv",
+    "pcmr",
+    "Pokemon",
     "Funny",
-    "Latest News",
     "NSFW",
     "Girl",
     "WTF",
@@ -172,6 +222,14 @@ const Sidebar = () => {
     "Relationshiop",
     "Savage",
     "Video",
+    "world cup",
+    "brazil",
+    "football",
+    "fifa",
+    "jaban",
+    "sport",
+    "qatar 2022",
+    "cat",
   ]); //array for Popular filters
 
   const [AllSection, setAllSection] = useState([
@@ -192,7 +250,6 @@ const Sidebar = () => {
     "Music",
     "Sport",
     "PC Master Race",
-    "Pokemon",
     "Satifying",
     "Science & Tech",
     "Star Wars",
@@ -223,9 +280,11 @@ const Sidebar = () => {
         data-bs-scroll="true"
         data-bs-backdrop="false"
         tabIndex="-1"
+        
         id="offcanvasScrolling"
         aria-labelledby="offcanvasScrollingLabel"
       >
+
         <div className="offcanvas-body">
           <div className="card">
             <div className="card-body">
@@ -285,45 +344,36 @@ const Sidebar = () => {
 
             {recentSection()}
 
+
+
+
+
             <h3 className="h3Sections">Explore Popular Tags</h3>
             <ul className="sidebar-menu">
-              {ExplorePopular.map((item, index) => {
+              {ExplorePopular.map((item, index ) => {
                 return (
                   <div className="filtersSections">
                     <li
                       key={index}
                       className="li-filter"
                       onClick={() => {
-                        // {handleTagClick()};
-                        // {filteredPosts.map((index) => (
-                        //   <PostCard key={id}
-                        //    op_user={op_user}
-                        //    op_user_avatar={op_user_avatar}
-                        //    title={title}
-                        //    content={content}
-                        //    post_date={post_date}
-                        //    tags={tags}
-                        //    up_votes={up_votes}
-                        //    down_votes={down_votes}
-                        //    comment={comment}
-                        //   />
-                        // ))}
 
+                       
                         setRecent((current) => [...current, item]);
-                        {
-                          recentSection();
-                        }
+              
+
                       }}
                     >
-                      <div className="sidebarItem">{item}</div>
+                      <Link to='/sidepage' className="sidebarItem" s={item} >{item}</Link>
+                    
                     </li>
+                    
                     <div className="starContainer">
                       <Star
                         onClick={() => {
-                          setFavorites((current) => [...current, item]);
-                          {
-                            favoriteSection();
-                          }
+                          setFavorites((current) => [ item , ...current ]);
+                          deleteItemFromExplorePopular(index , item);
+                        
                         }}
                       />
                     </div>
@@ -331,10 +381,14 @@ const Sidebar = () => {
                 );
               })}
             </ul>
+
+
+
+
 
             <h3 className="h3Sections">Popular </h3>
             <ul className="sidebar-menu">
-              {Popular.map((item, index) => {
+              {Popular.map((item, index ) => {
                 return (
                   <div className="filtersSections">
                     <li
@@ -342,20 +396,18 @@ const Sidebar = () => {
                       className="li-filter"
                       onClick={() => {
                         setRecent((current) => [...current, item]);
-                        {
-                          recentSection();
-                        }
+                       
+                     
                       }}
                     >
-                      <div className="sidebarItem">{item}</div>
+                      <Link to='/sidepage' className="sidebarItem" >{item}</Link>
                     </li>
                     <div className="starContainer">
                       <Star
                         onClick={() => {
                           setFavorites((current) => [...current, item]);
-                          {
-                            favoriteSection();
-                          }
+                          deleteItemFromPopular(index , item);
+                       
                         }}
                       />
                     </div>
@@ -364,9 +416,16 @@ const Sidebar = () => {
               })}
             </ul>
 
+
+
+
+
+
+
+
             <h3 className="h3Sections">All Sections</h3>
             <ul className="sidebar-menu">
-              {AllSection.map((item, index) => {
+              {AllSection.map((item, index ) => {
                 return (
                   <div className="filtersSections">
                     <li
@@ -374,20 +433,17 @@ const Sidebar = () => {
                       className="li-filter"
                       onClick={() => {
                         setRecent((current) => [...current, item]);
-                        {
-                          recentSection();
-                        }
+                       
                       }}
                     >
-                      <div className="sidebarItem">{item}</div>
+                       <Link to='/sidepage' className="sidebarItem" >{item}</Link>
+                      
                     </li>
                     <div className="starContainer">
                       <Star
                         onClick={() => {
                           setFavorites((current) => [...current, item]);
-                          {
-                            favoriteSection();
-                          }
+                          deleteItemFromAllSection(index , item);
                         }}
                       />
                     </div>
