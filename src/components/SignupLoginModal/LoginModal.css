@@ -151,31 +151,42 @@ h4.LOGin {
     background-color: rgb(194, 194, 194);
 }
 
+
+
 .content-of-login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 100px;
+    
+    width: 460px;
 }
 .input-field{
     width: 100%;
 
 }
+
 .input-field .input-control{
-    display: block;
     outline: none;
     border-radius: 8px;
     height: 40px;
     width:100%;
     border: 1px solid #ced4da;
 }
-
+p.text-massage.fill-color {
+    width: 200px;
+}
 
 .input-field .input-control.valid-email{
     border: 1px solid #1882f8;
 }
 .input-field .input-control.invalid-email{
+    border: 2px solid red;
+}
+.input-field .input-control.valid-password{
+    border: 1px solid #1882f8;
+}
+.input-field .input-control.invalid-password{
     border: 2px solid red;
 }
 .check-color{

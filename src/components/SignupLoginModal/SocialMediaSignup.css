@@ -1,15 +1,16 @@
-.signupbutton{
+.signupbutton {
     margin-right: 2%;
     float: right;
     background-color: white;
-  border-width: 0;
-  border-color: white;
-  border-radius: 5%;
+    border-width: 0;
+    border-color: white;
+    border-radius: 5%;
 }
-.signphoto{
+
+.signphoto {
     height: 200px;
-    width:300px;
-  border-radius: 5%;
+    width: 300px;
+    border-radius: 5%;
 }
 
 .modal-header .btn-close {
@@ -41,6 +42,7 @@ a.Apple {
     text-decoration: none;
     color: black;
 }
+
 a.link {
     color: white;
     font-weight: bold;
@@ -189,7 +191,8 @@ a.link {
     width: 13%;
     margin: -11px -161px;
 }
-.inputName{
+
+.inputName {
     height: 50px;
     width: 100%;
     font-weight: bold;
@@ -197,6 +200,7 @@ a.link {
     border-color: #e5e5e5;
     background-color: white;
 }
+
 .ButEmail {
     border-radius: 30px;
     height: 50px;
