@@ -22,10 +22,10 @@ const Profile = () => {
          </div>
          <div className="linkes-div">
               <div className="post-div">
-                   <a href="#" >Posts</a>
+                   <a className="profile-links">Posts</a>
               </div>
               <div className="comment-div">
-                   <a href="#">Comments</a>
+                   <a className="profile-links">Comments</a>
               </div>
               <div id="but-div" className="dropdown "> 
                      <button id="but" className="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
