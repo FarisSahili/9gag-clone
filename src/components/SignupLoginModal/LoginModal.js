@@ -21,19 +21,6 @@ const LogInPage = () => {
 
 
 
-  // const [pas, setpas] = useState("");
-  // const [message1, setMessage1] = useState(false);
-
-  // const passwordValidation = (e) => {
-  //   var passwored = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-  //   var passValue = e.target.value;
-  //   setEmail(passValue);
-  //   if (pas.match(pattern)) {
-  //     setMessage(true);
-  //   } else {
-  //     setMessage(false);
-  //   }
-  // };
   
   return (
     <>
@@ -57,7 +44,7 @@ const LogInPage = () => {
         </button>
 
         <div className="P-Or">or</div>
-        <div className="container content content-of-login">
+        <div className="content-of-login">
           <div className="input-field">
           <input
             type="text"

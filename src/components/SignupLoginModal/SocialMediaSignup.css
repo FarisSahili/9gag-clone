@@ -1,17 +1,26 @@
-.signupbutton{
+.signupbutton {
     margin-right: 2%;
     float: right;
     background-color: white;
-  border-width: 0;
-  border-color: white;
-  border-radius: 5%;
-}
-.signphoto{
-    height: 200px;
-    width:300px;
-  border-radius: 5%;
+    border-width: 0;
+    border-color: white;
+    border-radius: 5%;
 }
 
+.signphoto {
+    height: 200px;
+    width: 300px;
+    border-radius: 5%;
+}
+#SignUp{
+    margin: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 10px;
+
+}
 .modal-header .btn-close {
     margin: 0;
     padding: 0;
@@ -41,6 +50,7 @@ a.Apple {
     text-decoration: none;
     color: black;
 }
+
 a.link {
     color: white;
     font-weight: bold;
@@ -189,7 +199,8 @@ a.link {
     width: 13%;
     margin: -11px -161px;
 }
-.inputName{
+
+.inputName {
     height: 50px;
     width: 100%;
     font-weight: bold;
@@ -197,6 +208,7 @@ a.link {
     border-color: #e5e5e5;
     background-color: white;
 }
+
 .ButEmail {
     border-radius: 30px;
     height: 50px;
@@ -252,4 +264,30 @@ a.link {
 .ButApple:hover,
 .ButEmail:hover {
     background-color: rgb(194, 194, 194);
+}
+p.text-massage.fill-color {
+    width: 200px;
+}
+
+.input-field .input-control.valid-email{
+    border: 1px solid #1882f8;
+}
+.input-field .input-control.invalid-email{
+    border: 2px solid red;
+}
+.check-color{
+    color: #1882f8;
+}
+.success-color{
+    color: rgb(78, 231, 78);
+}
+.error-color{
+    color:red ;
+}
+input#email {
+    outline: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ced4da;
 }
