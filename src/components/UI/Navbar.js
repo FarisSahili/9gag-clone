@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import RecommendedPosts from "../Pages/Shuffle";
-import LogoNavHome from "./logoNavHome.png";
+ 
 import handleShuffle from "../Pages/Shuffle";
 import CostuomTags from "./CustomizeTags/CustomTags";
 import SocialMediaSignup from '../SignupLoginModal/SocialMediaSignup';
+ 
+import LogoNavHome from './logoNavHome.png'
 import ModalTags from "./CustomizeTags/CustomTags";
 import postData from "../../data";
 

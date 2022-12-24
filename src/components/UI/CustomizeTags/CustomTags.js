@@ -13,9 +13,7 @@ function ModalTags (){
  
           {favorites.map((item, index) => {
             return (
-              <ul className="list-group list-group-flush" onClick={() => 
-                {
-                setOtherTags((current) => [...current, item]);  }}>
+              <ul className="list-group list-group-flush">
               <div className="rowContainer">
               <div className="title">{item}</div>
               <div className="btnsContainer">
@@ -111,26 +109,23 @@ function ModalTags (){
   };
 
   const deleteItemFromFavorite = (selectedIndex) => {
-    setFavorites((current) => current.filter((_item, index) => index !== selectedIndex)
+    setFavorites((current) => current.filter((item, index) => index !== selectedIndex)
     );
   };
 
   const filterArrayFromOtherFavorite = (selectedIndex) => {
-    setOtherTags((current) => current.filter((_item, index) => index !== selectedIndex)
+    setOtherTags((current) => current.filter((item, index) => index !== selectedIndex)
     );
   };
   const filterArrayFromothertagstofav = (selectedIndex) => {
-    setOtherTags((current) => current.filter((_item, index) => index !== selectedIndex)
+    setOtherTags((current) => current.filter((item, index) => index !== selectedIndex)
     );
   };
   const filterArrayFromhidden = (selectedIndex) => {
-    setHidden((current) => current.filter((_item, index) => index !== selectedIndex)
+    setHidden((current) => current.filter((item, index) => index !== selectedIndex)
     );
     
   };
-  
-
-  
   
   return (
     <>
@@ -219,7 +214,7 @@ function ModalTags (){
                       <XButton isSelected={true}
                         onClick={() => {
                           filterArrayFromhidden(index);
-                          setFavorites((current) => [...current, item]);
+                          setPopularTags((current) => [...current, item]);
                         }}
                       />
                     </div>

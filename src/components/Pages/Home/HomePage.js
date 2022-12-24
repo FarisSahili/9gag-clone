@@ -14,6 +14,11 @@ const HomePage = (props) => {
         <>
         
             <Navbar/>
+<<<<<<< HEAD
+=======
+            <ModalTags/>
+            <Sidebar/> 
+>>>>>>> 1c51923e651aae10fcf3ce82d54398fbf3a709d3
             <SocialMediaSignup/> 
             <Interests/>
             <ModalTags/> 
