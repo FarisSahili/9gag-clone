@@ -135,7 +135,7 @@ function ModalTags (){
       </button>
       </div>
       <div className="modal fade " id="exampleModal" aria-hidden="true" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" >
-        <div className="modal-dialog" role="document">
+        <div className="modal-dialog " role="document">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">Customize with Tags</h5>
@@ -213,6 +213,7 @@ function ModalTags (){
                         onClick={() => {
                           filterArrayFromhidden(index);
                           setPopularTags((current) => [...current, item]);
+                           
                         }}
                       />
                     </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-//import PostCard from './src/components_new/Posts/PostCard.js' 
 import { Link } from "react-router-dom";
 import  postData  from "../../data"
 import PostCard from "../Posts/PostCard";
@@ -46,7 +45,7 @@ data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img cl
       {list.map((x) => (
         <PostCard key={x.id}
         op_user={x.op_user} op_user_avatar={x.op_user_avatar}  title={x.title}  content={x.content} post_date={x.post_date} 
-        tags={x.tags}   up_votes={x.up_votes}  down_votes={x.down_votes}  comment={x.comment}   
+        tags={x.tags}   up_votes={x.up_votes}  down_votes={x.down_votes}   comment_count={x.comment_count}   
         />
       ))}
     </div>
