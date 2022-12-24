@@ -43,33 +43,41 @@
  
 }
 .ctag{
-  width:200px;
-  height: 100px;
-border-radius: 5%;
-
- }
-.butn{
-  position:relative;
-  margin-top: 2%;
-  margin-right: 2%;
-  margin-left: 78%;
-  float: right;
-  background-color: white;
-border-width: 0;
-border-color: white;
+  width:300px;
+  height: 200px;
 border-radius: 5%;
 }
-.flex-container {
+.butn{
+  margin-left: 1%;
+  /* margin-top: 200px; */
+  /* margin-top: 2%; */
+  margin-right: 3%;
+  /* padding-left: 153vh; */
+  float: right;
+border-width: 0;
+border-radius: 5%;
+position: absolute;
+background-color:unset;
+}
+@media screen and (max-width:1280px){
+.butn,.ctag{
+margin-top:0% ;
+}
+/* .butn{
+  padding-left: 100%;
+} */
+}
+/* .flex-container {
   display: flex;
   flex-direction: row;
-}
+} */
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
-}
+} */
 /* @media screen {
   .butn{
       margin-left:0;

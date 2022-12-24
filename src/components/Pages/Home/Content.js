@@ -8,20 +8,17 @@ import RecommendedPosts from "../Shuffle";
 import TagButton from "../../Tags/Tag";
 import Logincard from "../../Posts/LoginPost";
 import Dark from "../../../dark";
-import Content from "./Content";
-const HomePage = (props) => {
+import homegag from './homegag.png'
+import './Content.css'
+const Content = (props) => {
     return (
         <>
-            <Navbar/>
-            <Sidebar/>
-            <Dark/>
-            <aside>
-            <SocialMediaSignup/> 
-            <ModalTags/> 
-            </aside>
-            <Content/>
+            <img src={homegag} className="gag" alt="Responsive image"/>
+            <Interests/>
+            <TagButton/>
+            <PostList/>  
         </>
     );
 }
 
-export default HomePage;
+export default Content;
