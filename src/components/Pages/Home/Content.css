@@ -9,16 +9,5 @@ padding-bottom: 2%;
 height:150px;
 }
 
-::-webkit-scrollbar.home {
-    width: 100px;
-    height: 7px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-   
-    border-radius: 10px;
-    background: rgb(175, 173, 173); 
-  
-  }
   
   

@@ -66,8 +66,9 @@ const AddNewPost=()=>
     <div>
     <input type="text" onChange={handleInputChange} placeholder="Paste image or video URL" className="urlinput form-control gap-2"  />
     <p className='supportfile'>Support links with PNG, JPG, GIF or MP4 file.</p>
+    <button type="button" className="hidenchoosee btn btn-secondary" disabled>Use Link</button>
         {inputValue && <button type="button" className="hidenchoose btn btn-secondary">Use Link</button>}
-        {inputValue || <button type="button" className="hidenchoose btn btn-secondary" disabled>Use Link</button>}
+        {/* {inputValue || <button type="button" className="hidenchoose btn btn-secondary" disabled>Use Link</button>} */}
     </div>
                                 
                                 
@@ -102,7 +103,7 @@ const AddNewPost=()=>
                                 <button type="button" className="add_list toggle-button" data-bs-toggle="dropdown">
                                     <img className='setting' src={Setting} alt='setting icon'/>
                                 </button>
-                                <ul className="dd dropdown-menu">
+                                <ul className="dropdownsittings dropdown-menu">
                                 <div className="mb-3 form-check">
                                 <input type="checkbox" className="settingpt form-check-input" id="exampleCheck1"></input>
                                 <label className="settingtext form-check-label" for="exampleCheck1">Enable anonymous posting</label>
