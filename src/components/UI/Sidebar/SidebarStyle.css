@@ -427,16 +427,6 @@ body
   margin-right: 2px;
 }
 
-/* clear recent section style*/
-
-.clear-modal 
-{
-  padding: 16px;
-  height: auto;
-  max-height: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
 
 
 
