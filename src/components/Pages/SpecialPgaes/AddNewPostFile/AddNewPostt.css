@@ -1,4 +1,10 @@
-bcontainer{
+.creat_post{
+    margin: 4% 0 0 25%;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+}
+.bcontainer{
     border-radius: 0.5rem;
     border: 0.12rem solid #e5e5e5;
 
@@ -47,6 +53,13 @@ bcontainer{
     
 }
 .hidenchoose{
+    margin: -8.5rem 0 0 27rem;
+    width: auto;
+    height: 2rem;
+    border-radius: 3rem;
+    
+}
+.hidenchoosee{
     margin: -6.5rem 0 0 27rem;
     width: auto;
     height: 2rem;
@@ -69,11 +82,6 @@ bcontainer{
     margin: -2% 0 0 60%;
     
 }
-.rules_menu{
-    width: 20rem;
-    height: auto;
-    
-}
 .rules{
     width: auto;
     height: 3rem;
@@ -85,22 +93,12 @@ bcontainer{
     background-color: white;
     border: none;
 }
-.add_list:hover{
-background-color: lightgrey;
-}
 
-.creat_post{
-    margin: 4% 0 0 25%;
-    font-weight: bold;
-    width: auto;
-    height: auto;
-}
 .btn-group{
     width: auto;
     height: auto;
     margin: 1rem 0 0 2rem;
 }
-
 .hidenbtn{
     width: auto;
     height: auto;
@@ -108,16 +106,9 @@ background-color: lightgrey;
     margin:  -7% 0 0 530px;
     
 }
-
 .setting{
     width: 1.1rem;
     height: 1.1rem;
-}
-.g99{
-    width: 0;
-    height: 60%;
-    margin: 2% 0 0 -2%;
-    font-weight: bold;
 }
 .tages{
     width: auto;
@@ -132,7 +123,7 @@ background-color: lightgrey;
     color: gray;
     font-weight: bold;
 }
-.dd{
+.dropdownsittings{
     padding: 10%;
     height: auto;
     
@@ -142,10 +133,7 @@ background-color: lightgrey;
     height: 1.2rem;
     padding: 0.8%;
 }
-.settingpt{
-    margin: 0 0 0 0;
-}
 .gag-rules{
     font-weight: bold;
     
-} 
+}
