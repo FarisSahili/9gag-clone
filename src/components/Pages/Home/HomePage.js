@@ -8,6 +8,7 @@ import RecommendedPosts from "../Shuffle";
 import TagButton from "../../Tags/Tag";
 import Clear from "../../UI/Sidebar/Clear";
 import Logincard from "../../Posts/LoginPost";
+import Dark from "../../../dark";
 
 const HomePage = (props) => {
     return (
@@ -15,6 +16,7 @@ const HomePage = (props) => {
       
             <Navbar/>
             <Sidebar/>
+            <Dark/>
             <aside>
             <SocialMediaSignup/> 
           

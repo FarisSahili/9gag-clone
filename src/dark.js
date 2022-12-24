@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './dark.css'
-function App() {
-const [theme, setTheme] = useState('light');
+function Dark() {
+const [theme, setTheme] = useState( localStorage.getItem('theme') || 'light'
+);
 const toggleTheme = () => {
     if (theme === 'light') {
 setTheme('dark');
@@ -10,6 +11,7 @@ setTheme('dark');
     }
   };
   useEffect(() => {
+    localStorage.setItem('theme', theme);
     document.body.className = theme;
   }, [theme]);
   return (
@@ -17,4 +19,4 @@ setTheme('dark');
    
   );
 }
-export default App;
+export default Dark;
