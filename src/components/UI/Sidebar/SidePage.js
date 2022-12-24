@@ -23,17 +23,6 @@ const SidePage = (props) => {
     "movie tv",
   ]);
 
-    // function openSidebar()
-    // {
-    //   document.querySelector('wr-side-bar').style.width='250px';
-    //   document.querySelector('content').style.marginLeft='250px';
-    // }
-
-  //   function openSidebar()
-  //   {
-  // document.getElementById('menu').style.width='0';
-  // document.getElementById('content').style.marginLeft='0';
-  //   }
 
   return (
     <>
