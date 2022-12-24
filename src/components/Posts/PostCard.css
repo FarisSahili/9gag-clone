@@ -1,163 +1,157 @@
 /* container  */
 .post-container {
-    text-align: left; 
- padding-top: 2%;
+    text-align: left;
+    padding-top: 2%;
     padding-left: 25%;
-    padding-right: 500px; 
+    padding-right: 500px;
     padding: auto;
-width: 540px;
-display: flex;
-position: relative;
+    width: 540px;
+    display: flex;
+    position: relative;
 }
-/* css for a  */
- .card-font {
-display: block;
-margin-top: 0%;
-text-decoration:1px solid black;
-font-weight: bold;
-color:black ; 
-font-size: small;
-width:auto;
- }
- .card-font:hover{
-color: black;
- }
 
 /* Gagger Part  */
- .gagger-prof-pic{
+.gagger-prof-pic {
     height: 20px;
     width: 100%;
     cursor: pointer;
     position: relative;
     display: flex;
- }
- .avatar-pic {
+}
+
+.avatar-pic {
     height: 30px;
-    width:30px;
+    width: 30px;
     display: flex;
     border-radius: 50%;
 }
+
 /* gagger-name */
-a.gagger{
-    width:80px;
+a.gagger {
+    width: 80px;
     padding-top: 5%;
     padding-left: 1%;
-     }
- .gagger{
+}
+
+.gagger {
     font-size: 15px;
     cursor: pointer;
     padding-left: 3%;
     padding-top: 1%;
     height: 50%;
     width: 100%;
-      /* 150px */
+    /* 150px */
     display: flex;
- }
+}
+
+
+/* css for a  */
+.card-font {
+    display: block;
+    margin-top: 0%;
+    text-decoration: 1px solid black;
+    font-weight: bold;
+    color: black;
+    font-size: small;
+    width: auto;
+}
+
+.card-font:hover {
+    color: black;
+}
 
 /* post time */
- .time {
-    display:flex;
-    padding-top: 1%;
-    color:  #999999 ;
+.time {
+    display: flex;
+    color: #999999;
     font-size: small;
-  padding-left: 1%;
-  cursor: auto;
- }
- /* save icon  */
+    padding-left: 1%;
+    cursor: auto;
+}
 
-.SaveIcon{
-    width: auto; 
-}
-.SaveIcon:hover{
-    background-color: #00ff2a;
-}
-   .save-button{
-    height:auto;
-    width: 100%;
-    display: flex;
-    cursor: pointer;
-    border-color: white ;
-    border-width: 0;
-    background-color:unset;
- }
-   .save-button-active{
-    height: auto;
-    width: 100%;
-    display: flex;
-    cursor: pointer;
-    border-color: white ;
-    border-width: 0;
-    background-color:green;
- }
-   /* Drop down css  */
-   .dd-card{
-  
-    display: flex;
+/* save icon  */
+
+.save-icon {
+    width: auto;
+    height: 15px;
     padding-top: 2%;
-    padding-left: 5%;
-    align-items: center; 
-    width: 100%;
-   }
-   .dd-post{
-background-color:unset;
-border-width: 0; 
-  }
-  .drop-down-icon{
+}
+
+.save-button {
+    height: auto;
+    width: auto;
     display: flex;
-padding-left: 0% ;
-align-items: center; 
-width: 100%;
+    cursor: pointer;
+    border-color: white;
+    border-width: 0;
+    background-color: unset;
+    border-radius: 60%;
+}
 
-   }
-   .DropdownIcon{
-    height: 90%;
-    width: 90%;
-    margin: 1px; 
-    padding-right: px;
-    padding-top: 1px;
+.save-button:hover {
+    background-color: lightgray;
 
- }
+}
 
- .dropdown-button{
-    height: 30px;
-    width: 30px;
+/* Drop down css  */
+.dd-post {
+    background-color: unset;
+    border-width: 0;
+    height: 15px;
+}
+
+.drop-down-icon {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 15px;
+    padding-top: 5%;
+}
+.dropdown-button {
+    height: 15px;
     border-radius: 50%;
     display: flex;
-    background-color:unset;
+    background-color: unset;
     cursor: pointer;
-    border-color:unset;
+    border-color: unset;
     border-width: 0;
     align-items: center;
 }
+.dropdown-button:hover {
+    background-color: lightgray;
+
+}
+
+.dd-it {
+    font-weight: normal;
+    padding: 7px;
+    padding-left: 15px;
+    font-size: medium;
+    font-family: BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, Helvetica;
+}
 
 
- .dropdown-button:hover{
-    background-color:lightgray; 
-
- }
 /* title  */
-.postcardh4{
-    padding-top : 3%;
+.postcardh4 {
+    padding-top: 3%;
     cursor: pointer;
     font-weight: bold;
 }
-.title-of-post{
+
+.title-of-post {
     padding-top: 1%;
 }
- .title-of-post.h2{
+.title-of-post.h2 {
     height: 30px;
     width: 100%;
     display: flex;
     cursor: pointer;
 }
-
-.title-of-post:hover{
-color :  #0099FF;
+.title-of-post:hover {
+    color: #0099FF;
 }
-
 /* Media of Post  */
-
-.Media{
+.Media {
     cursor: pointer;
     margin-top: 5px;
     background-color: #f0eeee;
@@ -165,221 +159,139 @@ color :  #0099FF;
     height: auto;
     width: 100%;
     align-items: center;
-    
+
 }
-/* .video-card{
-    
-    cursor: pointer;
-margin-top: 5px;
-    background-color: #f0eeee;
-    border-radius: 20px;
-    height: 700px;
-    width: 600px;
-    max-height: auto;
-    max-width: auto;
-} */
 
 /* Tags */
-.container-tag{
+.container-tag {
     display: flex;
     padding: 1%;
     padding-left: 0%;
 }
-.Post-Card-Tag{
+
+.Post-Card-Tag {
     border-radius: 5px;
-    border-color:#f0eeee;
+    border-color: #f0eeee;
     border-width: 100%;
     background-color: #f0eeee;
-    justify-content: center; 
-    padding:1% 2%;
-    margin :4px;
+    justify-content: center;
+    padding: 1% 2%;
+    margin: 4px;
     display: flex;
     position: relative;
-    width:auto;
+    width: auto;
     font-size: 100%;
     cursor: pointer;
     font-weight: bold;
 }
-.Post-Card-Tag:hover{
-    background-color:lightgray;
+
+.Post-Card-Tag:hover {
+    background-color: lightgray;
     color: black;
 
 }
+
 /* Vote & share Part */
-#up,#down,#comment-but{
-    background-color:white;
+#up,
+#down,
+#comment-but {
+    background-color: white;
     /* width: 24%; */
     border-radius: 5%;
     border-color: #e3e5e7;
     margin-right: 1%;
-    width:100px;
+    width: 100px;
     color: #979797;
 }
-#up:hover,#down:hover,#comment-but:hover{
+
+#up:hover,
+#down:hover,
+#comment-but:hover {
     background-color: #f0eeee;
     color: grey;
 }
 
 
-.vote-button{
-display: flex;
-padding-top: 1%;
-margin-right: 2%;
-width:400px;
-height:50px;
-padding: 2px;
+.vote-button {
+    display: flex;
+    padding-top: 1%;
+    margin-right: 2%;
+    width: 400px;
+    height: 50px;
+    padding: 2px;
 }
+/* 
 .button-vote-active {
     border-radius: 5px;
-    border-width:0px;
-    justify-content: center; 
-    padding:1% 1%;
-    margin :3px;
+    border-width: 0px;
+    justify-content: center;
+    padding: 1% 1%;
+    margin: 3px;
     display: flex;
     position: relative;
-    width:auto;
+    width: auto;
     height: 80%;
     font-size: 90%;
     cursor: pointer;
-    background-color:  #cde3f3;
-    border-color:1px  #0099FF;
+    background-color: #cde3f3;
+    border-color: 1px #0099FF;
     font-weight: bold;
     color: #0099FF;
-}
-/* .button-vote-comment{
-    border-radius: 5px;
-    border-color:rgb(219, 208, 208);
-    border-width:1px;
-    background-color: white;
-    justify-content: center; 
-    padding:1% 1%;
-    margin :3px;
-    display: flex;
-    position: relative;
-    width:auto;
-    height: 80%;
-    font-size: 90%;
-    cursor: pointer;
-    font-weight: bold;
-    color: grey;
-    padding-top: 6px;
-}
-.button-vote-comment:hover{
-background-color:rgb(246, 246, 246);
 } */
-.comment-img{
+
+.comment-img {
     width: 35%;
     padding-top: 3px;
     padding-right: 5px;
-    color: #0099FF;
 }
-.button-vote {
-    border-radius: 5px;
-    border-color:rgb(219, 208, 208);
-    border-width:1px;
-    background-color: white;
-    justify-content: center; 
-    padding:1% 1%;
-    margin :3px;
-    display: flex;
-    position: relative;
-    width:auto;
-    height: 80%;
-    font-size: 90%;
-    cursor: pointer;
-    font-weight: bold;
-    color: grey;
-    padding-top: 6px;
-
-}
-
-.up-active{
-   
-    background-color:  #cde3f3;
-    border-color:1px  #0099FF;
-
-    color: #0099FF;
-}
-
-.down-active{
-    background-color:  #151a1d;
-    border-color:1px  #00ff2a;
-    color: #00ff48;
-}
-.share-buttons{
+.share-buttons {
     display: flex;
     padding-top: 0%;
     margin-left: 20px;
-    
 }
-
-
-.share-icon{
+.share-icon {
     background-color: white;
     border-radius: 30%;
     border-color: rgb(65, 41, 88);
-    text-align:  center; 
-padding:10px 10px;
-padding-left: 10px;
-padding-right: 10px;
-margin :1px;
-display: flex;
-height: 50px;
-cursor: pointer;
-width: 50px;
-
+    text-align: center;
+    padding: 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 1px;
+    display: flex;
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
 }
 
-.vote-button{
-   padding-top: 7px; 
-}
-
-.votebutton:hover{
-    background-color:lightgray;
-
-}
-.commit{
-    width:50%
+.share-icon:hover {
+    background-color: rgb(246, 246, 246);
 }
 
 
-.button-vote:hover{
-    background-color:rgb(246, 246, 246);
-   
-}
-.share-icon:hover{
-    background-color:rgb(246, 246, 246);
-}
-
-
-.dd-it{
-font-weight:normal;
-padding : 7px;
-padding-left: 15px;
-font-size: medium;
-font-family: BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, Helvetica;
-}
-.dropdown-share-icon{
+.dropdown-share-icon {
     height: 20px;
     width: auto;
     padding-right: 15px;
     padding-left: 5px;
-    align-items: center; 
+    align-items: center;
 }
 
-.button-card{
+.button-card {
     display: flex;
-    padding: 10px;  
+    padding: 10px;
     margin: -9px;
 
 }
-a.button-vote{
-    color:grey;
+
+a.button-vote {
+    color: grey;
 }
-.hr-card{
+
+.hr-card {
     margin-left: 20%;
     border-bottom: 1px solid lightgray;
-    width:10%; 
-    padding-left: 50%;
-
+    width: 5%;
+    padding-left: 300px;
+    padding-right: 400px;
 }
