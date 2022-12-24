@@ -64,77 +64,69 @@ a.gagger{
   cursor: auto;
  }
  /* save icon  */
- .save-icon{
-   
-    width: 110%;
-    margin: 3px;
- }
 
- .save-icon{
-    display: flex;
-    padding-left: 60% ;
-    padding-top: 2%;
-    align-items: center; 
-   }
+.SaveIcon{
+    width: auto; 
+}
+.SaveIcon:hover{
+    background-color: #00ff2a;
+}
    .save-button{
-    height: auto;
+    height:auto;
     width: 100%;
-    border-radius:50%;
-    margin: 7px;
     display: flex;
-    background-color:white ;
     cursor: pointer;
     border-color: white ;
     border-width: 0;
-
+    background-color:unset;
  }
- .save-button-active{
+   .save-button-active{
     height: auto;
     width: 100%;
-    border-radius:50%;
-    margin: 7px;
     display: flex;
-    background-color:rgb(231, 20, 20) ;
     cursor: pointer;
-    border-color: rgb(26, 244, 18) ;
+    border-color: white ;
     border-width: 0;
-
+    background-color:green;
  }
    /* Drop down css  */
    .dd-card{
   
     display: flex;
-    padding-top: 0%;
+    padding-top: 2%;
+    padding-left: 5%;
     align-items: center; 
     width: 100%;
-
    }
+   .dd-post{
+background-color:unset;
+border-width: 0; 
+  }
   .drop-down-icon{
     display: flex;
 padding-left: 0% ;
 align-items: center; 
 width: 100%;
+
    }
    .DropdownIcon{
     height: 90%;
     width: 90%;
     margin: 1px; 
-    padding-right: 5px;
+    padding-right: px;
     padding-top: 1px;
 
  }
 
  .dropdown-button{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
-    margin: 0px;
     display: flex;
-    background-color:white ;
+    background-color:unset;
     cursor: pointer;
-    border-color: white ;
+    border-color:unset;
     border-width: 0;
-    padding-top:15px;
     align-items: center;
 }
 
@@ -200,12 +192,11 @@ margin-top: 5px;
     background-color: #f0eeee;
     justify-content: center; 
     padding:1% 2%;
-    margin :3px;
+    margin :4px;
     display: flex;
     position: relative;
     width:auto;
-    height: 10%;
-    font-size: 90%;
+    font-size: 100%;
     cursor: pointer;
     font-weight: bold;
 }
@@ -238,7 +229,23 @@ width:400px;
 height:50px;
 padding: 2px;
 }
-
+.button-vote-active {
+    border-radius: 5px;
+    border-width:0px;
+    justify-content: center; 
+    padding:1% 1%;
+    margin :3px;
+    display: flex;
+    position: relative;
+    width:auto;
+    height: 80%;
+    font-size: 90%;
+    cursor: pointer;
+    background-color:  #cde3f3;
+    border-color:1px  #0099FF;
+    font-weight: bold;
+    color: #0099FF;
+}
 /* .button-vote-comment{
     border-radius: 5px;
     border-color:rgb(219, 208, 208);
@@ -261,9 +268,9 @@ padding: 2px;
 background-color:rgb(246, 246, 246);
 } */
 .comment-img{
-    width: 45%;
-    padding-top: 5px;
-    padding-right: 1px;
+    width: 35%;
+    padding-top: 3px;
+    padding-right: 5px;
     color: #0099FF;
 }
 .button-vote {
@@ -343,26 +350,20 @@ width: 50px;
 .share-icon:hover{
     background-color:rgb(246, 246, 246);
 }
-.dropdown{
-    background-color: white;
-    border: none ;
-}
-.dd-men{
-width: 20px;
-}
+
+
 .dd-it{
 font-weight:normal;
 padding : 7px;
 padding-left: 15px;
-font-size: small;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+font-size: medium;
+font-family: BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, Helvetica;
 }
-.dropdow{
-    height: 15px;
+.dropdown-share-icon{
+    height: 20px;
     width: auto;
-    padding-right: 10px;
-    padding-left: 4px;
+    padding-right: 15px;
+    padding-left: 5px;
     align-items: center; 
 }
 

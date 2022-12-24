@@ -134,7 +134,7 @@ function ModalTags (){
       <button type="button" className="butn flex-container" data-bs-toggle="modal" data-bs-target="#exampleModal">
      <img src={CustomizeTagsPic} className="ctag"></img>
       </button>
- 
+    
       </div>
       <div className="modal fade " id="exampleModal" aria-hidden="true" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" >
         <div className="modal-dialog" role="document">

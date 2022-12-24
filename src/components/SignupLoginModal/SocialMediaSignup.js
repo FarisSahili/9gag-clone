@@ -232,7 +232,7 @@ const SocialMediaSignup = () => {
       </div>
       <button
       type="button"
-        className="signbutton"
+        className="signupbutton"
         data-bs-toggle="modal"
         href="#exampleModalToggle"
         >
