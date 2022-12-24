@@ -112,65 +112,76 @@ import basil from '../image/basil.jpg';
                                     <li><a className="items dropdown-item">Download 9GAG App</a></li>
                                     <li><a className="items dropdown-item">Help Center</a></li>
                                     <li><a className="items dropdown-item">Report Problems</a></li>
-                                    <li>  
-                                            <a className="dropdown-nested btn" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" onClick={itemClicked}>
-                                              <div className='carets-div'>
-                                                Terms & Policies
-                                                <div className='caret'>
-                                                        <svg id='img-terms-idP'  xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                                                        </svg>
-                                                </div>
-                                             </div> 
-                                            </a>
-                                            <div className="collapse" id="collapseExample1">
-                                                <a className='nested-dropdown'>Term</a><br />
-                                                <a className='nested-dropdown'>Privacy</a><br />
-                                                <a className='nested-dropdown'>Copyright</a>
-                                            </div>                                                       
-                                    </li> 
-
-                                    <li>  
-                                            <a className="dropdown-nested btn" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" onClick={itemClicked}>
-                                             <div className='carets-div'>
-                                                Advertise
-                                                <div className='caret'>
-                                                        <svg id='img-Advertise-idP'  xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                                                        </svg>
-                                                </div>
-                                              </div>  
-                                            </a>
-                                            <div className="collapse" id="collapseExample2">
-                                            <div>
-                                                <a className='nested-dropdown'>Advertise on 9GAG</a><br />
-                                                <a className='nested-dropdown'>Report Ads</a>
-                                            </div>
-                                            </div>                                                       
-                                    </li> 
-
-
-                                    <li>  
-                                            <a className="dropdown-nested btn" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" onClick={itemClicked}>
-                                             <div className='carets-div'> 
-                                                Contact
-                                                <div className='caret'>
-                                                        <svg id='img-Contact-idP'  xmlns="http://www.w3.org/2000/svg"  fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                                                        </svg>
-                                                </div>
-                                              </div>  
-                                            </a>
-                                            <div className="collapse" id="collapseExample3">
-                                            <div>
-                                                <a className='nested-dropdown'>Career</a><br />
-                                                <a className='nested-dropdown'>Business Enquiry</a>
-                                            </div>
-                                            </div>                                                       
-                                    </li> 
                                     <li>
-                                    <p id="gagP" className='disabled'>9GAG <i>&copy;</i> 2022</p>
+                                        <div className="accordion" >
+                                                <div>
+                                                    <h2 className="accordion-header" >
+                                                    <button id="TermsP" className="accordion-button items" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1P" aria-expanded="true" aria-controls="collapseOne" onClick={itemClicked}>
+                                                    Terms & Policies
+                                                    </button>
+                                                    </h2>
+                                                    <div id="collapseOne1P" className="accordion">
+                                                    <div className="accordion-body AB">
+                                                        <li className="nested-dropdpwn-items">Terms</li>
+                                                        <li className="nested-dropdpwn-items">Privacy</li>
+                                                        <li className="nested-dropdpwn-items">Copyright</li>
+                                                        <hr className="nested-dropdpwn-hr"/>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        </li>
+
+
+
+                                        <li>
+                                        <div className="accordion" >
+                                                <div>
+                                                    <h2 className="accordion-header" >
+                                                    <button id="AdvertiseP" className="accordion-button items " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2P" aria-expanded="true" aria-controls="collapseOne" onClick={itemClicked}>
+                                                    Advertise
+                                                    </button>
+                                                    </h2>
+                                                    <div id="collapseOne2P" className="accordion">
+                                                    <div className="accordion-body AB">
+                                                        <li className="nested-dropdpwn-items">Advertise on 9GAG</li>
+                                                        <li className="nested-dropdpwn-items">Report Ads</li>
+                                                        <hr className="nested-dropdpwn-hr"/>
+                                                    </div>
+
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        </li>
+
+                                        <li>
+                                        <div className="accordion" >
+                                                <div>
+                                                    <h2 className="accordion-header" >
+                                                    <button id="ContactP" className=" accordion-button items" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3P" aria-expanded="true" aria-controls="collapseOne" onClick={itemClicked}>
+                                                    Contact
+                                                    </button>
+                                                    </h2>
+                                                    <div id="collapseOne3P" className="accordion">
+                                                    <div className="accordion-body AB">
+                                                        <li className="nested-dropdpwn-items">Career</li>
+                                                        <li className="nested-dropdpwn-items">Business Enquiry</li>
+                                                        <hr className="nested-dropdpwn-hr"/>
+                                                    </div>
+
+                                                    </div>
+                                                </div>
+                                        </div>
                                     </li>
+
+                                    <li>
+                                        <p id="gagP" href="#" className="disabled">
+                                        9GAG <em>&copy;</em> 2022
+                                        </p>
+                                    </li> 
+
+
+                                    
                                 </ul>
                         </div>
 

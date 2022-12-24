@@ -5,11 +5,12 @@ import Upvote from "./2.png";
 import Downvote from "./3.png";
 import Comment from "./4.png";
 import SaveTo from "./5.png";
-import face1 from "./facebook.png.png";
+import face1 from "./facebook.png";
 import google1 from "./Google_Icons.webp";
 import Apple1 from "./Apple-Logo.png";
 import LeftArrow from "./left.png";
-import { Button } from "bootstrap";
+import Signuppic from "./Signuppic.png"
+import { Link } from "react-router-dom";
 const SocialMediaSignup = () => {
   return (
     <div className="FullModal">
@@ -216,7 +217,7 @@ const SocialMediaSignup = () => {
                   aria-label="Password"
                 />
                 <label for="floatingPassword"></label>
-                <button className="ButLogIn2">Log in</button>
+                <Link to='/SocialMediaSignup' className="ButLogIn2">Log in</Link>
                 <button
                   className="Forgot"
                   data-bs-target="#exampleModalToggle3"
@@ -229,15 +230,14 @@ const SocialMediaSignup = () => {
           </div>
         </div>
       </div>
-      <li
-        className="btn btn-danger"
+      <button
+      type="button"
+        className="signbutton"
         data-bs-toggle="modal"
         href="#exampleModalToggle"
-        role="button" 
-
-      >
-        Open first modal
-      </li>
+        >
+      <img src={Signuppic} className="signphoto"></img>
+      </button>
       <div
         className="modal"
         id="exampleModalToggle3"

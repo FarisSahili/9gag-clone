@@ -7,19 +7,27 @@ import Interests from "./Interests";
 import Dark from "../../../dark";
 import RecommendedPosts from "../Shuffle";
 import TagButton from "../../Tags/Tag";
+import Clear from "../../UI/Sidebar/Clear";
+import Logincard from "../../Posts/LoginPost";
 
 const HomePage = (props) => {
     return (
         <>
-        
+      
             <Navbar/>
-            <ModalTags/>
-            <Sidebar/> 
+            <Sidebar/>
+            <aside>
             <SocialMediaSignup/> 
+          
+            <ModalTags/> 
+            </aside>
             <Interests/>
             <TagButton/>
-            <PostList/>   
-        
+         
+            <PostList/>  
+            
+          
+      
         </>
     );
 }
