@@ -27,7 +27,7 @@ root.render(
         <Route path="/getapp" element={<GetApp />} />
         <Route path="/addnewpost" element={<AddNewPost />} />
         <Route path="/comment" element={<SinglePostPage/>} /> 
-        <Route path="SocialMediaSignup" element={<SocialMediaSignup/>} /> 
+        <Route path="SocialMediaSignup" element={<LogInPage/>} /> 
         <Route path="/shuffle" element={<RecommendedPosts/>} />
         <Route path="/gaggerpage" element={<Profile/>} /> 
 

@@ -4,7 +4,6 @@ import ModalTags from "../../UI/CustomizeTags/CustomTags";
 import Navbar from "../../UI/Navbar";
 import Sidebar from "../../UI/Sidebar/Sidebar";
 import Interests from "./Interests";
-import Dark from "../../../dark";
 import RecommendedPosts from "../Shuffle";
 import TagButton from "../../Tags/Tag";
 import Clear from "../../UI/Sidebar/Clear";
